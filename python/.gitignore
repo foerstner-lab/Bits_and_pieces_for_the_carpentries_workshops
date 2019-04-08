@@ -1,2 +1,3 @@
 *.pdf
-*.csv.ipynb_checkpoints/
+*.csv
+.ipynb_checkpoints/
