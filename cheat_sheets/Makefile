@@ -8,3 +8,6 @@ pdf:
           -V papersize:a4 \
 	  -o python_de.pdf \
 	  python_de.md
+
+clean:
+	rm -f *pdf *~
