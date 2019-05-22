@@ -1,4 +1,6 @@
-- git init - creates a git repository
+# Git
+
+- git init - Initiiert eine neue Git-Repositorium
 - git status - view the status of your files in the working directory and staging area
 - git add - tells git to start tracking a file, or a series of files.
 - git commit - commits ‘saves’ the staged snapshot to the project history.
