@@ -1,4 +1,4 @@
-# Python
+# Python-Kurzreferenz
 
 ## Variablen und Wertezuweisung (Assignment)
 
@@ -8,10 +8,13 @@ name = "Darwin"
 
 ## Einfach Datentypen
 
-str - Zeichenkette (String)
-int - Ganzzahl (Integer)
-float - Gleitkommazahl (Floating point number)
-bool - Boolesche Werte (Boolean)
+str - Zeichenkette (String), `"Hallo Welt"`
+
+int - Ganzzahl (Integer), `234`
+
+float - Gleitkommazahl (Floating point number), `42.23`
+
+bool - Boolesche Werte (Boolean)- `True`/`False`
 
 ## Container-Datentypen
 
@@ -45,11 +48,15 @@ for <Variable> in <Liste/Interable>:
 ``` 
 
 ## Bedingte Anweisung (Conditionals)
+
+Ausführung bei Bedingung
+
 ``` 
 if <Bedingung>:
     <Auszuführender Block>
 ``` 
 
+Ausführung bei Bedingung und Alternative, wenn Bedingung nicht erfüllt
 
 ``` 
 if <Bedingung>:
@@ -57,28 +64,31 @@ if <Bedingung>:
 else:
     <Auszuführender Block>
 ``` 
+
+Verschiedene Bedingungen und Alternative, wenn Bedingung nicht erfüllt
 
 ``` 
 if <Bedingung 1>:
     <Auszuführender Block>
 elif <Bedingung 2>:
-
+    <Auszuführender Block>
 else:
     <Auszuführender Block>
 ``` 
 
-
-
-
 ## Kommentare
 
-- Alle rechts eine `#` steht wird nicht interpretiert
+- Alles was rechts von einem `#` steht, wird nicht interpretiert
 
 ## Bibliotheken einbinden
+
+Importieren eines Paketes 
 
 ``` 
 import csv
 ```
+
+Importieren eines Modules einer Bibliothek
 
 ``` 
 import urllib.request
@@ -86,6 +96,8 @@ import urllib.request
 urllib.request.urlopen
 
 ```
+
+Import mit Modul mit einem anderen Namen
 
 ``` 
 import pandas as pd
@@ -95,7 +107,9 @@ import pandas as pd
 
 ## Funktionen
 
-Funktionaufruf durch runde klammern 
+- Funktionen eine Gruppierug von Anweisungen
+- Funktionen können keine bis mehrer Parameter besitzen
+- Funktionaufruf durch runde Klammern "()"
 
 - Beispiel:
   - `print("Hello World!")`
@@ -104,7 +118,14 @@ Funktionaufruf durch runde klammern
 
 ## Methoden
 
-Funktionen die an Objekte gebunden sind
+- Methoden sind Funktionen, die an Objekte gebunden sind
 
+Beispiele
 - `name.upper()`
 - `name.replace("und", "oder")`
+
+
+## Leseempfehlung
+
+- "Automate the Boring Stuff with Python", Al Sweigart,
+  https://automatetheboringstuff.com/
