@@ -1,0 +1,12 @@
+- [List of markup languages](https://en.wikipedia.org/wiki/List_of_markup_languages) (WP)
+
+- HTML
+- XML and [many that build upon it](https://en.wikipedia.org/wiki/List_of_XML_markup_languages) e.g.
+  - SVG
+  - [MARKXML](https://en.wikipedia.org/wiki/MARC_standards#MARCXML)
+  - [MathML](https://en.wikipedia.org/wiki/MathML)
+  - [MusicXML](https://en.wikipedia.org/wiki/MusicXML)
+  - [SBML](https://en.wikipedia.org/wiki/SBML)
+- TeX/LaTeX
+- Markdown
+- [reStructuredText](https://en.wikipedia.org/wiki/ReStructuredText)

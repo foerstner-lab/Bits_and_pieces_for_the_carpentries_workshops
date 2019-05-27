@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.0"
+   width="150pt"
+   height="150pt"
+   id="svg2">
+   <g
+     id="layer1">
+    <path
+       d="M 171.42857 89.64286 A 79.64286 82.14286 0 1 1  12.142853,89.64286 A 79.64286 82.14286 0 1 1  171.42857 89.64286 z"
+       transform="matrix(1.084295,0,0,1.051299,-6.149323,0.645357)"
+       style="fill:none;stroke:#ff0909;stroke-width:8.83199978;"
+       id="path1307" />
+    <text
+       x="26.641287"
+       y="100.69164"
+       style="font-size:25.34131813px;line-height:125%;font-family:Sans"
+       id="text1888"
+       xml:space="preserve"><tspan x="26.641287" y="100.69164"
+           style="font-size:25.34131813px;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Sans"
+           id="tspan1892">Community!</tspan></text>
+  </g>
+</svg>
