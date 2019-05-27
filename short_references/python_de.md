@@ -124,6 +124,24 @@ Beispiele
 - `name.upper()`
 - `name.replace("und", "oder")`
 
+## Datein öffnen
+
+Mit `open(<Dateinname>` wird ein sogenannter File-Handle erzeugt. Der
+ganze Inhalt kann dann mittel der Methode `read` der File-Handles
+eingelesen werden:
+
+```
+my_file_handle = open("Meine Daten.txt"):
+file_content = my_file_handle.read()
+```
+
+Alternativ kann man auch Zeile für Zeile eine Datein einlesen:
+
+```
+for line in open("Meine_Daten.txt"):
+    print(line)
+```
+
 
 ## Leseempfehlung
 
