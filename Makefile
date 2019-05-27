@@ -14,3 +14,6 @@ get_example_files:
 	# https://www.ncbi.nlm.nih.gov/nuccore/KM366535
 	wget -c -O plain_text_file_examples/Influenza_A_virus_HA_gene_sequence.fa \
 	  "https://www.ncbi.nlm.nih.gov/sviewer/viewer.cgi?db=nuccore&report=gene_fasta&id=686467572"
+
+	wget -c -P plain_text_file_examples/ \
+	  https://raw.githubusercontent.com/openbsd/src/master/bin/ls/ls.c
