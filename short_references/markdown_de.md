@@ -1,9 +1,10 @@
-# Markdown
+# Markdown-Kurzreferenz
 
-- ist eine einfache, vielgenutzte Auszeichnungssprache (engl. markup
+
+- Markdown ist eine einfache, vielgenutzte Auszeichnungssprache (engl. markup
   language)
-- kann in HTML, PDF un vielen andere übersetzt werden (e.g. mit dem
-  Werkzeug pandoc)
+- Markdown kann in HTML, PDF un vielen andere übersetzt werden
+  (z.B. mit dem Werkzeug pandoc (https://pandoc.org/))
 
 ## Überschriften
 
