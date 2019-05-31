@@ -39,8 +39,8 @@ Die Ausgabe von Programmen muss nicht immer in der Shell ausgegeben, sondern kan
 
 | Operator | Aktion                                        | Beispiel       |
 |----------|-----------------------------------------------|----------------|
-| ```>```    | Umleiten der Ausgabe in eine Datei            | ```ls > datei.txt``` |
-|   ```|```       | Umleiten der Ausgabe in ein weiteres Programm | ```wc -l *.tsv | sort -n ``               |
+| ```>```  | Umleiten der Ausgabe in eine Datei            | ```ls > datei.txt``` |
+| <code>&#124;</code>|Umleiten der Ausgabe in ein weiteres Programm  | <code> wc -l *.tsv &#124; sort -n </code>|
 
 ## Tastaturkürzel
 | Kürzel            | Aktion                                   |
@@ -55,7 +55,7 @@ Die Ausgabe von Programmen muss nicht immer in der Shell ausgegeben, sondern kan
 | strg + u          | löscht die Eingabe vor dem Cursor        |
 
 # Scripting
-## for Schleifen
+## for-Schleifen
 
 ```
 $ for NAME in "Jo" "Meg" "Beth" "Amy"
