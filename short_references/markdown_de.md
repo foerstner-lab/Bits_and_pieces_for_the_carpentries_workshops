@@ -28,11 +28,41 @@
 
 ## Listen
 
+```
+- Punkt 1
+- Punkt 2
+- Punkt 3
+```
+
+oder
+
+```
+* Punkt 1
+* Punkt 2
+* Punkt 3
+```
+
 ## Links
+
+```
+[Library Carpentry homepage](https://librarycarpentry.org/)
+```
 
 ## Bilder
 
+```
+[Alternativer Text](https://librarycarpentry.org/assets/img/lc_logo_1.png)
+```
+
 ## Tabellen
+
+```
+| Person | Lieblingsthema |
+|--------|----------------|
+| Aragon | Python         |
+| Leia   | Git            |
+| Luke   | Unix Shell     |
+```
 
 ## Leseempfehlungen
 
