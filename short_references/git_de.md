@@ -11,3 +11,7 @@
 - git remote add origin - Verbindet ein lokales Repositorium mit einem Remote-Repositorium 
 - git clone - Erstellt eine lokale Kopie eines Remote-Repositorium 
 - git config - Anzeigen oder Verändern von Optionen des Repositoriums oder generelle Optionen
+
+([CC-BY](https://creativecommons.org/licenses/by/3.0/de/) Till
+Sauerwein und Konrad Förstner)
+

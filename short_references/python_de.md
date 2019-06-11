@@ -147,3 +147,5 @@ for line in open("Meine_Daten.txt"):
 
 - "Automate the Boring Stuff with Python", Al Sweigart,
   https://automatetheboringstuff.com/
+
+(CC-BY Till Sauerwein und Konrad Förstner)

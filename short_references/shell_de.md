@@ -64,3 +64,6 @@ $ for NAME in "Jo" "Meg" "Beth" "Amy"
 >    echo $NAME
 > done
 ```
+
+
+([CC-BY](https://creativecommons.org/licenses/by/3.0/de/) Felix Langer und Konrad Förstner)

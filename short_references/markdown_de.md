@@ -38,3 +38,4 @@
 
 - https://markdown.de/
 
+([CC-BY](https://creativecommons.org/licenses/by/3.0/de/) Konrad Förstner)
