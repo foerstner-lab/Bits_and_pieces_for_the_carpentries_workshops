@@ -3,8 +3,8 @@
 
 - Markdown ist eine einfache, vielgenutzte Auszeichnungssprache (engl. markup
   language)
-- Markdown kann in HTML, PDF un vielen andere übersetzt werden
-  (z.B. mit dem Werkzeug pandoc (https://pandoc.org/))
+- Markdown kann in HTML, PDF und vielen andere Formate übersetzt
+  werden (z.B. mit dem Werkzeug pandoc (https://pandoc.org/))
 
 ## Überschriften
 
