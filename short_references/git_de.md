@@ -10,4 +10,4 @@
 - git pull - Fügt 'commits' die in einem Remote-Repositorium (z.B. Github o. Gitlab) entstanden sind dem lokalen Repositorium hinzu
 - git remote add origin - Verbindet ein lokales Repositorium mit einem Remote-Repositorium 
 - git clone - Erstellt eine lokale Kopie eines Remote-Repositorium 
-- git config - Anzeigen oder Verändern von Optionen des Repositoriums
+- git config - Anzeigen oder Verändern von Optionen des Repositoriums oder generelle Optionen
