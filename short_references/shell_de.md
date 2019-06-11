@@ -1,6 +1,7 @@
-# Shell
+# Shell-Kurzreferenz
+
 ## Syntax
-```$programm [-Optionen] [Argumente]```
+```$ programm [-Optionen] [Argumente]```
 
 **Optionen:**
 * Optionen ändern das Verhalten von Programmen

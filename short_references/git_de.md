@@ -1,4 +1,4 @@
-# Git
+# Git-Kurzreferenz
 
 - git init - Initiiert eine neue Git-Repositorium
 - git status - view the status of your files in the working directory and staging area
