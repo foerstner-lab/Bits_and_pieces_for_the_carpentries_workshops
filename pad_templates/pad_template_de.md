@@ -21,6 +21,7 @@
 - [ ] GitHub account eingerichtet?
 - [ ] Pad erklären
 - [ ] Übung - eigenen Namen zur Teilnehmerliste hinzufügen
+- [ ] Feedback und Fehler
 - [ ] Kursmaterialien
 - [ ] Kurzreferenzen
 
