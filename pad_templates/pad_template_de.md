@@ -77,12 +77,14 @@
 - [Python Cheat Sheet extended](https://github.com/ehmatthes/pcc/releases/download/v1.0.0/beginners_python_cheat_sheet_pcc_all.pdf)
 - [PEP 8](https://www.python.org/dev/peps/pep-0008/)
 
-### CSV-Übung
+### TSV-Übung
 
-* TSV-Datei raw: https://raw.githubusercontent.com/foerstner-lab/Bits_and_pieces_for_the_carpentries_workshops/master/plain_text_file_examples/DOIs_PMIDs_PubYears.
+* TSV-Datei raw:
+https://raw.githubusercontent.com/foerstner-lab/Bits_and_pieces_for_the_carpentries_workshops/master/text_file_examples/DOIs_PMIDs_PubYears.tsv
+
 
 ```
-tsv_url = "https://raw.githubusercontent.com/foerstner-lab/Bits_and_pieces_for_the_carpentries_workshops/master/plain_text_file_examples/DOIs_PMIDs_PubYears.tsv"
+tsv_url = "https://raw.githubusercontent.com/foerstner-lab/Bits_and_pieces_for_the_carpentries_workshops/master/text_file_examples/DOIs_PMIDs_PubYears.tsv"
 ```
 
 ### OpenAPC-Übung
