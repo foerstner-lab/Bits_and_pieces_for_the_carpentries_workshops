@@ -48,14 +48,14 @@ Die Ausgabe von Programmen muss nicht immer in der Shell ausgegeben, sondern kan
 |-------------------|:-----------------------------------------|
 | TAB               | Autovervollständigung                    |
 | Pfeiltaste hoch   | springt zum vorherigen Befehl            |
-| strg + a          | Cursor springt zum Zeilenanfang          |
-| strg + e          | Cursor springt zum Zeilenanende          |
-| strg + l          | leert den Inhalt des Shell Fensters      |
-| strg + c          | bricht Eingabe oder laufenden Prozess ab |
-| strg + k          | löscht die Eingabe nach dem Cursor       |
-| strg + u          | löscht die Eingabe vor dem Cursor        |
+| Strg + a          | Cursor springt zum Zeilenanfang          |
+| Strg + e          | Cursor springt zum Zeilenanende          |
+| Strg + l          | leert den Inhalt des Shell Fensters      |
+| Strg + c          | bricht Eingabe oder laufenden Prozess ab |
+| Strg + k          | löscht die Eingabe nach dem Cursor       |
+| Strg + u          | löscht die Eingabe vor dem Cursor        |
+| Strg + y          | fügt Zwischenablage ein                  |
 
-# Scripting
 ## for-Schleifen
 
 ```
