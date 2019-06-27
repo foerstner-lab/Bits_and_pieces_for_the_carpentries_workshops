@@ -73,7 +73,7 @@
 
 
 - [Pandas Cheat Sheet](https://github.com/pandas-dev/pandas/blob/master/doc/cheatsheet/Pandas_Cheat_Sheet.pdf)
-- [Python-Kurzreferenz](https://github.com/foerstner-lab/Bits_and_pieces_for_the_carpentries_workshops/blob/master/cheat_sheets/python_de.md)
+- [Python-Kurzreferenz](https://github.com/foerstner-lab/Bits_and_pieces_for_the_carpentries_workshops/blob/master/short_references/python_de.pdf)
 - [Python Cheat Sheet extended](https://github.com/ehmatthes/pcc/releases/download/v1.0.0/beginners_python_cheat_sheet_pcc_all.pdf)
 - [PEP 8](https://www.python.org/dev/peps/pep-0008/)
 
