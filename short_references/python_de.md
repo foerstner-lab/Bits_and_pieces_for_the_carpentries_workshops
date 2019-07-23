@@ -36,6 +36,7 @@ person_and_birth_years = {"Noether": 1882, "Darwin": 1809, "Lovelace": 1815}
 - Werte werden über die Schlüssel adressiert - z.B: `person_and_birth_years["Noether"]`
 
 ## Operatoren
+
 - `+`, `-`, `*`, `/`
 - `==`, `!=`, `<`, `>`, `=<`, `=>`
 - `not`, `and`, `or`
@@ -97,7 +98,7 @@ urllib.request.urlopen
 
 ```
 
-Import mit Modul mit einem anderen Namen
+Import eine Bibliothek mit einem anderen Namen
 
 ``` 
 import pandas as pd
@@ -107,7 +108,7 @@ import pandas as pd
 
 ## Funktionen
 
-- Funktionen eine Gruppierug von Anweisungen
+- Funktionen sind Gruppierungen von Anweisungen
 - Funktionen können keine bis mehrer Parameter besitzen
 - Funktionaufruf durch runde Klammern "()"
 
@@ -120,9 +121,9 @@ import pandas as pd
 
 - Methoden sind Funktionen, die an Objekte gebunden sind
 
-Beispiele
-- `name.upper()`
-- `name.replace("und", "oder")`
+- Beispiele
+  - `name.upper()`
+  - `name.replace("und", "oder")`
 
 ## Datein öffnen
 
