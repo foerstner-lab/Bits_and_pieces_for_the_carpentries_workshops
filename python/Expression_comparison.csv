@@ -1,0 +1,17 @@
+# Log2 Fold changes of gene expression comparisons				
+Gene	Comparison_B_to_A	Comparison_C_to_A	Comparison_D_to_A	Comparison_E_to_A
+thrL	-0.5	0	0.1	0.1
+thrA	-1.2	0.1	0.1	0.71
+thrB	2	0.1	-2.5	0.4
+thrC	0	0.1	0.1	0.1
+yaaX	0.1	0.71	0.3	0.1
+yaaA	0.1	0.9	0.1	-0.5
+yaaJ	-0.1	-0.5	-1.1	0.3
+talB	0.71	-0.1	0.1	-0.1
+mog	0.23	0.7	0.71	0.1
+satP	0.4	-0.1	0.4	0.71
+yaaW	0.3	0.3	0.1	0.1
+mbiA	0.01	-0.1	-0.5	0.1
+yaaI	2.4	0.31	0.1	0.4
+dnaK	0.01	0.8	0.6	2.5
+dnaJ	0.23	0.01	0.3737	0.3
