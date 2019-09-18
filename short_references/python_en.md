@@ -63,9 +63,9 @@ code block if the conditions is not true
 
 ``` 
 if <Bedingung>:
-    <Auszuführender Block>
+    <block to execute 1>
 else:
-    <Auszuführender Block>
+    <block to execute 2>
 ``` 
 
 Exececution of a code block under certain conditions and alternatives
@@ -150,5 +150,5 @@ for line in open("My_great_file.txt"):
 
 - "Automate the Boring Stuff with Python", Al Sweigart,
   https://automatetheboringstuff.com/
+https://github.com/foerstner-lab/Bits_and_pieces_for_the_carpentries_workshops/blob/master/short_references/python_en.pdf
 
-(CC-BY Till Sauerwein and Konrad Förstner)
