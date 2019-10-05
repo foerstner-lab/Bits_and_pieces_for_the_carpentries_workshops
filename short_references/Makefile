@@ -6,8 +6,8 @@ pdf:
           -V geometry:"top=3cm, bottom=3cm, left=3.2cm, right=3.2cm" \
 	  -V fontsize=11pt \
           -V papersize:a4 \
-	  -o python_de.pdf \
-	  python_de.md
+	  -o Kurzreferenz_git.pdf \
+	  Kurzreferenz_git.md
 
 	pandoc \
           --pdf-engine xelatex \
@@ -16,8 +16,8 @@ pdf:
           -V geometry:"top=3cm, bottom=3cm, left=3.2cm, right=3.2cm" \
 	  -V fontsize=11pt \
           -V papersize:a4 \
-	  -o python_en.pdf \
-	  python_en.md
+	  -o shortreference_python.pdf \
+	  shortreference_python.md
 
 	pandoc \
           --pdf-engine xelatex \
@@ -26,8 +26,8 @@ pdf:
           -V geometry:"top=3cm, bottom=3cm, left=3.2cm, right=3.2cm" \
 	  -V fontsize=11pt \
           -V papersize:a4 \
-	  -o git_de.pdf \
-	  git_de.md
+	  -o Kurzreferenz_git.pdf \
+	  Kurzreferenz_git.md
 
 	pandoc \
           --pdf-engine xelatex \
@@ -36,8 +36,8 @@ pdf:
           -V geometry:"top=3cm, bottom=3cm, left=3.2cm, right=3.2cm" \
 	  -V fontsize=11pt \
           -V papersize:a4 \
-	  -o shell_de.pdf \
-	  shell_de.md
+	  -o Kurzreferenz_shell.pdf \
+	  Kurzreferenz_shell.md
 
 	pandoc \
           --pdf-engine xelatex \
@@ -46,8 +46,8 @@ pdf:
           -V geometry:"top=3cm, bottom=3cm, left=3.2cm, right=3.2cm" \
 	  -V fontsize=11pt \
           -V papersize:a4 \
-	  -o markdown_de.pdf \
-	  markdown_de.md
+	  -o Kurzreferenz_markdown.pdf \
+	  Kurzreferenz_markdown.md
 
 clean:
 	rm -f *pdf *~
