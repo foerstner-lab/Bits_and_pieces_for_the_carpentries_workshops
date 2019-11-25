@@ -1,42 +1,40 @@
 Der Verhaltenskodex der Carpentries
 Verhaltenskodex (Zusammenfassung)
 
-Nachfolgend finden Sie eine Zusammenfassung des Verhaltenskodex der
-Carpentries. Lesen Sie weiter, um eine detailliertere Beschreibung des
+Nachfolgend findest du eine Zusammenfassung des Verhaltenskodex der
+Carpentries. Lies weiter, um eine detailliertere Beschreibung des
 CoC zu erhalten.
 
 Wir sind bestrebt, eine einladende und unterstützende Umgebung für
 alle Menschen zu schaffen, unabhängig von ihrem Hintergrund oder ihrer
 Identität. Durch die Teilnahme an dieser Community erklären sich die
 Teilnehmer damit einverstanden, sich an den Verhaltenskodex der
-Zimmerei zu halten und die Verfahren zur Lösung von Vorfällen des
-Verhaltenskodex zu akzeptieren. Jede Form oder jedes Verhalten, um
-Unannehmlichkeiten auszuschließen, einzuschüchtern oder zu
-verursachen, stellt einen Verstoß gegen den Verhaltenskodex dar. Um
+Carpentries zu halten und die Verfahren zur Lösung von Vorfällen des
+auschließt, einzuschüchtert oder Unannehmlichkeiten
+verursacht, stellt einen Verstoß gegen den Verhaltenskodex dar. Um
 ein positives und professionelles Lernumfeld zu fördern, fördern wir
 die folgenden Verhaltensweisen in allen Plattformen und
 Veranstaltungen:
 
-- Verwenden Sie eine einladende und integrative Sprache.
-- Seien Sie respektvoll gegenüber verschiedenen Standpunkten und Erfahrungen.
-- Akzeptieren Sie anmutig konstruktive Kritik.
-- Fokussierung auf das Beste für die Gemeinschaft
-
+- Verwende eine einladende und integrative Sprache.
+- Sei respektvoll gegenüber verschiedenen Standpunkten und Erfahrungen.
+- Akzeptiere konstruktive Kritik.
+- Fokussiere dich auf das, was das Beste für die Gemeinschaft ist.
 - Zeige Höflichkeit und Respekt gegenüber anderen Community-Mitgliedern.
 
-Wenn Sie glauben, dass jemand gegen den Verhaltenskodex verstößt,
-bitten wir Sie, ihn dem Carpentries Code of Conduct Committee zu
-melden, das dieses Formular ausfüllt, das die entsprechenden Maßnahmen
+Wenn du glaubst, dass jemand gegen den Verhaltenskodex verstößt,
+bitten wir dich, ihn dem Carpentries Code of Conduct Committee zu
+melden, das Formular auszufüllt, das die entsprechenden Maßnahmen
 ergreifen wird, um der Situation zu begegnen.  Verhaltenskodex
 (Detailansicht)
 
 ## Teil 1. Einführung
 
-Die Schreinereien sind ein von der Gemeinde geleitetes Projekt. Wir
+Die Carpentries sind eine von der Community geleitetes Projekt. Wir
 schätzen das Engagement aller Beteiligten in der Gemeinschaft. Wir
 sind bestrebt, einen freundlichen und respektvollen Ort zum Lernen,
 Lehren und Mitwirken zu schaffen. Von allen Teilnehmern unserer
-Veranstaltungen und Mitteilungen wird erwartet, dass sie anderen
+Veranstaltungen und Kommuikation wird erwartet, dass sie anderen
 gegenüber Respekt und Höflichkeit zeigen.
 
 Um klarzustellen, was erwartet wird, ist jeder, der an den Aktivitäten
@@ -69,9 +67,9 @@ Zugehörigkeit zu einer nationalen Minderheit, Eigentum, Alter,
 Bildung, sozioökonomischer Status, technische Entscheidungen und
 Erfahrungsniveau umfassen.
 
-Jeder, der an den Tätigkeiten der Zimmerei teilnimmt, ist
-verpflichtet, sich an diesen Verhaltenskodex zu halten. Sie gilt für
-alle von The Carpentries verwalteten Bereiche, einschließlich, aber
+Jeder, der an den Tätigkeiten der Carpentries teilnimmt, ist
+verpflichtet, sich an diesen Verhaltenskodex zu halten. Er gilt für
+alle von den Carpentries verwalteten Bereichen, einschließlich, aber
 nicht beschränkt auf Workshops, E-Mail-Listen und Online-Foren wie
 GitHub, Slack und Twitter. Von den Workshop-Gastgebern wird erwartet,
 dass sie bei der Umsetzung des Verhaltenskodexes mitwirken. Durch die
@@ -90,13 +88,14 @@ und professionelles Lernumfeld zu schaffen, fördern wir die folgenden
 Verhaltensweisen in allen Veranstaltungen und Plattformen von
 Carpentries:
 
-- Verwenden Sie eine einladende und integrative Sprache.
-- Seien Sie respektvoll gegenüber verschiedenen Standpunkten und Erfahrungen.
-- Akzeptieren Sie anmutig konstruktive Kritik.
-- Fokussierung auf das Beste für die Gemeinschaft
+- Verwende eine einladende und integrative Sprache.
+- Sei espektvoll gegenüber verschiedenen Standpunkten und Erfahrungen.
+- Akzeptiere konstruktive Kritik.
+- Fokussiere dich auf das, was das Beste für die Gemeinschaft ist.
 - Zeige Höflichkeit und Respekt gegenüber anderen Community-Mitgliedern.
 
-Hinweis: Weitere Empfehlungen finden Sie in den vier Sozialregeln.
+
+Hinweis: Weitere Empfehlungen findest du in den vier Sozialregeln.
 
 ## Teil 2.2 Unzulässiges Verhalten
 
@@ -104,18 +103,18 @@ Beispiele für unannehmbares Verhalten von Teilnehmern an einer
 Veranstaltung oder Plattform von Carpentries sind unter anderem:
 
 - schriftliche oder mündliche Kommentare, die dazu führen, dass Personen aufgrund der Zugehörigkeit zu einer bestimmten Gruppe ausgeschlossen werden.
-- jemanden dazu bringen, um seine Sicherheit zu fürchten, z.B. durch Pirsch, Verfolgung oder Einschüchterung.
+- jemanden dazu zu bringen, um seine Sicherheit zu fürchten, z.B. durch Stalking, Verfolgung oder Einschüchterung.
 - gewalttätige Drohungen oder Formulierungen, die sich gegen eine andere Person richten.
 - die Darstellung von sexuellen oder gewalttätigen Bildern
 - unerwünschte sexuelle Aufmerksamkeit
 - unvereinbarer oder unwillkommener Körperkontakt
 - nachhaltige Unterbrechung von Gesprächen, Veranstaltungen oder Kommunikationen
-- Beleidigungen oder Niederlagen
-- sexistische, rassistische, homophobe, transphobische, ablehnende oder ausschließende Witze
+- Beleidigungen oder Herabsetzungen
+- sexistische, rassistische, homophobe, transphobe, ablehnende oder ausschließende Witze
 - übermäßiges Fluchen
 - Anstiftung zu Gewalt, Selbstmord oder Selbstverletzung
-- weiterhin eine Interaktion (einschließlich Fotografie oder Aufnahme)
-  mit jemandem zu initiieren, nachdem er aufgefordert wurde,
+- anhaltende Interaktion (einschließlich Fotografie oder Aufnahme)
+  mit jemandem, obwhol er aufgefordert wurde,
   aufzuhören.
 - Veröffentlichung privater Mitteilungen ohne Zustimmung
 
