@@ -25,6 +25,7 @@
 | ```echo "Text"```                 | gibt Text in die Shell aus                     |
 | ```wc <Dateiname>```            | zählt Zeilen, Wörter, Zeichen in Datei         |
 | ```mkdir <Verzeichnisname>```     | erstellt Ordner                                |
+| ```cat <Dateiname>```     | zeigt Inhalt von Datei an                                |
 
 Weitere Hilfe
 
