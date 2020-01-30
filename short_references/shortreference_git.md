@@ -1,4 +1,4 @@
-# Git-short reference
+# Git - short reference
 
 - git init - Initiates a new git repository
 - git status - Shows the status of all files in the working directory and the staging area
