@@ -1,0 +1,406 @@
+\documentclass[aspectratio=169]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz} % For semi-transparent background blocks
+\usepackage{hyperref}
+\usepackage{multimedia}
+\usepackage{ulem}
+\usepackage{wasysym}
+
+\usepackage{pbox}
+
+\usepackage[absolute,overlay]{textpos}
+
+% \usetikzlibrary{mindmap,trees}
+
+\usepackage{smartdiagram}
+\usetikzlibrary{shapes.geometric,calc}
+\usetikzlibrary{shapes.symbols}
+\usetikzlibrary{shapes.symbols,positioning}
+\usepackage{metalogo}
+\usetikzlibrary{backgrounds, calc, shadows, shadows.blur}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Style modifications
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usetheme{Berlin}
+
+%%% Fonts %%%
+
+% Change font. Fontspec requires xelatex instead of pdflatex!
+% Font catalog: http://www.tug.dk/FontCatalogue/
+\usepackage{fontspec}
+
+%\setsansfont{Comfortaa}
+%\setsansfont{DejaVu Sans}
+%\setsansfont{Fira Sans}
+
+% Use "Fira Sans Light" as the normal font and the "Fira Sans" for
+% bold fonts
+
+\setsansfont[
+  ItalicFont={Fira Sans Light Italic},
+  BoldFont={Fira Sans},
+  BoldItalicFont={Fira Sans Italic}]{Fira Sans Light}
+
+\setbeamerfont{title}{size=\Large, series=\bfseries}
+\setbeamerfont{frametitle}{size=\large, series=\bfseries}
+
+\setbeamertemplate{frames}[default]
+
+% Empty headline / footline
+\setbeamertemplate{headline}{}
+\setbeamertemplate{footline}{}
+
+% Remove navigation icons
+\setbeamertemplate{navigation symbols}{}
+
+
+\begin{document}
+
+
+%1 - Local only
+\begin{frame}{}
+
+  \begin{textblock*}{5cm}(0.0cm, 6.5cm)
+    \begin{center}
+      \includegraphics[width=1.8cm]{images/laptop.pdf}
+    \end{center}
+  \end{textblock*}
+  
+\end{frame}
+
+
+
+% 2 - One user local + GitHub
+\begin{frame}{}
+
+  \begin{textblock*}{5cm}(0.0cm, 6.5cm)
+    \begin{center}
+      \includegraphics[width=1.8cm]{images/laptop.pdf}
+    \end{center}
+  \end{textblock*}
+
+  \begin{textblock*}{5cm}(1.3cm, 0.7cm)
+    \begin{center}
+      \includegraphics[width=4.8cm]{images/cloud.pdf}
+    \end{center}
+  \end{textblock*}
+  
+  \begin{textblock*}{5cm}(1.8cm, 0.0cm)
+    \begin{center}
+      {\small GitHub / GitLab}
+    \end{center}
+  \end{textblock*}  
+
+  \begin{textblock*}{5cm}(0.0cm, 3.5cm)
+    \begin{center}
+      \includegraphics[width=0.8cm,angle=180]{images/arrow.pdf}
+    \end{center}
+  \end{textblock*}
+
+  \begin{textblock*}{5cm}(0.8cm, 3.5cm)
+    \begin{center}
+      \includegraphics[width=0.8cm]{images/arrow.pdf}
+    \end{center}
+  \end{textblock*}
+  
+  \begin{textblock*}{5cm}(-0.6cm, 4.6cm)
+    \begin{center}
+      {\small push}
+    \end{center}
+  \end{textblock*}
+
+  \begin{textblock*}{5cm}(1.25cm, 4.6cm)
+    \begin{center}
+      {\small pull}
+    \end{center}
+  \end{textblock*}    
+  
+\end{frame}
+
+
+% 3 - Two users local + GitHub
+\begin{frame}{}
+
+  \begin{textblock*}{5cm}(0.0cm, 6.5cm)
+    \begin{center}
+      \includegraphics[width=1.8cm]{images/laptop.pdf}
+    \end{center}
+  \end{textblock*}
+
+  \begin{textblock*}{5cm}(1.3cm, 0.7cm)
+    \begin{center}
+      \includegraphics[width=4.8cm]{images/cloud.pdf}
+    \end{center}
+  \end{textblock*}
+  
+  \begin{textblock*}{5cm}(1.8cm, 0.0cm)
+    \begin{center}
+      {\small GitHub / GitLab}
+    \end{center}
+  \end{textblock*}  
+
+  \begin{textblock*}{5cm}(0.0cm, 3.5cm)
+    \begin{center}
+      \includegraphics[width=0.8cm,angle=180]{images/arrow.pdf}
+    \end{center}
+  \end{textblock*}
+
+  \begin{textblock*}{5cm}(0.8cm, 3.5cm)
+    \begin{center}
+      \includegraphics[width=0.8cm]{images/arrow.pdf}
+    \end{center}
+  \end{textblock*}
+  
+  \begin{textblock*}{5cm}(-0.6cm, 4.6cm)
+    \begin{center}
+      {\small push}
+    \end{center}
+  \end{textblock*}
+
+  \begin{textblock*}{5cm}(1.25cm, 4.6cm)
+    \begin{center}
+      {\small pull}
+    \end{center}
+  \end{textblock*}    
+  
+  \begin{textblock*}{5cm}(2.6cm, 6.5cm)
+    \begin{center}
+      \includegraphics[width=1.8cm]{images/laptop.pdf}
+    \end{center}
+  \end{textblock*}  
+
+  \begin{textblock*}{5cm}(2.5cm, 3.5cm)
+    \begin{center}
+      \includegraphics[width=0.8cm,angle=180]{images/arrow.pdf}
+    \end{center}
+  \end{textblock*}
+
+  \begin{textblock*}{5cm}(3.3cm, 3.5cm)
+    \begin{center}
+      \includegraphics[width=0.8cm]{images/arrow.pdf}
+    \end{center}
+  \end{textblock*}      
+  
+\end{frame}
+
+
+
+
+% 4 - Fork
+\begin{frame}{}
+
+  \begin{textblock*}{5cm}(0.0cm, 6.5cm)
+    \begin{center}
+      \includegraphics[width=1.8cm]{images/laptop.pdf}
+    \end{center}
+  \end{textblock*}
+
+  \begin{textblock*}{5cm}(1.3cm, 0.7cm)
+    \begin{center}
+      \includegraphics[width=4.8cm]{images/cloud.pdf}
+    \end{center}
+  \end{textblock*}
+  
+  \begin{textblock*}{5cm}(9.5cm, 0.7cm)
+    \begin{center}
+      \includegraphics[width=4.8cm]{images/cloud.pdf}
+    \end{center}
+  \end{textblock*}
+  
+  \begin{textblock*}{5cm}(1.8cm, 0.0cm)
+    \begin{center}
+      {\small GitHub / GitLab}
+    \end{center}
+  \end{textblock*}  
+
+  \begin{textblock*}{5cm}(0.0cm, 3.5cm)
+    \begin{center}
+      \includegraphics[width=0.8cm,angle=180]{images/arrow.pdf}
+    \end{center}
+  \end{textblock*}
+
+  \begin{textblock*}{5cm}(0.8cm, 3.5cm)
+    \begin{center}
+      \includegraphics[width=0.8cm]{images/arrow.pdf}
+    \end{center}
+  \end{textblock*}
+  
+  \begin{textblock*}{5cm}(-0.6cm, 4.6cm)
+    \begin{center}
+      {\small push}
+    \end{center}
+  \end{textblock*}
+
+  \begin{textblock*}{5cm}(1.25cm, 4.6cm)
+    \begin{center}
+      {\small pull}
+    \end{center}
+  \end{textblock*}    
+  
+  \begin{textblock*}{5cm}(2.6cm, 6.5cm)
+    \begin{center}
+      \includegraphics[width=1.8cm]{images/laptop.pdf}
+    \end{center}
+  \end{textblock*}  
+
+  \begin{textblock*}{5cm}(2.5cm, 3.5cm)
+    \begin{center}
+      \includegraphics[width=0.8cm,angle=180]{images/arrow.pdf}
+    \end{center}
+  \end{textblock*}
+
+  \begin{textblock*}{5cm}(3.3cm, 3.5cm)
+    \begin{center}
+      \includegraphics[width=0.8cm]{images/arrow.pdf}
+    \end{center}
+  \end{textblock*}      
+
+  \begin{textblock*}{5cm}(9.2cm, 6.5cm)
+    \begin{center}
+      \includegraphics[width=1.8cm]{images/laptop.pdf}
+    \end{center}
+  \end{textblock*}
+
+  \begin{textblock*}{5cm}(8.9cm, 3.5cm)
+    \begin{center}
+      \includegraphics[width=0.8cm,angle=180]{images/arrow.pdf}
+    \end{center}
+  \end{textblock*}
+  
+  \begin{textblock*}{5cm}(9.7cm, 3.5cm)
+    \begin{center}
+      \includegraphics[width=0.8cm]{images/arrow.pdf}
+    \end{center}
+  \end{textblock*}
+  
+  \begin{textblock*}{5cm}(5.4cm, 1.6cm)
+    \begin{center}
+      \includegraphics[width=0.8cm,angle=90]{images/arrow.pdf}
+    \end{center}
+  \end{textblock*}
+  
+  \begin{textblock*}{5cm}(5.2cm, 1.5cm)
+    \begin{center}
+      {\small Fork}
+    \end{center}
+  \end{textblock*}
+
+\end{frame}
+
+% 5 - Merge/Pull request
+\begin{frame}{}
+
+  \begin{textblock*}{5cm}(0.0cm, 6.5cm)
+    \begin{center}
+      \includegraphics[width=1.8cm]{images/laptop.pdf}
+    \end{center}
+  \end{textblock*}
+
+  \begin{textblock*}{5cm}(1.3cm, 0.7cm)
+    \begin{center}
+      \includegraphics[width=4.8cm]{images/cloud.pdf}
+    \end{center}
+  \end{textblock*}
+  
+  \begin{textblock*}{5cm}(9.5cm, 0.7cm)
+    \begin{center}
+      \includegraphics[width=4.8cm]{images/cloud.pdf}
+    \end{center}
+  \end{textblock*}
+  
+  \begin{textblock*}{5cm}(1.8cm, 0.0cm)
+    \begin{center}
+      {\small GitHub / GitLab}
+    \end{center}
+  \end{textblock*}  
+
+  \begin{textblock*}{5cm}(0.0cm, 3.5cm)
+    \begin{center}
+      \includegraphics[width=0.8cm,angle=180]{images/arrow.pdf}
+    \end{center}
+  \end{textblock*}
+
+  \begin{textblock*}{5cm}(0.8cm, 3.5cm)
+    \begin{center}
+      \includegraphics[width=0.8cm]{images/arrow.pdf}
+    \end{center}
+  \end{textblock*}
+  
+  \begin{textblock*}{5cm}(-0.6cm, 4.6cm)
+    \begin{center}
+      {\small push}
+    \end{center}
+  \end{textblock*}
+
+  \begin{textblock*}{5cm}(1.25cm, 4.6cm)
+    \begin{center}
+      {\small pull}
+    \end{center}
+  \end{textblock*}    
+  
+  \begin{textblock*}{5cm}(2.6cm, 6.5cm)
+    \begin{center}
+      \includegraphics[width=1.8cm]{images/laptop.pdf}
+    \end{center}
+  \end{textblock*}  
+
+  \begin{textblock*}{5cm}(2.5cm, 3.5cm)
+    \begin{center}
+      \includegraphics[width=0.8cm,angle=180]{images/arrow.pdf}
+    \end{center}
+  \end{textblock*}
+
+  \begin{textblock*}{5cm}(3.3cm, 3.5cm)
+    \begin{center}
+      \includegraphics[width=0.8cm]{images/arrow.pdf}
+    \end{center}
+  \end{textblock*}      
+
+  \begin{textblock*}{5cm}(9.2cm, 6.5cm)
+    \begin{center}
+      \includegraphics[width=1.8cm]{images/laptop.pdf}
+    \end{center}
+  \end{textblock*}
+
+  \begin{textblock*}{5cm}(8.9cm, 3.5cm)
+    \begin{center}
+      \includegraphics[width=0.8cm,angle=180]{images/arrow.pdf}
+    \end{center}
+  \end{textblock*}
+  \begin{textblock*}{5cm}(9.7cm, 3.5cm)
+    \begin{center}
+      \includegraphics[width=0.8cm]{images/arrow.pdf}
+    \end{center}
+  \end{textblock*}
+  
+  \begin{textblock*}{5cm}(5.4cm, 1.6cm)
+    \begin{center}
+      \includegraphics[width=0.8cm,angle=90]{images/arrow.pdf}
+    \end{center}
+  \end{textblock*}
+  \begin{textblock*}{5cm}(5.4cm, 2.4cm)
+    \begin{center}
+      \includegraphics[width=0.8cm,angle=-90]{images/arrow.pdf}
+    \end{center}
+  \end{textblock*}  
+  
+  \begin{textblock*}{5cm}(5.2cm, 1.5cm)
+    \begin{center}
+      {\small Fork}
+    \end{center}
+  \end{textblock*}
+  
+  \begin{textblock*}{5cm}(5.3cm, 3.2cm)
+    \begin{center}
+      {\small Merge /Pull request}
+    \end{center}
+  \end{textblock*}    
+  
+\end{frame}
+
+
+
+\end{document}
