@@ -54,6 +54,7 @@ Die Ausgabe von Programmen muss nicht immer in der Shell ausgegeben, sondern kan
 | Strg + l          | leert den Inhalt des Shell Fensters      |
 | Strg + c          | bricht Eingabe oder laufenden Prozess ab |
 | Strg + k          | löscht die Eingabe nach dem Cursor       |
+| Strg + r          | startet interaktive History              |
 | Strg + u          | löscht die Eingabe vor dem Cursor        |
 | Strg + y          | fügt Zwischenablage ein                  |
 
