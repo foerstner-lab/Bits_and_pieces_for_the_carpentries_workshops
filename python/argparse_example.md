@@ -5,6 +5,8 @@ information.
 
 
 ```python
+# Store this and the following python code in a file called "calc.py"
+
 number_1 = 10
 number_2 = 30
 result = number_1 + number_1
