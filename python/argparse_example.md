@@ -34,7 +34,7 @@ $ python calc.py
 ```
 
 ```bash
-python calc.py -h
+$ python calc.py -h
 usage: calc.py [-h]
 
 optional arguments:
@@ -55,7 +55,7 @@ print(args)
 ```
 
 ```bash
-python calc.py 1000 5000                                                                                         ~
+$ python calc.py 1000 5000                                                                                         ~
 Namespace(number_1='1000', number_2='5000')
 ```
 
@@ -71,7 +71,7 @@ print(result)
 ```
 
 ```bash
-python calc.py -h
+$ python calc.py -h
 usage: calc.py [-h] number_1 number_2
 
 positional arguments:
@@ -84,7 +84,7 @@ optional arguments:
 
 
 ```bash
-python calc.py 1000 5000
+$ python calc.py 1000 5000
 10005000
 ```
 
@@ -107,19 +107,19 @@ print(result)
 
 
 ```bash
-python calc.py 1000 5000
+$ python calc.py 1000 5000
 6000
 
 ```
 
 ```bash
-python calc.py AAAA ZZZZ
+$ python calc.py AAAA ZZZZ
 usage: calc.py [-h] number_1 number_2
 calc.py: error: argument number_1: invalid int value: 'AAAA'
 ```
 
 ```bash
-python calc.py 1000 ZZZZ                                                                                           ~
+$ python calc.py 1000 ZZZZ                                                                                           ~
 usage: calc.py [-h] number_1 number_2
 calc.py: error: argument number_2: invalid int value: 'ZZZZ'
 ```
@@ -136,7 +136,7 @@ print(result)
 ```
 
 ```python
-python calc.py -h
+$ python calc.py -h
 usage: calc.py [-h] number_1 number_2
 
 positional arguments:
@@ -160,7 +160,7 @@ print(result)
 ```
 
 ```bash
-python calc.py -h                                                                                                ~
+$ python calc.py -h                                                                                                ~
 usage: calc.py [-h] [--multi] number_1 number_2
 
 positional arguments:
@@ -173,13 +173,13 @@ optional arguments:
 ```
 
 ```bash
-python calc.py 1000 5000
+$ python calc.py 1000 5000
 6000
 Namespace(multi=False, number_1=1000, number_2=5000)
 ```
 
 ```bash
-python calc.py --multi 1000 5000
+$ python calc.py --multi 1000 5000
 6000
 Namespace(multi=True, number_1=1000, number_2=5000)
 ```
@@ -201,34 +201,46 @@ print(result)
 ```
 
 ```bash
-python calc.py 1000 5000
-6000
-```
-
-```bash
-python calc.py --multi 1000 5000
-5000000
-```
-
-```bash
-python calc.py --operation sum 1000 5000
-6000
-
 $ python calc.py 1000 5000
 6000
+```
 
+```bash
+$ python calc.py --multi 1000 5000
+5000000
+```
+
+```bash
 $ python calc.py --operation sum 1000 5000
 6000
+```
 
+```bash
+$ python calc.py 1000 5000
+6000
+```
+
+```bash
+$ python calc.py --operation sum 1000 5000
+6000
+```
+
+```bash
 $ python calc.py --operation mult 1000 5000
 5000000
+```
 
+```bash
 $ python calc.py --operation div 1000 5000
 0.2
+```
 
+```bash
 $ python calc.py --operation sub 1000 5000
 -4000
+```
 
+```bash
 $ python calc.py --operation blub 1000 5000
 usage: calc.py [-h] [--operation {sum,mult,div,sub}] number_1 number_2
 calc.py: error: argument --operation: invalid choice: 'blub' (choose from 'sum', 'mult', 'div', 'sub')
