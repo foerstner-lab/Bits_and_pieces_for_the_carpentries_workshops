@@ -12,7 +12,7 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-@app.route("/") # Start page
+@app.route("/")
 def start_page():
     return "<p>Hello World!</p>"
 ```
@@ -30,7 +30,7 @@ Open http://127.0.0.1:5000/
 
 
 ```
-@app.route("/") # Start page
+@app.route("/")
 def start_page():
     return "<p>Hello World!</p>"
 
@@ -62,11 +62,11 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-@app.route("/") # Start page
+@app.route("/")
 def start_page():
     return "<p>Hello World!</p>"
 
-@app.route("/info") # Information page
+@app.route("/info")
 def show_info():
     return "<p>Some information.</p>"
 
@@ -84,11 +84,11 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-@app.route("/") # Start page
+@app.route("/")
 def start_page():
     return "<p>Hello World!</p>"
 
-@app.route("/info") # Information page
+@app.route("/info")
 def show_info():
     return "<p>Some information.</p>"
 
@@ -122,11 +122,11 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-@app.route("/") # Start page
+@app.route("/")
 def start_page():
     return "<p>Hello World!</p>"
 
-@app.route("/info") # Information page
+@app.route("/info")
 def show_info():
     return "<p>Some information.</p>"
 
