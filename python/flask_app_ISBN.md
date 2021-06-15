@@ -1,10 +1,15 @@
-```shell
-mkdir isnb_app
-cd isnb_app
-```
+
+
+- https://flask.palletsprojects.com
+
 
 ```shell
 python -m pip install Flask
+```
+
+```shell
+mkdir isnb_app
+cd isnb_app
 ```
 
 ```isnb_app.py
@@ -75,9 +80,8 @@ def isbn_display():
     return "<p>Your ISBN: </p>"
 ```
 
-Open http://127.0.0.1:5000/isbn
-
-
+- https://docs.python.org/3/library/__main__.html
+- Open http://127.0.0.1:5000/isbn
 
 ```isnb_app.py
 from flask import Flask, render_template
