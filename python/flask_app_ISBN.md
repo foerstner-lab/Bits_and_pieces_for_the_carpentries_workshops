@@ -13,7 +13,7 @@ cd isnb_app
 ```
 
 ```isnb_app.py
-from flask import Flask, render_template
+from flask import Flask
 
 app = Flask(__name__)
 
@@ -35,6 +35,10 @@ Open http://127.0.0.1:5000/
 
 
 ```
+from flask import Flask
+
+app = Flask(__name__)
+
 @app.route("/")
 def start_page():
     return "<p>Hello World!</p>"
@@ -63,7 +67,7 @@ python -m flask run
 ```
 
 ```isnb_app.py
-from flask import Flask, render_template
+from flask import Flask
 
 app = Flask(__name__)
 
@@ -84,7 +88,7 @@ def isbn_display():
 - Open http://127.0.0.1:5000/isbn
 
 ```isnb_app.py
-from flask import Flask, render_template
+from flask import Flask
 
 app = Flask(__name__)
 
@@ -103,6 +107,7 @@ def isbn_display(isbn):
 
 - Open http://127.0.0.1:5000/isbn/8484-499
 - Open http://127.0.0.1:5000/isbn/444-4444
+- Read https://flask.palletsprojects.com/en/2.0.x/quickstart/#routing
 
 ```shell
 mkdir templates
