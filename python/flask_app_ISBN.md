@@ -65,6 +65,8 @@ export FLASK_ENV=development
 ```shell
 python -m flask run
 ```
+- https://snarky.ca/why-you-should-use-python-m-pip/
+- https://docs.python.org/3/using/cmdline.html#cmdoption-m
 
 ```isnb_app.py
 from flask import Flask
