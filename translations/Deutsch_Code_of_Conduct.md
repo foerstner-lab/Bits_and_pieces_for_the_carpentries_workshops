@@ -33,7 +33,7 @@ ergreifen wird, um der Situation zu begegnen.  Verhaltenskodex
 Die Carpentries sind eine von der Community geleitetes Projekt. Wir
 schätzen das Engagement aller Beteiligten in der Gemeinschaft. Wir
 sind bestrebt, einen freundlichen und respektvollen Ort zum Lernen,
-Lehren und Mitwirken zu schaffen. Von allen Teilnehmern unserer
+Lehren und Mitwirken zu schaffen. Von allen Teilnehmenden unserer
 Veranstaltungen und Kommuikation wird erwartet, dass sie anderen
 gegenüber Respekt und Höflichkeit zeigen.
 
@@ -89,10 +89,10 @@ Verhaltensweisen in allen Veranstaltungen und Plattformen von
 Carpentries:
 
 - Verwende eine einladende und integrative Sprache.
-- Sei espektvoll gegenüber verschiedenen Standpunkten und Erfahrungen.
+- Sei respektvoll gegenüber verschiedenen Standpunkten und Erfahrungen.
 - Akzeptiere konstruktive Kritik.
 - Fokussiere dich auf das, was das Beste für die Gemeinschaft ist.
-- Zeige Höflichkeit und Respekt gegenüber anderen Community-Mitgliedern.
+- Zeige dich höflich und respektvoll gegenüber anderen Community-Mitgliedern.
 
 
 Hinweis: Weitere Empfehlungen findest du in den vier Sozialregeln.
