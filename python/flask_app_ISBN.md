@@ -146,4 +146,126 @@ def isbn_display(isbn):
     return render_template("isbn.html")
 ```
 
+```templates/isbn.html
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>ISBN check</h1>
+
+<p>Your ISBN: {{ isbn }}</p>
+
+</body>
+</html> 
+```
+
+```
+from flask import Flask, render_template
+
+app = Flask(__name__)
+
+@app.route("/")
+def start_page():
+    return "<p>Hello World!</p>"
+
+@app.route("/info")
+def show_info():
+    return "<p>Some information.</p>"
+
+@app.route("/isbn/<isbn>")
+def isbn_display(isbn):
+    return render_template("isbn.html", isbn=isbn)
+```
+
+
+```isbn_form.html
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>ISBN submission</h1>
+
+<form method="POST" action="isbn_form_content">
+    <p>
+        <label for="isbn">ISBN</label>
+        <input id="isbn" name="isbn" type="text">
+    </p>
+    <input type="submit" value="Submit ISBN">
+</form>
+
+</body>
+</html>
+```
+
+```
+from flask import Flask, render_template
+
+app = Flask(__name__)
+
+@app.route("/") # Start page
+def start_page():
+    return "<p>Hello World!</p>"
+
+@app.route("/info") # Information page
+def show_info():
+    return "<p>Some information.</p>"
+
+@app.route("/isbn/<isbn>")
+def isbn_display(isbn):
+    return render_template("isbn_display.html", isbn=isbn)
+
+@app.route("/isbn_form")
+def isbn_form():
+    return render_template("isbn_form.html")
+```
+
+http://127.0.0.1:5000/isbn_form
+
+```isbn_display_form_content.html
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>ISBN check</h1>
+
+<p>Your ISBN: {{ isbn }}</p>
+
+</body>
+</html>
+```
+
+
+```
+from flask import Flask, render_template, request
+
+app = Flask(__name__)
+
+@app.route("/") # Start page
+def start_page():
+    return "<p>Hello World!</p>"
+
+@app.route("/info") # Information page
+def show_info():
+    return "<p>Some information.</p>"
+
+@app.route("/isbn/<isbn>")
+def isbn_display(isbn):
+    return render_template("isbn_display.html", isbn=isbn)
+
+@app.route("/isbn_form")
+def isbn_form():
+    return render_template("isbn_form.html")
+
+@app.route("/isbn_form_content", methods=["POST"])
+def isbn_display_of_form():
+    args = request.args
+    return render_template("isbn_display_form_content.html", args=args)
+```
+
+
+```
+```
+
+
 TBC
