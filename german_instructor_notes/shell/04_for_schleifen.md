@@ -11,6 +11,7 @@ Zielsetzungen:
 Schlüsselpunkte:
 - "Schleifen sind die Grundlage für intelligenteres Arbeiten mit der Kommandozeile"
 - "Schleifen helfen uns, das Gleiche (oder Ähnliche) mit einem Haufen von Gegenständen zu tun".
+- Die Anführungszeichen sind nicht immer nötig, aber gute Praxis um Gefahren entgegenzuwirken - in diesem Fall ginge es auch ohne
 ---
 ### Eine For-Loop schreiben
 
