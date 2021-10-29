@@ -1,6 +1,6 @@
 # Configure Ubuntu Subsystem for Windows
 
-## Ubuntu Version abfragen
+## Query Ubuntu version
 - lsb_release -a
 - be sure, that it's the newest version of Ubuntu:
 ```
