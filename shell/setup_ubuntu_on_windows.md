@@ -18,16 +18,18 @@ application to the taskbar. Otherwise, you will probably
 open the older version via the search function.
 
 ## Update system
-
+```
 $ sudo apt-get update
+```
+```
 $ sudo apt-get upgrade
-
+```
 ## Create user
 
 1. First switch to root user if you're not already
 Open cmd and type command:
 ```
-$ $ ubuntu2004.exe config --default-user root
+$ ubuntu2004.exe config --default-user root
 ```
 
 Go back to Ubuntu shell and create a new user
@@ -52,7 +54,7 @@ path you want to set as home directory
 1. First switch to root user if you're not already
 open cmd and type command:
 ```
-$ $ ubuntu2004.exe config --default-user root
+$ ubuntu2004.exe config --default-user root
 ```
 
 2. Open Ubuntu shell as root
@@ -71,8 +73,9 @@ $ ubuntu2004.exe config --default-user username
 ### Error when opening shell after setting new home directory
 
 - when starting ubuntu this error occurs:
-> : No such file or directoryr/bin/win-sudo/s/aliases   
-- syntax highlighting doesn't work anymore
+```
+: No such file or directoryr/bin/win-sudo/s/aliases   
+```
 
 #### SOLUTION 
 Path is in 
@@ -115,7 +118,7 @@ for the workshop participants because the indentation is not transferred
 by pasting and you don't want to overwrite the lines that are already in ~/.bashrc.
 Consider to let them copy first into a file:
 ```
-cp /home/username/.bashrc bashskript.txt
+$ cp /home/username/.bashrc bashskript.txt
 ```
 and paste it manually through texteditor in their fileexplorer.
 Be are that hidden folders must be seen then. You can make them visable 
