@@ -126,11 +126,11 @@ by "Ansicht / [x] Ausgeblendete Elemente"
 
 ## Tips / To consider
 
-### Kopieren / Einfügen
-- kopieren mit STRG C
-- einfügen auch mit rechtsklick
-- ansonsten bei Eigenschaften umstellen auf 
-UMSCHALT+STRG+C/V
+### Copy / Paste
+- copy with CTRL C
+- Paste also with right click
+- otherwise change properties to 
+SHIFT+STRG+C/V
 
 ### Execute Python
 $ ~/Anaconda3/python.exe script.py
