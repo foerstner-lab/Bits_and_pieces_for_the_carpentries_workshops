@@ -13,9 +13,9 @@ ORDER BY Citation_Count DESC, Titel ASC;
 
 ## 2. Übung - Filtern (Episode 3)
 
-Schreibt eine Abfrage, die den Title, First_Author, Subjects, ISSNs, Month und Year zurückgibt. 
-Die Ausgabe soll nur Treffer enthalten die das Wort computer in der Spalte Subjects enthalten 
-und mehr als 4 Zitate haben (Citation_Count Spalte).
+Schreibt eine Abfrage, die den `Title`, `First_Author`, `Subjects`, `ISSNs`, `Month` und `Year` zurückgibt. 
+Die Ausgabe soll nur Treffer enthalten die das Wort "computer" in der Spalte `Subjects` enthalten 
+und mehr als 4 Zitate haben (`Citation_Count` Spalte).
 
 ```
 SELECT Title, First_Author, Subjects, ISSNs, Month, Year
