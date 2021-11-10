@@ -54,5 +54,7 @@ Hier können wir das KEYWORD `IN` verwenden, um die Abfrage zu verbessern und le
 ~~~
 SELECT *
 FROM articles
-WHERE (ISSNs IN ('2076-0787', '2077-1444', '2056-9890'));
+WHERE ISSNs IN ('2076-0787', '2077-1444', '2056-9890');
 ~~~
+
+In diesem Fall ist die Klammer notwendig, damit die Abfrage funktioniert.
