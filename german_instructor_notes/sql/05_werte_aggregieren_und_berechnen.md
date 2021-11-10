@@ -59,6 +59,11 @@ ORDER BY AVG(Citation_Count) DESC;
 
 SQL bietet einen Mechanismus zum Filtern der Ergebnisse auf der Grundlage von Aggregatfunktionen durch das Schlüsselwort `HAVING`.
 
+**Anmerkung**: Der Unterschied zwischen where- und have-Klausel in SQL besteht darin, 
+dass where zum Filtern von Datensätzen verwendet wird, bevor eine 
+Gruppierung oder Aggregation erfolgt, während have zum Filtern von 
+Datensätzen nach einer Gruppierung oder einer Aggregation verwendet wird.
+
 Zum Beispiel können wir die letzte Anfrage, die wir geschrieben haben, so anpassen, dass nur Informationen über die Zeitschrift `ISSNs` 
 mit 10 oder mehr veröffentlichten Artikeln zurückgegeben werden:
 
