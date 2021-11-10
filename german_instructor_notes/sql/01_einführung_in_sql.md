@@ -17,16 +17,16 @@ Schlüsselpunkte:
 
 ## Was ist SQL?
 
-**S**structured **Q**uery **L**anguage, oder SQL (manchmal auch "Fortsetzung" ausgesprochen), ist eine mächtige Sprache, die zum Abfragen und
-relationale Datenbanken zu manipulieren. 
+**S**tructured **Q**uery **L**anguage, oder SQL ist eine mächtige Sprache, um
+relationale Datenbanken abzufragen und zu bearbeiten. 
 
 ## Relationale Datenbanken
 
 Relationale Datenbanken bestehen aus einer oder mehreren Datentabellen. Diese Tabellen haben
 _Felder_ (Spalten) und _Datensätze_ (Zeilen). Diese Tabellen können
-miteinander verknüpft, wenn ein Feld in einer Tabelle mit einem Feld in einer anderen Tabelle abgeglichen werden kann. 
-SQL _queries_ sind die Befehle, mit denen Ihr Daten in einer Datenbank nachschlagen könnt oder
-Berechnungen auf der Grundlage von Spalten durchführt.
+miteinander verknüpft werden, wenn ein Feld in einer Tabelle mit einem Feld in einer anderen Tabelle abgeglichen werden kann. 
+SQL _queries_ sind die Befehle, mit denen Ihr Daten in einer Datenbank abfragen könnt oder
+Berechnungen auf der Grundlage von Spalten durchführen könnt.
 
 ## Warum SQL verwenden?
 
