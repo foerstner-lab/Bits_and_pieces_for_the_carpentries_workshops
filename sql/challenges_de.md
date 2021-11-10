@@ -13,7 +13,7 @@ ORDER BY Citation_Count DESC, Titel ASC;
 
 ## 2. Übung - Filtern (Episode 3)
 
-Schreibt eine Abfrage, die den `Title`, `First_Author`, `Subjects`, `ISSNs`, `Month` und `Year` zurückgibt. 
+Schreibe eine Abfrage, die den `Title`, `First_Author`, `Subjects`, `ISSNs`, `Month` und `Year` zurückgibt. 
 Die Ausgabe soll nur Treffer enthalten die das Wort "computer" in der Spalte `Subjects` enthalten 
 und mehr als 4 Zitate haben (`Citation_Count` Spalte).
 
@@ -92,7 +92,7 @@ ON articles.ISSNs = journals.ISSNs
 GROUP BY Journal_Title
 ORDER BY COUNT(*) DESC
 ```
-### Gruppenaufgaben (Episode 10)
+### Gruppenaufgaben (Episode 08)
 
 **Anmerkung**: Die Teilnehmer:innen in 3-4 Gruppen in Breakout-Rooms zur Bearbeitung dieser Übungen schicken. Bearbeitungszeit sind ca. 45 Minuten.
 
