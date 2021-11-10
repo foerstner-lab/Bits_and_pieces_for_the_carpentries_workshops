@@ -15,8 +15,6 @@ Schlüsselpunkte:
 - "Personen, die in bibliotheks- und informationsbezogenen Funktionen arbeiten, verfügen über Fähigkeiten, die es ihnen ermöglichen, SQL zum Organisieren von und Zugreifen auf Daten zu verwenden.
 ---
 
-
-
 ## Was ist SQL?
 
 **S**structured **Q**uery **L**anguage, oder SQL (manchmal auch "Fortsetzung" ausgesprochen), ist eine mächtige Sprache, die zum Abfragen und
@@ -91,46 +89,7 @@ Wenn wir eine Abfrage schreiben wollen, klicken wir auf die Registerkarte SQL au
 
 Die Daten, die wir verwenden werden, bestehen aus 5 csv-Dateien, die Tabellen mit Artikeltiteln, Zeitschriften, Sprachen, Lizenzen und Verlagen enthalten. Die Informationen in diesen Tabellen stammen aus einer Stichprobe von 51 verschiedenen Zeitschriften, die im Jahr 2015 veröffentlicht wurden.
 
-__Artikel__  
-* Enthält einzelne Artikeltitel und die zugehörigen Zitate und Metadaten
-* (16 Felder, 1001 Datensätze)
-* Feldnamen: `id`, `Titel`, `Autoren`, `DOI`, `URL`, `Themen`, `ISSNs`, `Zitat`, `LanguageID`, `LicenseID`, `Autor_Zählung`, `Erster_Autor`, `Zitat_Zählung`, `Tag`, `Monat`, `Jahr`
-
-__Journale__  
-* Enthält verschiedene Zeitschriftentitel und zugehörige Metadaten. Die Tabelle verknüpft auch Zeitschriftentitel mit ISSN-Nummern, die dann in der Tabelle "Artikel" durch das Feld "ISSNs" referenziert werden.
-* (5 Felder, 51 Datensätze)
-* Feldnamen: `id`, `ISSN-L`, `ISSNs`, `PublisherID`, `Journal_Title`
-
-__Sprachen__  
-* ID-Tabelle, die Sprachcodes mit ID-Nummern verknüpft. Diese ID-Nummern werden dann in der "Artikel"-Tabelle durch das "LanguageID"-Feld referenziert.
-* (2 Felder, 4 Datensätze)
-* Feldnamen: `id`, `Sprache`
-
-__Lizenzen__  
-* ID-Tabelle, die Lizenzcodes mit ID-Nummern verknüpft. Diese Id-Nummern werden dann in der 'Artikel'-Tabelle durch das Feld `LicenseID` referenziert.
-* (2 Felder, 4 Datensätze)
-* Feldnamen: `id`, `Lizenz`
-
-__Verlage__  
-* ID-Tabelle, die Verlagsnamen mit ID-Nummern verknüpft. Diese ID-Nummern werden dann in der Zeitschriftentabelle durch das Feld `PublisherID` referenziert.
-* (2 Felder, 6 Datensätze)
-* Feldnamen: `id`, `Herausgeber`
-
 
 ## Ein Hinweis zu Datentypen
 
 Die Hauptdatentypen, die in der doaj-Artikel-Probendatenbank verwendet werden, sind `INTEGER` und `TEXT`, die definieren, welchen Wert die Tabellenspalte enthalten kann. 
-
-
-## SQL-Datentyp-Kurzreferenz
-
-Verschiedene Datenbanksoftware/Plattformen haben unterschiedliche Namen und manchmal auch unterschiedliche Definitionen von Datentypen, so dass Sie die Datentypen für jede Plattform, die Sie verwenden, verstehen müssen.  Die folgende Tabelle erklärt einige der gebräuchlichen Datentypen und wie sie in SQLite dargestellt werden; [weitere Einzelheiten finden Sie auf der SQLite-Website](https://www.sqlite.org/datatype3.html).
-
-| Datentyp | Details | Name in SQLite |
-|:---------------|:----------------------------------------------------------------------------------------|:--------------------------|
-| boolesch oder binär | dieser Variablentyp wird oft verwendet, um Variablen darzustellen, die nur zwei Werte haben können: ja oder nein, wahr oder falsch.  |existiert nicht - muss ganzzahligen Datentyp und Werte von 0 oder 1.| verwenden
-| Ganzzahl | manchmal auch ganze Zahlen oder Zählzahlen genannt.  Kann 1,2,3, usw. sein, sowie 0 und negative ganze Zahlen: -1,-2,-3, etc.|INTEGER|
-| Float, Real oder Double | eine Dezimalzahl oder eine Gleitkommazahl.  Die größtmögliche Größe der Zahl kann angegeben werden. |REAL
-| Text oder Zeichenfolge |und Kombination aus Zahlen, Buchstaben, Symbolen.  Plattformen können verschiedene Datentypen haben: einen für Variablen mit einer festgelegten Anzahl von Zeichen - z.B. eine Postleitzahl oder eine Postleitzahl - und einen für Variablen mit einer offenen Anzahl von Zeichen, z.B. eine Adress- oder Beschreibungsvariable. |TEXT|
-|Datum oder Datum/Uhrzeit| abhängig von der Plattform, kann das Datum und die Uhrzeit oder die Anzahl der Tage seit einem bestimmten Datum darstellen.  Dieses Feld hat oft ein bestimmtes Format, z.B. JJJJJ-MM-TT|existiert nicht - müssen eingebaute Datums- und Zeitfunktionen verwenden und Daten in den Formaten Real, Ganzzahl oder Text speichern.  Siehe [Abschnitt 2.2 der SQLite-Dokumentation] (https://www.sqlite.org/datatype3.html#date_and_time_datatype) für weitere Einzelheiten.
-| blob | ein Binary Large OBject kann eine große Menge an Daten, Dokumenten, Audio- oder Videodateien speichern.|BLOB| ein Binary Large OBject kann eine große Menge an Daten, Dokumenten, Audio- oder Videodateien speichern.|BLOB
