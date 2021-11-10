@@ -105,7 +105,7 @@ ORDER BY ISSNs DESC, First_Author ASC;
 
 > ## Herausforderung
 > Schreibe eine Abfrage, die `Title`, `First_Author`, `ISSNs` und `Citation Count` aus
-> der Tabelle 'articles' zurückgibt. Ordne die Ausgabe nach dem höchsten 'Citation_Count' und alphabetisch nach 'Title'.
+> der Tabelle `articles` zurückgibt. Ordne die Ausgabe nach dem höchsten `Citation_Count` und alphabetisch nach `Title`.
 >
 > > ## Lösung
 > > ~~~
