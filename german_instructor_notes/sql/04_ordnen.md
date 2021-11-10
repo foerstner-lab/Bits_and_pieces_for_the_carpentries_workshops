@@ -1,5 +1,5 @@
 ---
-Titel: "Ordnen und kommentieren"
+Titel: "Ordnen"
 Unterricht: 15
 Übungen: 0
 Fragen:
@@ -37,7 +37,7 @@ Wir können dies tun, weil die Sortierung früher in der Berechnungs-Pipeline al
 
 Es ist möglich, eine Abfrage als eine einzige Zeile zu schreiben, aber aus Gründen der Lesbarkeit empfehlen wir, jeden Abschnitt in eine eigene Zeile zu setzen.
 
-## Komplexe Abfragen & Kommentierung
+## Komplexe Abfragen
 
 Betrachten Sie die folgende Abfrage:
 
@@ -59,18 +59,3 @@ WHERE (ISSNs IN ('2076-0787', '2077-1444', '2067-2764|2247-6202'));
 
 Wir begannen mit etwas Einfachem, fügten dann nach und nach weitere Klauseln hinzu und testeten
 ihre Auswirkungen, während wir weitermachten.  Bei komplexen Fragen ist dies eine gute Strategie, um sicherzustellen, dass Sie bekommen, was Sie wollen.  Manchmal kann es helfen, eine Teilmenge der Daten, die Sie leicht in einer temporären Datenbank sehen können, zu nehmen, um Ihre Abfragen zu üben, bevor Sie an einer größeren oder komplizierteren Datenbank arbeiten.
-
-Wenn die Abfragen komplexer werden, kann es nützlich sein, Kommentare hinzuzufügen. In SQL beginnen Kommentare mit `--` und enden am Ende der Zeile. Zum Beispiel, ein
-kommentierte Version der obigen Anfrage kann geschrieben werden als:
-
-~~~
--- Alle Spalten auswählen
-SELECT * 
--- Aus der Tabelle der Artikel
-FROM articles
--- Wählen Sie nur die Datensätze aus, die die folgenden ISSNs enthalten
-WHERE (ISSNs IN ('2076-0787', '2077-1444', '2067-2764|2247-6202'));
-~~~
-{: .sql}
-
-Obwohl sich SQL-Abfragen oft wie einfaches Englisch lesen, ist es *immer* nützlich, Kommentare zu schreiben, besonders wenn die Abfragen komplexer werden. 
