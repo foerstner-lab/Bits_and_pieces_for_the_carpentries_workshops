@@ -13,13 +13,14 @@ ORDER BY Citation_Count DESC, Titel ASC;
 
 ## 2. Übung - Filtern (Episode 3)
 
-Schreibe eine Abfrage, die den Title, First_Author, Subjects, 
-ISSNs, Month und Year zurückgibt für alle Artikel, bei denen 
-Subjects "computer" enthält und die mehr als 8 Zitate haben.
+Schreibt eine Abfrage, die den Title, First_Author, Subjects, ISSNs, Month und Year zurückgibt. 
+Die Ausgabe soll nur Treffer enthalten die das Wort computer in der Spalte Subjects enthalten 
+und mehr als 4 Zitate haben (Citation_Count Spalte).
+
 ```
 SELECT Title, First_Author, Subjects, ISSNs, Month, Year
 FROM articles
-WHERE (Subjects LIKE '%computer%') AND (Citation_Count > 8);
+WHERE (Subjects LIKE '%computer%') AND (Citation_Count > 4);
 ```
 ## 3. Übung - Aggregationen (Episode 5)
 
