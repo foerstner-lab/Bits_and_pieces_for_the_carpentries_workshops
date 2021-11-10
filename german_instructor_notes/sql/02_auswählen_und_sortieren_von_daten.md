@@ -104,8 +104,8 @@ ORDER BY ISSNs DESC, First_Author ASC;
 ~~~
 
 > ## Herausforderung
-> Schreibe eine Abfrage, die `Titel`, `Erster_Autor`, `ISSNs` und `Zitat_Zählung` aus
-> die Tabelle der Artikel, geordnet nach dem oben zitierten Artikel und alphabetisch nach Titel.
+> Schreibe eine Abfrage, die `Title`, `First_Author`, `ISSNs` und `Citation Count` aus
+> der Tabelle 'articles' zurückgibt. Ordne die Ausgabe nach dem höchsten 'Citation_Count' und alphabetisch nach 'Title'.
 >
 > > ## Lösung
 > > ~~~
