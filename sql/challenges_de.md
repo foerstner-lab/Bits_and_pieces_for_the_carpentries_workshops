@@ -24,20 +24,15 @@ WHERE (Subjects LIKE '%computer%') AND (Citation_Count > 4);
 ```
 ## 3. Übung - Aggregationen (Episode 5)
 
-Schreibe eine Abfrage mit einer Aggregatfunktion, die die Anzahl 
-der Artikeltitel pro ISSN, sortiert nach Titelanzahl in absteigender 
-Reihenfolge, zurückgibt. Welche ISSN hat die meisten Titel? 
-(MAX, MIN, AVG, COUNT, SUM)
+Schreibe eine Abfrage mit einer `Aggregation`, die die Anzahl der `Title` pro `ISSN` zurückgibt. 
+Die Ausgabe soll dabei die Anzahl der `Title` in absteigender Reihenfolge anzeigen. 
+Mögliche Aggregatfunktionen: `MAX, MIN, AVG, COUNT, SUM`
 ```
 SELECT ISSNs, COUNT(Title)
 FROM articles
 GROUP BY ISSNs
 ORDER BY Title DESC;
 ```
-**Anmerkung**: Der Unterschied zwischen where- und have-Klausel in SQL besteht darin, 
-dass where zum Filtern von Datensätzen verwendet wird, bevor eine 
-Gruppierung oder Aggregation erfolgt, während have zum Filtern von 
-Datensätzen nach einer Gruppierung oder einer Aggregation verwendet wird.
 
 ## 4. Übung - Having (Episode 5)
 
