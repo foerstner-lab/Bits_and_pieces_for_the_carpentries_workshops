@@ -43,10 +43,10 @@ USING (ISSNs);
 ~~~
 
 Diese Abbildung zeigt die Beziehungen zwischen den Tabellen und hilft bei der Visualisierung des Zusammenfügens oder Verknüpfens der Tabellen in der Datenbank:
-![Artikeldatenbank](../../fig/articles-erd-v02.png)
-Über [relationales Datenbankdesign] (https://librarycarpentry.org/lc-sql/08-database-design/index.html) werden wir in der nächsten Episode berichten. Zusätzlich zu den obigen visuellen Erläuterungen bietet *[SQL Join Types Explained Visually](https://dataschool.com/how-to-teach-people-sql/sql-join-types-explained-visually/)* visuelle/animierte Beispiele, die den Lernenden helfen sollen, zu vermitteln, was in SQL `JOIN`s geschieht.
+![Artikeldatenbank](../../fig/articles-erd-v02.png)  
+Über [relationales Datenbankdesign](https://librarycarpentry.org/lc-sql/08-database-design/index.html) werden wir in der nächsten Episode berichten. Zusätzlich zu den obigen visuellen Erläuterungen bietet *[SQL Join Types Explained Visually](https://dataschool.com/how-to-teach-people-sql/sql-join-types-explained-visually/)* visuelle/animierte Beispiele, die den Lernenden helfen sollen, zu verstehen, was in SQL `JOIN`s geschieht.
 
-Wenn Sie Tabellen verbinden, können Sie die gewünschten Spalten mit `table.colname` angeben, anstatt alle Spalten mit `*` auszuwählen. Zum Beispiel:
+Wenn wir Tabellen verbinden, können wir die gewünschten Spalten mit `table.colname` angeben, anstatt alle Spalten mit `*` auszuwählen. Zum Beispiel:
 
 ~~~
 SELECT articles.ISSNs, journals.Journal_Title, articles.Title, articles.First_Author
@@ -58,21 +58,19 @@ ON articles.ISSNs = journals.ISSNs;
 Verknüpfungen können mit Sortieren, Filtern und Aggregation kombiniert werden.  Wenn wir also die durchschnittliche Anzahl der Autoren für Artikel in jeder Zeitschrift ermitteln wollten, können wir die folgende Abfrage verwenden:
 
 ~~~
-SELECT articles.ISSNs, journals.Journal_Title, ROUND(AVG(articles.Author_Count), 2)
+SELECT articles.ISSNs, journals.Journal_Title, AVG(articles.Author_Count)
 FROM articles
 JOIN journals
 ON articles.ISSNs = journals.ISSNs
 GROUP BY articles.ISSNs;
 ~~~
 
-Die Funktion `ROUND` erlaubt es uns, die von der Funktion `AVG` zurückgegebene `Author_Count`-Zahl um 2 Dezimalstellen zu runden.
-
 > ## Herausforderung
-> Schreiben Sie eine Abfrage, die die Tabellen `Artikel` und `Journale` verbindet und die den `Journal_Title`, die Gesamtzahl der veröffentlichten Artikel und die durchschnittliche Anzahl der Zitate für jede Zeitschriften-ISSN zurückgibt.
+> Schreibe eine Abfrage, die die Tabellen `articles` und `journals` verbindet und die den `Journal_Title`, die Gesamtzahl der 'Title' und den durchschnittlichen 'Citation Count' für jede ISSN zurückgibt.
 >
 > > ## Lösung
 > > ~~~
-> > SELECT journals.Journal_Title, COUNT(*), AVG(articles.Citation_Count)
+> > SELECT journals.Journal_Title, COUNT(Title), AVG(articles.Citation_Count)
 > > FROM articles
 > > JOIN journals
 > > ON articles.ISSNs = journals.ISSNs
@@ -80,7 +78,7 @@ Die Funktion `ROUND` erlaubt es uns, die von der Funktion `AVG` zurückgegebene 
 > > ~~~
 >
 
-Sie können auch mehrere Tabellen verbinden. Zum Beispiel:
+Ihr könnt auch mehrere Tabellen verbinden. Zum Beispiel:
 
 ~~~
 SELECT articles.Title, articles.First_Author, journals.Journal_Title, publishers.Publisher
@@ -93,30 +91,30 @@ ON publishers.id = journals.PublisherId;
 
 > ## Herausforderung:
 >
-> Schreiben Sie eine Abfrage, die den `Journal_Titel`, den `Verlagsnamen` und die Nummer von
-> veröffentlichte Artikel, geordnet nach der Anzahl der Artikel in absteigender Reihenfolge.
+> Schreibe eine Abfrage, die den `Journal_Title`, den `Publisher` und die Anzahl der
+> 'Title', geordnet nach der Anzahl der 'Title' in absteigender Reihenfolge zurückgibt.
 >
 > > ## Lösung
 > > ~~~
-> > SELECT journals.Journal_Title, publishers.Publisher, COUNT(*)
+> > SELECT journals.Journal_Title, publishers.Publisher, COUNT(Title)
 > > FROM articles
 > > JOIN journals
 > > ON articles.ISSNs = journals.ISSNs
 > > JOIN publishers
 > > ON publishers.id = journals.PublisherId
 > > GROUP BY Journal_Title
-> > ORDER BY COUNT(*) DESC;
+> > ORDER BY COUNT(Title) DESC;
 > > ~~~
 >
 
-Es gibt verschiedene Arten von Joins, über die Sie unter [SQL Joins Explained](http://www.sql-join.com/sql-join-types) mehr erfahren können.
+Es gibt verschiedene Arten von Joins, über die ihr unter [SQL Joins Explained](http://www.sql-join.com/sql-join-types) mehr erfahren könnt.
 
 
 ## Aliasnamen
 
 Da die Anfragen immer komplexer werden, können die Namen lang und unhandlich werden. Um die Dinge klarer zu machen, können wir Aliase verwenden, um den Elementen in der Abfrage neue Namen zuzuweisen.
 
-Wir können beide Tabellennamen aliasisieren:
+Wir können beiden Tabellen Aliase geben:
 
 ~~~
 SELECT ar.Title, ar.First_Author, jo.Journal_Title
@@ -134,11 +132,11 @@ JOIN journals  AS jo
 ON ar.issns = jo.issns;
 ~~~
 
-Das `AS` ist technisch nicht erforderlich, Sie könnten es also tun:
+Das `AS` ist technisch nicht erforderlich, es ginge auch so:
 
 ~~~
 SELECT a.Title t
 FROM articles a;
 ~~~
 
-Aber die Verwendung von `AS` ist viel klarer, so dass es ein guter Stil ist, es einzubeziehen.
+Aber die Verwendung von `AS` ist viel klarer, es gehört also zum guten Stil es einzubeziehen.
