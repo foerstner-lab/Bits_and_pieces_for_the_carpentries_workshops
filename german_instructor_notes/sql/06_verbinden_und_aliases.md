@@ -31,7 +31,7 @@ ON articles.ISSNs = journals.ISSNs;
 
 Wir können diesen JOIN anhand des folgenden Diagramms darstellen.
 
-![Left JOIN](../Assets/img/left-join-articles-journals.png)
+![Left JOIN](../../fig/left-join-articles-journals.png)
 
 Alternativ können wir das Wort `USING` als Kurzform verwenden.  In diesem Fall sagen wir, dass wir `articles` mit `journals` kombinieren wollen und dass die gemeinsame Spalte `ISSNs` ist.
 
@@ -43,7 +43,7 @@ USING (ISSNs);
 ~~~
 
 Diese Abbildung zeigt die Beziehungen zwischen den Tabellen und hilft bei der Visualisierung des Zusammenfügens oder Verknüpfens der Tabellen in der Datenbank:
-![Artikeldatenbank](../Assets/img/Artikel-erd-v02.png)
+![Artikeldatenbank](../../fig/articles-erd-v02.png)
 Über [relationales Datenbankdesign] (https://librarycarpentry.org/lc-sql/08-database-design/index.html) werden wir in der nächsten Episode berichten. Zusätzlich zu den obigen visuellen Erläuterungen bietet *[SQL Join Types Explained Visually](https://dataschool.com/how-to-teach-people-sql/sql-join-types-explained-visually/)* visuelle/animierte Beispiele, die den Lernenden helfen sollen, zu vermitteln, was in SQL `JOIN`s geschieht.
 
 Wenn Sie Tabellen verbinden, können Sie die gewünschten Spalten mit `table.colname` angeben, anstatt alle Spalten mit `*` auszuwählen. Zum Beispiel:
