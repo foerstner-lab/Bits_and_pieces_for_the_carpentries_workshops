@@ -15,7 +15,7 @@ Schlüsselpunkte:
 
 ## Aggregation
 
-SQL enthält Funktionen, mit denen Sie Berechnungen mit Daten in Ihrer Datenbank durchführen können. Einige der gebräuchlichsten Funktionen sind `MAX, MIN, AVG, COUNT, SUM', und das werden sie auch: 
+SQL enthält Funktionen, mit denen Sie Berechnungen mit Daten in Ihrer Datenbank durchführen können. Einige der gebräuchlichsten Funktionen sind `MAX, MIN, AVG, COUNT, SUM': 
 - `MAX`: findet den maximalen Wert in einem Feld
 - `MIN`: findet den minimalen Wert in einem Feld
 - `AVG`: findet den Durchschnittswert eines Feldes
@@ -64,7 +64,15 @@ dass where zum Filtern von Datensätzen verwendet wird, bevor eine
 Gruppierung oder Aggregation erfolgt, während have zum Filtern von 
 Datensätzen nach einer Gruppierung oder einer Aggregation verwendet wird.
 
-Zum Beispiel können wir die letzte Anfrage, die wir geschrieben haben, so anpassen, dass nur Informationen über die Zeitschrift `ISSNs` 
+| WHERE                                         | HAVING                                              |
+| --------------------------------------------- | --------------------------------------------------- |
+| auf Zeilen angewendet                         | auf Spalten angewendet                              |
+| Auf einzelne Reihen angewendet                | auf zusammengefasste Reihen oder Gruppen angewendet |
+| kann nicht auf Aggregationen angewandt werden | kann auf Aggregationen angewandt werden             |
+| Vorfilter                                     | Nachfilter                                          |
+| Kommt vor GROUP BY                            | Kommt nach GROUP BY                                 |
+
+Wir können die letzte Anfrage, die wir geschrieben haben, so anpassen, dass nur Informationen über die Zeitschrift `ISSNs` 
 mit 10 oder mehr veröffentlichten Artikeln zurückgegeben werden:
 
 ~~~
@@ -76,7 +84,7 @@ HAVING COUNT(Title) >= 10;
 
 Das Schlüsselwort `HAVING` funktioniert genau wie das Schlüsselwort `WHERE`, verwendet aber Aggregatfunktionen anstelle von Datenbankfeldern.  Wenn Sie auf der Basis einer Aggregation wie `MAX, MIN, AVG, COUNT, SUM` filtern wollen, verwenden Sie `HAVING`; um auf der Basis der einzelnen Werte in einem Datenbankfeld zu filtern, verwenden Sie `WHERE`.
 
-Beachten Sie, dass `HAVING` _nach_ `GROUP BY` kommt. Eine Möglichkeit, darüber nachzudenken, ist: Die Daten werden abgerufen (`SELECT`), können gefiltert werden (`WOERE`), dann in Gruppen zusammengefasst werden (`GROUP BY`); schließlich wählen wir nur einige dieser Gruppen aus (`HAVING`).
+Beachten Sie, dass `HAVING` _nach_ `GROUP BY` kommt. Eine Möglichkeit, darüber nachzudenken, ist: Die Daten werden abgerufen (`SELECT`), können gefiltert werden (`WHERE`), dann in Gruppen zusammengefasst werden (`GROUP BY`); schließlich wählen wir nur einige dieser Gruppen aus (`HAVING`).
 
 > ## Herausforderung
 > Schreiben Sie eine Abfrage, die aus der Tabelle `Artikel` die durchschnittliche `Zitieranzahl` für jede Zeitschriften-ISSN zurückgibt 
@@ -87,7 +95,7 @@ Beachten Sie, dass `HAVING` _nach_ `GROUP BY` kommt. Eine Möglichkeit, darüber
 > > SELECT ISSNs, AVG(Citation_Count)
 > > FROM articles
 > > GROUP BY ISSNs
-> > HAVING AVG(Citation_Count)>=5;
+> > HAVING AVG(Citation_Count) >= 5;
 > > ~~~
 
 ## Berechnungen

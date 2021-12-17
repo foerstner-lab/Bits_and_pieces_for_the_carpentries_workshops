@@ -44,6 +44,13 @@ FROM articles;
 
 Ihr könnt die Kommentarspalte nutzen, um Notizen für euch zu machen, die Abfrage zu umschreiben und um einzelne Zeilen auszukommentieren, wenn ihr Abfragen neu testet. Die Kommentare sind auch nützlich, wenn ihr eure Abfragen mit anderen teilt, damit diese sie leichter nachvollziehen können.
 
+## Query-Tabs öffnen und Projekte speichern
+
+Wenn wir unsere Anfragen, die wir bereits geschrieben haben behalten möchten können wir auch einen neuen Tab für 
+eine neue Anfrage öffnen. Wenn wir möchten, dass die Tabs nicht verloren gehen, wenn wir den DB Browser schließen, können wir 
+unsere bisherige Arbeit auch als **Projekt speichern**. Dabei werden die Datenbank und unsere Abfragen in einem Projekt 
+abgespeichert. Wir können auch einzelne Anfragen unter den kleinen Speicher-Symbol über der Abfrage abspeichern.
+
 ## Weitere SELECT Optionen
 Wenn wir mehr Informationen wünschen, können wir direkt nach `SELECT` eine neue Spalte zu der Liste der Felder hinzufügen:
 
