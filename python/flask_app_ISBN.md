@@ -24,6 +24,9 @@ mkdir isnb_app
 cd isnb_app
 ```
 
+```
+nano isbn_app.py
+```
 
 
 ```isnb_app.py
@@ -160,7 +163,11 @@ def isbn_display(isbn):
     return render_template("isbn.html")
 ```
 
-```templates/isbn.html
+```
+nano templates/isbn.html
+```
+
+```
 <!DOCTYPE html>
 <html>
 <body>
@@ -190,9 +197,11 @@ def show_info():
 def isbn_display(isbn):
     return render_template("isbn.html", isbn=isbn)
 ```
+```
+nano templates/isbn_form.html
+```
 
-
-```isbn_form.html
+```
 <!DOCTYPE html>
 <html>
 <body>
@@ -235,7 +244,11 @@ def isbn_form():
 
 http://127.0.0.1:5000/isbn_form
 
-```isbn_display_form_content.html
+```
+nano templates/isbn_display_form_content.html
+```
+
+```
 
 <!DOCTYPE html>
 <html>
