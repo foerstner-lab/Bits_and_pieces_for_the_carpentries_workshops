@@ -1,16 +1,30 @@
 ## Simple flask example
 
+Instructor notes:
+- Don't run this under Windows - we had trouble with running it with
+  Spyder and Git Bash (weird continuation of the processes even after
+  stopping); rather consider doing this in in a proper Linux
+  environment
+- Under Linux this can be done without shell knowledge only in Spyder
+
+More information:
 - https://flask.palletsprojects.com
 
+
+Installation of the package
 
 ```shell
 python -m pip install Flask
 ```
 
+Creation of the folder
+
 ```shell
 mkdir isnb_app
 cd isnb_app
 ```
+
+
 
 ```isnb_app.py
 from flask import Flask
