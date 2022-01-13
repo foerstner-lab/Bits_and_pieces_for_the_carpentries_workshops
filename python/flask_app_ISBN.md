@@ -12,6 +12,10 @@ mkdir isnb_app
 cd isnb_app
 ```
 
+```
+nano isbn_app.py
+```
+
 ```isnb_app.py
 from flask import Flask
 
