@@ -162,7 +162,7 @@ test_gccalc.py::test_empty_seq PASSED                                    [100%]
 
 Extend `test_gccalc.py` to 
 
-```
+```python
 from gccalc import calc_gc_content
 
 def test_mid_gc():
