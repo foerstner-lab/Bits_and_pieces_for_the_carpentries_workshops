@@ -2,19 +2,18 @@ Building upon / modifying [Python Testing and Continuous
 Integration](https://carpentries-incubator.github.io/python-testing/)
 
 
-Write file with function to calculate GC content
+Write file with function to calculate GC content - `gccalc.py`:
 
-```gccalc.py
-
+```
 def calc_gc_content(seq):
     gc_count = (seq.upper().count("G") + seq.upper().count("C")) * 100
     gc_value = gc_count / len(seq)
     return gc_value
 ```
 
-Write file with tests. The function to be tested is imported.
+Write file with tests. The function to be tested is imported. `test_gccalc.py`
 
-```test_gccalc.py
+```
 from gccalc import calc_gc_content
 
 def test_mid_gc():
@@ -62,9 +61,9 @@ Traceback (most recent call last):
 ZeroDivisionError: division by zero
 ```
 
-We remove the function calls at the end of the file in the `test_gccalc.py`:
+We remove the function calls at the end of the file in the `test_gccalc.py:
 
-```test_gccalc.py
+```
 from gccalc import calc_gc_content
 
 def test_mid_gc():
@@ -118,9 +117,10 @@ ERROR test_gccalc.py - ZeroDivisionError: division by zero
 			
 ```
 
-To adresse the error in the GC calculation of we extend the function:
+To adresse the error in the GC calculation of we extend the
+function. `test_gccalc.py`:
 
-```gccalc.py
+```
 def calc_gc_content(seq):
     if len(seq) == 0:
         return 0.0
@@ -129,7 +129,7 @@ def calc_gc_content(seq):
     return gc_value
 ```
 
-Now all tes pass
+Now all test pass:
 
 ```
 $ pytest
@@ -160,9 +160,9 @@ test_gccalc.py::test_empty_seq PASSED                                    [100%]
 ============================== 4 passed in 0.01s ===============================
 ```
 
-Extend test_gccalc.py to 
+Extend `test_gccalc.py` to 
 
-```test_gccalc.py
+```
 from gccalc import calc_gc_content
 
 def test_mid_gc():
@@ -223,7 +223,7 @@ FAILED test_gccalc.py::test_invalid_characters - assert 40.0 == 50.0
 
 Extending `test_gccalc.py` to skip the test:
 
-```test_gccalc.py
+```
 from gccalc import calc_gc_content
 import pytest
 
