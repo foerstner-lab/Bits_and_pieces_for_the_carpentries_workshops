@@ -4,7 +4,7 @@ Integration](https://carpentries-incubator.github.io/python-testing/)
 
 Write file with function to calculate GC content - `gccalc.py`:
 
-```python
+```python gccalc.py
 def calc_gc_content(seq):
     gc_count = (seq.upper().count("G") + seq.upper().count("C")) * 100
     gc_value = gc_count / len(seq)
