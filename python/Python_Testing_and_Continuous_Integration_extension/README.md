@@ -62,7 +62,7 @@ Traceback (most recent call last):
 ZeroDivisionError: division by zero
 ```
 
-We remove the function call at the end of the file:
+We remove the function calls at the end of the file in the `test_gccalc.py`:
 
 ```test_gccalc.py
 from gccalc import calc_gc_content
