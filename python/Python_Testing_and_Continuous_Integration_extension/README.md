@@ -296,11 +296,11 @@ test_gccalc.py::test_invalid_characters SKIPPED (Cleaning not yet im...) [100%]
 
 
 ```shell
-coverage run --source=. -m pytest
+$ coverage run --source=. -m pytest
 ```
 
 ```shell
-coverage report
+$ coverage report
 Name             Stmts   Miss  Cover
 ------------------------------------
 gccalc.py            6      0   100%
