@@ -293,3 +293,19 @@ test_gccalc.py::test_invalid_characters SKIPPED (Cleaning not yet im...) [100%]
 ========================= 4 passed, 1 skipped in 0.01s =========================
 
 ```
+
+
+```shell
+coverage run --source=. -m pytest
+```
+
+```shell
+coverage report
+Name             Stmts   Miss  Cover
+------------------------------------
+gccalc.py            6      0   100%
+test_gccalc.py      28      4    86%
+------------------------------------
+TOTAL               34      4    88%
+```
+
