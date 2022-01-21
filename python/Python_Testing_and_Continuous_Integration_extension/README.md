@@ -4,7 +4,7 @@ Integration](https://carpentries-incubator.github.io/python-testing/)
 
 Write file with function to calculate GC content - `gccalc.py`:
 
-```
+```python
 def calc_gc_content(seq):
     gc_count = (seq.upper().count("G") + seq.upper().count("C")) * 100
     gc_value = gc_count / len(seq)
@@ -13,7 +13,7 @@ def calc_gc_content(seq):
 
 Write file with tests. The function to be tested is imported. `test_gccalc.py`
 
-```
+```python
 from gccalc import calc_gc_content
 
 def test_mid_gc():
@@ -63,7 +63,7 @@ ZeroDivisionError: division by zero
 
 We remove the function calls at the end of the file in the `test_gccalc.py:
 
-```
+```python
 from gccalc import calc_gc_content
 
 def test_mid_gc():
@@ -120,7 +120,7 @@ ERROR test_gccalc.py - ZeroDivisionError: division by zero
 To adresse the error in the GC calculation of we extend the
 function. `test_gccalc.py`:
 
-```
+```python
 def calc_gc_content(seq):
     if len(seq) == 0:
         return 0.0
@@ -223,7 +223,7 @@ FAILED test_gccalc.py::test_invalid_characters - assert 40.0 == 50.0
 
 Extending `test_gccalc.py` to skip the test:
 
-```
+```python
 from gccalc import calc_gc_content
 import pytest
 
