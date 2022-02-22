@@ -54,7 +54,7 @@ Viele Webanwendungen (wie Amazon oder WordPress) laufen auf einer SQL-Datenbank.
 Es gibt eine Reihe von verschiedenen Datenbankverwaltungssystemen für die Arbeit mit
 relationale Daten. Wir werden heute SQLite verwenden, aber im Grunde genommen kann alles, was wir
 heute machen auch auf die anderen Datenbanksysteme anwenden (z.B. MySQL,
-PostgreSQL, MS Access). Die einzigen Dinge, die sich unterscheiden werden.
+PostgreSQL, MS Access). 
 
 ## Einführung in den DB Browser for SQLite
 
