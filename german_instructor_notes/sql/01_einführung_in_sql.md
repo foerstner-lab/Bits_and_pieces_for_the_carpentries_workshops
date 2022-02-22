@@ -37,7 +37,7 @@ kann eine gespeicherte Abfrage erneut ausgeführt werden, um die neuen Daten zu 
 - SQL ist für den Umgang mit großen Datenmengen optimiert. Hilfe zu Datentypen 
 Qualitätskontrolle der Eingaben - ihr erhaltet eine Fehlermeldung.
 
-Viele Webanwendungen (wie Amazon oder WordPress) laufen auf einer SQL-Datenbank. Das Verständnis von SQL ist der erste Schritt, um schließlich kundenspezifische Webanwendungen zu erstellen, die den Benutzern Daten zur Verfügung stellen können.
+Viele Webanwendungen (wie Amazon oder WordPress) laufen auf einer SQL-Datenbank. Das Verständnis von SQL ist der erste Schritt, um schließlich kundenspezifische Webanwendungen zu erstellen, die den Benutzern Daten zur Verfügung stellen können. https://sqlite.org/mostdeployed.html
 
 ## Welche Verwendungsmöglichkeiten gibt es für SQL in Bibliotheken?
  - Ihr könnt SQL verwenden, um Makro- oder groß angelegte Änderungen an Metadatensätzen in Bibliotheksdatenbanken vorzunehmen, z. B. um Zeitschriftennamen zu aktualisieren, damit sie in der gesamten Datenbank konsistent oder normalisiert sind.
