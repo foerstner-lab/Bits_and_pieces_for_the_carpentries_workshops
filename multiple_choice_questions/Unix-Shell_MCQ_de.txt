@@ -1,0 +1,11 @@
+Mit welchem Befehl wechsel ich in mein Home-Verzeichnis?
+A) cd ~
+B) cd
+C) cd /home/
+D) cd .
+ANSWER: A,B
+
+Wofür steht der Befehl "rm" und was macht er?
+A) "Read manual" - Handbücher lesen
+B) "Remove" - Löscht Ordner/Dateien
+ANSWER: B

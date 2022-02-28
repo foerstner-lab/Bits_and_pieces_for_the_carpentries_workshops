@@ -25,6 +25,7 @@ Python - Standard Libraries - Third Party Libraries
 - [python_cheat_sheet](https://github.com/ehmatthes/pcc/releases/download/v1.0.0/beginners_python_cheat_sheet_pcc_all.pdf)
 - [The 35 Words You Need to Python](https://yawpitchroll.com/posts/the-35-words-you-need-to-python/)
 - [Python built-ins worth learning](https://treyhunner.com/2019/05/python-builtins-worth-learning/)
+- book [Git from the Bottom Up](https://jwiegley.github.io/git-from-the-bottom-up/)
 - book [Pro Git](https://git-scm.com/book/en/v2)
 - [GitHub Pages](https://pages.github.com/)
 - [Oh Shit, Git?!?](https://ohshitgit.com/de)

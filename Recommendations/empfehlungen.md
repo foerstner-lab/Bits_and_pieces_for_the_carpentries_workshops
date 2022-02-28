@@ -23,6 +23,7 @@ Python - Standard Libraries - Third Party Libraries
 - [PyCoders Weekly](https://pycoders.com) Newsletter
 - Buch [Seven languages in seven weeks](https://pragprog.com/book/btlang/seven-languages-in-seven-weeks)
 - [The 35 Words You Need to Python](https://yawpitchroll.com/posts/the-35-words-you-need-to-python/)
+- Buch [Git from the Bottom Up](https://jwiegley.github.io/git-from-the-bottom-up/)
 - Buch https://git-scm.com/book/en/v2
 - [Oh Shit, Git?!?](https://ohshitgit.com/de)
 - [GitHub Pages](https://pages.github.com/)
