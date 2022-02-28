@@ -17,19 +17,21 @@ Use the PyPI search to check if a name is already taken: https://pypi.org/search
 
 
 create gccalc folder:
-
+```
 mkdir gccalc
-
+```
 move gccalc.py to gccalc
-
+```
 mv gccalc.py gccalc
-
+```
 rename gccalc.py to __init__.py
-
+```
+mv gccalc/gccalc.py gccalc/__init__.py
+```
 
 in folder gccalc create setup.py
 
-"""
+```
 from setuptools import setup
 
 setup(name='GCcalculator',
@@ -37,50 +39,58 @@ setup(name='GCcalculator',
       description='GC Calculator',
       url='https://github.com/Tillsa/GC_Calc',
       author='Till',
-      author_email='sauerwein@zbmed.de',
+      author_email='sauerwein@dummy.de',
       license='MIT',
       packages=['gccalc'],
       zip_safe=False)
 
-"""
+```
 
 install locally
 
+```
 pip install .
+```
 
 open python
 
+```
 import gccalc
 
 gccalc.calc_gc_content("GCAGCT")
-
-
+```
+Show package
+```
 pip list
-
+```
+Uninstall package
+```
 pip uninstall GCcalculator
+```
 
 
+Create a source distribution with:
 
-create a source distribution with:
+```
+python setup.py sdist bdist_wheel
+```
+Upload to PyPi test server
 
-
-$ python setup.py sdist bdist_wheel
-
-
-
-$ twine upload --repository-url https://test.pypi.org/legacy/ dist/*
-
-
-# install twine
-# need username on https://test.pypi.org/
+```
+twine upload --repository-url https://test.pypi.org/legacy/ dist/*
+```
 
 
-$ pip install -i https://test.pypi.org/simple/ GCcalculator
+Install your package:
 
+```
+pip install -i https://test.pypi.org/simple/ GCcalculator
+```
 
 
 open python
-
+```
 import gccalc
 
 gccalc.calc_gc_content("GCAGCT")
+```
