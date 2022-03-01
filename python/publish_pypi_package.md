@@ -34,9 +34,9 @@ in folder gccalc create setup.py
 ```
 from setuptools import setup
 
-setup(name='GCcalculator',
+setup(name='GCcalculator_till',
       version='0.1',
-      description='GC Calculator',
+      description='GC Calculator, calculates GC content of DNA sequences',
       url='https://github.com/Tillsa/GC_Calc',
       author='Till',
       author_email='sauerwein@dummy.de',
