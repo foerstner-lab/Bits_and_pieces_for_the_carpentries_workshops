@@ -9,13 +9,16 @@
 
 - https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000424 
 - https://bioconda.github.io/
+- Cheat sheet https://docs.conda.io/projects/conda/en/latest/user-guide/cheatsheet.html
 
 # Conda
 
 - install Anaconda or miniconda
 
+
+(instead of `--name` also only `-n` can be used
 ```
-conda create --name my_awesome_project --channel bioconda
+conda create --name my_awesome_project --channel conda-forge python=3.10
 ```
 
 show all environments
@@ -104,3 +107,54 @@ dependencies:
   - pandas=1.4.1
   - seaborn=0.11.2
 ```
+
+
+(this time with an `env` between `conda` and `create`!)
+```
+conda env create -n project_2 -f environment.yml
+```
+
+```
+conda activate project_2
+```
+
+add another package
+
+```
+channels:
+  - default
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pandas=1.4.1
+  - seaborn=0.11.2
+  - git=2.35
+```
+
+And update the environment (`--prune` will remove packages not needed) if you are in the environment
+```
+conda env update --file environment.yml --prune
+```
+
+if you are not in the environment
+
+```
+conda env update --name project_2 --file environment.yml --prune
+```
+
+```
+conda deactivate
+```
+
+```
+conda info --envs
+```
+
+```
+conda env remove project_2
+```
+
+```
+conda clean -a
+```
+
