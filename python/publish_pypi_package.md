@@ -46,6 +46,9 @@ setup(name='GCcalculator',
 
 ```
 
+change packages_name
+
+
 install locally
 
 ```
