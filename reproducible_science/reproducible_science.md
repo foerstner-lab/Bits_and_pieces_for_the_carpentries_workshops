@@ -84,10 +84,6 @@ conda install curl=7.69.1
 conda env export > environment.yml
 ```
 
-https://github.com/mwaskom/seaborn-data/blob/master/fmri.csv 
-https://github.com/mwaskom/Waskom_CerebCortex_2017
-https://academic.oup.com/cercor/article/27/2/1270/3056315?keytype=ref&ijkey=5hjFprzQ7miiYZ4
-
 
 ```
 import requests
@@ -158,3 +154,66 @@ conda env remove project_2
 conda clean -a
 ```
 
+
+# Example project structure
+
+https://github.com/mwaskom/seaborn-data/blob/master/fmri.csv 
+https://github.com/mwaskom/Waskom_CerebCortex_2017
+https://academic.oup.com/cercor/article/27/2/1270/3056315?keytype=ref&ijkey=5hjFprzQ7miiYZ4
+
+
+
+
+```
+mkdir 2022-03-01-fMRI_analysis
+cd 2022-03-01-fMRI_analysis
+```
+
+```
+mkdir data analyses docs
+```
+
+```
+touch README.md
+```
+
+```
+git init
+git add README.md
+git commit -m "Initial commit"
+```
+
+```
+cd data
+```
+
+```
+mkdir 2022-03-01-fMRI_from_seaborn_Waskom_et_al_2017
+```
+
+```
+cd 2022-03-01-fMRI_from_seaborn_Waskom_et_al_2017
+```
+
+```
+curl -o fmri.csv https://raw.githubusercontent.com/mwaskom/seaborn-data/master/fmri.csv
+```
+
+`run.sh`
+
+```
+curl -o fmri.csv https://raw.githubusercontent.com/mwaskom/seaborn-data/master/fmri.csv
+chmod a-w fmri.csv
+```
+
+run.py
+```
+import urllib.request
+import os
+
+url = "https://raw.githubusercontent.com/mwaskom/seaborn-data/master/fmri.csv"
+file_name = "fmri.csv"
+urllib.request.urlretrieve(url, file_name)
+
+os.chmod(file_name, 0o444)
+```
