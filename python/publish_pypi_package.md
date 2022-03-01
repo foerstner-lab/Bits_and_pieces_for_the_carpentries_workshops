@@ -1,4 +1,4 @@
-# Alpha-version of *Publishing a Package with PyPi
+# Alpha-version for *Publishing a Package with PyPi*
 
 https://python-packaging.readthedocs.io/en/latest/minimal.html
 
