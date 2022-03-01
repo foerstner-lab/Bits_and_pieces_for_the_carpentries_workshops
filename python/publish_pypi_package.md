@@ -18,7 +18,7 @@ Use the PyPI search to check if a name is already taken: https://pypi.org/search
 
 create gccalc folder:
 ```
-mkdir gccalc
+mkdir gccalc_till
 ```
 move gccalc.py to gccalc
 ```
