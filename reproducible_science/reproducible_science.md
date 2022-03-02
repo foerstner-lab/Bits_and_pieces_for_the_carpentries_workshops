@@ -178,6 +178,15 @@ touch README.md
 ```
 
 ```
+$ tree 2022-03-01-fMRI_analysis
+2022-03-01-fMRI_analysis
+├── analyses
+├── data
+├── docs
+└── README.md
+```
+
+```
 git init
 git add README.md
 git commit -m "Initial commit"
@@ -217,3 +226,4 @@ urllib.request.urlretrieve(url, file_name)
 
 os.chmod(file_name, 0o444)
 ```
+
