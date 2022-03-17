@@ -103,6 +103,8 @@ Beispiel-Projekt: Liste mit Bestellungen auf Zeitschriftenartikel soll mit panda
 - [Unix Subsystem unter Windows 10](https://docs.microsoft.com/de-de/windows/wsl/install-win10)
 - [Python 3 Quick Tip: The easy way to deal with file paths on Windows, Mac and Linux](https://medium.com/@ageitgey/python-3-quick-tip-the-easy-way-to-deal-with-file-paths-on-windows-mac-and-linux-11a072b58d5f)
 - [GitHub Email privacy issue auflösen](https://help.github.com/en/github/setting-up-and-managing-your-github-user-account/setting-your-commit-email-address)
+- [MYSYS](https://www.msys2.org/) zum Installieren von weiteren Tools auf GitBash (e.g. tmux)
+    - [Beispiel](https://blog.pjsen.eu/?p=440) wie man Tools von MYSYS in GitBash implementiert 
 ### Binder
 #### Ausweichmöglichkeit, falls Anaconda nicht funktioniert
 Gehe auf https://mybinder.org/. Kopiere die URL 
