@@ -37,7 +37,11 @@ Python - Standard Libraries - Third Party Libraries
 
 ### Videos
 - [PyCon](https://www.youtube.com/results?search_query=pycon&search_type=) - Talks, Tutorial und vieles mehr von den PyCon-Konferenzen
-
+- 09:09 min [Die Entstehung von Unix](https://www.youtube.com/watch?v=OdJFi8fTsxg)
+- 5:39 min [5 Linux Distributionen für Anfänger](https://www.youtube.com/watch?v=5UD3jZefBsk)
+- Multilingual 01:25:04 min [Revolution OS - 2001](https://www.youtube.com/watch?v=Eluzi70O-P4)
+- 51:12 min [Arte Doku: Codename Linux 2001](https://www.youtube.com/watch?v=SzKEi5AHZf4)
+-
 ## Text-Editoren/IDEs (integrated development environment)
 
 1) [PyCharm](https://www.jetbrains.com/pycharm/)
