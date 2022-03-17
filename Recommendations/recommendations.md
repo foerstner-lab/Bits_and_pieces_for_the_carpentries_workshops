@@ -30,6 +30,10 @@ Python - Standard Libraries - Third Party Libraries
 - [GitHub Pages](https://pages.github.com/)
 - [Oh Shit, Git?!?](https://ohshitgit.com/de)
 - [Definitly not lazy Comic](https://www.commitstrip.com/en/2017/02/28/definitely-not-lazy/)
+- Video German 09:09 min [Die Entstehung von Unix](https://www.youtube.com/watch?v=OdJFi8fTsxg)
+- Video German 5:39 min [5 Linux Distributionen für Anfänger](https://www.youtube.com/watch?v=5UD3jZefBsk)
+- Video Multilingual 01:25:04 min [Revolution OS - 2001](https://www.youtube.com/watch?v=Eluzi70O-P4)
+- Video German 51:12 min [Arte Doku: Codename Linux 2001](https://www.youtube.com/watch?v=SzKEi5AHZf4)
 
 ### podcasts
 - [Command Line Heros](https://www.redhat.com/en/command-line-heroes) (en) - "Command Line Heroes tells the epic true tales of how developers, programmers, hackers, geeks, and open source rebels are revolutionizing the technology landscape." Z. B.
