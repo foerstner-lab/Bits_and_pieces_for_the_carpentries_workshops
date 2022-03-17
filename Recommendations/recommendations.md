@@ -76,7 +76,8 @@ Python - Standard Libraries - Third Party Libraries
  - [Participate to the hacky-hour](https://hackyhour.github.io/Cologne/)
  
 ## tips and tricks
-
+- [MYSYS](https://www.msys2.org/) for building, installing and running tools for GitBash (e.g. tmux)
+    - [example](https://blog.pjsen.eu/?p=440) how to implement tools from MYSYS to your GitBash  
 - [GitHub Solution for email privacy issue](https://help.github.com/en/github/setting-up-and-managing-your-github-user-account/setting-your-commit-email-address)
 
 ### How to run python in the Git Bash on Windows
