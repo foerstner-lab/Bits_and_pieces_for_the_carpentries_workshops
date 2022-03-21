@@ -53,16 +53,16 @@ Git wurde ursprünglich entwickelt, um Softwareentwicklern bei der gemeinsamen A
 
 https://onlywei.github.io/explain-git-with-d3/#branch
 
-git commit
-git branch feature
-git checkout feature
-git commit
-git commit
-git checkout master
-git commit
-git commit
-git merge feature
-git commit
+git commit  
+git branch feature  
+git checkout feature  
+git commit  
+git commit  
+git checkout master  
+git commit  
+git commit  
+git merge feature  
+git commit  
 
 ### Verwendungen in einem Bibliothekskontext
 
