@@ -49,6 +49,20 @@ Git wurde ursprünglich entwickelt, um Softwareentwicklern bei der gemeinsamen A
 *Ein Ort, an dem eine große Menge an offen lizenzierten digitalen Projekten und Open-Source-Software entdeckt und wiederverwendet werden kann ("fork")
 * Ein neues und alternatives Mittel zur Veröffentlichung von Inhalten im Internet. Jedes GitHub-Repository kann seine eigene Projekt-Website, seinen Blog und sein Wiki mit GitHub Pages haben.  
 
+### git mit d3
+
+https://onlywei.github.io/explain-git-with-d3/#branch
+
+git commit
+git branch feature
+git checkout feature
+git commit
+git commit
+git checkout master
+git commit
+git commit
+git merge feature
+git commit
 
 ### Verwendungen in einem Bibliothekskontext
 
