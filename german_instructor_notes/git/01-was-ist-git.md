@@ -21,11 +21,11 @@ Auf der einfachsten Ebene hilft uns die Versionskontrollsoftware dabei, Sätze v
 
 ##### Vorteile der Verwendung von Versionskontrolle?
 
-**Zusammenarbeit** - Versionskontrolle erlaubt es uns, formalisierte Wege zu definieren, wie wir zusammenarbeiten und das Schreiben und den Code gemeinsam nutzen können. Zum Beispiel ermöglicht das Zusammenführen von Änderungssätzen verschiedener Parteien die gemeinsame Erstellung von Dokumenten und Software in verteilten Teams.
-**Versionierung** - Ein robustes und strenges Protokoll der Änderungen an einer Datei, ohne Umbenennung von Dateien (v1, v2, _final_copy_)
-**Rolling Back** - Die Versionskontrolle erlaubt es uns, eine Reihe von Änderungen schnell rückgängig zu machen. Dies kann nützlich sein, wenn beim Schreiben von neuen Texten oder neuen Ergänzungen zum Code Probleme auftreten.
-**Verstehen** - Die Versionskontrolle kann Ihnen helfen zu verstehen, wie der Code oder das Schreiben entstanden ist, wer bestimmte Teile geschrieben oder beigetragen hat und wen Sie bitten könnten, Ihnen zu helfen, den Code besser zu verstehen.
-**Backup** - Auch wenn es nicht als Backup-Lösung gedacht ist, bedeutet die Verwendung von Versionskontrollsystemen, dass Ihr Code und Ihre Texte auf mehreren anderen Computern gespeichert werden können.
+**Zusammenarbeit** - Versionskontrolle erlaubt es uns, formalisierte Wege zu definieren, wie wir zusammenarbeiten und das Schreiben und den Code gemeinsam nutzen können. Zum Beispiel ermöglicht das Zusammenführen von Änderungssätzen verschiedener Parteien die gemeinsame Erstellung von Dokumenten und Software in verteilten Teams.  
+**Versionierung** - Ein robustes und strenges Protokoll der Änderungen an einer Datei, ohne Umbenennung von Dateien (v1, v2, _final_copy_)  
+**Rolling Back** - Die Versionskontrolle erlaubt es uns, eine Reihe von Änderungen schnell rückgängig zu machen. Dies kann nützlich sein, wenn beim Schreiben von neuen Texten oder neuen Ergänzungen zum Code Probleme auftreten.  
+**Verstehen** - Die Versionskontrolle kann Ihnen helfen zu verstehen, wie der Code oder das Schreiben entstanden ist, wer bestimmte Teile geschrieben oder beigetragen hat und wen Sie bitten könnten, Ihnen zu helfen, den Code besser zu verstehen.  
+**Backup** - Auch wenn es nicht als Backup-Lösung gedacht ist, bedeutet die Verwendung von Versionskontrollsystemen, dass Ihr Code und Ihre Texte auf mehreren anderen Computern gespeichert werden können.  
 
 Es gibt noch viele weitere Gründe, Versionskontrolle zu verwenden, und wir werden einige davon im Bibliothekskontext untersuchen, aber lass uns zuerst ein wenig über ein beliebtes Versionskontrollwerkzeug namens Git lernen.
 
