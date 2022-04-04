@@ -18,7 +18,7 @@ wie dieser unsere Abfragen verarbeitet. Nehmen wir an, wir hätten die folgende 
 ~~~
 SELECT Title, Authors
 FROM articles
-WHERE ISSNs = '2056-9890'.
+WHERE ISSNs = '2056-9890'
 ORDER BY First_Author ASC;
 ~~~
 
