@@ -58,6 +58,7 @@ The output of programs does not always have to be displayed in the Shell, but ca
 | ctrl + k          | deletes the input after the cursor       |
 | ctrl + u          | deletes the input in front of the cursor        |
 | ctrl + y          | pastes the clipboard                  |
+|ctrl + d  | deletes character after the postion |
 
 ## for-loops
 
