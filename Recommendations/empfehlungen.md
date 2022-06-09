@@ -46,12 +46,11 @@ Python - Standard Libraries - Third Party Libraries
 
 1) [PyCharm](https://www.jetbrains.com/pycharm/)
 2) [Spyder](https://www.spyder-ide.org/)
-3) [Atom](https://atom.io/)
-4) [Emacs](https://www.gnu.org/software/emacs/)
-5) [Geany](https://www.geany.org/)
-6) [Visual Studio Code](https://code.visualstudio.com/) / [VSCodium](https://github.com/VSCodium/vscodium) (binary releases of VS Code without MS branding/telemetry/licensing )
-7) [Notepad ++](https://notepad-plus-plus.org/)
-8) ... [viele mehr](https://en.wikipedia.org/wiki/List_of_text_editors)
+3) [Emacs](https://www.gnu.org/software/emacs/)
+4) [Geany](https://www.geany.org/)
+5) [Visual Studio Code](https://code.visualstudio.com/) / [VSCodium](https://github.com/VSCodium/vscodium) (binary releases of VS Code without MS branding/telemetry/licensing )
+6) [Notepad ++](https://notepad-plus-plus.org/)
+7) ... [viele mehr](https://en.wikipedia.org/wiki/List_of_text_editors)
 ### Anforderungen an einen guten Editor/IDE
 - Quellcode speichern und wieder laden 
     - Eine IDE oder ein Editor muss Deine Arbeit speichern und alles später wieder öffnen, und zwar in demselben Zustand, in dem es sich zuvor befand, um so Zeit für die Entwicklung zu sparen.
