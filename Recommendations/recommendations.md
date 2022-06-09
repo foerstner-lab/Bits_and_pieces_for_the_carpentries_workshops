@@ -58,12 +58,11 @@ Python - Standard Libraries - Third Party Libraries
 ### text editors/IDEs (integrated development environment)
 1) [PyCharm](https://www.jetbrains.com/pycharm/)
 2) [Spyder](https://www.spyder-ide.org/)
-3) [Atom](https://atom.io/)
-4) [Emacs](https://www.gnu.org/software/emacs/)
-5) [Geany](https://www.geany.org/)
-6) [Visual Studio Code](https://code.visualstudio.com/) / [VSCodium](https://github.com/VSCodium/vscodium) (binary releases of VS Code without MS branding/telemetry/licensing )
-7) [Notepad ++](https://notepad-plus-plus.org/)
-8) ... [viele mehr](https://en.wikipedia.org/wiki/List_of_text_editors)
+3) [Emacs](https://www.gnu.org/software/emacs/)
+4) [Geany](https://www.geany.org/)
+5) [Visual Studio Code](https://code.visualstudio.com/) / [VSCodium](https://github.com/VSCodium/vscodium) (binary releases of VS Code without MS branding/telemetry/licensing )
+6) [Notepad ++](https://notepad-plus-plus.org/)
+7) ... [viele mehr](https://en.wikipedia.org/wiki/List_of_text_editors)
 
 ### videos
 - [PyCon](https://www.youtube.com/results?search_query=pycon&search_type=) - Talks, Tutorial und vieles mehr von den PyCon-Konferenzen
