@@ -92,8 +92,7 @@ wie "Afrika" oder "Amerika" im Feld "Titel" von "2014-01_JA.tsv" vorkommt.
 {: .callout}
 <!-- hm, das erinnert mich an MARC -->
 
-Schauen wir uns zunächst die größte Datei an und verwenden die Werkzeuge, die wir in
-[Dateien lesen]({{ page.root }}/03-working-with-files-and-folders/#reading-files):
+Schauen wir uns zunächst die größte Datei an und verwenden die Werkzeuge, die wir bereits kennen:
 
 ~~~
 $ cat 2014-01_JA.tsv
