@@ -52,7 +52,7 @@ $ pwd
 ~~~
 /Users/riley/Desktop/shell-lesson
 ~~~
-{: .output}
+
 
 Prüfen wir nun, welche Dateien sich in dem Verzeichnis befinden und wie groß sie sind
 sind mit `ls -lhS`:
@@ -60,7 +60,7 @@ sind mit `ls -lhS`:
 ~~~
 $ ls -lhS
 ~~~
-{: .bash}
+
 ~~~
 insgesamt 139M
 -rw-rw-r-- 1 riley staff 126M Jun 10 2015 2014-01_JA.tsv
@@ -71,7 +71,7 @@ insgesamt 139M
 -rw-r--r-- 1 riley staff 583K Feb 1 22:53 33504-0.txt
 drwxr-xr-x 2 riley staff 68 Feb 2 00:58 backup
 ~~~
-{: .output}
+
 
 In dieser Folge konzentrieren wir uns auf das Dataset `2014-01_JA.tsv`, das die
 Metadaten von Zeitschriftenartikeln enthält, und die drei `.tsv`-Dateien, die aus dem ursprünglichen
@@ -96,7 +96,7 @@ Schauen wir uns zunächst die größte Datei an und verwenden die Werkzeuge, die
 ~~~
 $ cat 2014-01_JA.tsv
 ~~~
-{: .bash}
+
 
 Wie bei `829-0.txt` zuvor, stürzt der ganze Datensatz vorbei und kann nicht wirklich einen
 Sinn aus dieser Menge an Text machen. Um diese laufende Kon`cat`enation abzubrechen, oder überhaupt jeden
@@ -108,14 +108,14 @@ In den meisten Datendateien verrät ein kurzer Blick auf die ersten Zeilen berei
 ~~~
 $ head -n 3 2014-01_JA.tsv
 ~~~
-{: .bash}
+
 ~~~
 File Creator Issue Volume Journal ISSN ID Citation Title Place Labe Language Publisher Date
 Geschichte_1a-rdf.tsv Doolittle, W. E. 1 59 KIVA -ARIZONA- 0023-1940 (Uk)RN001571862 KIVA -ARIZONA- 59(1), 7-26. (1993) A Method for Distinguishing between Prehistoric and Recent Water and Soil Control Features xxu eng ARIZONA ARCHAEOLOGICAL AND HISTORICAL SOCIETY 1993
 Geschichte_1a-rdf.tsv Nelson, M. C. 1 59 KIVA -ARIZONA- 0023-1940 (Uk)RN001571874 KIVA -ARIZONA- 59(1), 27-48. (1993) Classic Mimbres Land Use in the Eastern Mimbres Region, Southwestern New Mexico xxu eng ARIZONA ARCHAEOLOGICAL AND HISTORICAL SOCIETY 1993
 
 ~~~
-{: .output}
+
 
 In der Kopfzeile sehen wir die üblichen Metadatenfelder von wissenschaftlichen Arbeiten: `Creator`, `Issue`, `Citation`, etc.
 
@@ -128,7 +128,7 @@ Da wir den Wildcard-Operator lieben, führen wir den Befehl
 ~~~~
 $ wc *.tsv
 ~~~~
-{: .bash}
+
 ~~~
     13712 511261 3773660 2014-01-31_JA-afrika.tsv
     27392 1049601 7731914 2014-01-31_JA-america.tsv
@@ -136,7 +136,7 @@ $ wc *.tsv
      5375 196999 1453418 2014-02-02_JA-britain.tsv
    554211 19364171 144081136 insgesamt
 ~~~
-{: .output}
+
 
 Die ersten drei Spalten enthalten die Anzahl der Zeilen, Wörter und Bytes.
 
@@ -153,7 +153,7 @@ Anzahl der Zeilen und nicht die Anzahl der Wörter und Bytes:
 ~~~~
 $ wc -l *.tsv
 ~~~~
-{: .bash}
+
 ~~~
     13712 2014-01-31_JA-afrika.tsv
     27392 2014-01-31_JA-america.tsv
@@ -161,7 +161,7 @@ $ wc -l *.tsv
      5375 2014-02-02_JA-britain.tsv
    554211 insgesamt
 ~~~
-{: .output}
+
 
 Der Befehl `wc` selbst hat kein Flag, um die Ausgabe zu sortieren, aber wie wir sehen werden
 aber wir werden sehen, dass wir drei verschiedene Shell-Befehle kombinieren können, um das zu bekommen, was wir wollen.
@@ -173,7 +173,7 @@ in eine Datei um, indem wir das "Größer als"-Zeichen (>) verwenden, etwa so
 ~~~
 $ wc -l *.tsv > lengths.txt
 ~~~
-{: .bash}
+
 
 Jetzt gibt es keine Ausgabe mehr, da die Ausgabe in die Datei `lengths.txt` gegangen ist, aber
 aber wir können überprüfen, ob die Ausgabe tatsächlich in der Datei gelandet ist, indem wir `cat` oder `less` verwenden
@@ -182,7 +182,7 @@ aber wir können überprüfen, ob die Ausgabe tatsächlich in der Datei gelandet
 ~~~~
 $ cat lengths.txt
 ~~~~
-{: .bash}
+
 ~~~
     13712 2014-01-31_JA-afrika.tsv
     27392 2014-01-31_JA-america.tsv
@@ -190,7 +190,7 @@ $ cat lengths.txt
      5375 2014-02-02_JA-britain.tsv
    554211 insgesamt
 ~~~
-{: .bash}
+
 
 Als Nächstes gibt es den Befehl `sort`. Wir benutzen das `-n` Flag, um anzugeben, dass wir
 dass wir numerisch und nicht lexikalisch sortieren wollen, wir geben die Ergebnisse in
@@ -200,7 +200,7 @@ eine weitere Datei aus, und wir benutzen `cat`, um die Ergebnisse zu überprüfe
 $ sort -n lengths.txt > sort-lengths.txt
 $ cat sort-lengths.txt
 ~~~~
-{: .bash}
+
 ~~~
      5375 2014-02-02_JA-britain.tsv
     13712 2014-01-31_JA-afrika.tsv
@@ -208,7 +208,7 @@ $ cat sort-lengths.txt
    507732 2014-01_JA.tsv
    554211 insgesamt
 ~~~
-{: .output}
+
 
 Endlich haben wir unseren alten Freund `head`, mit dem wir die erste Zeile
 der `sorted-lengths.txt` zu erhalten:
@@ -216,11 +216,11 @@ der `sorted-lengths.txt` zu erhalten:
 ~~~~
 $ head -n 1 sortierte-längen.txt
 ~~~~
-{: .bash}
+
 ~~~
      5375 2014-02-02_JA-britain.tsv
 ~~~
-{: .output}
+
 
 Aber wir sind wirklich nur am Endergebnis interessiert, nicht an den Zwischen
 Zwischenergebnisse, die jetzt in `lengths.txt` und `sorted-lengths.txt` gespeichert sind. Was wäre, wenn wir
@@ -232,7 +232,7 @@ Pipe mit dem vertikalen Balkenzeichen `|`. Versuchen wir es zuerst mit einer Pip
 ~~~~
 $ wc -l *.tsv | sort -n
 ~~~~
-{: .bash}
+
 ~~~
      5375 2014-02-02_JA-britain.tsv
     13712 2014-01-31_JA-afrika.tsv
@@ -240,7 +240,7 @@ $ wc -l *.tsv | sort -n
    507732 2014-01_JA.tsv
    554211 insgesamt
 ~~~
-{: .output}
+
 
 Beachte, dass dies genau die gleiche Ausgabe ist, die in unserer `sorted-lengths.txt` gelandet ist
 landete. Fügen wir eine weitere Pipe hinzu:
@@ -248,11 +248,11 @@ landete. Fügen wir eine weitere Pipe hinzu:
 ~~~~
 $ wc -l *.tsv | sort -n | head -n 1
 ~~~~
-{: .bash}
+
 ~~~
      5375 2014-02-02_JA-britain.tsv
 ~~~
-{: .output}
+
 
 Es kann einige Zeit dauern, bis man Pipes vollständig verstanden hat und sie effizient nutzen kann, aber es ist ein
 aber es ist ein sehr mächtiges Konzept, das du nicht nur in der Shell, sondern auch in den meisten
@@ -274,7 +274,7 @@ Unix-Programmierer konzentrieren sich darauf, > viele einfache Werkzeuge zu entw
 > Zeilen Text auf die Standardausgabe schreibt, mit jedem anderen Programm kombiniert werden kann, das
 > sich ebenfalls so verhält. Du kannst und solltest deine Programme auf diese Weise schreiben, damit
 Du kannst und solltest deine Programme so schreiben, damit > du und andere Leute diese Programme in Pipes einbinden können, um ihre Leistung zu vervielfachen.
-{: .callout}
+
 <!-- Kopiert von https://swcarpentry.github.io/shell-novice/04-pipefilter/ -->
 
 > ## Hinzufügen einer weiteren Pipe
@@ -288,16 +288,16 @@ Du kannst und solltest deine Programme so schreiben, damit > du und andere Leute
 > > ~~~
 > > $ wc -l *.tsv | sort -n | head -n 1
 > > ~~~
-> > {: .bash}
+> > 
 > >
 > > und
 > >
 > > ~~~
 > > $ wc -l *.tsv | sort -n | head -n 1 | cat
 > > ~~~
-> > {: .bash}
-> {: .solution}
-{: .challenge}
+> > 
+> 
+
 
 > ## Zählen, sortieren und drucken (verblichenes Beispiel)
 >Um die Gesamtzeilen in jeder `tsv`-Datei zu zählen, die Ergebnisse zu sortieren und dann die erste Zeile der Datei auszudrucken, verwenden wir Folgendes:
@@ -305,7 +305,7 @@ Du kannst und solltest deine Programme so schreiben, damit > du und andere Leute
 >~~~
 >wc -l *.tsv | sort -n | head -n 1
 >~~~
->{: .bash}
+>
 >
 >
 >Nun lass uns das Szenario ändern. Wir wollen die 10 Dateien wissen, die _die meisten_ Wörter enthalten. Fülle die folgenden Felder aus, um die Wörter für jede Datei zu zählen, sie in eine Reihenfolge zu bringen und dann die 10 Dateien mit den meisten Wörtern auszugeben (Tipp: Der Sortierbefehl sortiert standardmäßig in aufsteigender Reihenfolge).
@@ -313,7 +313,7 @@ Du kannst und solltest deine Programme so schreiben, damit > du und andere Leute
 >~~~
 >__ -w *.tsv | sort __ | ____
 >~~~
->{: .bash}
+>
 >
 > > ## Lösung
 > >
@@ -321,9 +321,9 @@ Du kannst und solltest deine Programme so schreiben, damit > du und andere Leute
 > >~~~
 > > wc -w *.tsv | sort -n | tail -n 11
 > >~~~
-> >{: .bash}
-> {: .solution}
-{: .challenge}
+> >
+> 
+
 
 
 > ## Zählen der Anzahl der Dateien
@@ -335,9 +335,9 @@ Du kannst und solltest deine Programme so schreiben, damit > du und andere Leute
 > > ~~~
 > > $ ls | wc -l
 > > ~~~~
-> > {: .bash}
-> {: .solution}
-{: .challenge}
+> >
+> 
+
 
 > ## Schreiben in Dateien
 > Der Befehl "date" gibt das aktuelle Datum und die Uhrzeit aus. Kannst du das
@@ -349,13 +349,13 @@ Du kannst und solltest deine Programme so schreiben, damit > du und andere Leute
 > > $ date > logfile.txt
 > > $ cat logfile.txt
 > > ~~~~
-> > {: .bash}
+> > 
 > > Um den Inhalt zu überprüfen, kannst du auch `less` oder viele andere Befehle verwenden.
 > >
 > > Pass auf, dass `>` gerne eine bestehende Datei überschreibt, ohne dich zu warnen,
 > > sei also bitte vorsichtig.
-> {: .solution}
-{: .challenge}
+> 
+
 
 > ## Anhängen an eine Datei
 > Während >` in eine Datei schreibt, fügt >>` etwas an eine Datei an. Versuche, das
@@ -366,9 +366,9 @@ Du kannst und solltest deine Programme so schreiben, damit > du und andere Leute
 > > $ date >> logfile.txt
 > > $ cat logfile.txt
 > > ~~~~
-> > {: .bash}
-> {: .solution}
-{: .challenge}
+> >
+>
+
 
 > ## Zählen der Anzahl der Wörter
 >
@@ -388,14 +388,14 @@ Du kannst und solltest deine Programme so schreiben, damit > du und andere Leute
 > > -w Die Anzahl der Wörter in jeder Eingabedatei wird auf die Standard
 > > Ausgabe geschrieben.
 > > ~~~
-> > {: .output}
+> >
 > >
 > > So werden die Wortzahlen der `.tsv`-Dateien ausgegeben:
 > >
 > > ~~~
 > > $ wc -w *.tsv
 > > ~~~
-> > {: .bash}
+> >
 > > ~~~
 > > 511261 2014-01-31_JA-africa.tsv
 > > 1049601 2014-01-31_JA-america.tsv
@@ -403,14 +403,14 @@ Du kannst und solltest deine Programme so schreiben, damit > du und andere Leute
 > > 196999 2014-02-02_JA-britain.tsv
 > > 19364171 gesamt
 > > ~~~
-> > {: .output}
+> >
 > >
 > > Und um die Zeilen numerisch zu sortieren:
 > >
 > > ~~~
 > > $ wc -w *.tsv | sort -n
 > > ~~~
-> > {: .bash}
+> >
 > > ~~~
 > > 196999 2014-02-02_JA-britain.tsv
 > > 511261 2014-01-31_JA-afrika.tsv
@@ -418,9 +418,9 @@ Du kannst und solltest deine Programme so schreiben, damit > du und andere Leute
 > > 17606310 2014-01_JA.tsv
 > > 19364171 gesamt
 > > ~~~
-> > {: .output}
-> {: .solution}
-{: .challenge}
+> > 
+> 
+
 
 ## Mining oder Suche
 
@@ -436,7 +436,7 @@ falls noch nicht vorhanden. Erstelle dann ein neues Verzeichnis "results":
 ~~~
 $ mkdir results
 ~~~
-{: .bash}
+
 
 
 Versuchen wir nun unsere erste Suche:
@@ -444,7 +444,7 @@ Versuchen wir nun unsere erste Suche:
 ~~~
 $ grep 1999 *.tsv
 ~~~
-{: .bash}
+
 
 Denke daran, dass die Shell `*.tsv` zu einer Liste aller `.tsv` Dateien im
 Verzeichnis. Grep" sucht dann in diesen Dateien nach der Zeichenkette "1999" und
@@ -452,7 +452,7 @@ druckt die passenden Zeilen aus.
 
 > ## Zeichenketten
 > Eine Zeichenkette ist eine Folge von Zeichen oder "ein Stück Text".
-{: .callout}
+
 
 Drücke einmal den Pfeil nach oben, um zu deiner letzten Aktion zurückzukehren.
 Ändere `grep 1999 *.tsv` in `grep -c 1999 *.tsv` und drücke Enter.
@@ -460,14 +460,14 @@ Drücke einmal den Pfeil nach oben, um zu deiner letzten Aktion zurückzukehren.
 ~~~
 $ grep -c 1999 *.tsv
 ~~~
-{: .bash}
+
 ~~~
 2014-01-31_JA-africa.tsv:804
 2014-01-31_JA-america.tsv:1478
 2014-01_JA.tsv:28767
 2014-02-02_JA-britain.tsv:284
 ~~~
-{: .output}
+
 
 Die Shell gibt nun aus, wie oft die Zeichenkette 1999 in jeder Datei vorkommt.
 Wenn du dir die Ausgabe des vorherigen Befehls ansiehst, bezieht sich das auf das
@@ -478,14 +478,14 @@ Wir versuchen eine andere Suche:
 ~~~
 $ grep -c revolution *.tsv
 ~~~
-{: .bash}
+
 ~~~
 2014-01-31_JA-africa.tsv:20
 2014-01-31_JA-america.tsv:34
 2014-01_JA.tsv:867
 2014-02-02_JA-britain.tsv:9
 ~~~
-{: .output}
+
 
 Wir haben die Anzahl der Instanzen der Zeichenkette "Revolution" in den Dateien zurückbekommen.
 Ändere nun den obigen Befehl in den folgenden ab und beobachte, wie sich die Ausgabe der beiden unterscheidet:
@@ -493,14 +493,14 @@ Wir haben die Anzahl der Instanzen der Zeichenkette "Revolution" in den Dateien 
 ~~~
 $ grep -ci revolution *.tsv
 ~~~
-{: .bash}
+
 ~~~
 2014-01-31_JA-africa.tsv:118
 2014-01-31_JA-america.tsv:1018
 2014-01_JA.tsv:9327
 2014-02-02_JA-britain.tsv:122
 ~~~
-{: .output}
+
 
 Dies wiederholt die Abfrage, druckt aber eine Groß
 unabhängig von der Groß- und Kleinschreibung aus (einschließlich der Instanzen von `revolution` und `Revolution` und anderer Varianten).
@@ -516,7 +516,7 @@ aus einer oder mehreren Dateien erstellen kannst.
 ~~~
 $ grep -i revolution *.tsv
 ~~~
-{: .bash}
+
 
 Dieses Skript sucht in den definierten Dateien und gibt alle Zeilen, die `revolution` enthalten
 (ohne Rücksicht auf Groß- und Kleinschreibung) an die Shell. Wir lassen die Shell das heutige Datum an den
@@ -525,7 +525,7 @@ Dateinamen hinzufügen:
 ~~~
 $ grep -i revolution *.tsv > results/$(date "+%Y-%m-%d")_JAi-revolution.tsv
 ~~~
-{: .bash}
+
 
 Dies speichert die unterteilten Daten in einer neuen Datei.
 
@@ -533,7 +533,7 @@ Dies speichert die unterteilten Daten in einer neuen Datei.
 > Diese Art, Daten zu schreiben, ist so verbreitet, dass du auf einigen Plattformen (nicht macOS X)
 > dass du das gleiche Ergebnis erhältst, wenn du `$(date -I)` anstelle von
 > `$(date "+%Y-%m-%d")`.
-{: .callout}
+
 
 Wenn wir uns jedoch diese Datei ansehen, enthält sie jede Instanz der
 Zeichenfolge "Revolution", sowohl als einzelnes Wort als auch als Teil anderer Wörter
@@ -544,7 +544,7 @@ So können wir unsere Suche präziser gestalten.
 ~~~
 $ grep -iw revolution *.tsv > results/$(date "+%Y-%m-%d")_JAiw-revolution.tsv
 ~~~
-{: .bash}
+
 
 Dieses Skript sucht in den beiden definierten Dateien und
 exportiert alle Zeilen, die das ganze Wort "Revolution" enthalten (ohne Berücksichtigung der Groß- und Kleinschreibung)
@@ -555,13 +555,13 @@ Wir können den Unterschied zwischen den von uns erstellten Dateien anzeigen.
 ~~~
 $ wc -l ergebnisse/*.tsv
 ~~~
-{: .bash}
+
 ~~~
    10585 2016-07-19_JAi-revolution.tsv
     7779 2016-07-19_JAiw-revolution.tsv
    18364 insgesamt
 ~~~
-{: .output}
+
 
 > ## Automatisches Hinzufügen eines Datumspräfixes
 > Beachte, dass wir das heutige Datum nicht selbst eingegeben haben, sondern dass der
@@ -578,8 +578,8 @@ $ wc -l ergebnisse/*.tsv
 > > [--iso-8601](https://en.wikipedia.org/wiki/ISO_8601), was
 > > die Verwirrung zwischen dem europäischen
 > > und amerikanischen Datumsformaten `DD.MM.YYYY` und `MM/DD/YYYY`.
-> {: .solution}
-{: .challenge}
+> 
+
 
 Zum Schluss verwenden wir die Syntax der **regulären Ausdrücke**, die wir bereits behandelt haben, um nach ähnlichen Wörtern zu suchen.
 
@@ -593,7 +593,7 @@ Zum Schluss verwenden wir die Syntax der **regulären Ausdrücke**, die wir bere
 > fortschrittlichsten regulären Ausdrücke verwendest, die deine Version von `grep` unterstützt (`-E` Flag auf
 > macOS X, `-P` auf den meisten anderen Plattformen) oder wenn du etwas Komplexeres
 > als die Suche nach einer einfachen Zeichenkette.
-{: .callout}
+
 
 Der reguläre Ausdruck "fr[ae]nc[eh]" passt auf "france", "french", aber auch auf "frence" und "franch".
 Im Allgemeinen ist es eine gute Idee, den Ausdruck in einfache Anführungszeichen zu setzen, da
@@ -603,7 +603,7 @@ den Wildcard-Operator * zu erweitern).
 ~~~
 $ grep -iwE 'fr[ae]nc[eh]' *.tsv
 ~~~
-{: .bash}
+
 
 Die Shell wird jede übereinstimmende Zeile ausdrucken.
 
@@ -613,7 +613,7 @@ Wir fügen das `-o` Flag hinzu, um nur den übereinstimmenden Teil der Zeilen au
 ~~~
 $ grep -iwEo 'fr[ae]nc[eh]' *.tsv
 ~~~
-{: .bash}
+
 
 Mach dich mit deinem Nachbarn zusammen und bearbeite diese Aufgaben:
 
@@ -626,9 +626,9 @@ Mach dich mit deinem Nachbarn zusammen und bearbeite diese Aufgaben:
 > > ~~~
 > > $ grep -w hero *.tsv
 > > ~~~
-> > {: .bash}
-> {: .solution}
-{: .challenge}
+> >
+> 
+
 
 > ## Suche nach Groß- und Kleinschreibung in Select-Dateien
 > Suche nach allen case sensitive Instanzen eines Wortes, das du in
@@ -639,9 +639,9 @@ Mach dich mit deinem Nachbarn zusammen und bearbeite diese Aufgaben:
 > > ~~~
 > > $ grep hero *a.tsv
 > > ~~~
-> > {: .bash}
-> {: .solution}
-{: .challenge}
+> >
+> 
+
 
 > ## Wörter zählen (Groß- und Kleinschreibung beachten)
 > Zähle alle Instanzen eines Wortes, das du in den
@@ -652,9 +652,9 @@ Mach dich mit deinem Nachbarn zusammen und bearbeite diese Aufgaben:
 > > ~~~
 > > $ grep -c hero *a.tsv
 > > ~~~
-> > {: .bash}
-> {: .solution}
-{: .challenge}
+> >
+> 
+
 
 > ## Wörter zählen (Groß-/Kleinschreibung nicht beachten)
 > Zähle alle Instanzen dieses Wortes in den `.tsv'-Dateien "Amerika" und "Afrika" ohne Berücksichtigung der Groß- und Kleinschreibung
@@ -664,9 +664,9 @@ Mach dich mit deinem Nachbarn zusammen und bearbeite diese Aufgaben:
 > > ~~~
 > > $ grep -ci hero *a.tsv
 > > ~~~
-> > {: .bash}
-> {: .solution}
-{: .challenge}
+> >
+> 
+
 
 > ## Groß- und Kleinschreibung nicht beachtende Suche in Select-Dateien
 > Suche nach allen Instanzen dieses Wortes ohne Unterscheidung der Groß- und Kleinschreibung
@@ -676,9 +676,9 @@ Mach dich mit deinem Nachbarn zusammen und bearbeite diese Aufgaben:
 > > ~~~
 > > $ grep -i hero *a.tsv > results/hero.tsv
 > > ~~~
-> > {: .bash}
-> {: .solution}
-{: .challenge}
+> >
+>
+
 
 > ## Suche nach Groß- und Kleinschreibung in Select-Dateien (ganzes Wort)
 > Suche nach allen case insensitive Instanzen des ganzen Wortes
@@ -688,9 +688,9 @@ Mach dich mit deinem Nachbarn zusammen und bearbeite diese Aufgaben:
 > > ~~~
 > > $ grep -iw hero *a.tsv > results/hero-i.tsv
 > > ~~~
-> > {: .bash}
-> {: .solution}
-{: .challenge}
+> >
+> 
+
 
 > ## Suche mit regulären Ausdrücken
 > Verwenden Sie reguläre Ausdrücke, um alle ISSN-Nummern zu finden
@@ -703,14 +703,14 @@ Mach dich mit deinem Nachbarn zusammen und bearbeite diese Aufgaben:
 > > ~~~
 > > $ grep -Eo '\d{4}-\d{4}' 2014-01_JA.tsv > results/issns.tsv
 > > ~~~
-> > {: .bash}
+> >
 > >
 > > oder
 > >
 > > ~~~
 > > $ grep -Po '\d{4}-\d{4}' 2014-01_JA.tsv > results/issns.tsv
 > > ~~~
-> > {: .bash}
+> >
 > >
 > > Es lohnt sich, die Datei zu überprüfen, um sicherzugehen, dass `grep` das Muster richtig interpretiert hat
 > > richtig interpretiert hat. Dazu kannst du den Befehl `less` verwenden.
@@ -721,9 +721,9 @@ Mach dich mit deinem Nachbarn zusammen und bearbeite diese Aufgaben:
 > > Wenn dir etwas Besseres einfällt, vielleicht mit Wortgrenzen,
 > > dann teile dein Ergebnis bitte in dem gemeinsamen Dokument und klopfe dir selbst auf die Schulter.
 > >
-> > {: .bash}
-> {: .solution}
-{: .challenge}
+> >
+> 
+
 
 > ## Finden von eindeutigen Werten
 > Wenn du etwas an den Befehl "uniq" weitergibst, filtert er benachbarte doppelte Zeilen heraus.
@@ -735,15 +735,15 @@ Mach dich mit deinem Nachbarn zusammen und bearbeite diese Aufgaben:
 > > ~~~
 > > $ grep -Eo '\d{4}-\d{4}' 2014-01_JA.tsv | sort | uniq | wc -l
 > > ~~~
-> > {: .bash}
+> > 
 > >
 > > oder
 > > ~~~
 > > $ grep -Po '\d{4}-\d{4}' 2014-01_JA.tsv | sort | uniq | wc -l
 > > ~~~
-> > {: .bash}
-> {: .solution}
-{: .challenge}
+> > 
+> 
+
 
 ### Eine Schleife zum Zählen von Wörtern verwenden
 
@@ -766,7 +766,7 @@ $ for name in "Jo" "Meg" "Beth" "Amy"
 > done
 ~~~
 
-{: .bash}
+
 
 ~~~
 Jo
@@ -778,7 +778,7 @@ Beth
 Amy
 645
 ~~~
-{: .output}
+
 
 Was passiert in der Schleife?  
 + `echo "$name"` gibt den aktuellen Wert von `$name` aus
@@ -812,16 +812,16 @@ Was passiert in der Schleife?
 >> grep: Alcott: No such file or directory
 >> 4
 >> ~~~
->> {: .bash}
-> {: .solution}
-{: .challenge}
+>>
+> 
+
 
 > ## Auswählen von Spalten aus unserem Artikeldatensatz
 > Wenn du Daten erhältst, enthalten sie oft mehr Spalten oder Variablen, als du für deine Arbeit brauchst. Wenn du nur die Spalten auswählen willst, die du für deine Analyse brauchst, kannst du den Befehl `cut` verwenden. Mit dem Befehl "Ausschneiden" kannst du Abschnitte aus einer Datei extrahieren. Nehmen wir zum Beispiel an, dass wir nur die Spalten "Ersteller", "Band", "Zeitschrift" und "Zitat" aus unseren Artikeldaten behalten wollen. Mit "cut" würden wir das tun:
 >~~~
 > cut -f 2,4,5,8 2014-01_JA.tsv | head
 >~~~
->{: .bash}
+>
 >
 >~~~
 > Ersteller Band Journal Citation
@@ -835,7 +835,7 @@ Was passiert in der Schleife?
 > Duany, W. 1 NORTHEAST AFRICAN STUDIES NORTHEAST AFRICAN STUDIES 1(2/3), 75-102. (1994)
 > Mohamed Ibrahim Khalil 1 NORTHEAST AFRICAN STUDIES NORTHEAST AFRICAN STUDIES 1(2/3), 103-118. (1994)
 >~~~
->{: .output}
+>
 >
 > Oben haben wir `cut` und das Flag `-f` benutzt, um anzugeben, welche Spalten wir behalten wollen. Standardmäßig funktioniert "cut" bei tabulatorgetrennten Dateien. Mit dem Flag `-d` können wir dies in ein Komma, ein Semikolon oder ein anderes Trennzeichen ändern.
 > Wenn du dir über die Position deiner Spalten nicht sicher bist und die Datei Kopfzeilen in der ersten Zeile hat, können wir diese mit `head -n 1 <Dateiname>` ausgeben.
@@ -847,12 +847,12 @@ Was passiert in der Schleife?
 >>~~~
 >> head -n 1 2014-01_JA.tsv
 >>~~~
->>{: .bash}
+>>
 >>
 >>~~~
 >>File Creator Issue Volume Journal ISSN ID Citation Title Place Labe Language Publisher Date
 >>~~~
->>{: .output}
+>>
 >>
 >>Ok, jetzt wissen wir, dass `Ausgabe` Spalte 3, `Band` 4, `Sprache` 11 und `Verlag` 12 ist.
 >> Wir benutzen diese Spaltennummern, um unseren `cut`-Befehl zu konstruieren:
@@ -870,6 +870,6 @@ Was passiert in der Schleife?
 >>1 59 eng ARIZONA ARCHAEOLOGICAL AND HISTORICAL SOCIETY (ARCHÄOLOGISCHE UND HISTORISCHE GESELLSCHAFT)
 >>1 59 eng ARIZONA ARCHAEOLOGICAL AND HISTORICAL SOCIETY (ARCHÄOLOGISCHE UND HISTORISCHE GESELLSCHAFT)
 >>~~~
->>{: .output}
-> {: .solution}
-{: .challenge}
+>>
+> 
+
