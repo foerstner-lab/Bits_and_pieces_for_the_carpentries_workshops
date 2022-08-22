@@ -41,7 +41,6 @@ Befehl "cd":
 ~~~
 $ cd shell-lesson
 ~~~
-{: .bash}
 
 Denke daran, wenn du dir nicht sicher bist, wo du dich in deiner Verzeichnisstruktur befindest,
 benutze den Befehl `pwd`, um das herauszufinden:
@@ -49,7 +48,7 @@ benutze den Befehl `pwd`, um das herauszufinden:
 ~~~
 $ pwd
 ~~~
-{: .bash}
+
 ~~~
 /Users/riley/Desktop/shell-lesson
 ~~~
