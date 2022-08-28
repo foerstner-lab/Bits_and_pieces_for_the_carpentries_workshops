@@ -1,5 +1,5 @@
 ---
-Titel: "Zählen und Bergbau mit der Muschel"
+Titel: "Zählen und Gewinnung mit der Shell"
 Unterricht: 60
 Übungen: 30
 Fragen:
@@ -62,18 +62,16 @@ $ ls -lhS
 ~~~
 
 ~~~
-insgesamt 139M
+total 139M
 -rw-rw-r-- 1 riley staff 126M Jun 10 2015 2014-01_JA.tsv
 -rw-r--r-- 1 riley staff 7.4M Jan 31 18:47 2014-01-31_JA-america.tsv
 -rw-r--r-- 1 riley staff 3.6M Jan 31 18:47 2014-01-31_JA-africa.tsv
 -rw-r--r-- 1 riley staff 1.4M Jan 31 18:47 2014-02-02_JA-britain.tsv
--rw-r--r-- 1 riley staff 598K Jan 31 18:47 gulliver.txt
 -rw-r--r-- 1 riley staff 583K Feb 1 22:53 33504-0.txt
-drwxr-xr-x 2 riley staff 68 Feb 2 00:58 backup
 ~~~
 
 
-In dieser Folge konzentrieren wir uns auf das Dataset `2014-01_JA.tsv`, das die
+In diesem Abschnitt konzentrieren wir uns auf das Dataset `2014-01_JA.tsv`, das die
 Metadaten von Zeitschriftenartikeln enthält, und die drei `.tsv`-Dateien, die aus dem ursprünglichen
 Datensatz abgeleitet wurden. Jede dieser drei "tsv"-Dateien enthält alle Daten, die ein Schlüsselwort wie
 wie "Afrika" oder "Amerika" im Feld "Titel" von "2014-01_JA.tsv" vorkommt.
@@ -88,8 +86,6 @@ wie "Afrika" oder "Amerika" im Feld "Titel" von "2014-01_JA.tsv" vorkommt.
 > Dateien gibt es kein "CSV"-Programm, sondern viele Programme, die das Format
 > die das Format unterstützen, Darunter übrigens auch Excel.), und du hättest keine
 > Probleme haben, eine 40 Jahre alte Datei zu öffnen, wenn du heute auf eine stößt.
-{: .callout}
-<!-- hm, das erinnert mich an MARC -->
 
 Schauen wir uns zunächst die größte Datei an und verwenden die Werkzeuge, die wir bereits kennen:
 
@@ -98,7 +94,7 @@ $ cat 2014-01_JA.tsv
 ~~~
 
 
-Wie bei `829-0.txt` zuvor, stürzt der ganze Datensatz vorbei und kann nicht wirklich einen
+Wie bei `829-0.txt` zuvor, stürzt der ganze Datensatz vorbei und ich kann nicht wirklich einen
 Sinn aus dieser Menge an Text machen. Um diese laufende Kon`cat`enation abzubrechen, oder überhaupt jeden
 Prozess in der Unix-Shell abzubrechen, drücke <kbd>Strg</kbd>+<kbd>C</kbd>.
 
@@ -147,7 +143,7 @@ Geschwindigkeitsvorteil. Die wahre Stärke der Shell liegt in der Möglichkeit, 
 und Aufgaben zu automatisieren. Darauf werden wir gleich noch eingehen.
 
 Zunächst werden wir sehen, wie wir eine einfache Pipeline erstellen können, um die kürzeste Datei zu finden
-in Bezug auf die Anzahl der Zeilen zu finden. Wir fangen an, indem wir das Flag "l" hinzufügen, um nur die
+in Bezug auf die Anzahl der Zeilen zu finden. Wir fangen an, indem wir das Flag "l" (el) hinzufügen, um nur die
 Anzahl der Zeilen und nicht die Anzahl der Wörter und Bytes:
 
 ~~~~
@@ -163,12 +159,10 @@ $ wc -l *.tsv
 ~~~
 
 
-Der Befehl `wc` selbst hat kein Flag, um die Ausgabe zu sortieren, aber wie wir sehen werden
-aber wir werden sehen, dass wir drei verschiedene Shell-Befehle kombinieren können, um das zu bekommen, was wir wollen.
+Der Befehl `wc` selbst hat kein Flag, um die Ausgabe zu sortieren, aber wir werden sehen, dass wir drei verschiedene Shell-Befehle kombinieren können, um das zu bekommen, was wir wollen.
 
 Zuerst haben wir den Befehl "wc -l *.tsv". Wir speichern die Ausgabe dieses
-Befehls in einer neuen Datei speichern. Dazu *umleiten* wir die Ausgabe des Befehls in eine Datei
-in eine Datei um, indem wir das "Größer als"-Zeichen (>) verwenden, etwa so
+Befehls in einer neuen Datei speichern. Dazu leiten wir die Ausgabe des Befehls in eine Datei um, indem wir das "Größer als"-Zeichen (>) verwenden, etwa so
 
 ~~~
 $ wc -l *.tsv > lengths.txt
@@ -178,6 +172,14 @@ $ wc -l *.tsv > lengths.txt
 Jetzt gibt es keine Ausgabe mehr, da die Ausgabe in die Datei `lengths.txt` gegangen ist, aber
 aber wir können überprüfen, ob die Ausgabe tatsächlich in der Datei gelandet ist, indem wir `cat` oder `less` verwenden
 (oder Notepad oder einem anderen Texteditor) überprüfen.
+
+Um Notepad über GitBash zu öffnen, müsst ihr den Pfas angeben, wo sich der exe File von Notepad befindet:
+
+```
+/c/WINDOWS/system32/notepad.exe lengths.txt
+```
+
+etwas umständlich auf Windows. Linux und Max lösen es anders mit dem `open` Befehl. Stattdessen könnt ihr auch wieder den `explorer .` Befehl nutzen, um euren File-Explorer an der Stelle, wo sich die Datei befindet, zu öffnen.
 
 ~~~~
 $ cat lengths.txt
@@ -192,8 +194,7 @@ $ cat lengths.txt
 ~~~
 
 
-Als Nächstes gibt es den Befehl `sort`. Wir benutzen das `-n` Flag, um anzugeben, dass wir
-dass wir numerisch und nicht lexikalisch sortieren wollen, wir geben die Ergebnisse in
+Als Nächstes gibt es den Befehl `sort`. Wir benutzen den `-n` Flag, um anzugeben, dass wir numerisch und nicht alphabetisch sortieren wollen, wir geben die Ergebnisse in
 eine weitere Datei aus, und wir benutzen `cat`, um die Ergebnisse zu überprüfen:
 
 ~~~~
@@ -258,22 +259,20 @@ Es kann einige Zeit dauern, bis man Pipes vollständig verstanden hat und sie ef
 aber es ist ein sehr mächtiges Konzept, das du nicht nur in der Shell, sondern auch in den meisten
 Programmiersprachen.
 
-[Redirects und Pipes](../fig/redirects-and-pipes.png)
-
 > ## Pipes und Filter
 > Diese einfache Idee ist der Grund, warum Unix so erfolgreich ist. Anstatt riesige Programme zu erstellen
 > Programme zu entwickeln, die viele verschiedene Dinge tun, konzentrieren sich die Unix-Programmierer auf
-Unix-Programmierer konzentrieren sich darauf, > viele einfache Werkzeuge zu entwickeln, die jeweils eine Aufgabe gut erledigen und gut miteinander zusammenarbeiten.
+> viele einfache Werkzeuge zu entwickeln, die jeweils eine Aufgabe gut erledigen und gut miteinander zusammenarbeiten.
 > Dieses Programmiermodell wird "Pipes und Filter" genannt. Pipes haben wir schon gesehen; ein
 > Filter ist ein Programm wie `wc` oder `sort`, das einen Eingabestrom in einen Ausgabestrom umwandelt.
 > Ausgabestrom umwandelt. Fast alle Unix-Standardprogramme können auf diese Weise arbeiten: Wenn
-> Wenn sie nicht anders angewiesen werden, lesen sie von der Standardeingabe, machen etwas mit dem, was sie
+> Wenn sie nicht anders angewiesen werden, lesen sie von der Standardeingabe, machen etwas damit
 > und schreiben dann in die Standardausgabe.
 >
 > Der Schlüssel ist, dass jedes Programm, das Textzeilen von der Standardeingabe liest und
 > Zeilen Text auf die Standardausgabe schreibt, mit jedem anderen Programm kombiniert werden kann, das
 > sich ebenfalls so verhält. Du kannst und solltest deine Programme auf diese Weise schreiben, damit
-Du kannst und solltest deine Programme so schreiben, damit > du und andere Leute diese Programme in Pipes einbinden können, um ihre Leistung zu vervielfachen.
+> du und andere Leute diese Programme in Pipes einbinden können, um ihre Leistung zu vervielfachen.
 
 <!-- Kopiert von https://swcarpentry.github.io/shell-novice/04-pipefilter/ -->
 
@@ -296,32 +295,6 @@ Du kannst und solltest deine Programme so schreiben, damit > du und andere Leute
 > > $ wc -l *.tsv | sort -n | head -n 1 | cat
 > > ~~~
 > > 
-> 
-
-
-> ## Zählen, sortieren und drucken (verblichenes Beispiel)
->Um die Gesamtzeilen in jeder `tsv`-Datei zu zählen, die Ergebnisse zu sortieren und dann die erste Zeile der Datei auszudrucken, verwenden wir Folgendes:
->
->~~~
->wc -l *.tsv | sort -n | head -n 1
->~~~
->
->
->
->Nun lass uns das Szenario ändern. Wir wollen die 10 Dateien wissen, die _die meisten_ Wörter enthalten. Fülle die folgenden Felder aus, um die Wörter für jede Datei zu zählen, sie in eine Reihenfolge zu bringen und dann die 10 Dateien mit den meisten Wörtern auszugeben (Tipp: Der Sortierbefehl sortiert standardmäßig in aufsteigender Reihenfolge).
->
->~~~
->__ -w *.tsv | sort __ | ____
->~~~
->
->
-> > ## Lösung
-> >
-> > Hier verwenden wir den Befehl `wc` mit dem `-w` (word) Flag auf alle `tsv` Dateien, `sortieren` sie und geben dann die letzten 11 Zeilen (10 Dateien und die Gesamtzahl) mit dem Befehl `tail` aus.
-> >~~~
-> > wc -w *.tsv | sort -n | tail -n 11
-> >~~~
-> >
 > 
 
 
@@ -374,7 +347,7 @@ Du kannst und solltest deine Programme so schreiben, damit > du und andere Leute
 >
 > Schau im Handbuch für den Befehl `wc` nach (entweder mit `man wc` oder `wc --help`)
 > um herauszufinden, welches Flag du verwenden musst, um die Anzahl der Wörter auszugeben
-> (aber nicht die Anzahl der Zeilen und Bytes). Versuche es mit den `.tsv` Dateien.
+> (aber nicht die Anzahl der Zeilen und Bytes). Versuche es dann auf die `.tsv` Dateien im Verzeichnis anzuwenden.
 >
 > Wenn du Zeit hast, kannst du auch versuchen, die Ergebnisse zu sortieren, indem du sie an `sort` weiterleitest.
 > Und / oder die anderen Flags von `wc` ausprobieren.
@@ -427,11 +400,9 @@ Du kannst und solltest deine Programme so schreiben, damit > du und andere Leute
 Wir werden oft nach etwas in einer oder mehreren Dateien suchen müssen,
 Deshalb wollen wir einen Befehl einführen, der dies ermöglicht: `grep` (kurz für **globaler regulärer
 expression print**). Wie der Name schon sagt, unterstützt er reguläre Ausdrücke und
-ist daher nur durch deine Vorstellungskraft, die Form deiner Daten und - wenn du
-und - wenn du mit Tausenden oder Millionen von Dateien arbeitest - durch die Rechenleistung, die dir zur Verfügung steht.
+ist daher nur durch deine Vorstellungskraft, die Form deiner Daten und - wenn du mit Tausenden oder Millionen von Dateien arbeitest - durch die Rechenleistung, die dir zur Verfügung steht.
 
-Um mit `grep` zu beginnen, wechsle zunächst in das Verzeichnis `shell-lesson`, falls es dort noch nicht
-falls noch nicht vorhanden. Erstelle dann ein neues Verzeichnis "results":
+Um mit `grep` zu beginnen, wechsle zunächst in das Verzeichnis `shell-lesson`. Erstelle dann ein neues Verzeichnis "results":
 
 ~~~
 $ mkdir results
@@ -445,9 +416,7 @@ Versuchen wir nun unsere erste Suche:
 $ grep 1999 *.tsv
 ~~~
 
-
-Denke daran, dass die Shell `*.tsv` zu einer Liste aller `.tsv` Dateien im
-Verzeichnis. Grep" sucht dann in diesen Dateien nach der Zeichenkette "1999" und
+Grep" sucht dann in diesen Dateien nach der Zeichenkette "1999" und
 druckt die passenden Zeilen aus.
 
 > ## Zeichenketten
@@ -502,16 +471,11 @@ $ grep -ci revolution *.tsv
 ~~~
 
 
-Dies wiederholt die Abfrage, druckt aber eine Groß
-unabhängig von der Groß- und Kleinschreibung aus (einschließlich der Instanzen von `revolution` und `Revolution` und anderer Varianten).
-Beachte, dass die Anzahl der Zeitschriftenartikel, die das Schlüsselwort "Amerika" enthalten, um fast das 30-fache
-Titel von Zeitschriftenartikeln, die das Schlüsselwort "Amerika" enthalten. Wie zuvor kannst du zurückgehen und
-Ergebnisse/", gefolgt von einem Dateinamen (idealerweise im .txt-Format), um die Ergebnisse in einer Datei zu speichern.
+Dies wiederholt die Abfrage, druckt aber unabhängig von der Groß- und Kleinschreibung aus (einschließlich der Instanzen von `revolution` und `Revolution` und anderer Varianten).
+Beachte, dass die Anzahl der Zeitschriftenartikel, die das Schlüsselwort "Amerika" enthalten, um fast das 30-fache unterscheidet. 
+Wie zuvor kannst du zurückgehen und > results/" eingeben, gefolgt von einem Dateinamen (idealerweise im .txt-Format), um die Ergebnisse in einer Datei zu speichern.
 
-Bisher haben wir die Zeichenketten in den Dateien gezählt und die Ergebnisse in der Shell oder in einer Datei ausgegeben.
-Datei ausgegeben. Aber die wahre Stärke von `grep` liegt darin, dass du
-dass du damit auch Teilmengen von tabellarischen Daten (oder beliebigen Daten)
-aus einer oder mehreren Dateien erstellen kannst.  
+Bisher haben wir die Zeichenketten in den Dateien gezählt und die Ergebnisse in der Shell oder in einer Datei ausgegeben. Aber die wahre Stärke von `grep` liegt darin, dass du damit auch Teilmengen von tabellarischen Daten (oder beliebigen Daten) aus einer oder mehreren Dateien erstellen kannst.  
 
 ~~~
 $ grep -i revolution *.tsv
@@ -546,14 +510,13 @@ $ grep -iw revolution *.tsv > results/$(date "+%Y-%m-%d")_JAiw-revolution.tsv
 ~~~
 
 
-Dieses Skript sucht in den beiden definierten Dateien und
-exportiert alle Zeilen, die das ganze Wort "Revolution" enthalten (ohne Berücksichtigung der Groß- und Kleinschreibung)
+Dieses Skript sucht in den  Dateien und exportiert alle Zeilen, die das ganze Wort "Revolution" enthalten 
 in die angegebene `.tsv`-Datei.
 
 Wir können den Unterschied zwischen den von uns erstellten Dateien anzeigen.
 
 ~~~
-$ wc -l ergebnisse/*.tsv
+$ wc -l results/*.tsv
 ~~~
 
 ~~~
@@ -583,27 +546,15 @@ $ wc -l ergebnisse/*.tsv
 
 Zum Schluss verwenden wir die Syntax der **regulären Ausdrücke**, die wir bereits behandelt haben, um nach ähnlichen Wörtern zu suchen.
 
-> ## Einfache, erweiterte und PERL-kompatible reguläre Ausdrücke
-> Es gibt leider [verschiedene Arten, reguläre Ausdrücke zu schreiben] (https://www.gnu.org/software/grep/manual/html_node/Regular-Expressions.html).
-> In seinen verschiedenen Versionen unterstützt `grep` "basic", mindestens zwei Arten von "extended",
-> und "PERL-kompatible" reguläre Ausdrücke. Das ist eine häufige Ursache für Verwirrung, denn
-> die meisten Tutorien, einschließlich unseres, reguläre Ausdrücke lehren, die mit der Programmiersprache PERL
-> Programmiersprache kompatibel sind, `grep` aber standardmäßig Basic verwendet.
-> Wenn du dir die Details nicht merken willst, mach dir das Leben leicht, indem du immer die
-> fortschrittlichsten regulären Ausdrücke verwendest, die deine Version von `grep` unterstützt (`-E` Flag auf
-> macOS X, `-P` auf den meisten anderen Plattformen) oder wenn du etwas Komplexeres
-> als die Suche nach einer einfachen Zeichenkette.
-
-
 Der reguläre Ausdruck "fr[ae]nc[eh]" passt auf "france", "french", aber auch auf "frence" und "franch".
 Im Allgemeinen ist es eine gute Idee, den Ausdruck in einfache Anführungszeichen zu setzen, da
-Dies stellt sicher, dass die Shell den Ausdruck direkt an grep sendet, ohne ihn zu verarbeiten (z. B. indem sie versucht, den
-den Wildcard-Operator * zu erweitern).
+Dies stellt sicher, dass die Shell den Ausdruck direkt an grep sendet, ohne ihn zu verarbeiten (z. B. indem sie versucht, den Wildcard-Operator * zu erweitern).
 
 ~~~
 $ grep -iwE 'fr[ae]nc[eh]' *.tsv
 ~~~
 
+E steht für regular expressions, i wieder und Groß und Kleinschreibweise zu ignorieren und w um nur nach ganzen Wörtern zu suchen.
 
 Die Shell wird jede übereinstimmende Zeile ausdrucken.
 
@@ -614,12 +565,12 @@ Wir fügen das `-o` Flag hinzu, um nur den übereinstimmenden Teil der Zeilen au
 $ grep -iwEo 'fr[ae]nc[eh]' *.tsv
 ~~~
 
-
+## Breakout Session
 Mach dich mit deinem Nachbarn zusammen und bearbeite diese Aufgaben:
 
 > ## Suche nach Groß- und Kleinschreibung
-> Suche nach allen case sensitive Instanzen von
-> einem ganzen Wort, das du in allen vier abgeleiteten `.tsv`-Dateien in diesem Verzeichnis wählst.
+> Suche nach allen case-sensitive Instanzen von
+> einem ganzen Wort, das ihr in allen vier abgeleiteten `.tsv`-Dateien in diesem Verzeichnis wählt.
 > Gib deine Ergebnisse auf der Shell aus.
 >
 > > ## Lösung
@@ -630,7 +581,7 @@ Mach dich mit deinem Nachbarn zusammen und bearbeite diese Aufgaben:
 > 
 
 
-> ## Suche nach Groß- und Kleinschreibung in Select-Dateien
+> ## Suche nach Groß- und Kleinschreibung in tsv-Dateien
 > Suche nach allen case sensitive Instanzen eines Wortes, das du in
 > den Dateien "Amerika" und "Afrika" `.tsv" in diesem Verzeichnis.
 > Gib deine Ergebnisse auf der Shell aus.
@@ -644,8 +595,8 @@ Mach dich mit deinem Nachbarn zusammen und bearbeite diese Aufgaben:
 
 
 > ## Wörter zählen (Groß- und Kleinschreibung beachten)
-> Zähle alle Instanzen eines Wortes, das du in den
-> den `.tsv'-Dateien "Amerika" und "Afrika" in diesem Verzeichnis.
+> Zähle alle Instanzen eines Wortes in den
+> `.tsv'-Dateien "Amerika" und "Afrika" in diesem Verzeichnis.
 > Gib deine Ergebnisse auf der Shell aus.
 >
 > > ## Lösung
@@ -658,7 +609,7 @@ Mach dich mit deinem Nachbarn zusammen und bearbeite diese Aufgaben:
 
 > ## Wörter zählen (Groß-/Kleinschreibung nicht beachten)
 > Zähle alle Instanzen dieses Wortes in den `.tsv'-Dateien "Amerika" und "Afrika" ohne Berücksichtigung der Groß- und Kleinschreibung
-> in diesem Verzeichnis. Gib deine Ergebnisse auf der Shell aus.
+> Gib deine Ergebnisse auf der Shell aus.
 >
 > > ## Lösung
 > > ~~~
@@ -670,7 +621,7 @@ Mach dich mit deinem Nachbarn zusammen und bearbeite diese Aufgaben:
 
 > ## Groß- und Kleinschreibung nicht beachtende Suche in Select-Dateien
 > Suche nach allen Instanzen dieses Wortes ohne Unterscheidung der Groß- und Kleinschreibung
-> Wortes in den `.tsv'-Dateien "Amerika" und "Afrika" in diesem Verzeichnis. Gib deine Ergebnisse in die Datei `results/hero.tsv` aus.
+> Wortes in den `.tsv'-Dateien "Amerika" und "Afrika" in diesem Verzeichnis. Lege deine Ergebnisse in einer tsv Datei im Ordner results ab.
 >
 > > ## Lösung
 > > ~~~
@@ -682,66 +633,13 @@ Mach dich mit deinem Nachbarn zusammen und bearbeite diese Aufgaben:
 
 > ## Suche nach Groß- und Kleinschreibung in Select-Dateien (ganzes Wort)
 > Suche nach allen case insensitive Instanzen des ganzen Wortes
-> in den `.tsv'-Dateien "Amerika" und "Afrika" in diesem Verzeichnis. Drucke deine Ergebnisse in die Datei `results/hero-i.tsv`.
+> in den `.tsv'-Dateien "Amerika" und "Afrika" in diesem Verzeichnis. Lege deine Ergebnisse in einer neuen tsv Datei im Ordner results ab.
 >
 > > ## Lösung
 > > ~~~
 > > $ grep -iw hero *a.tsv > results/hero-i.tsv
 > > ~~~
 > >
-> 
-
-
-> ## Suche mit regulären Ausdrücken
-> Verwenden Sie reguläre Ausdrücke, um alle ISSN-Nummern zu finden
-> (vier Ziffern, gefolgt von einem Bindestrich, gefolgt von vier Ziffern)
-> in `2014-01_JA.tsv` und gib die Ergebnisse in die Datei `results/issns.tsv` aus.
-> Beachte, dass du eventuell das `-E` Flag (oder `-P` bei einigen Versionen von
-> von `grep`, z.B. mit Git Bash unter Windows).
->
-> > ## Lösung
-> > ~~~
-> > $ grep -Eo '\d{4}-\d{4}' 2014-01_JA.tsv > results/issns.tsv
-> > ~~~
-> >
-> >
-> > oder
-> >
-> > ~~~
-> > $ grep -Po '\d{4}-\d{4}' 2014-01_JA.tsv > results/issns.tsv
-> > ~~~
-> >
-> >
-> > Es lohnt sich, die Datei zu überprüfen, um sicherzugehen, dass `grep` das Muster richtig interpretiert hat
-> > richtig interpretiert hat. Dazu kannst du den Befehl `less` verwenden.
-> >
-> > Das `-o` Flag bedeutet, dass nur die ISSN selbst ausgedruckt wird, statt der
-> > ganze Zeile.
-> >
-> > Wenn dir etwas Besseres einfällt, vielleicht mit Wortgrenzen,
-> > dann teile dein Ergebnis bitte in dem gemeinsamen Dokument und klopfe dir selbst auf die Schulter.
-> >
-> >
-> 
-
-
-> ## Finden von eindeutigen Werten
-> Wenn du etwas an den Befehl "uniq" weitergibst, filtert er benachbarte doppelte Zeilen heraus.
-> Damit der Befehl "uniq" nur eindeutige Werte zurückgibt, muss er mit dem Befehl "sort" verwendet werden.
-> mit dem Befehl "sort" verwendet werden. Versuche, die Ausgabe des Befehls aus der letzten Übung über die Pipeline
-> zu "sort" zu leiten und diese Ergebnisse dann zu "uniq" zu leiten und dann "wc -l", um die Anzahl der eindeutigen ISSN-Werte zu zählen.
->
-> > ## Lösung
-> > ~~~
-> > $ grep -Eo '\d{4}-\d{4}' 2014-01_JA.tsv | sort | uniq | wc -l
-> > ~~~
-> > 
-> >
-> > oder
-> > ~~~
-> > $ grep -Po '\d{4}-\d{4}' 2014-01_JA.tsv | sort | uniq | wc -l
-> > ~~~
-> > 
 > 
 
 
@@ -765,8 +663,6 @@ $ for name in "Jo" "Meg" "Beth" "Amy"
 > grep -wo "$name" littlewomen.txt | wc -l
 > done
 ~~~
-
-
 
 ~~~
 Jo
@@ -817,7 +713,7 @@ Was passiert in der Schleife?
 
 
 > ## Auswählen von Spalten aus unserem Artikeldatensatz
-> Wenn du Daten erhältst, enthalten sie oft mehr Spalten oder Variablen, als du für deine Arbeit brauchst. Wenn du nur die Spalten auswählen willst, die du für deine Analyse brauchst, kannst du den Befehl `cut` verwenden. Mit dem Befehl "Ausschneiden" kannst du Abschnitte aus einer Datei extrahieren. Nehmen wir zum Beispiel an, dass wir nur die Spalten "Ersteller", "Band", "Zeitschrift" und "Zitat" aus unseren Artikeldaten behalten wollen. Mit "cut" würden wir das tun:
+> Wenn du Daten erhältst, enthalten sie oft mehr Spalten oder Variablen, als du für deine Arbeit brauchst. Wenn du nur die Spalten auswählen willst, die du für deine Analyse brauchst, kannst du den Befehl `cut` verwenden. Mit dem Befehl "cut" kannst du Abschnitte aus einer Datei extrahieren. Nehmen wir zum Beispiel an, dass wir nur die Spalten "creator", "volume", "jornal" und "Citation" aus unseren Artikeldaten behalten wollen. Mit "cut" würden wir das tun:
 >~~~
 > cut -f 2,4,5,8 2014-01_JA.tsv | head
 >~~~
@@ -839,8 +735,9 @@ Was passiert in der Schleife?
 >
 > Oben haben wir `cut` und das Flag `-f` benutzt, um anzugeben, welche Spalten wir behalten wollen. Standardmäßig funktioniert "cut" bei tabulatorgetrennten Dateien. Mit dem Flag `-d` können wir dies in ein Komma, ein Semikolon oder ein anderes Trennzeichen ändern.
 > Wenn du dir über die Position deiner Spalten nicht sicher bist und die Datei Kopfzeilen in der ersten Zeile hat, können wir diese mit `head -n 1 <Dateiname>` ausgeben.
+
 > ### Jetzt bist du dran
->Wähle die Spalten `Ausgabe`, `Band`, `Sprache`, `Verlag` und leite die Ausgabe in eine neue Datei. Du kannst sie z.B. `2014-01_JA_ivlp.tsv` nennen.
+>Wähle die Spalten `Issue`, `Volume`, `Language`, `Publisher` und leite die Ausgabe in eine neue Datei. Du kannst sie z.B. `2014-01_JA_ivlp.tsv` nennen.
 >> ## Lösung
 >> Schauen wir zuerst, wo unsere gewünschten Spalten sind:
 >>
@@ -854,7 +751,7 @@ Was passiert in der Schleife?
 >>~~~
 >>
 >>
->>Ok, jetzt wissen wir, dass `Ausgabe` Spalte 3, `Band` 4, `Sprache` 11 und `Verlag` 12 ist.
+>>Ok, jetzt wissen wir, dass `Creator` Spalte 3, `Band` 4, `Sprache` 11 und `Verlag` 12 ist.
 >> Wir benutzen diese Spaltennummern, um unseren `cut`-Befehl zu konstruieren:
 >>```
 >> cut -f 3,4,11,12 2014-01_JA.tsv > 2014-01_JA_ivlp.tsv
