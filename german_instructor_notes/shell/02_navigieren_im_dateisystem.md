@@ -12,21 +12,22 @@ Schlüsselpunkte:
 ---
 ## In der Shell navigieren
 
-Wir werden mit den Grundlagen der Navigation durch die Unix-Shell beginnen.
+Wir beginnen mit den Grundlagen der Navigation in der Unix-Shell.
 
-Beginnen wir mit dem Öffnen der Shell. Dies führt wahrscheinlich dazu, dass Sie ein schwarzes Fenster mit einem blinkenden Cursor neben einem Dollarzeichen sehen.
-Dies ist unsere Befehlszeile, und das `$` ist der Befehl **prompt**, um zu zeigen, dass das System für unsere Eingabe bereit ist.
-Das Aussehen der Eingabeaufforderung wird von System zu System unterschiedlich sein, je nachdem, wie die Einrichtung konfiguriert wurde,
-aber es endet gewöhnlich mit einem `$`.
+Beginnen wir damit, die Shell zu öffnen. Dann siehst du wahrscheinlich ein schwarzes oder weißes Fenster mit einem blinkenden Cursor neben einem Dollarzeichen.
+Das ist unsere Befehlszeile, und das "$" ist die Eingabeaufforderung, um zu zeigen, dass das System bereit für unsere Eingaben ist.
+Das Aussehen der Eingabeaufforderung variiert von System zu System, je nachdem, wie das System konfiguriert wurde.
+Andere übliche Prompts sind die Zeichen `%` oder `#`, aber wir werden in dieser Lektion `$` verwenden, um den Prompt allgemein darzustellen.
 
-Wenn Sie in der Shell arbeiten, sind Sie immer *irgendwo* in der Shell des Computers
-Dateisystem, in irgendeinem Ordner (Verzeichnis). Wir werden daher zunächst herausfinden
-wo wir uns befinden, indem Sie den Befehl `pwd` verwenden, den Sie benutzen können, wenn Sie unsicher sind
-darüber, wo Sie sich befinden. Es steht für "**print working directory**".
+Wenn du in der Shell arbeitest, befindest du dich immer *irgendwo* im Dateisystem deines Computers
+Dateisystem, in einem Ordner (Verzeichnis). Deshalb werden wir zunächst herausfinden
+herauszufinden, wo wir uns befinden, indem wir den Befehl `pwd` verwenden, den du immer dann
+wo du dich befindest. Er steht für "print working directory" und das Ergebnis des
+Befehls wird auf deiner Standardausgabe, also dem Bildschirm, ausgegeben.
 
-Lassen Sie uns `pwd` tippen und Enter drücken, um den Befehl auszuführen
-(Beachten Sie, dass das "$"-Zeichen verwendet wird, um einen Befehl anzugeben, der an der Eingabeaufforderung einzugeben ist,
- aber wir tippen nie das `$`-Zeichen selbst, sondern nur das, was danach folgt):
+Gib `pwd` ein und drücke die Eingabetaste, um den Befehl auszuführen
+(Beachte, dass das `$`-Zeichen verwendet wird, um einen Befehl anzuzeigen, der an der Eingabeaufforderung eingegeben werden soll,
+ Wir geben aber nie das "$"-Zeichen selbst ein, sondern nur das, was danach kommt.):
 
 ~~~
 $ pwd
@@ -130,8 +131,7 @@ bash: cd: Teuflischer Plan: No such file or directory
 
 
 Wie wir sehen, ich habe leider keinen teuflischen Plan. Was wir hier auch sehen können ist, 
-dass ich den Namen in Anführungszeichen gesetzt habe. Damit sage ich der Shell dass es sich um einen einzigen 
-Ordner handelt und nicht zwei verschiedene Argumente. 
+dass ich den Namen in Anführungszeichen gesetzt habe. Damit sage ich der Shell dass es sich um einen einzigen Ordner handelt und nicht zwei verschiedene Argumente. 
 
 Wir haben jetzt gesehen, dass wir uns in die tiefen des Verzeichnisses bewegen können. 
 Wenn wir zurückgehen wollen, können wir `cd ..` eingeben. Das ".." steht für den Elternordner darüber.
