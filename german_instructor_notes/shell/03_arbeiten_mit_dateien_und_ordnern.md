@@ -244,7 +244,7 @@ mv gulliver-backup.txt backup
 > `History` ein. Notiere die Befehlsnummer, z.B. 2045. Rufe den Befehl auf, indem du 
 > `!2045`. Dadurch wird der Befehl ausgeführt.
 
-> ## Challenge: Verwenden des Befehls "echo
+> ## Verwenden des Befehls "echo
 > Der Befehl "echo" gibt einfach einen Text aus, den du angibst. Probiere es aus: `echo 'Library Carpentry is awesome!'`.
 > Interessant, nicht wahr?
 >
