@@ -231,8 +231,8 @@ mv gulliver-backup.txt backup
 
 
 ## Verwendung von `history`
-Mit dem Befehl "history" kannst du dir eine Liste aller Befehle anzeigen lassen, die du während der > aktuellen Sitzung eingegeben hast. 
-> aktuellen Sitzung eingegeben hast. Du kannst auch <kbd>Strg</kbd> + <kbd>r</kbd> verwenden, um eine Rückwärtssuche durchzuführen. Drücke <kbd>Strg</kbd> + <kbd>r</kbd>, 
+> Mit dem Befehl "history" kannst du dir eine Liste aller Befehle anzeigen lassen, die du während der aktuellen Sitzung eingegeben hast. 
+> Du kannst auch <kbd>Strg</kbd> + <kbd>r</kbd> verwenden, um eine Rückwärtssuche durchzuführen. Drücke <kbd>Strg</kbd> + <kbd>r</kbd>, 
 > und beginne dann, einen beliebigen Teil des gesuchten Befehls einzutippen. Der letzte Befehl wird 
 > automatisch vervollständigt. Drücke "Enter", um den Befehl erneut auszuführen, oder drücke die Pfeiltasten, um den Befehl zu > bearbeiten. 
 > Bearbeiten des Befehls. Wenn mehrere vergangene Befehle den von dir eingegebenen Text enthalten, kannst du 
