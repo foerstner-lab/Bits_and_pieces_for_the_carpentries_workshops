@@ -111,9 +111,9 @@ auf eine Vielzahl von Dateien angewendet werden und gibt uns ein super Möglichk
 >
 > > ## Lösung
 > > ```
-> > for file in *.txt
+> > for FILE in *.txt
 > > do
-> > echo "$file"
+> > echo "$FILE"
 > > head -n 1 "$FILE"
 > > tail -n 1 "$FILE" 
 > > done
