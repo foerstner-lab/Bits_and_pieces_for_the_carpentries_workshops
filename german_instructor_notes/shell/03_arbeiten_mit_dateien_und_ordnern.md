@@ -100,16 +100,6 @@ die Befehle `head` und `tail`.
 $ head 829-0.txt
 ~~~
 
-~~~
-The Project Gutenberg eBook, Gulliver's Travels, by Jonathan Swift
-
-
-This eBook is for the use of anyone anywhere at no cost and with
-almost no restrictions whatsoever.  You may copy it, give it away or
-re-use it under the terms of the Project Gutenberg License included
-with this eBook or online at www.gutenberg.org
-~~~
-
 
 Dies gibt einen Überblick über die ersten zehn Zeilen,
 während `tail 829-0.txt` eine Perspektive auf die letzten zehn Zeilen bietet:
@@ -118,57 +108,11 @@ während `tail 829-0.txt` eine Perspektive auf die letzten zehn Zeilen bietet:
 $ tail 829-0.txt
 ~~~
 
-~~~
-Most people start at our Web site which has the main PG search facility:
-
-    http://www.gutenberg.org
-
-This Web site includes information about Project Gutenberg-tm,
-including how to make donations to the Project Gutenberg Literary
-Archive Foundation, how to help produce our new eBooks, and how to
-subscribe to our email newsletter to hear about new eBooks.
-~~~
 
 
 Wenn zehn Zeilen nicht ausreichen (oder zu viel), würden wir `head -n 20` eingeben.
 
-## Wiederverwendung von Befehlen
 
-Drücken wir in einer leeren Eingabeaufforderung die Pfeiltaste nach oben erscheint der vorherige Befehl. Wir können die Taste
-mehrmals drücken, um durch Ihre vorherigen Befehle zu blättern. Der Pfeil nach unten schaltet zurück
-auf Ihr jüngstes Kommando zu. Dies ist eine weitere wichtige arbeitssparende
-Funktion und etwas, das wir viel nutzen werden.
-
-Drücke den Pfeil nach oben, bis du zum Befehl `head 829-0.txt` gelangst. Ein Leerzeichen hinzufügen
-und dann `33504-0.txt` (Erinnern Sie sich an Ihren Freund Tab? Gebe `3` gefolgt von Tab ein, um den folgenden Befehl zu erzeugen:
-
-~~~
-$ head 829-0.txt 33504-0.txt
-~~~
-
-~~~
-==> 829-0.txt <==
-The Project Gutenberg eBook, Gulliver's Travels, by Jonathan Swift
-
-
-This eBook is for the use of anyone anywhere at no cost and with
-almost no restrictions whatsoever.  You may copy it, give it away or
-re-use it under the terms of the Project Gutenberg License included
-with this eBook or online at www.gutenberg.org
-
-
-==> 33504-0.txt <==
-The Project Gutenberg EBook of Opticks, by Isaac Newton
-
-This eBook is for the use of anyone anywhere at no cost and with
-almost no restrictions whatsoever.  You may copy it, give it away or
-re-use it under the terms of the Project Gutenberg License included
-with this eBook or online at www.gutenberg.org
-
-
-Title: Opticks
-       or, a Treatise of the Reflections, Refractions, Inflections,
-~~~
 
 ## Less Befehl
 
@@ -194,8 +138,7 @@ Um uns das Tippen zu ersparen, führen wir zunächst einen sehr nützlichen Tric
 
 
 Drücke den Pfeil nach oben, bis du zu dem Befehl "head 829-0.txt" gelangst. Füge ein Leerzeichen
-und dann `33504-0.txt` (Erinnerst du dich an deinen Freund Tab? Tippe `3` gefolgt von Tab, um
-um `33504-0.txt` zu erhalten), um den folgenden Befehl zu erhalten:
+und dann `33504-0.txt` (Erinnerst du dich an deinen Freund Tab? Tippe `3` gefolgt von Tab, um `33504-0.txt` zu erhalten):
 
 ~~~
 $ head 829-0.txt 33504-0.txt
