@@ -98,7 +98,7 @@ auf eine Vielzahl von Dateien angewendet werden und gibt uns ein super Möglichk
 
 > ## Challenge: For-Schleife Lückentext
 > Fülle die Leerzeichen in der folgenden for-Schleife aus, um den Namen, die erste Zeile und die letzte Zeile
-> jeder Textdatei im aktuellen Verzeichnis ausgeben.
+> jeder Textdatei im aktuellen Verzeichnis ausgeben. **Ihr findet die For-Schleife im Pad**
 >
 > ```
 > ___ FILE in *.txt
