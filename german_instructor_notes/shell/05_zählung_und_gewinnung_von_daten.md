@@ -53,9 +53,18 @@ $ pwd
 /Users/riley/Desktop/shell-lesson
 ~~~
 
+Schauen wir uns den Inhalt von der africa Datei an
 
-Prüfen wir nun, welche Dateien sich in dem Verzeichnis befinden und wie groß sie sind
-sind mit `ls -lhS`:
+~~~
+$ less 2014-01-31_JA-africa.tsv
+~~~
+Der Inhalt lässt sich sich schwer erahnen. Erweitern wir den Befehl durch den Flag -S
+
+~~~
+$ less -S 2014-01-31_JA-africa.tsv
+~~~
+
+Damit sehen wir zumindest besser, was in der Datei steckt. Aber vielleicht wollen wir noch mehr Details dieser Datei kennen. Prüfen wir nun, welche Dateien sich in dem Verzeichnis befinden und wie groß sie sind mit `ls -lhS`:
 
 ~~~
 $ ls -lhS
