@@ -21,7 +21,7 @@ Keypoints:
 ---
 
 ## Das Layout von OpenRefine
-OpenRefine zeigt die Daten in einem Tabellenformat an. Jede Zeile steht normalerweise für einen "Datensatz" in den Daten, während jede Spalte eine Art von Information darstellt. Dies ähnelt der Darstellung von Daten in einer Tabellenkalkulation oder Datenbank. Wie in einer Tabellenkalkulation befinden sich die einzelnen Daten in "Zellen" an der Schnittstelle zwischen einer Zeile und einer Spalte.
+OpenRefine zeigt die Daten in einem Tabellenformat an. Jede Zeile steht normalerweise für einen "Datensatz" in den Daten, während jede Spalte eine Art von Information darstellt, wie zb in Excel.
 
 OpenRefine zeigt nur eine begrenzte Anzahl von Datenzeilen auf einmal an. Du kannst die Anzahl zwischen 5, 10 (Standard), 25 und 50 oben links in der Datentabelle einstellen. Du kannst durch die Datensätze navigieren, indem du die Navigationsoptionen Vorherige/Nächste/Erste/Letzte oben rechts in der Datentabelle benutzt.
 
@@ -32,7 +32,7 @@ Facette/Filter und Rückgängig/Redo.  Wir werden uns später im Workshop mit de
 Die meisten Optionen für die Arbeit mit Daten in OpenRefine werden über Dropdown-Menüs am oberen Rand der Datenspalten aufgerufen. Wenn du eine Option in einer bestimmten Spalte auswählst (z. B. um eine Änderung an den Daten vorzunehmen), wirkt sie sich auf alle Zellen in dieser Spalte aus. Wenn du Änderungen in mehreren Spalten vornehmen willst, musst du dies spaltenweise tun.
 
 ## Zeilen und Datensätze
-OpenRefine verfügt über zwei Modi zur Anzeige von Daten: "Zeilen" und "Datensätze". Im Moment befinden wir uns im Zeilenmodus, in dem jede Zeile einen einzelnen Datensatz darstellt - in diesem Fall einen Artikel. Im Modus "Datensätze" kann OpenRefine mehrere Zeilen miteinander verknüpfen, die zum selben Datensatz gehören. Die Zeilen werden den Datensätzen anhand der Werte in der ersten Spalte zugeordnet. Mehr dazu [Details zu Zeilen und Datensätzen in der OpenRefine-Dokumentation](https://docs.openrefine.org/manual/exploring#rows-vs-records).
+OpenRefine verfügt über zwei Modi zur Anzeige von Daten: "rows" und "records". Im Moment befinden wir uns im Zeilenmodus, in dem jede Zeile einen einzelnen Datensatz darstellt - in diesem Fall einen Artikel. Im Modus "Datensätze" kann OpenRefine mehrere Zeilen miteinander verknüpfen, die zum selben Datensatz gehören. Die Zeilen werden den Datensätzen anhand der Werte in der ersten Spalte zugeordnet. Mehr dazu [Details zu Zeilen und Datensätzen in der OpenRefine-Dokumentation](https://docs.openrefine.org/manual/exploring#rows-vs-records).
 
 ### Zellen aufteilen
 
@@ -40,23 +40,18 @@ Um zu sehen, wie das in der Praxis funktioniert, können wir die Autorennamen in
 
 Um in OpenRefine effektiv mit den Autorennamen arbeiten zu können, müssen wir jeden Namen in einer eigenen Zelle haben. Um die Namen in ihre eigenen Zellen aufzuteilen, können wir die Funktion "Mehrwertige Zellen aufteilen" verwenden:
 
-* Klicke auf das Dropdown-Menü oben in der Autorenspalte.
-* Wähle "Zellen bearbeiten->Mehrwertige Zellen aufteilen".
-* Gib in der Eingabeaufforderung das Symbol (\| ) ein und klicke auf "OK".
+* Click the dropdown menu at the top of the Author column
+* Choose `Edit cells->Split multi-valued cells`
+* In the prompt type the ( \| ) symbol and click `OK`
     * Beachte, dass die Zeilen weiterhin fortlaufend nummeriert sind.
-* Klicke auf die Option "Datensätze", um in den Modus "Datensätze" zu wechseln.
+* Click the `Records` option to change to Records mode
     * Beachte, dass sich die Nummerierung geändert hat, was darauf hinweist, dass sich mehrere Zeilen auf denselben Datensatz beziehen.
-
- Der Bildschirmausschnitt zeigt OpenRefine im Zeilenmodus (../assets/img/rows.png)
- Bildschirmfoto von OpenRefine im Zeilenmodus (../assets/img/records.png)
 
 Beachte in den Bildern oben den Unterschied zwischen: Zeilen mit demselben Titel erscheinen unter jedem gemeinsamen Titel, wobei die nummerierte Reihenfolge in der dritten Spalte von links unterbrochen wird. Gemeinsame Titel haben die gleiche Schattierung, was visuell schwer zu unterscheiden sein kann. Achte daher auf die Sterne und Fähnchen in den Spalten ganz links, die eine neue Zeile, also einen Artikel mit einem anderen Autor, anzeigen.
 
 Jetzt, wo wir mehrwertige Zellen aufteilen können, werden wir uns ansehen, wie wir sie wieder zusammenfügen.
 
 ### Zellen zusammenfügen
-
-Ein üblicher Arbeitsablauf mit mehrwertigen Zellen ist
 
 - Aufteilung der mehrwertigen Zellen in einzelne Zellen (wie oben beschrieben)
 - einzelne Zellen ändern/verfeinern/bereinigen
@@ -77,8 +72,7 @@ Records sind nun gleich, da wir keine Spalten mit geteilten (mehrwertigen) Zelle
 
 ### Auswahl eines guten Trennzeichens
 
-Der Wert, der mehrwertige Zellen trennt, wird als Trennzeichen oder Delimiter bezeichnet. Die Wahl eines guten
-Trennzeichen ist wichtig. In den Beispielen haben wir gesehen, dass das Pipe-Zeichen ( \| ) verwendet wurde.
+Die Wahl eines guten Trennzeichen ist wichtig. In den Beispielen haben wir gesehen, dass das Pipe-Zeichen ( \| ) verwendet wurde.
 
 Die Wahl des falschen Trennzeichens kann zu Problemen führen. Betrachte das folgende Beispiel für einen mehrwertigen Autor,
 mit einer Pipe als Trennzeichen.
@@ -119,7 +113,7 @@ Die Aufteilung durch ein Komma funktioniert bei Authors nicht, weil die Namen Ko
 
 >## Aufteilung von Fächern in separate Zellen
 >
->1. Welches Trennzeichen wird in den Zellen für die Themen verwendet?
+>1. Welches Trennzeichen wird in den Zellen für die Subjects verwendet?
 >2. wie würdest du diese Themen in einzelne Zellen aufteilen?
 >
 > > ## Lösung
