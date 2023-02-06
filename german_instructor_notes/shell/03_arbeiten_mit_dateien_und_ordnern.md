@@ -254,8 +254,8 @@ mv gulliver-backup.txt backup
 > Du kannst sowohl Text- als auch normale Shell-Befehle mit `echo` kombinieren, zum Beispiel den
 > `pwd`-Befehl, den du heute schon gelernt hast. Das machst du, indem du einen Shell
 > Befehl in `$(` und `)` einschließt, zum Beispiel `$(pwd)`. Probiere nun Folgendes aus:
-> `echo "Endlich ist es schön und sonnig am" $(Datum)`.
-> Beachte, dass die Ausgabe des Befehls `Datum` zusammen mit dem Text
+> `echo "Endlich ist es schön und sonnig am" $(date)`.
+> Beachte, dass die Ausgabe des Befehls `date` zusammen mit dem Text
 > den du angegeben hast. Das Gleiche kannst du mit einigen anderen Befehlen ausprobieren, die du bisher gelernt hast.
 >
 > **Warum denkst du, dass der echo-Befehl in der Shell-Umgebung eigentlich so wichtig ist?**
