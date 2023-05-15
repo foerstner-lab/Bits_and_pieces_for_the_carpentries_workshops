@@ -1,169 +1,116 @@
 ---
-Titel: "Arbeiten mit Freitext"
-Lehre: 20
+Titel: "Arbeiten mit freiem Text"
+Unterricht: 20
 Übungen: 40
 Fragen:
-- "Wie arbeiten wir mit komplexen Akten?"
+- "Wie arbeiten wir mit komplexen Dateien?"
 Ziele:
-- "Verwendung von Shell-Werkzeugen zur Bereinigung und Umwandlung von freiem Text".
-Schlüsselpunkte:
-- "Schalenwerkzeuge können wirkungsvoll kombiniert werden"
+- "Shell-Werkzeuge verwenden, um freien Text zu bereinigen und umzuwandeln"
+Kernpunkte:
+- "Shell-Werkzeuge können wirkungsvoll kombiniert werden"
 ---
 ### Arbeiten mit freiem Text
 
-Bisher haben wir uns damit befasst, wie man die Unix-Shell zum Manipulieren, Zählen und
-Mine tabellierte Daten. Einige Bibliotheksdaten, insbesondere digitalisierte Dokumente, sind viel unordentlicher als
-tabellarische Metadaten. Nichtsdestotrotz können viele der gleichen Techniken angewandt werden
-auf nicht-tabellierte Daten wie freien Text. Wir müssen sorgfältig darüber nachdenken
-was es ist, was wir zählen und wie wir das Beste aus der Unix-Shell herausholen können.
+Bisher haben wir uns angesehen, wie man die Unix-Shell benutzt, um Daten zu manipulieren, zu zählen und
+tabellarische Daten zu analysieren. Manche Bibliotheksdaten, vor allem digitalisierte Dokumente, sind viel unordentlicher als
+tabellarische Metadaten. Dennoch lassen sich viele der gleichen Techniken auch auf nicht-tabellarische Daten wie Freitext angewenden.
 
-Glücklicherweise gibt es da draußen eine Menge Leute, die diese Art von Arbeit machen, und wir
-können sich das, was sie tun, als Einführung in die Arbeit mit diesen komplexeren Akten ausleihen.
-Für diese letzte Übung werden wir also einen kleinen Sprung nach vorne machen
-von Schwierigkeiten zu einem Szenario, in dem wir nicht über alles lernen, was
-geschieht im Detail oder diskutiert ausführlich jedes Kommando. Wir werden
-Texte vorzubereiten und auseinander zu nehmen, um einige der möglichen Anwendungen der Unix-Shell zu demonstrieren. Und wo Befehle, von denen wir gelernt haben, benutzt werden,
-Ich habe Ihnen einen Teil der Rechenarbeit überlassen - bitte lesen Sie also in Ihren Notizen nach, falls Sie nicht weiterkommen!
+Für diese letzte Übung machen wir also einen kleinen Sprung nach vorne, und zwar
+ein Szenario, in dem wir nicht alles, was passiert, im Detail lernen oder jeden Befehl ausführlich besprechen. Wir werden Texte vorbereiten und auseinandernehmen, um einige der möglichen Anwendungen der Unix-Shell zu demonstrieren. Und wo die Befehle, die wir kennengelernt haben, verwendet werden.
 
-Bevor Sie weitermachen, sprechen Sie mit der Person neben Ihnen und wählen Sie aus, an welcher Art von Text Sie gemeinsam arbeiten möchten. Sie haben drei Möglichkeiten:
 
-- Ein Beispiel für von Hand transkribierten Text: *Gullivers Reisen* (1735)
-- Ein Beispiel für Text, der durch einen optischen Zeichenerkennungsprozess erfasst wurde: *Generaler Bericht über die Physiographie von Maryland. Eine Dissertation, etc. (Nachgedruckt aus Report of Maryland State Weather Service.) [Mit Karten und Abbildungen.]* 1898 (aus [https://doi.org/10.21250/db12](https://doi.org/10.21250/db12))
-- Ein Beispiel für eine Webseite: Piper's World (eine GeoCities-Seite von 1999, gespeichert unter [archive.org](http://wayback.archive.org/web/20091020080943/http:/geocities.com/Heartland/Hills/7649/diary.html))
+## Option 1: Handschriftlicher Text
 
-## Option 1: Von Hand transkribierter Text
+### Einen Text erfassen und bereinigen
 
-### Einen Text schnappen, aufräumen
+Wir werden mit der Datei `little_women.txt` arbeiten, die wir in erstellt haben.
+Du solltest (noch) im Verzeichnis `shell-lesson` arbeiten.
 
-Wir werden mit der Datei `gulliver.txt` arbeiten, die wir in der vorherigen Lektion erstellt haben.
-Sie sollten (noch) im Verzeichnis `hell-lesson` arbeiten.
-
-Sehen wir uns die Datei an.
+Schauen wir uns die Datei an.
 
 ~~~
-$ less -N gulliver.txt
+$ less -N little_women.txt
 ~~~
-{: .bash}
-~~~
-      1 <U+FEFF>The Project Gutenberg eBook, Gulliver's Travels, by Jonatha
-      1 n Swift
-      2
-      3
-      4 This eBook is for the use of anyone anywhere at no cost and with
-      5 almost no restrictions whatsoever.  You may copy it, give it away o
-      5 r
-      6 re-use it under the terms of the Project Gutenberg License included
-      7 with this eBook or online at www.gutenberg.org
-      8
-      9
-     10
-     11
-     12
-     13 Title: Gulliver's Travels
-     14        into several remote nations of the world
-     15
-     16
-     17 Author: Jonathan Swift
-     18
-     19
-     20
-     21 Release Date: June 15, 2009  [eBook #829]
-     22
-     23 Language: English
-     24
-     25 Character set encoding: UTF-8
-     26
-     27
-     28 ***START OF THE PROJECT GUTENBERG EBOOK GULLIVER'S TRAVELS***
-     29
-     30
-     31 Transcribed from the 1892 George Bell and Sons edition by David Pri
-     31 ce,
-     32 email ccx074@pglaf.org
-     33
-     34
-     35
-~~~
-{: .output}
 
-Wir beginnen mit dem Befehl `sed`. Der Befehl erlaubt es Ihnen, Dateien direkt zu bearbeiten.
+
+Wir beginnen mit dem Befehl `sed`. Mit diesem Befehl kannst du Dateien direkt bearbeiten.
 
 ~~~
 $ sed '9352,9714d' gulliver.txt > gulliver-nofoot.txt
 ~~~
 {: .bash}
 
-Das Kommando `sed` in Kombination mit dem `d`
-Wert schaut sich `gulliver.txt` an und löscht alle
-Werte zwischen den angegebenen Zeilen. Die Aktion `>` dann
-fordert das Skript zu diesem bearbeiteten Text in der angegebenen neuen Datei auf.
+Der Befehl `sed` in Kombination mit dem `d`
+Wert wird die Datei `gulliver.txt` durchsuchen und alle
+Werte zwischen den angegebenen Zeilen. Die `>`-Aktion veranlasst dann
+fordert das Skript auf, diesen bearbeiteten Text in die angegebene neue Datei zu schreiben.
 
 ~~~
 $ sed '1,37d' gulliver-nofoot.txt > gulliver-noheadfoot.txt
 ~~~
 {: .bash}
 
-Dies macht dasselbe wie vorher, aber für den Kopfball.
+Dies macht das Gleiche wie vorher, aber für die Kopfzeile.
 
-Sie haben jetzt einen saubereren Text. Der nächste Schritt ist
-sie noch weiter für eine rigorose Analyse vorzubereiten.
+Du hast jetzt einen saubereren Text. Der nächste Schritt ist
+ihn noch weiter für eine gründliche Analyse vorzubereiten.
 
-Wir verwenden jetzt den Befehl `tr`, der zum Übersetzen oder
-Löschen von Zeichen. Tippen und ausführen:
+Wir verwenden jetzt den Befehl `tr`, mit dem wir Zeichen übersetzen oder
+Löschen von Zeichen. Tippe und führe ihn aus:
 
 ~~~
 $ tr -d '[:punct:]\r' < gulliver-noheadfoot.txt > gulliver-noheadfootpunct.txt
 ~~~
 {: .bash}
 
-Dabei werden der Befehl translate und eine spezielle Syntax verwendet, um alle Satzzeichen zu entfernen
+Dies verwendet den Befehl translate und eine spezielle Syntax, um alle Satzzeichen zu entfernen
 (`[:punct:]`) und Zeilenumbrüche (`\r`).
-Es erfordert auch die Verwendung sowohl des Ausgabe-Redirects `>`, den wir gesehen haben, als auch des Eingabe-Redirects `<`, den wir nicht gesehen haben.
+Außerdem muss sowohl die Ausgabeumleitung `>`, die wir gesehen haben, als auch die Eingabeumleitung `<`, die wir nicht gesehen haben, verwendet werden.
 
 Schließlich wird der Text regularisiert, indem alle Großbuchstaben entfernt werden.
 
 ~~~
-$ tr [:upper:] [:lower:] < gulliver-noheadfootpunct.txt > gulliver-clean.txt
+$ tr '[:upper:]' '[:lower:]' < gulliver-noheadfootpunct.txt > gulliver-clean.txt
 ~~~
 {: .bash}
 
-Öffnen Sie die `gulliver-clean.txt` in einem Texteditor. Beachten Sie, wie der Text für die Analyse transformiert wurde.
+Öffne die `gulliver-clean.txt` in einem Texteditor. Beachte, wie der Text für die Analyse umgewandelt wurde.
 
-### Auseinanderziehen eines Textes, Worthäufigkeiten zählen
+### Einen Text auseinandernehmen, Worthäufigkeiten zählen
 
-Wir sind jetzt bereit, den Text auseinander zu ziehen.
+Jetzt können wir den Text zerlegen.
 
 ~~~
-$ tr ' ' ' '\n' < gulliver-clean.txt | sort | uniq -c | sort -nr > gulliver-final.txt
+$ tr ' ' '\n' < gulliver-clean.txt | sort | uniq -c | sort -nr > gulliver-final.txt
 ~~~
-{: .bash}
+{.bash}
 
-Hier haben wir die Rohre, die wir in [Zählen und Bergbau mit der Schale]({{{{ page.root }}{% link _episodes/05-counting-mining.md %}) gesehen haben, ausgiebig genutzt. Der erste Teil dieses Skripts verwendet wieder den Befehl translate, diesmal, um jede Leerstelle in `\n` zu übersetzen, was als neue Zeile gerendert wird. Jedes Wort in der Datei wird zu diesem Zeitpunkt eine eigene Zeile haben.
+Hier machen wir erweiterten Gebrauch von den Pipes, die wir in [Zählen und Mining mit der Shell]({{ page.root }}{% link _episodes/05-counting-mining.md %}) gesehen haben. Der erste Teil dieses Skripts verwendet wieder den translate-Befehl, diesmal um jedes Leerzeichen in `\n` zu übersetzen, was als neue Zeile dargestellt wird. Jedes Wort in der Datei hat jetzt seine eigene Zeile.
 
-Der zweite Teil verwendet den Befehl `sort`, um den Text von seiner ursprünglichen Reihenfolge in eine alphabetische Anordnung umzuordnen.
+Der zweite Teil verwendet den Befehl `sort`, um den Text aus seiner ursprünglichen Reihenfolge in eine alphabetische Anordnung zu bringen.
 
-Der dritte Teil benutzt `uniq`, ein weiteres neues Kommando, in Kombination mit dem Flag `-c`, um doppelte Zeilen zu entfernen und eine Wortzahl dieser Duplikate zu erzeugen.
+Im dritten Teil wird `uniq`, ein weiterer neuer Befehl, in Kombination mit dem Flag `-c` verwendet, um doppelte Zeilen zu entfernen und eine Wortzählung dieser Duplikate zu erstellen.
 
-Der vierte und letzte Teil sortiert den Text erneut nach der Anzahl der in Schritt drei erzeugten Duplikate.
+Der vierte und letzte Teil sortiert den Text wieder nach der Anzahl der Duplikate, die in Schritt drei erzeugt wurden.
 
 > ## Herausforderung
-> Es sind noch einige Interpunktionszeichen im Text vorhanden. Sie werden 'intelligente' oder 'geschweifte' Anführungszeichen genannt.
-> Können Sie sie mit `sed` entfernen?
+> Es sind noch einige Satzzeichen im Text übrig. Sie werden "intelligente" oder "geschweifte" Anführungszeichen genannt.
+> Kannst du sie mit `sed` entfernen?
 >
 > Hinweis: Diese Anführungszeichen gehören nicht zu den 128 Zeichen des ASCII-Standards,
-> so dass sie in der Datei mit einem anderen Standard, UTF-8, kodiert sind.
-> Während dies für `sed` kein Problem darstellt, versteht das Fenster, in das Sie tippen, möglicherweise nicht UTF-8.
-> Wenn dies der Fall ist, müssen Sie ein Bash-Skript verwenden; wir sind am Ende von Episode 4 darauf gestoßen,
-> 'Das Langweilige mit Schleifen automatisieren'.
+> deshalb werden sie in der Datei mit einem anderen Standard, UTF-8, kodiert.
+> Für `sed` ist das kein Problem, aber das Fenster, in das du eintippst, versteht vielleicht kein UTF-8.
+> In diesem Fall musst du ein Bash-Skript verwenden; wir haben es am Ende von Folge 4 kennengelernt,
+> "Das Mühsame mit Schleifen automatisieren".
 >
-> Zur Erinnerung: Benutzen Sie den Texteditor Ihrer Wahl, um eine Datei zu schreiben, die wie diese aussieht:
+> Zur Erinnerung: Verwende einen Texteditor deiner Wahl, um eine Datei zu schreiben, die wie folgt aussieht:
 > > ```
 > > #!/bin/bash
-> > # Dieses Script entfernt die Anführungszeichen aus gulliver-clean.txt und speichert das Ergebnis als gulliver-noquotes.txt
-> > (ersetzen Sie diese Zeile durch Ihre Lösung)
+> > # Dieses Skript entfernt die Anführungszeichen aus gulliver-clean.txt und speichert das Ergebnis als gulliver-noquotes.txt
+> > (ersetze diese Zeile mit deiner Lösung)
 > > ```
 > > {: .bash}
-> Speichern Sie die Datei als `remove-quotes.sh` und starten Sie sie von der Befehlszeile aus wie folgt:
+> Speichere die Datei als `remove-quotes.sh` und führe sie wie folgt von der Kommandozeile aus:
 > > ```
 > > bash remove-quotes.sh
 > > ```
@@ -172,31 +119,31 @@ Der vierte und letzte Teil sortiert den Text erneut nach der Anzahl der in Schri
 > > ## Lösung
 > > ```
 > > #!/bin/bash
-> > # Dieses Script entfernt die Anführungszeichen aus gulliver-clean.txt und speichert das Ergebnis als gulliver-noquotes.txt
+> > ## Dieses Skript entfernt die Anführungszeichen aus gulliver-clean.txt und speichert das Ergebnis als gulliver-noquotes.txt
 > > sed -Ee 's/[""'']//g' gulliver-clean.txt > gulliver-noquotes.txt
 > > ```
 > > {: .bash}
-> > Wenn das bei Ihnen nicht funktioniert, müssen Sie eventuell prüfen, ob Ihr Texteditor
-> > Dateien mit der UTF-8-Kodierung speichern.
-> {: .lösung}
-{: .herausfordern}
+> > Wenn das bei dir nicht funktioniert, musst du vielleicht überprüfen, ob dein Texteditor
+> > Dateien mit der Kodierung UTF-8 speichern kann.
+> {: .solution}
+{: .challenge}
 
-Wir haben den Text jetzt auseinandergenommen und eine
-zählen für jedes Wort darin. Das sind Daten, die wir stupsen und durchstöbern können
+Jetzt haben wir den Text auseinandergenommen und eine
+Zählung für jedes Wort im Text. Das sind Daten, die wir durchstöbern und
 und visualisieren, die die Grundlage für unsere Untersuchungen bilden können,
-und kann sich mit anderen auf die gleiche Weise bearbeiteten Texten vergleichen.
-Und wenn wir einen anderen Transformationssatz für
-eine andere Analyse, können wir zu `gulliver-clean.txt` zurückkehren, um mit dieser Arbeit zu beginnen.
+und mit anderen Texten vergleichen können, die auf die gleiche Weise bearbeitet wurden.
+Und wenn wir für eine andere Analyse eine andere Umwandlung durchführen müssen
+eine andere Analyse durchführen müssen, können wir zu "gulliver-clean.txt" zurückkehren, um diese Arbeit zu beginnen.
 
-Und das alles mit ein paar Befehlen auf einer ansonsten anspruchslosen, aber sehr mächtigen Befehlszeile.
+Und das alles mit ein paar Befehlen auf einer ansonsten unscheinbaren, aber sehr mächtigen Kommandozeile.
 
-## Option 2: Text mit optischer Zeichenerkennung
+## Option 2: Optische Zeichenerkennung von Text
 
-### Einen Text schnappen, aufräumen
+## Einen Text erfassen und bereinigen
 
-Wir werden mit `201403160_01_text.json` arbeiten.
+Wir arbeiten mit der Datei "201403160_01_text.json".
 
-Sehen wir uns die Akte an.
+Schauen wir uns die Datei an.
 
 ~~~
 $ less -N 201403160_01_text.json
@@ -205,93 +152,93 @@ $ less -N 201403160_01_text.json
 ~~~
       1 [[1, ""], [2, ""], [3, ""], [4, ""], [5, ""], [6, ""], [7, "A GENERAL RE
       1 PORT ON THE PHYSIOGRAPHY OF MARYLAND A DISSERTATION PRESENTED TO THE PRE
-      1 SIDENT AND FACULTY OF THE JOHNS HOPKINS UNIVERSITY FOR THE DEGREE OF DOC
+      1 SIDENTEN UND DER FAKULTÄT DER JOHNS HOPKINS UNIVERSITÄT FÜR DEN DOKTORGRAD DER
       1 TOR OF PHILOSOPHY BY CLEVELAND ABBE, Jr. BALTIMORE, MD. MAY, 1898."], [8
       1 , ""], [9, ""], [10, "A MAP S H OW I N G THE PHYSIOGRAPHIC PROVINCES OF
       1 MARYLAND AND Their Subdivisions Scale 1 : 2,000.000. 32 Miles-1 Inch"],
       1 [11, "A GENERAL REPORT ON THE PHYSIOGRAPHY OF MARYLAND A DISSERTATION PR
       1 ESENTED TO THE PRESIDENT AND FACULTY OF THE JOHNS HOPKINS UNIVERSITY FOR
-      1  THE DEGREE OF DOCTOR OF PHILOSOPHY BY CLEVELAND ABBE, Jr. BALTIMORE, MD
-      1 . MAY, 1898."], [12, "PRINTED BY tL%t jfricbcnrtxifti Compang BALTIMORE,
-      1  MD., U. S. A. REPRINTED FROM Report of Maryland State Weather Service,
-      1 Vol. 1, 1899, pp. 41-216."], [13, "A GENERAL REPORT ON THE PHYSIOGRAPHY
-      1 OF MARYLAND Physiographic Processes. INTRODUCTION. From the earliest tim
-      1 es men have observed more or less closely the various phenomena which na
-      1 ture presents, and have sought to find an explanation for them. Among th
-      1 e most interesting of these phe nomena have been those which bear on the
-      1  development of the sur face features of the earth or its topography. Im
-      1 pressed by the size and grandeur of the mountains, their jagged crests a
-      1 nd scarred sides, early students of geographical features were prone to
-      1 ascribe their origin to great convulsions of the earth's crust, earthqua
-      1 kes and vol canic eruptions. One generation after another comes and goes
-      1 , yet the mountains continue to rear their heads to the same heights, th
-      1 e rivers to run down the mountain sides in the same courses and follow t
+      1 DEN DOKTOR DER PHILOSOPHIE VON CLEVELAND ABBE, Jr. BALTIMORE, MD
+      1 . MAI, 1898."], [12, "PRINTED BY tL%t jfricbcnrtxifti Compang BALTIMORE,
+      1 MD, U. S. A. GEDRUCKT AUS dem Bericht des Maryland State Weather Service,
+      1 Vol. 1, 1899, pp. 41-216."], [13, "EIN ALLGEMEINER BERICHT ÜBER DIE PHYSIOGRAPHIE
+      1 VON MARYLAND Physiographische Prozesse. EINLEITUNG. Seit den frühesten Zeiten
+      1 en haben die Menschen die verschiedenen Phänomene der Natur mehr oder weniger genau
+      1 turelle Phänomene mehr oder weniger genau beobachtet und versucht, eine Erklärung für sie zu finden. Zu den
+      1 e interessantesten dieser Phänomene waren die, die sich auf die
+      1 Entwicklung der Oberflächenmerkmale der Erde oder ihrer Topografie. Im
+      1 Beeindruckt von der Größe und Erhabenheit der Berge, ihren zerklüfteten Kämmen und
+      1 und den zerklüfteten Flanken neigten die frühen Geographen dazu
+      1 ihren Ursprung auf große Erschütterungen der Erdkruste, Erdbeben
+      1 kes und Vulkanausbrüche. Eine Generation nach der anderen kommt und geht
+      1 und doch ragen die Berge immer wieder in dieselben Höhen, die
+      1 e Flüsse fließen in denselben Bahnen die Berghänge hinunter und folgen dem
 ~~~
 {: .output}
 
-Wir beginnen mit dem `tr'-Befehl, der zum Übersetzen oder
-Löschen von Zeichen. Tippen und ausführen:
+Wir beginnen mit dem Befehl `tr`, der zum Übersetzen oder
+Löschen von Zeichen. Gib ihn ein und führe ihn aus:
 
 ~~~
-$ tr -d [:punct:] < 201403160_01_text.json > 201403160_01_text-nopunct.txt
-~~~
-{: .bash}
-
-Dabei werden der Befehl translate und eine spezielle Syntax verwendet, um alle Satzzeichen zu entfernen.
-Es erfordert auch die Verwendung sowohl der Ausgabe-Umleitung `>`, die wir gesehen haben, als auch der Eingabe-Umleitung `<`, die wir nicht gesehen haben.
-
-Abschließend wird der Text regularisiert, indem alle Großbuchstaben entfernt werden.
-
-~~~
-$ tr [:upper:] [:lower:] < 201403160_01_text-nopunct.txt > 201403160_01_text-clean.txt
+$ tr -d '[:punct:]' < 201403160_01_text.json > 201403160_01_text-nopunct.txt
 ~~~
 {: .bash}
 
-Öffnen Sie die `201403160_01_text-clean.txt` in einem Texteditor. Beachten Sie, wie der Text für die Analyse transformiert wurde.
+Dies verwendet den Befehl translate und eine spezielle Syntax, um alle Satzzeichen zu entfernen.
+Außerdem muss sowohl die Ausgabeumleitung `>`, die wir gesehen haben, als auch die Eingabeumleitung `<`, die wir nicht gesehen haben, verwendet werden.
 
-### Auseinanderziehen eines Textes, Worthäufigkeiten zählen
+Schließlich wird der Text regularisiert, indem alle Großbuchstaben entfernt werden.
 
-Wir sind jetzt bereit, den Text auseinander zu ziehen.
+~~~
+$ tr '[:upper:]' '[:lower:]' < 201403160_01_text-nopunct.txt > 201403160_01_text-clean.txt
+~~~
+{: .bash}
+
+Öffne die `201403160_01_text-clean.txt` in einem Texteditor. Beachte, wie der Text für die Analyse umgewandelt wurde.
+
+### Einen Text auseinandernehmen, Worthäufigkeiten zählen
+
+Jetzt können wir den Text zerlegen.
 
 ~~~
 $ tr ' ' '\n' < 201403160_01_text-clean.txt | sort | uniq -c | sort -nr > 201403160_01_text-final.txt
 ~~~
 {: .bash}
 
-Hier haben wir die Rohre, die wir in [Zählen und Bergbau mit der Schale]({{{{ page.root }}{% link _episodes/05-counting-mining.md %}) gesehen haben, ausgiebig genutzt. Der erste Teil dieses Skripts verwendet wieder den Befehl translate, diesmal, um jede Leerstelle in `\n` zu übersetzen, was als neue Zeile gerendert wird. Jedes Wort in der Datei wird zu diesem Zeitpunkt eine eigene Zeile haben.
+Hier machen wir erweiterten Gebrauch von den Pipes, die wir in [Zählen und Mining mit der Shell]({{ page.root }}{% link _episodes/05-counting-mining.md %}) gesehen haben. Der erste Teil dieses Skripts verwendet wieder den translate-Befehl, diesmal um jedes Leerzeichen in `\n` zu übersetzen, was als neue Zeile dargestellt wird. Jedes Wort in der Datei hat jetzt seine eigene Zeile.
 
-Der zweite Teil verwendet den Befehl `sort`, um den Text von seiner ursprünglichen Reihenfolge in eine alphabetische Anordnung umzuordnen.
+Der zweite Teil verwendet den Befehl `sort`, um den Text aus seiner ursprünglichen Reihenfolge in eine alphabetische Anordnung zu bringen.
 
-Der dritte Teil benutzt `uniq`, ein weiteres neues Kommando, in Kombination mit dem Flag `-c`, um doppelte Zeilen zu entfernen und eine Wortzahl dieser Duplikate zu erzeugen.
+Im dritten Teil wird `uniq`, ein weiterer neuer Befehl, in Kombination mit dem Flag `-c` verwendet, um doppelte Zeilen zu entfernen und eine Wortzählung dieser Duplikate zu erstellen.
 
-Der vierte und letzte Teil sortiert den Text erneut nach der Anzahl der in Schritt drei erzeugten Duplikate.
+Der vierte und letzte Teil sortiert den Text wieder nach der Anzahl der Duplikate, die in Schritt drei erzeugt wurden.
 
-**Anmerkung: Ihre endgültige Ausgabe wird ein Problem haben - nicht alle gezählten Wörter sind echte Wörter (siehe die Wörter, die nur 1 oder 2 Mal gezählt wurden). Um besser zu verstehen, was passiert ist, suchen Sie online, um mehr über die optische Zeichenerkennung von Texten zu erfahren**
+**Hinweis: Deine endgültige Ausgabe wird ein Problem haben - nicht alle gezählten Wörter sind echte Wörter (siehe die Wörter, die nur 1 oder 2 Mal gezählt wurden). Um besser zu verstehen, was passiert ist, kannst du im Internet mehr über die optische Zeichenerkennung von Texten herausfinden**
 
-So oder so haben wir jetzt den Text auseinandergenommen und eine
-zählen für jedes Wort darin. Das sind Daten, die wir stupsen und durchstöbern können
+Auf jeden Fall haben wir den Text auseinandergenommen und eine
+Zählung für jedes Wort erstellt. Das sind Daten, die wir durchstöbern und
 und visualisieren, die die Grundlage für unsere Untersuchungen bilden können,
-und kann sich mit anderen auf die gleiche Weise bearbeiteten Texten vergleichen.
-Und wenn wir einen anderen Transformationssatz für
-eine andere Analyse, können wir zu `201403160_01_text-clean.txt` zurückkehren, um mit dieser Arbeit zu beginnen.
+und mit anderen Texten vergleichen können, die auf die gleiche Weise bearbeitet wurden.
+Und wenn wir für eine andere Analyse eine andere Umwandlung durchführen müssen
+eine andere Analyse durchführen müssen, können wir zu `201403160_01_text-clean.txt` zurückkehren, um diese Arbeit zu beginnen.
 
-Und das alles mit ein paar Befehlen auf einer ansonsten anspruchslosen, aber sehr mächtigen Befehlszeile.
+Und das alles mit ein paar Befehlen auf einer ansonsten unscheinbaren, aber sehr mächtigen Kommandozeile.
 
 ## Option 3: Eine Webseite
 
-### Einen Text schnappen, aufräumen
+### Einen Text greifen, ihn bereinigen
 
-Wir werden mit `Tagebuch.html` arbeiten.
+Wir werden mit `diary.html` arbeiten.
 
-Sehen wir uns die Datei an.
+Schauen wir uns die Datei an.
 
 ~~~
-$ less -N diary.html
+$ less -N tagebuch.html
 ~~~
 {: .bash}
 ~~~
-      1 <!-- This document was created with HomeSite v2.5 -->
-      2 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+      1 <!-- Dieses Dokument wurde mit HomeSite v2.5 erstellt -->
+      2 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//DE">
       3 <html>
       4
       5 <head>
@@ -304,143 +251,143 @@ $ less -N diary.html
      10 ss"/>
      11
      12
-     13 <title>Piper's Diary</title>
+     13 <title>Pipers Tagebuch</title>
      14 <meta name="description"
-     15 content="Come visit our shih tzu, Piper.  He has his very own photo gall
-     15 ary, monthly diary, newsletter, and dog site award.  He also maintains d
-     15 og book reviews and quotations.  Come check him out!">
+     15 content="Komm und besuche unseren Shih Tzu, Piper.  Er hat seine ganz eigene Fotogalerie
+     15 ary, ein monatliches Tagebuch, einen Newsletter und einen Hundeseiten-Award.  Außerdem unterhält er d
+     15 og Buchbesprechungen und Zitate.  Schau ihn dir an!">
      16 <meta name="keywords"
-     17 content="shih tzu, dog, pet, quotations, award, diary, advice, book, rev
+     17 content="shih tzu, hund, haustier, zitate, award, tagebuch, ratschläge, buch, rev
      17 iew, piper">
      18 <style TYPE="text/css" TITLE="Basic Fonts">
 
 ~~~
 {: .output}
 
-Wir beginnen mit dem Befehl `sed`. Der Befehl erlaubt es Ihnen, Dateien direkt zu bearbeiten.
+Wir beginnen mit dem Befehl `sed`. Der Befehl ermöglicht es dir, Dateien direkt zu bearbeiten.
 
 ~~~
 $ sed '265,330d' diary.html > diary-nofoot.txt
 ~~~
 {: .bash}
 
-Das Kommando `sed` in Kombination mit dem `d`
-Wert schaut sich `diary.html` an und löscht alle
-Werte zwischen den angegebenen Zeilen. Die Aktion `>` dann
-fordert das Skript zu diesem bearbeiteten Text in der angegebenen neuen Datei auf.
+Der Befehl `sed` in Kombination mit dem `d`
+Wert sieht sich `diary.html` an und löscht alle
+Werte zwischen den angegebenen Zeilen. Die Aktion `>` veranlasst dann
+fordert das Skript auf, diesen bearbeiteten Text in die angegebene neue Datei zu schreiben.
 
 ~~~
 $ sed '1,221d' diary-nofoot.txt > diary-noheadfoot.txt
 ~~~
 {: .bash}
 
-Dies macht dasselbe wie vorher, aber für den Kopfball.
+Dies macht das Gleiche wie vorher, aber für die Kopfzeile.
 
-Sie haben jetzt einen saubereren Text. Der nächste Schritt ist
-sie noch weiter für eine rigorose Analyse vorzubereiten.
+Du hast jetzt einen saubereren Text. Der nächste Schritt ist
+den Text noch weiter für eine strenge Analyse vorzubereiten.
 
-Zuerst werden wir alle html-Tags entfernen. Tippen und ausführen:
+Zuerst entfernen wir alle html-Tags. Tippe und führe aus:
 
 ~~~
 $ sed -e 's/<[^>]*>//g' diary-noheadfoot.txt > diary-notags.txt
 ~~~
 {: .bash}
 
-Hier verwenden wir einen regulären Ausdruck (siehe die [Library Carpentry Lektion über reguläre Ausdrücke]({{{{ page.root }}}/lc-data-intro/04-regular-expressions/), um alle gültigen html-Tags (alles innerhalb spitzer Klammern) zu finden und sie zu löschen. Dies ist ein komplexer regulärer Ausdruck, machen Sie sich nicht allzu viele Gedanken darüber, wie er funktioniert! Das Skript erfordert auch die Verwendung sowohl des Output-Redirects `>`, den wir gesehen haben, als auch des Input-Redirects `<`, den wir nicht gesehen haben.
+Hier verwenden wir einen regulären Ausdruck (siehe die [Lektion über reguläre Ausdrücke in der Bibliothek](https://librarycarpentry.org/lc-data-intro/01-regular-expressions/), um alle gültigen html-Tags (alles innerhalb von spitzen Klammern) zu finden und zu löschen). Dies ist ein komplexer regulärer Ausdruck, also mach dir nicht zu viele Gedanken darüber, wie er funktioniert! Das Skript erfordert außerdem die Verwendung des Output Redirects `>`, den wir gesehen haben, und des Input Redirects `<`, den wir nicht gesehen haben.
 
-Wir beginnen mit der Verwendung des Befehls `tr`, der für die Übersetzung oder
-Löschen von Zeichen. Tippen und ausführen:
+Wir beginnen mit dem Befehl `tr`, der zum Übersetzen oder
+Löschen von Zeichen. Gib ihn ein und führe ihn aus:
 
 ~~~
-$ tr -d '[:punct:]\r' < diary-notags.txt > diary-notagspunct.txt
+$ tr -d '[:punct:]\r' < tagebuch-notags.txt > tagebuch-notagspunct.txt
 ~~~
 {: .bash}
 
-Dabei werden der Befehl translate und eine spezielle Syntax verwendet, um alle Satzzeichen zu entfernen
+Dies verwendet den Befehl translate und eine spezielle Syntax, um alle Satzzeichen zu entfernen
 (`[:punct:]`) und Zeilenumbrüche (`\r`).
 
 Schließlich wird der Text regularisiert, indem alle Großbuchstaben entfernt werden.
 
 ~~~
-$ tr [:upper:] [:lower:] < diary-notagspunct.txt > diary-clean.txt
+$ tr '[:upper:]' '[:lower:]' < tagebuch-notagspunct.txt > tagebuch-clean.txt
 ~~~
 {: .bash}
 
-Öffnen Sie die Datei `diary-clean.txt` in einem Texteditor. Notieren Sie, wie der Text für die Analyse transformiert wurde.
+Öffne die `diary-clean.txt` in einem Texteditor. Beachte, wie der Text für die Analyse umgewandelt wurde.
 
-### Auseinanderziehen eines Textes, Worthäufigkeiten zählen
+### Einen Text auseinandernehmen, Worthäufigkeiten zählen
 
-Wir sind jetzt bereit, den Text auseinander zu ziehen.
+Jetzt können wir den Text zerlegen.
 
 ~~~
 $ tr ' ' '\n' < diary-clean.txt | sort | uniq -c | sort -nr > diary-final.txt
 ~~~
 {: .bash}
 
-Hier haben wir die Rohre, die wir in [Zählen und Bergbau mit der Schale]({{{{ page.root }}{% link _episodes/05-counting-mining.md %}) gesehen haben, ausgiebig genutzt. Der erste Teil dieses Skripts verwendet wieder den Befehl translate, diesmal, um jede Leerstelle in `\n` zu übersetzen, was als neue Zeile gerendert wird. Jedes Wort in der Datei wird zu diesem Zeitpunkt eine eigene Zeile haben.
+Hier machen wir erweiterten Gebrauch von den Pipes, die wir in [Zählen und Mining mit der Shell] ({{ page.root }}{% link _episodes/05-counting-mining.md %}) gesehen haben. Der erste Teil dieses Skripts verwendet wieder den translate-Befehl, diesmal um jedes Leerzeichen in `\n` zu übersetzen, was als neue Zeile dargestellt wird. Jedes Wort in der Datei hat jetzt seine eigene Zeile.
 
-Der zweite Teil verwendet den Befehl `sort`, um den Text von seiner ursprünglichen Reihenfolge in eine alphabetische Anordnung umzuordnen.
+Der zweite Teil verwendet den Befehl `sort`, um den Text aus seiner ursprünglichen Reihenfolge in eine alphabetische Anordnung zu bringen.
 
-Der dritte Teil benutzt `uniq`, ein weiteres neues Kommando, in Kombination mit dem Flag `-c`, um doppelte Zeilen zu entfernen und eine Wortzahl dieser Duplikate zu erzeugen.
+Im dritten Teil wird `uniq`, ein weiterer neuer Befehl, in Kombination mit dem Flag `-c` verwendet, um doppelte Zeilen zu entfernen und eine Wortzählung dieser Duplikate zu erstellen.
 
-Der vierte und letzte Teil sortiert den Text erneut nach der Anzahl der in Schritt drei erzeugten Duplikate.
+Der vierte und letzte Teil sortiert den Text wieder nach der Anzahl der Duplikate, die in Schritt drei erzeugt wurden.
 
-Wir haben nun den Text auseinandergenommen und eine Liste der Dubletten erstellt.
-zählen für jedes Wort darin. Das sind Daten, die wir stupsen und durchstöbern können
+Jetzt haben wir den Text auseinandergenommen und eine
+Zählung für jedes Wort im Text. Das sind Daten, die wir durchstöbern und
 und visualisieren, die die Grundlage für unsere Untersuchungen bilden können,
-und kann sich mit anderen auf die gleiche Weise bearbeiteten Texten vergleichen.
-Und wenn wir einen anderen Transformationssatz für
-eine andere Analyse, können wir zu `Diary-final.txt` zurückkehren, um mit dieser Arbeit zu beginnen.
+und mit anderen Texten vergleichen können, die auf die gleiche Weise bearbeitet wurden.
+Und wenn wir für eine andere Analyse eine andere Umwandlung durchführen müssen
+eine andere Analyse durchführen müssen, können wir zu `diary-final.txt` zurückkehren, um diese Arbeit zu beginnen.
 
-Und das alles mit ein paar Befehlen auf einer ansonsten unscheinbaren, aber sehr mächtigen Befehlszeile.
+Und das alles mit ein paar Befehlen auf einer ansonsten unscheinbaren, aber sehr mächtigen Kommandozeile.
 
-## Wohin als Nächstes?
+## Wo geht's weiter?
 
-Deborah S. Ray und Eric J. Ray, *Unix und Linux: visuelle Schnellstartanleitung*, 4. Auflage (2009).
-Unschätzbar wertvoll (und nicht teuer) als Nachschlagewerk - besonders wenn Sie die Kommandozeile nur sporadisch benutzen!
+Deborah S. Ray und Eric J. Ray, *Unix and Linux: visual quickstart guide*, 4. Auflage (2009).
+Als Nachschlagewerk von unschätzbarem Wert (und nicht teuer) - vor allem, wenn du die Kommandozeile nur sporadisch benutzt!
 
-[Der Kommandozeilen-Crashkurs](https://learncodethehardway.org/unix/)
-'UNIX auf die harte Tour lernen' - gut geeignet, um an die Grundlagen zu erinnern.
+[The Command Line Crash Course](https://learncodethehardway.org/unix/)
+'Learn UNIX the Hard Way' - gut, um sich an die Grundlagen zu erinnern.
 
-[Langweilige Sachen automatisieren] (https://automatetheboringstuff.com/)
+[Automate the Boring Stuff](https://automatetheboringstuff.com/)
 
-Ein weiterer Coursera-Kurs, [Programmieren für jedermann (Python)] (https://www.coursera.org/course/pythonlearn)
-ist verfügbar und dauert 10 Wochen, wenn Sie 2-4 Stunden pro Woche zur Verfügung haben.
-Python ist in der Forschungsprogrammierung beliebt, da es lesbar, relativ einfach und sehr leistungsfähig ist.
+Ein weiterer Coursera-Kurs, [Programming for Everybody (Python)](https://www.coursera.org/course/pythonlearn)
+ist verfügbar und dauert 10 Wochen, wenn du 2-4 Stunden pro Woche Zeit hast.
+Python ist in der Forschungsprogrammierung sehr beliebt, da es gut lesbar, relativ einfach und sehr leistungsstark ist.
 
-Bill Turkel und die Digital History-Gemeinschaft im weiteren Sinne.
-Die zweite Lektion, die Sie heute gehalten haben, basierte auf einer Lektion, die Bill auf [seiner Website] (https://williamjturkel.net/2013/06/15/basic-text-analysis-with-command-line-tools-in-linux/) gehalten hat, und Bill ist auch allgemeiner Herausgeber des [Programmierhistoriker] (https://programminghistorian.org/project-team). Der Programming Historian ist ein offenes, gemeinschaftlich verfasstes Buch, das darauf abzielt, Historikern Programmierunterricht zu erteilen. Obwohl sich die Lektionen um Probleme drehen, die Historiker haben, haben ihre Lektionen - die verschiedene Programmiersprachen abdecken - eine breite Anwendbarkeit - in der Tat basiert der heutige Kurs auf zwei Lektionen, die ich zusammen mit Ian Milligan, einem Historiker in Waterloo, Kanada, für ProgHist geschrieben habe. Bill hat auch ein wunderbares Tutorial über ['Named Entity Recognition with Command Line Tools in Linux'] (http://williamjturkel.net/2013/06/30/named-entity-recognition-with-command-line-tools-in-linux/), das ich sehr empfehle, wenn Sie Namen, Orte und Organisationen in Textdateien automatisch finden, markieren und zählen wollen...
+Bill Turkel und die Digital History Community im Allgemeinen.
+Die zweite Lektion, die du heute gemacht hast, basierte auf einer Lektion, die Bill auf [seiner Website](https://williamjturkel.net/2013/06/15/basic-text-analysis-with-command-line-tools-in-linux/) anbietet. Bill ist auch einer der Herausgeber des [Programming Historian](https://programminghistorian.org/project-team). The Programming Historian ist ein offenes, gemeinschaftliches Buch mit dem Ziel, Historikern Programmierunterricht zu geben. Obwohl sich die Lektionen an den Problemen von Historikern orientieren, sind die Lektionen - die verschiedene Programmiersprachen abdecken - breit anwendbar. Der heutige Kurs basiert auf zwei Lektionen, die ich zusammen mit Ian Milligan, einem Historiker in Waterloo, Kanada, für ProgHist geschrieben habe. Bill hat auch ein wunderbares Tutorial über ['Named Entity Recognition with Command Line Tools in Linux'] (http://williamjturkel.net/2013/06/30/named-entity-recognition-with-command-line-tools-in-linux/), das ich dir wärmstens empfehlen kann, wenn du Namen, Orte und Organisationen in Textdateien automatisch finden, markieren und zählen möchtest...
 
-## Schlussfolgerung
+## Fazit
 
-In dieser Sitzung haben Sie gelernt, sich in der Unix-Shell zurechtzufinden, einige
-einfaches Zählen, Verketten und Löschen von Dateien, um datenübergreifend nach gemeinsamen
-Strings, um Ergebnisse und abgeleitete Daten zu speichern und Textdaten für eine strenge rechnergestützte Analyse vorzubereiten.
+In dieser Lektion hast du gelernt, dich in der Unix-Shell zurechtzufinden, einige
+Dateizählung, -verkettung und -löschung, die Abfrage von Daten nach allgemeinen
+Daten nach gemeinsamen Zeichenketten abzufragen, Ergebnisse und abgeleitete Daten zu speichern und Textdaten für eine strenge rechnerische Analyse vorzubereiten.
 
-Dies kratzt nur an der Oberfläche dessen, wozu die Unix-Umgebung in der Lage ist.
-Es ist jedoch zu hoffen, dass diese Sitzung einen Vorgeschmack geliefert hat, der ausreicht, um
-weitere Untersuchungen und produktives Spiel anregen.
+Das ist nur ein kleiner Ausschnitt dessen, was die Unix-Umgebung zu leisten vermag.
+Wir hoffen jedoch, dass diese Sitzung einen Vorgeschmack gegeben hat, der
+zu weiteren Untersuchungen und produktiven Spielen anregen.
 
-Denken Sie daran, dass das volle Potenzial, das die Instrumente bieten können, möglicherweise nur
-entstehen, wenn diese Fähigkeiten in reale Projekte eingebettet werden. Nichtsdestotrotz,
-Die Möglichkeit, Tausende von Dateien zu manipulieren, zu zählen und zu verminen, ist äußerst nützlich.
-Selbst eine große Sammlung von Dateien, die keine alphanumerischen Daten enthalten
-Elemente, wie z.B. Bilddateien, können leicht sortiert, ausgewählt und abgefragt werden
-über den Umfang der Beschreibung, der in jedem Dateinamen enthaltenen Metadaten.
-Wenn nicht eine Voraussetzung für die Arbeit mit Unix, dann nehmen Sie sich die Zeit
-Ihre Daten auf konsistente und vorhersehbare Weise zu strukturieren, ist
-sicherlich ein bedeutender Schritt, um das Beste aus Unix herauszuholen
-Befehle. Und wenn Sie einen Weg finden können, die Unix-Shell regelmäßig zu benutzen - vielleicht
-nur um Dateien zu kopieren oder zu ändern - Sie halten die Grundlagen frisch, was bedeutet, dass
-wenn Sie das nächste Mal Anlass haben, die Unix-Shell für komplexere Befehle zu verwenden,
-sollten Sie nicht alles noch einmal lernen müssen.
+Vergiss nicht, dass das volle Potenzial der Tools erst dann zum Tragen kommt
+erst dann zum Vorschein kommen, wenn du diese Fähigkeiten in echte Projekte einbindest. Nichtsdestotrotz,
+die Möglichkeit, Tausende von Dateien zu manipulieren, zu zählen und zu durchsuchen, ist äußerst nützlich.
+Selbst eine große Sammlung von Dateien, die keine alphanumerischen Datenelemente enthalten
+nummerische Datenelemente enthalten, wie z. B. Bilddateien, lassen sich leicht sortieren, auswählen und abfragen.
+der Metadaten, die in jedem Dateinamen enthalten sind.
+Wenn das keine Voraussetzung für die Arbeit mit Unix ist, solltest du dir die Zeit nehmen
+Daten auf konsistente und vorhersehbare Weise zu strukturieren, ist
+ist sicherlich ein wichtiger Schritt, um das Beste aus den Unix
+Befehle zu nutzen. Und wenn du einen Weg findest, die Unix-Shell regelmäßig zu benutzen - vielleicht
+vielleicht nur zum Kopieren oder Ändern von Dateien - hältst du die Grundlagen frisch, sodass du
+das nächste Mal, wenn du die Unix-Shell für komplexere Befehle verwenden musst,
+brauchst du sie nicht noch einmal neu zu lernen.
 
-## References
+## Referenzen
 
-James Baker and Ian Milligan, 'Counting and mining research data with Unix', *The Programming Historian* ([2014](https://programminghistorian.org/lessons/research-data-with-unix))
+James Baker und Ian Milligan, 'Counting and mining research data with Unix', *The Programming Historian* ([2014](https://programminghistorian.org/lessons/research-data-with-unix))
 
-Ian Milligan and James Baker, 'Introduction to the Bash Command Line', *The Programming Historian* ([2014](https://programminghistorian.org/lessons/intro-to-bash))
+Ian Milligan und James Baker, 'Introduction to the Bash Command Line', *The Programming Historian* ([2014](https://programminghistorian.org/lessons/intro-to-bash))
 
-William J. Turkel, 'Named Entity Recognition with Command Line Tools in Linux' ([30 June 2013](http://williamjturkel.net/2013/06/30/named-entity-recognition-with-command-line-tools-in-linux/)). The section 'NER Demo' is adapted from this and shared under a [Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-nc-sa/3.0/).
+William J. Turkel, 'Named Entity Recognition with Command Line Tools in Linux' ([30. Juni 2013](http://williamjturkel.net/2013/06/30/named-entity-recognition-with-command-line-tools-in-linux/)). Der Abschnitt 'NER-Demo' ist hiervon abgeleitet und steht unter einer [Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-nc-sa/3.0/).
 
-William J. Turkel, 'Basic Text Analysis with Command Line Tools in Linux' ([15 June 2013](https://williamjturkel.net/2013/06/15/basic-text-analysis-with-command-line-tools-in-linux/)). The sections 'Grabbing a text, cleaning it up' and 'Pulling a text apart, counting word frequencies' are adapted from this and shared under a [Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-nc-sa/3.0/).
+William J. Turkel, 'Basic Text Analysis with Command Line Tools in Linux' ([15. Juni 2013](https://williamjturkel.net/2013/06/15/basic-text-analysis-with-command-line-tools-in-linux/)). Die Abschnitte "Einen Text greifen, ihn bereinigen" und "Einen Text auseinanderziehen, Worthäufigkeiten zählen" sind hiervon abgeleitet und werden unter einer [Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-nc-sa/3.0/) geteilt.
