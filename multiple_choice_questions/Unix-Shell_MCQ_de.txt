@@ -9,3 +9,4 @@ Wofür steht der Befehl "rm" und was macht er?
 A) "Read manual" - Handbücher lesen
 B) "Remove" - Löscht Ordner/Dateien
 ANSWER: B
+
