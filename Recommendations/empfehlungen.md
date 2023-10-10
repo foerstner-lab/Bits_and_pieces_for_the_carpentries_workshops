@@ -1,4 +1,9 @@
 # Empfehlungen rund um die Workshop Themen
+## Offizielle Library Carpentry-Lektionen
+
+- [Shell](https://librarycarpentry.org/lc-shell/)
+- [Git](https://librarycarpentry.org/lc-git/)
+- [Python](https://librarycarpentry.org/lc-python-intro/)
 
 ## Python-Library-Empfehlungen
 Python - Standard Libraries - Third Party Libraries
@@ -27,6 +32,13 @@ Python - Standard Libraries - Third Party Libraries
 - Buch https://git-scm.com/book/en/v2
 - [Oh Shit, Git?!?](https://ohshitgit.com/de)
 - [GitHub Pages](https://pages.github.com/)
+- [Definitely not lazy Comic](https://www.commitstrip.com/en/2017/02/28/definitely-not-lazy/)
+- [Why Microsoft needed to make Windows run Linux software](https://arstechnica.com/information-technology/2016/04/why-microsoft-needed-to-make-windows-run-linux-software/)
+- [Wikipedia Auszeichnungssprache](https://de.wikipedia.org/wiki/Auszeichnungssprache)
+- [CR LF erklärt](https://www.youtube.com/watch?v=lN7bFt05pxc)
+- [What is CRLF? Carriage Return?](https://www.youtube.com/watch?v=VdVvXr5ZigM)
+- [What's a Carriage and Who's Feeding it Lines? CRLF - Computer Stuff They Didn't Teach You #1](https://www.youtube.com/watch?v=TtiBhktB4Qg)
+- [Python built-ins worth learning](https://treyhunner.com/2019/05/python-builtins-worth-learning/)
 
 ### Podcasts
 - [Command Line Heros](https://www.redhat.com/en/command-line-heroes) (en) - "Command Line Heroes tells the epic true tales of how developers, programmers, hackers, geeks, and open source rebels are revolutionizing the technology landscape." Z. B.
@@ -69,6 +81,7 @@ Python - Standard Libraries - Third Party Libraries
  - kleine alltägliche Aufgabe finden, die man mit Hilfe des Gelernten lösen kann, so das sie automatisch abläuft
  - [HackyHour](https://hackyhour.github.io/Cologne/) organisieren 
  - Bei Problemen melden (wir helfen gerne falls möglich)
+- [Command Line Challenge](https://cmdchallenge.com/)
 
 ### Beispiele für Einsatz von Python(-Skripten) im Biblioteksalltag:
 
@@ -120,3 +133,17 @@ ZBMED-Konfiguration:
 ```
 $ /c/ProgramData/Anaconda3/python
 ```
+## Unix Subsystem unter Windows 10
+- https://docs.microsoft.com/de-de/windows/wsl/install-win10
+- [Why Microsoft needed to make Windows run Linux software](https://arstechnica.com/information-technology/2016/04/why-microsoft-needed-to-make-windows-run-linux-software/)
+
+## Einen Alias für einen langen Pfad erstellen 
+(damit muss nicht der lange Pfadname "/c/ProgramData/Anaconda3/python" angegeben werden):
+[Alias für einen langen Pfad erstellen - Stackoverflow](https://stackoverflow.com/questions/17958567/how-to-make-an-alias-for-a-long-path)
+
+## Personen aus unseren Beispielen
+
+- [Emmy Noether](https://de.wikipedia.org/wiki/Emmy_Noether)
+- [Ada Lovelace](https://de.wikipedia.org/wiki/Ada_Lovelace)
+- [Charles Darwin](https://de.wikipedia.org/wiki/Charles_Darwin)
+- [Stephen Hawking](https://de.wikipedia.org/wiki/Stephen_Hawking)
