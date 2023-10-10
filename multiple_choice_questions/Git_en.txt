@@ -1,29 +1,29 @@
-Which command is used in Git to stage changes for a commit?
-
-A) git branch
-B) git checkout
-C) git commit
-D) git add
-E) git pull
-
-
-
-What is the purpose of the "git clone" command in Git?
-
-A) To create a new Git repository.
-B) To delete a remote repository.
-C) To download a copy of an existing Git repository.
-D) To commit changes to a local repository.
-E) To merge branches in a repository.
+::Staging changes
+::Which command is used in Git to stage changes for a commit? {
+~git branch
+~git checkout
+~git commit
+=git add
+~git pull
+}
 
 
-What is the purpose of the "git pull" command in Git?
+::git clone
+::What is the purpose of the "git clone" command in Git?{
+~To create a new Git repository.
+~To delete a remote repository.
+=To download a copy of an existing Git repository.
+~To commit changes to a local repository.
+~To merge branches in a repository.
+}
 
-A) To create a new branch.
-B) To push changes to a remote repository.
-C) To merge changes from a remote repository into the current branch.
-D) To delete the current branch.
-E) To undo the last Git commit.
-
+::git pull
+::What is the purpose of the "git pull" command in Git? {
+~To create a new branch.
+~To push changes to a remote repository.
+=To merge changes from a remote repository into the current branch.
++To delete the current branch.
+~To undo the last Git commit.
+}
 
 
