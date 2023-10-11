@@ -1,4 +1,5 @@
-// Which command is used to list files and directories in the current directory in Unix Shell?
+// Which command is used to list files and directories in the current directory in Unix Shell? [tag:shell] [tag:basic]
+::Which command is used to list files and directories in the current directory in Unix Shell?
 {
     =ls
     ~cd
@@ -7,7 +8,8 @@
     ~mkdir
 }
 
-// What command is used to change the current directory in Unix Shell?
+// What command is used to change the current directory in Unix Shell? [tag:shell] [tag:basic]
+::What command is used to change the current directory in Unix Shell?
 {
     ~ls
     =cd
@@ -16,7 +18,8 @@
     ~rm
 }
 
-// Which command is used to create a new directory in Unix Shell?
+// Which command is used to create a new directory in Unix Shell? [tag:shell] [tag:basic]
+::Which command is used to create a new directory in Unix Shell?
 {
     ~ls
     ~cd
@@ -25,7 +28,8 @@
     ~touch
 }
 
-// What is the purpose of the "pwd" command in Unix Shell?
+// What is the purpose of the "pwd" command in Unix Shell? [tag:shell] [tag:basic]
+::What is the purpose of the "pwd" command in Unix Shell?
 {
     =Print working directory
     ~Remove a file
@@ -34,7 +38,8 @@
     ~Change directory
 }
 
-// Which command is used to copy files or directories in Unix Shell?
+// Which command is used to copy files or directories in Unix Shell? [tag:shell] [tag:basic]
+::Which command is used to copy files or directories in Unix Shell?
 {
     ~mv
     =cp
@@ -43,7 +48,8 @@
     ~ls
 }
 
-// What does the "echo" command do in Unix Shell?
+// What does the "echo" command do in Unix Shell? [tag:shell] [tag:basic]
+::What does the "echo" command do in Unix Shell?
 {
     ~List directory contents
     ~Copy files
@@ -52,7 +58,8 @@
     ~Move files and directories
 }
 
-// How can you display the contents of a text file in Unix Shell?
+// How can you display the contents of a text file in Unix Shell? [tag:shell] [tag:basic]
+::How can you display the contents of a text file in Unix Shell?
 {
     =cat
     ~cp
@@ -61,7 +68,8 @@
     ~mv
 }
 
-// Which command is used to remove a file in Unix Shell?
+// Which command is used to remove a file in Unix Shell? [tag:shell] [tag:basic]
+::Which command is used to remove a file in Unix Shell?
 {
     ~ls
     ~cd
@@ -71,7 +79,8 @@
 }
 
 
-// What is the purpose of the "touch" command in Unix Shell?
+// What is the purpose of the "touch" command in Unix Shell? [tag:shell] [tag:basic]
+::What is the purpose of the "touch" command in Unix Shell?
 {
     ~Create a new directory
     ~Rename a file
@@ -80,7 +89,8 @@
     ~List directory contents
 }
 
-// Which command is used to move or rename files and directories in Unix Shell?
+// Which command is used to move or rename files and directories in Unix Shell? [tag:shell] [tag:basic]
+::Which command is used to move or rename files and directories in Unix Shell?
 {
     ~cp
     =mv
@@ -89,7 +99,8 @@
     ~cd
 }
 
-// What is the purpose of the "man" command in Unix Shell?
+// What is the purpose of the "man" command in Unix Shell? [tag:shell] [tag:basic]
+::What is the purpose of the "man" command in Unix Shell?
 {
     ~Create a new directory
     =Display the manual or help page for a command
@@ -98,7 +109,8 @@
     ~Remove files and directories
 }
 
-// Which command is used to search for files and directories in Unix Shell?
+// Which command is used to search for files and directories in Unix Shell? [tag:shell] [tag:basic]
+::Which command is used to search for files and directories in Unix Shell?
 {
     =grep
     ~cp
@@ -107,7 +119,8 @@
     ~mv
 }
 
-// What is the purpose of the "chmod" command in Unix Shell?
+// What is the purpose of the "chmod" command in Unix Shell? [tag:shell] [tag:basic]
+::What is the purpose of the "chmod" command in Unix Shell?
 {
     ~Change the current directory
     =Change file permissions
@@ -116,7 +129,8 @@
     ~Remove files and directories
 }
 
-// Which command is used to display the last few lines of a text file in Unix Shell?
+// Which command is used to display the last few lines of a text file in Unix Shell? [tag:shell] [tag:basic]
+::Which command is used to display the last few lines of a text file in Unix Shell?
 {
     ~cat
     ~head
@@ -125,7 +139,8 @@
     ~cp
 }
 
-// What is the purpose of the "history" command in Unix Shell?
+// What is the purpose of the "history" command in Unix Shell? [tag:shell] [tag:basic]
+::What is the purpose of the "history" command in Unix Shell?
 {
     ~List directory contents
     =Display command history
@@ -134,7 +149,8 @@
     ~Rename a file
 }
 
-// How can you create a symbolic link in Unix Shell?
+// How can you create a symbolic link in Unix Shell? [tag:shell] [tag:basic]
+::How can you create a symbolic link in Unix Shell?
 {
     =ln -s
     ~cp
@@ -143,7 +159,8 @@
     ~ls
 }
 
-// What command is used to zip or compress files in Unix Shell?
+// What command is used to zip or compress files in Unix Shell? [tag:shell] [tag:basic]
+::What command is used to zip or compress files in Unix Shell?
 {
     ~unzip
     =tar
@@ -152,7 +169,8 @@
     ~mv
 }
 
-// Which command is used to unzip or extract compressed files in Unix Shell?
+// Which command is used to unzip or extract compressed files in Unix Shell? [tag:shell] [tag:basic]
+::Which command is used to unzip or extract compressed files in Unix Shell?
 {
     =zip
     =tar
@@ -161,7 +179,8 @@
     ~mv
 }
 
-// What is the purpose of the "find" command in Unix Shell?
+// What is the purpose of the "find" command in Unix Shell? [tag:shell] [tag:basic]
+::What is the purpose of the "find" command in Unix Shell?
 {
     ~List directory contents
     ~Create a new directory
@@ -170,7 +189,8 @@
     ~Change file permissions
 }
 
-// How do you navigate to the home directory in Unix Shell?
+// How do you navigate to the home directory in Unix Shell? [tag:shell] [tag:basic]
+::How do you navigate to the home directory in Unix Shell?
 {
     ~home
     ~cd /
@@ -179,7 +199,8 @@
     ~cd
 }
 
-// What does the "mv" command do in Unix Shell?
+// What does the "mv" command do in Unix Shell? [tag:shell] [tag:basic]
+::What does the "mv" command do in Unix Shell?
 {
     =Move or rename files and directories
     ~Copy files and directories
@@ -188,7 +209,8 @@
     ~Change file permissions
 }
 
-// Which command is used to list the processes running on a Unix system?
+// Which command is used to list the processes running on a Unix system? [tag:shell] [tag:basic]
+::Which command is used to list the processes running on a Unix system?
 {
     =ps
     ~ls
@@ -197,7 +219,8 @@
     ~kill
 }
 
-// What is the purpose of the "grep" command in Unix Shell?
+// What is the purpose of the "grep" command in Unix Shell? [tag:shell] [tag:basic]
+::What is the purpose of the "grep" command in Unix Shell?
 {
     ~Display the manual for a command
     ~List directory contents
@@ -206,7 +229,8 @@
     ~Move files and directories
 }
 
-// Which command is used to open and edit a text file in Unix Shell?
+// Which command is used to open and edit a text file in Unix Shell? [tag:shell] [tag:basic]
+::Which command is used to open and edit a text file in Unix Shell?
 {
     ~edit
     ~open
@@ -215,7 +239,8 @@
     ~cp
 }
 
-// What is the purpose of the "df" command in Unix Shell?
+// What is the purpose of the "df" command in Unix Shell? [tag:shell] [tag:basic]
+::What is the purpose of the "df" command in Unix Shell?
 {
     =Display disk usage and free space
     ~List directory contents
@@ -224,7 +249,8 @@
     ~Change file permissions
 }
 
-// How do you terminate a running process in Unix Shell?
+// How do you terminate a running process in Unix Shell? [tag:shell] [tag:basic]
+::How do you terminate a running process in Unix Shell?
 {
     =kill
     ~stop
@@ -233,7 +259,8 @@
     ~ls
 }
 
-// Which command is used to create and edit a new text file in Unix Shell?
+// Which command is used to create and edit a new text file in Unix Shell? [tag:shell] [tag:basic]
+::Which command is used to create and edit a new text file in Unix Shell?
 {
     =touch
     ~edit
@@ -242,7 +269,8 @@
     ~cp
 }
 
-// What does the "mv" command do in Unix Shell?
+// What does the "mv" command do in Unix Shell? [tag:shell] [tag:basic]
+::What does the "mv" command do in Unix Shell?
 {
     =Move or rename files and directories
     ~Copy files and directories
@@ -251,7 +279,8 @@
     ~Change file permissions
 }
 
-// What is the purpose of the "chmod" command in Unix Shell?
+// What is the purpose of the "chmod" command in Unix Shell? [tag:shell] [tag:basic]
+::What is the purpose of the "chmod" command in Unix Shell?
 {
     =Change file permissions
     ~List directory contents
@@ -260,7 +289,8 @@
     ~Copy files
 }
 
-// How can you recursively copy a directory and its contents in Unix Shell?
+// How can you recursively copy a directory and its contents in Unix Shell? [tag:shell] [tag:basic]
+::How can you recursively copy a directory and its contents in Unix Shell?
 {
     =cp -r
     ~mv
@@ -269,7 +299,8 @@
     ~touch
 }
 
-// What is the purpose of the "ps" command in Unix Shell?
+// What is the purpose of the "ps" command in Unix Shell? [tag:shell] [tag:basic]
+::What is the purpose of the "ps" command in Unix Shell?
 {
     ~List directory contents
     =Display process information
@@ -278,7 +309,8 @@
     ~Change file permissions
 }
 
-// Which command is used to display the first few lines of a text file in Unix Shell?
+// Which command is used to display the first few lines of a text file in Unix Shell? [tag:shell] [tag:basic]
+::Which command is used to display the first few lines of a text file in Unix Shell?
 {
     =cat
     ~head
@@ -287,7 +319,8 @@
     ~cp
 }
 
-// What does the "wc" command do in Unix Shell?
+// What does the "wc" command do in Unix Shell? [tag:shell] [tag:basic]
+::What does the "wc" command do in Unix Shell?
 {
     =Count words, lines, and characters in a file
     ~Copy files
@@ -296,7 +329,8 @@
     ~Move files and directories
 }
 
-// What is the purpose of the "tar" command in Unix Shell?
+// What is the purpose of the "tar" command in Unix Shell? [tag:shell] [tag:basic]
+::What is the purpose of the "tar" command in Unix Shell?
 {
     =Archive and compress files
     ~List directory contents
@@ -305,7 +339,8 @@
     ~Change file permissions
 }
 
-// Which command is used to view and manipulate environment variables in Unix Shell?
+// Which command is used to view and manipulate environment variables in Unix Shell? [tag:shell] [tag:basic]
+::Which command is used to view and manipulate environment variables in Unix Shell?
 {
     =env
     ~set
@@ -314,7 +349,8 @@
     ~cp
 }
 
-// How can you display the contents of a directory in a tree-like structure in Unix Shell?
+// How can you display the contents of a directory in a tree-like structure in Unix Shell? [tag:shell] [tag:basic]
+::How can you display the contents of a directory in a tree-like structure in Unix Shell?
 {
     =tree
     ~ls
@@ -323,7 +359,8 @@
     ~mv
 }
 
-// What is the purpose of the "echo" command in Unix Shell?
+// What is the purpose of the "echo" command in Unix Shell? [tag:shell] [tag:basic]
+::What is the purpose of the "echo" command in Unix Shell?
 {
     =Print text to the screen
     ~Copy files
@@ -332,7 +369,8 @@
     ~Move files and directories
 }
 
-// How do you create an empty text file in Unix Shell?
+// How do you create an empty text file in Unix Shell? [tag:shell] [tag:basic]
+::How do you create an empty text file in Unix Shell?
 {
     =touch
     ~edit
@@ -341,7 +379,8 @@
     ~cp
 }
 
-// What is the purpose of the "alias" command in Unix Shell?
+// What is the purpose of the "alias" command in Unix Shell? [tag:shell] [tag:basic]
+::What is the purpose of the "alias" command in Unix Shell?
 {
     =Create shortcuts for long commands
     ~List directory contents
@@ -350,7 +389,8 @@
     ~Change file permissions
 }
 
-// Which command is used to display the current date and time in Unix Shell?
+// Which command is used to display the current date and time in Unix Shell? [tag:shell] [tag:basic]
+::Which command is used to display the current date and time in Unix Shell?
 {
     =date
     ~time
@@ -359,7 +399,8 @@
     ~mv
 }
 
-// What is the purpose of the "who" command in Unix Shell?
+// What is the purpose of the "who" command in Unix Shell? [tag:shell] [tag:basic]
+::What is the purpose of the "who" command in Unix Shell?
 {
     ~List directory contents
     =Display information about logged-in users
@@ -368,7 +409,8 @@
     ~Change file permissions
 }
 
-// What is the purpose of a "for" loop in Unix Shell?
+// What is the purpose of a "for" loop in Unix Shell? [tag:shell] [tag:basic]
+::What is the purpose of a "for" loop in Unix Shell?
 {
     ~To list directory contents
     ~To create a new directory
@@ -377,7 +419,8 @@
     ~To change file permissions
 }
 
-// Which keyword is commonly used to define a variable that iterates through a list of items in a "for" loop in Unix Shell?
+// Which keyword is commonly used to define a variable that iterates through a list of items in a "for" loop in Unix Shell? [tag:shell] [tag:basic]
+::Which keyword is commonly used to define a variable that iterates through a list of items in a "for" loop in Unix Shell?
 {
     ~iterate
     ~counter
@@ -386,7 +429,8 @@
     ~variable
 }
 
-// How can you specify a range of numbers to iterate through in a "for" loop in Unix Shell?
+// How can you specify a range of numbers to iterate through in a "for" loop in Unix Shell? [tag:shell] [tag:basic]
+::How can you specify a range of numbers to iterate through in a "for" loop in Unix Shell?
 {
     ~Using the "while" keyword
     ~Using the "until" keyword
