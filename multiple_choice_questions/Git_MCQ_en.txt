@@ -24,3 +24,113 @@
 +To delete the current branch.
 ~To undo the last Git commit.
 }
+
+// Initialize Repository [tag:git] [tag:basic]
+::How do you initialize a new Git repository in a local directory? {
+=git init
+~git start
+~git create
+~git setup
+~git clone
+}
+
+// Check Repository Status [tag:git] [tag:basic]
+::Which Git command is used to check the status of changes in the repository? {
+=git status
+~git check
+~git changes
+~git diff
+~git log
+}
+
+// Discard Changes [tag:git] [tag:basic]
+::How do you discard all unstaged changes in a Git repository? {
+=git checkout -- .
+~git reset --hard
+~git discard
+~git remove
+~git revert
+}
+
+// View Local Branches [tag:git] [tag:basic]
+::How can you view all local branches in a Git repository? {
+=git branch
+~git show
+~git list branches
+~git branches
+~git branches --local
+}
+
+// Create and Switch Branch [tag:git] [tag:basic]
+::How do you create and switch to a new branch in a Git repository? {
+=git checkout -b <branchname>
+~git branch <branchname> && git checkout <branchname>
+~git switch -c <branchname>
+~git new-branch <branchname>
+~git create-branch <branchname>
+}
+
+// Commit Changes [tag:git] [tag:basic]
+::How do you commit staged changes in a Git repository? {
+=git commit -m "Commit message"
+~git push
+~git save
+~git apply
+~git finalize
+}
+
+// Undo Commits [tag:git] [tag:basic]
+::How can you undo the last commit in Git while keeping the changes in the working directory? {
+=git reset --soft HEAD^
+~git undo
+~git revert HEAD
+~git rollback
+~git cancel
+}
+
+// Add Remote Repository [tag:git] [tag:basic]
+::How do you add a remote Git repository to a local repository? {
+=git remote add origin <repository-url>
+~git connect <repository-url>
+~git link <repository-url>
+~git attach <repository-url>
+~git add remote <repository-url>
+}
+
+// Merge Changes Between Branches [tag:git] [tag:basic]
+::How do you merge changes from one branch into another branch in Git? {
+=git merge <branchname>
+~git combine <branchname>
+~git join <branchname>
+~git sync <branchname>
+~git unite <branchname>
+}
+
+// Resolve Merge Conflicts [tag:git] [tag:basic]
+::How do you resolve merge conflicts in Git? {
+=Manually resolve conflicts in the affected files, then use 'git add' and 'git commit'
+~git resolve
+~git fix
+~git conflict
+~git accept
+~git merge --resolve
+}
+
+// Delete Branches in Git [tag:git] [tag:basic]
+::How do you delete a local branch in Git? {
+=git branch -d <branchname>
+~git delete <branchname>
+~git remove <branchname>
+~git discard <branchname>
+~git obliterate <branchname>
+}
+
+// Compare Changes Between Branches [tag:git] [tag:basic]
+::How do you compare changes between two branches in Git? {
+=git diff <branch1>..<branch2>
+~git compare <branch1> <branch2>
+~git changes <branch1> <branch2>
+~git diff-branches <branch1> <branch2>
+~git branch-diff <branch1> <branch2>
+}
+
