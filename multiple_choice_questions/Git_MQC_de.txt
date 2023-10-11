@@ -1,4 +1,4 @@
-// Änderungen stagen
+// Änderungen stagen [tag:git] [tag:basic]
 ::Welcher Befehl wird in Git verwendet, um Änderungen auf der "staging area" bereitzustellen? {
 =git add
 ~git branch
@@ -7,20 +7,130 @@
 ~git pull
 }
 
-// git clone
+// git clone [tag:git] [tag:basic]
 ::Was ist der Zweck des Befehls "git clone" in Git?{
-~Um ein neues Git-Repository zu erstellen.
-~Um ein entferntes Repository zu löschen.
-~Um eine Kopie eines bestehenden Git-Repositorys herunterzuladen.
-~Um Änderungen an ein lokales Repository zu übertragen.
-~Um Zweige in einem Repository zusammenzuführen.
+~Um ein neues Git-Repository zu erstellen
+~Um ein entferntes Repository zu löschen
+=Um eine Kopie eines bestehenden Git-Repositorys herunterzuladen
+~Um Änderungen an ein lokales Repository zu übertragen
+~Um Zweige in einem Repository zusammenzuführen
 }
 
-// git pull
+// git pull [tag:git] [tag:basic]
 ::Was ist der Zweck des Befehls "git pull" in Git? {
-~Um einen neuen Branch zu erstellen.
-~Um Änderungen in ein entferntes Repository zu übertragen.
-=Änderungen aus einem entfernten Repository in den aktuellen Zweig einzubinden.
-+Um den aktuellen Branch zu löschen.
-~Um die letzte Git-Übertragung rückgängig zu machen.
+~Einen neuen Branch erstellen
+~Änderungen in ein entferntes Repository übertragen
+=Änderungen aus einem entfernten Repository in den aktuellen Branch einbinden
+~Den aktuellen Branch löschen
+~Das letzte git commit rückgängig machen
 }
+
+// Repository initialisieren [tag:git] [tag:basic]
+::Wie initialisiert man ein neues Git-Repository in einem lokalen Verzeichnis? {
+=git init
+~git start
+~git create
+~git setup
+~git clone
+}
+
+// Status des Repositories anzeigen [tag:git] [tag:basic]
+::Welcher Git-Befehl wird verwendet, um den Status der Änderungen im Repository anzuzeigen? {
+=git status
+~git check
+~git changes
+~git diff
+~git log
+}
+
+// Änderungen verwerfen [tag:git] [tag:basic]
+::Wie kann man alle nicht gestagten Änderungen in einem Git-Repository verwerfen? {
+=git checkout -- .
+~git reset --hard
+~git discard
+~git remove
+~git revert
+}
+
+// Lokale Branches anzeigen [tag:git] [tag:basic]
+::Wie kann man alle lokalen Branches in einem Git-Repository anzeigen? {
+=git branch
+~git show
+~git list branches
+~git branches
+~git branches --local
+}
+
+// Branch erstellen und wechseln [tag:git] [tag:basic]
+::Wie erstellt und wechselt man zu einem neuen Branch in einem Git-Repository? {
+=git checkout -b <branchname>
+~git branch <branchname> && git checkout <branchname>
+~git switch -c <branchname>
+~git new-branch <branchname>
+~git create-branch <branchname>
+}
+
+// Änderungen commiten [tag:git] [tag:basic]
+::Wie kann man gestagte Änderungen in einem Git-Repository committen? {
+=git commit -m "Commit-Nachricht"
+~git push
+~git save
+~git apply
+~git finalize
+}
+
+// Änderungen zurücknehmen [tag:git] [tag:basic]
+::Wie kann man den letzten Commit in Git rückgängig machen, während die Änderungen im Arbeitsverzeichnis beibehalten werden? {
+=git reset --soft HEAD^
+~git undo
+~git revert HEAD
+~git rollback
+~git cancel
+}
+
+// Remote-Repository hinzufügen [tag:git] [tag:basic]
+::Wie kann man ein entferntes Git-Repository zu einem lokalen Repository hinzufügen? {
+=git remote add origin <repository-url>
+~git connect <repository-url>
+~git link <repository-url>
+~git attach <repository-url>
+~git add remote <repository-url>
+}
+
+// Änderungen zwischen Branches mergen [tag:git] [tag:basic]
+::Wie führt man Änderungen aus einem Branch in einen anderen Branch in Git zusammen? {
+=git merge <branchname>
+~git combine <branchname>
+~git join <branchname>
+~git sync <branchname>
+~git unite <branchname>
+}
+
+// Konflikte bei einem Merge lösen [tag:git] [tag:basic]
+::Wie löst man Merge-Konflikte in Git? {
+=Manuell die Konflikte in den betroffenen Dateien auflösen und dann 'git add' und 'git commit' verwenden
+~git resolve
+~git fix
+~git conflict
+~git accept
+~git merge --resolve
+}
+
+// Branches in Git löschen [tag:git] [tag:basic]
+::Wie löscht man einen lokalen Branch in Git? {
+=git branch -d <branchname>
+~git delete <branchname>
+~git remove <branchname>
+~git discard <branchname>
+~git obliterate <branchname>
+}
+
+// Änderungen zwischen Branches vergleichen [tag:git] [tag:basic]
+::Wie vergleicht man die Änderungen zwischen zwei Branches in Git? {
+=git diff <branch1>..<branch2>
+~git compare <branch1> <branch2>
+~git changes <branch1> <branch2>
+~git diff-branches <branch1> <branch2>
+~git branch-diff <branch1> <branch2>
+}
+
