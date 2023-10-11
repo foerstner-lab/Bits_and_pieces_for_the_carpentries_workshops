@@ -1,317 +1,396 @@
-Which command is used to list files and directories in the current directory in Unix Shell?
+// Which command is used to list files and directories in the current directory in Unix Shell?
+{
+    =ls
+    ~cd
+    ~rm
+    ~mv
+    ~mkdir
+}
 
-A) ls
-B) cd
-C) rm
-D) mv
-E) mkdir
+// What command is used to change the current directory in Unix Shell?
+{
+    ~ls
+    =cd
+    ~cp
+    ~mv
+    ~rm
+}
 
+// Which command is used to create a new directory in Unix Shell?
+{
+    ~ls
+    ~cd
+    ~rm
+    =mkdir
+    ~touch
+}
 
-What command is used to change the current directory in Unix Shell?
-A) ls
-B) cd
-C) cp
-D) mv
-E) rm
+// What is the purpose of the "pwd" command in Unix Shell?
+{
+    =Print working directory
+    ~Remove a file
+    ~Move a file
+    ~List files and directories
+    ~Change directory
+}
 
-Which command is used to create a new directory in Unix Shell?
-A) ls
-B) cd
-C) rm
-D) mkdir
-E) touch
+// Which command is used to copy files or directories in Unix Shell?
+{
+    ~mv
+    =cp
+    ~rm
+    ~mkdir
+    ~ls
+}
 
-What is the purpose of the "pwd" command in Unix Shell?
-A) Print working directory
-B) Remove a file
-C) Move a file
-D) List files and directories
-E) Change directory
+// What does the "echo" command do in Unix Shell?
+{
+    ~List directory contents
+    ~Copy files
+    =Print text to the screen
+    ~Remove files and directories
+    ~Move files and directories
+}
 
-Which command is used to copy files or directories in Unix Shell?
-A) mv
-B) cp
-C) rm
-D) mkdir
-E) ls
+// How can you display the contents of a text file in Unix Shell?
+{
+    =cat
+    ~cp
+    ~mkdir
+    ~touch
+    ~mv
+}
 
-What does the "echo" command do in Unix Shell?
-A) List directory contents
-B) Copy files
-C) Print text to the screen
-D) Remove files and directories
-E) Move files and directories
-
-How can you display the contents of a text file in Unix Shell?
-A) cat
-B) cp
-C) mkdir
-D) touch
-E) mv
-
-Which command is used to remove a file in Unix Shell?
-A) ls
-B) cd
-C) cp
-D) rm
-E) mkdir
-
-What is the purpose of the "touch" command in Unix Shell?
-A) Create a new directory
-B) Rename a file
-C) Update the timestamp of a file or create an empty file
-D) Move files and directories
-E) List directory contents
-
-Which command is used to move or rename files and directories in Unix Shell?
-A) cp
-B) mv
-C) rm
-D) ls
-E) cd
-
-What is the purpose of the "man" command in Unix Shell?
-A) Create a new directory
-B) Display the manual or help page for a command
-C) List directory contents
-D) Copy files
-E) Remove files and directories
+// Which command is used to remove a file in Unix Shell?
+{
+    ~ls
+    ~cd
+    ~cp
+    =rm
+    ~mkdir
+}
 
 
+// What is the purpose of the "touch" command in Unix Shell?
+{
+    ~Create a new directory
+    ~Rename a file
+    =Update the timestamp of a file or create an empty file
+    ~Move files and directories
+    ~List directory contents
+}
 
-Which command is used to search for files and directories in Unix Shell?
-A) grep
-B) cp
-C) ls
-D) rm
-E) mv
+// Which command is used to move or rename files and directories in Unix Shell?
+{
+    ~cp
+    =mv
+    ~rm
+    ~ls
+    ~cd
+}
 
-What is the purpose of the "chmod" command in Unix Shell?
-A) Change the current directory
-B) Change file permissions
-C) List directory contents
-D) Copy files
-E) Remove files and directories
+// What is the purpose of the "man" command in Unix Shell?
+{
+    ~Create a new directory
+    =Display the manual or help page for a command
+    ~List directory contents
+    ~Copy files
+    ~Remove files and directories
+}
 
-Which command is used to display the last few lines of a text file in Unix Shell?
-A) cat
-B) head
-C) tail
-D) ls
-E) cp
+// Which command is used to search for files and directories in Unix Shell?
+{
+    =grep
+    ~cp
+    ~ls
+    ~rm
+    ~mv
+}
 
-What is the purpose of the "history" command in Unix Shell?
-A) List directory contents
-B) Display command history
-C) Remove files and directories
-D) Copy files
-E) Rename a file
+// What is the purpose of the "chmod" command in Unix Shell?
+{
+    ~Change the current directory
+    =Change file permissions
+    ~List directory contents
+    ~Copy files
+    ~Remove files and directories
+}
 
-How can you create a symbolic link in Unix Shell?
-A) ln -s
-B) cp
-C) mv
-D) rm
-E) ls
+// Which command is used to display the last few lines of a text file in Unix Shell?
+{
+    ~cat
+    ~head
+    =tail
+    ~ls
+    ~cp
+}
 
-What command is used to zip or compress files in Unix Shell?
-A) unzip
-B) tar
-C) gzip
-D) cp
-E) mv
+// What is the purpose of the "history" command in Unix Shell?
+{
+    ~List directory contents
+    =Display command history
+    ~Remove files and directories
+    ~Copy files
+    ~Rename a file
+}
 
-Which command is used to unzip or extract compressed files in Unix Shell?
-A) zip
-B) tar
-C) gunzip
-D) cp
-E) mv
+// How can you create a symbolic link in Unix Shell?
+{
+    =ln -s
+    ~cp
+    ~mv
+    ~rm
+    ~ls
+}
 
-What is the purpose of the "find" command in Unix Shell?
-A) List directory contents
-B) Create a new directory
-C) Search for files and directories
-D) Copy files
-E) Change file permissions
+// What command is used to zip or compress files in Unix Shell?
+{
+    ~unzip
+    =tar
+    ~gzip
+    ~cp
+    ~mv
+}
 
-How do you navigate to the home directory in Unix Shell?
-A) home
-B) cd /
-C) cd ~
-D) cd ..
-E) cd
+// Which command is used to unzip or extract compressed files in Unix Shell?
+{
+    =zip
+    =tar
+    ~gunzip
+    ~cp
+    ~mv
+}
 
-What does the "mv" command do in Unix Shell?
-A) Move or rename files and directories
-B) Copy files and directories
-C) List directory contents
-D) Remove files and directories
-E) Change file permissions
+// What is the purpose of the "find" command in Unix Shell?
+{
+    ~List directory contents
+    ~Create a new directory
+    =Search for files and directories
+    ~Copy files
+    ~Change file permissions
+}
 
-Which command is used to list the processes running on a Unix system?
-A) ps
-B) ls
-C) top
-D) cd
-E) kill
+// How do you navigate to the home directory in Unix Shell?
+{
+    ~home
+    ~cd /
+    =cd ~
+    ~cd ..
+    ~cd
+}
 
-What is the purpose of the "grep" command in Unix Shell?
-A) Display the manual for a command
-B) List directory contents
-C) Search for patterns in files
-D) Copy files
-E) Move files and directories
+// What does the "mv" command do in Unix Shell?
+{
+    =Move or rename files and directories
+    ~Copy files and directories
+    ~List directory contents
+    ~Remove files and directories
+    ~Change file permissions
+}
 
-Which command is used to open and edit a text file in Unix Shell?
-A) edit
-B) open
-C) nano
-D) ls
-E) cp
+// Which command is used to list the processes running on a Unix system?
+{
+    =ps
+    ~ls
+    ~top
+    ~cd
+    ~kill
+}
 
-What is the purpose of the "df" command in Unix Shell?
-A) Display disk usage and free space
-B) List directory contents
-C) Create a new directory
-D) Remove files and directories
-E) Change file permissions
+// What is the purpose of the "grep" command in Unix Shell?
+{
+    ~Display the manual for a command
+    ~List directory contents
+    =Search for patterns in files
+    ~Copy files
+    ~Move files and directories
+}
 
-How do you terminate a running process in Unix Shell?
-A) kill
-B) stop
-C) start
-D) ps
-E) ls
+// Which command is used to open and edit a text file in Unix Shell?
+{
+    ~edit
+    ~open
+    =nano
+    ~ls
+    ~cp
+}
 
-Which command is used to create and edit a new text file in Unix Shell?
-A) touch
-B) edit
-C) open
-D) nano
-E) cp
+// What is the purpose of the "df" command in Unix Shell?
+{
+    =Display disk usage and free space
+    ~List directory contents
+    ~Create a new directory
+    ~Remove files and directories
+    ~Change file permissions
+}
 
-What does the "mv" command do in Unix Shell?
-A) Move or rename files and directories
-B) Copy files and directories
-C) List directory contents
-D) Remove files and directories
-E) Change file permissions
+// How do you terminate a running process in Unix Shell?
+{
+    =kill
+    ~stop
+    ~start
+    ~ps
+    ~ls
+}
 
-What is the purpose of the "chmod" command in Unix Shell?
-A) Change file permissions
-B) List directory contents
-C) Create a new directory
-D) Remove files and directories
-E) Copy files
+// Which command is used to create and edit a new text file in Unix Shell?
+{
+    =touch
+    ~edit
+    ~open
+    ~nano
+    ~cp
+}
 
-How can you recursively copy a directory and its contents in Unix Shell?
-A) cp -r
-B) mv
-C) rm
-D) ls
-E) touch
+// What does the "mv" command do in Unix Shell?
+{
+    =Move or rename files and directories
+    ~Copy files and directories
+    ~List directory contents
+    ~Remove files and directories
+    ~Change file permissions
+}
 
-What is the purpose of the "ps" command in Unix Shell?
-A) List directory contents
-B) Display process information
-C) Create a new directory
-D) Remove files and directories
-E) Change file permissions
+// What is the purpose of the "chmod" command in Unix Shell?
+{
+    =Change file permissions
+    ~List directory contents
+    ~Create a new directory
+    ~Remove files and directories
+    ~Copy files
+}
 
-Which command is used to display the first few lines of a text file in Unix Shell?
-A) cat
-B) head
-C) tail
-D) ls
-E) cp
+// How can you recursively copy a directory and its contents in Unix Shell?
+{
+    =cp -r
+    ~mv
+    ~rm
+    ~ls
+    ~touch
+}
 
-What does the "wc" command do in Unix Shell?
-A) Count words, lines, and characters in a file
-B) Copy files
-C) List directory contents
-D) Remove files and directories
-E) Move files and directories
+// What is the purpose of the "ps" command in Unix Shell?
+{
+    ~List directory contents
+    =Display process information
+    ~Create a new directory
+    ~Remove files and directories
+    ~Change file permissions
+}
 
-What is the purpose of the "tar" command in Unix Shell?
-A) Archive and compress files
-B) List directory contents
-C) Create a new directory
-D) Remove files and directories
-E) Change file permissions
+// Which command is used to display the first few lines of a text file in Unix Shell?
+{
+    =cat
+    ~head
+    ~tail
+    ~ls
+    ~cp
+}
 
-Which command is used to view and manipulate environment variables in Unix Shell?
-A) env
-B) set
-C) export
-D) ls
-E) cp
+// What does the "wc" command do in Unix Shell?
+{
+    =Count words, lines, and characters in a file
+    ~Copy files
+    ~List directory contents
+    ~Remove files and directories
+    ~Move files and directories
+}
 
-How can you display the contents of a directory in a tree-like structure in Unix Shell?
-A) tree
-B) ls
-C) cp
-D) rm
-E) mv
+// What is the purpose of the "tar" command in Unix Shell?
+{
+    =Archive and compress files
+    ~List directory contents
+    ~Create a new directory
+    ~Remove files and directories
+    ~Change file permissions
+}
 
-What is the purpose of the "echo" command in Unix Shell?
-A) Print text to the screen
-B) Copy files
-C) List directory contents
-D) Remove files and directories
-E) Move files and directories
+// Which command is used to view and manipulate environment variables in Unix Shell?
+{
+    =env
+    ~set
+    ~export
+    ~ls
+    ~cp
+}
 
-How do you create an empty text file in Unix Shell?
-A) touch
-B) edit
-C) open
-D) cat
-E) cp
+// How can you display the contents of a directory in a tree-like structure in Unix Shell?
+{
+    =tree
+    ~ls
+    ~cp
+    ~rm
+    ~mv
+}
 
-What is the purpose of the "alias" command in Unix Shell?
-A) Create shortcuts for long commands
-B) List directory contents
-C) Copy files
-D) Remove files and directories
-E) Change file permissions
+// What is the purpose of the "echo" command in Unix Shell?
+{
+    =Print text to the screen
+    ~Copy files
+    ~List directory contents
+    ~Remove files and directories
+    ~Move files and directories
+}
 
-Which command is used to display the current date and time in Unix Shell?
-A) date
-B) time
-C) ls
-D) cp
-E) mv
+// How do you create an empty text file in Unix Shell?
+{
+    =touch
+    ~edit
+    ~open
+    ~cat
+    ~cp
+}
 
-What is the purpose of the "who" command in Unix Shell?
-A) List directory contents
-B) Display information about logged-in users
-C) Create a new directory
-D) Remove files and directories
-E) Change file permissions
+// What is the purpose of the "alias" command in Unix Shell?
+{
+    =Create shortcuts for long commands
+    ~List directory contents
+    ~Copy files
+    ~Remove files and directories
+    ~Change file permissions
+}
 
+// Which command is used to display the current date and time in Unix Shell?
+{
+    =date
+    ~time
+    ~ls
+    ~cp
+    ~mv
+}
 
+// What is the purpose of the "who" command in Unix Shell?
+{
+    ~List directory contents
+    =Display information about logged-in users
+    ~Create a new directory
+    ~Remove files and directories
+    ~Change file permissions
+}
 
-In Unix Shell, what is the purpose of a "for" loop?
-A) To list directory contents
-B) To create a new directory
-C) To iterate over a list of items and perform a set of commands for each item
-D) To remove files and directories
-E) To change file permissions
+// What is the purpose of a "for" loop in Unix Shell?
+{
+    ~To list directory contents
+    ~To create a new directory
+    =To iterate over a list of items and perform a set of commands for each item
+    ~To remove files and directories
+    ~To change file permissions
+}
 
-Choose the correct answer.
+// Which keyword is commonly used to define a variable that iterates through a list of items in a "for" loop in Unix Shell?
+{
+    ~iterate
+    ~counter
+    =item
+    ~index
+    ~variable
+}
 
-Which keyword is commonly used to define a variable that iterates through a list of items in a "for" loop in Unix Shell?
-A) iterate
-B) counter
-C) item
-D) index
-E) variable
-
-Select the correct option.
-
-How can you specify a range of numbers to iterate through in a "for" loop in Unix Shell?
-A) Using the "while" keyword
-B) Using the "until" keyword
-C) Using the "seq" command
-D) Using the "if" statement
-E) Using the "grep" command
+// How can you specify a range of numbers to iterate through in a "for" loop in Unix Shell?
+{
+    ~Using the "while" keyword
+    ~Using the "until" keyword
+    =Using the "seq" command
+    ~Using the "if" statement
+    ~Using the "grep" command
+}
