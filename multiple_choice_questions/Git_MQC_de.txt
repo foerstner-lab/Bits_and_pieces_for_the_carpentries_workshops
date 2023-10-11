@@ -1,0 +1,26 @@
+// Änderungen stagen
+::Welcher Befehl wird in Git verwendet, um Änderungen auf der "staging area" bereitzustellen? {
+=git add
+~git branch
+~git checkout
+~git commit
+~git pull
+}
+
+// git clone
+::Was ist der Zweck des Befehls "git clone" in Git?{
+~Um ein neues Git-Repository zu erstellen.
+~Um ein entferntes Repository zu löschen.
+~Um eine Kopie eines bestehenden Git-Repositorys herunterzuladen.
+~Um Änderungen an ein lokales Repository zu übertragen.
+~Um Zweige in einem Repository zusammenzuführen.
+}
+
+// git pull
+::Was ist der Zweck des Befehls "git pull" in Git? {
+~Um einen neuen Branch zu erstellen.
+~Um Änderungen in ein entferntes Repository zu übertragen.
+=Änderungen aus einem entfernten Repository in den aktuellen Zweig einzubinden.
++Um den aktuellen Branch zu löschen.
+~Um die letzte Git-Übertragung rückgängig zu machen.
+}
