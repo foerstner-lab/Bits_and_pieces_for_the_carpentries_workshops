@@ -1,5 +1,5 @@
 // CSV- und TSV-Dateiformate
-Was ist der Hauptvorteil der Verwendung von CSV- oder TSV-Dateien für den Datenaustausch zwischen verschiedenen Softwareanwendungen? 
+::Was ist der Hauptvorteil der Verwendung von CSV- oder TSV-Dateien für den Datenaustausch zwischen verschiedenen Softwareanwendungen? 
 {
     =Sie sind plattformunabhängig und werden weitgehend unterstützt.
     ~Sie sind sicherer als andere Formate.
@@ -9,7 +9,7 @@ Was ist der Hauptvorteil der Verwendung von CSV- oder TSV-Dateien für den Daten
 }
 
 // Zeilenabschlüsse in reinen Textdateien
-Wie wird eine Zeile in einer einfachen Textdatei normalerweise beendet? 
+::Wie wird eine Zeile in einer einfachen Textdatei normalerweise beendet? 
 {
     =Durch ein Zeilenumbruchszeichen (\n).
     ~durch ein Semikolon (;).
@@ -19,7 +19,7 @@ Wie wird eine Zeile in einer einfachen Textdatei normalerweise beendet?
 }
 
 // Zweck des "Delimiter" in CSV- oder TSV-Dateien
-Was ist der Zweck des "Trennzeichens" in einer CSV- oder TSV-Datei? 
+::Was ist der Zweck des "Trennzeichens" in einer CSV- oder TSV-Datei? 
 {
     =Zur Trennung einzelner Datenfelder.
     ~Um die Version des Dateiformats anzugeben.
@@ -29,7 +29,7 @@ Was ist der Zweck des "Trennzeichens" in einer CSV- oder TSV-Datei?
 }
 
 // Bedeutung von "Delimiter" in CSV- und TSV-Dateien
-Was bedeutet der Begriff "Begrenzungszeichen" im Zusammenhang mit CSV- und TSV-Dateien? 
+::Was bedeutet der Begriff "Begrenzungszeichen" im Zusammenhang mit CSV- und TSV-Dateien? 
 {
     =Ein spezielles Zeichen, das zur Trennung von Datenfeldern verwendet wird.
     ~Eine Zeile, die das Ende der Datei markiert.
@@ -39,7 +39,7 @@ Was bedeutet der Begriff "Begrenzungszeichen" im Zusammenhang mit CSV- und TSV-D
 }
 
 // Verständnis der JSON-Abkürzung
-Wofür steht JSON im Kontext des Datenaustauschs? 
+::Wofür steht JSON im Kontext des Datenaustauschs? 
 {
     =JavaScript Object Notation.
     ~Java Serialized Object Network.
@@ -49,7 +49,7 @@ Wofür steht JSON im Kontext des Datenaustauschs?
 }
 
 // Primäre Verwendung von JSON
-Was ist die primäre Verwendung von JSON (JavaScript Object Notation)? 
+::Was ist die primäre Verwendung von JSON (JavaScript Object Notation)? 
 {
     =Zur Darstellung strukturierter Daten in einem für Menschen lesbaren Format.
     ~Um Multimediadateien zu speichern.
@@ -59,7 +59,7 @@ Was ist die primäre Verwendung von JSON (JavaScript Object Notation)?
 }
 
 // Einschließen von String-Werten in JSON
-Welches der folgenden Zeichen wird verwendet, um einen String-Wert in JSON einzuschließen? 
+::Welches der folgenden Zeichen wird verwendet, um einen String-Wert in JSON einzuschließen? 
 {
     =Doppelte Anführungszeichen (" ").
     ~Einfache Anführungszeichen (' ').
@@ -69,7 +69,7 @@ Welches der folgenden Zeichen wird verwendet, um einen String-Wert in JSON einzu
 }
 
 // Zweck der geschweiften Klammern in JSON-Objekten
-Was ist der Zweck der geschweiften Klammern { } in einem JSON-Objekt? 
+::Was ist der Zweck der geschweiften Klammern { } in einem JSON-Objekt? 
 {
     =Die Schlüssel-Wert-Paare des Objekts einschließen.
     ~Um das Ende des Objekts anzuzeigen.
@@ -79,7 +79,7 @@ Was ist der Zweck der geschweiften Klammern { } in einem JSON-Objekt?
 }
 
 // Gültige JSON-Datentypen
-Welcher der folgenden Datentypen ist NICHT ein gültiger JSON-Datentyp? 
+::Welcher der folgenden Datentypen ist NICHT ein gültiger JSON-Datentyp? 
 {
     =Datum.
     ~String.
@@ -89,7 +89,7 @@ Welcher der folgenden Datentypen ist NICHT ein gültiger JSON-Datentyp?
 }
 
 // Mischen von Datentypen in JSON-Arrays
-Können Elemente in einem JSON-Array unterschiedliche Datentypen haben (z. B. eine Mischung aus Zahlen und Zeichenketten)? 
+::Können Elemente in einem JSON-Array unterschiedliche Datentypen haben (z. B. eine Mischung aus Zahlen und Zeichenketten)? 
 {
     =Ja, JSON erlaubt das Mischen von Datentypen in Arrays.
     ~Nein, JSON erlaubt nur Elemente desselben Datentyps in Arrays.
@@ -99,7 +99,7 @@ Können Elemente in einem JSON-Array unterschiedliche Datentypen haben (z. B. ei
 }
 
 // Zweck von Schlüsseln in JSON-Objekten
-Was ist der Zweck eines Schlüssels in einem JSON-Objekt? 
+::Was ist der Zweck eines Schlüssels in einem JSON-Objekt? 
 {
     =Eine Bezeichnung für einen Wert bereitzustellen.
     ~Um eine Zahl darzustellen.
@@ -109,7 +109,7 @@ Was ist der Zweck eines Schlüssels in einem JSON-Objekt?
 }
 
 // JSON vs. XML: Vorteile von JSON
-Was ist der Hauptvorteil der Verwendung von JSON gegenüber XML für den Datenaustausch? 
+::Was ist der Hauptvorteil der Verwendung von JSON gegenüber XML für den Datenaustausch? 
 {
     =JSON ist kompakter und leichter zu lesen.
     ~JSON-Dateien sind binär und effizienter.
@@ -119,7 +119,7 @@ Was ist der Hauptvorteil der Verwendung von JSON gegenüber XML für den Datenau
 }
 
 // Werte in Verbindung mit Schlüsseln in JSON
-Welcher Wert ist in einem JSON-Objekt mit einem Schlüssel verknüpft? 
+::Welcher Wert ist in einem JSON-Objekt mit einem Schlüssel verknüpft? 
 {
     =Ein Datentyp wie eine Zeichenkette oder eine Zahl.
     ~Ein anderes Schlüssel-Werte-Paar.
@@ -129,7 +129,7 @@ Welcher Wert ist in einem JSON-Objekt mit einem Schlüssel verknüpft?
 }
 
 // Serialisierung in JSON
-Worauf bezieht sich der Begriff "Serialisierung" in einem JSON-Dokument? 
+::Worauf bezieht sich der Begriff "Serialisierung" in einem JSON-Dokument? 
 {
     =Der Prozess der Konvertierung von Daten in ein JSON-Format.
     ~Der Prozess des Parsens von JSON-Daten.
@@ -139,7 +139,7 @@ Worauf bezieht sich der Begriff "Serialisierung" in einem JSON-Dokument?
 }
 
 // Kommentare in JSON
-Welche der folgenden Aussagen über die Verwendung von Kommentaren in JSON ist zutreffend? 
+::Welche der folgenden Aussagen über die Verwendung von Kommentaren in JSON ist zutreffend? 
 {
     =JSON unterstützt keine Kommentare.
     ~Kommentare in JSON müssen in doppelte Anführungszeichen gesetzt werden.
@@ -149,7 +149,7 @@ Welche der folgenden Aussagen über die Verwendung von Kommentaren in JSON ist z
 }
 
 // Schlüssel-Wert-Trennzeichen in JSON-Objekten
-Welches Zeichen wird verwendet, um Schlüssel-Wert-Paare in einem JSON-Objekt zu trennen? 
+::Welches Zeichen wird verwendet, um Schlüssel-Wert-Paare in einem JSON-Objekt zu trennen? 
 {
     =Komma (,).
     ~Semikolon (;).
@@ -159,7 +159,7 @@ Welches Zeichen wird verwendet, um Schlüssel-Wert-Paare in einem JSON-Objekt zu
 }
 
 // Zugriff auf Elemente in JSON-Arrays
-Kann auf Elemente in einem JSON-Array über ihre Position oder ihren Index zugegriffen werden? 
+::Kann auf Elemente in einem JSON-Array über ihre Position oder ihren Index zugegriffen werden? 
 {
     =Ja, auf Elemente kann über ihre Position zugegriffen werden.
     ~Nein, JSON-Arrays unterstützen keine Indizierung.
@@ -169,7 +169,7 @@ Kann auf Elemente in einem JSON-Array über ihre Position oder ihren Index zugeg
 }
 
 // Gültige JSON-Array-Darstellung
-Welche der folgenden Angaben ist ein gültiges JSON-Array? 
+::Welche der folgenden Angaben ist ein gültiges JSON-Array? 
 {
     =["Apfel", "Banane", "Kirsche"].
     ~{ "apfel", "banane", "kirsche" }.
@@ -179,7 +179,7 @@ Welche der folgenden Angaben ist ein gültiges JSON-Array?
 }
 
 // Datenkodierung in JSON
-Was ist der Hauptzweck der Datenkodierung in JSON? 
+::Was ist der Hauptzweck der Datenkodierung in JSON? 
 {
     =Um sie für den Menschen lesbar und leicht zu parsen zu machen.
     ~Die Daten zu komprimieren.
@@ -189,7 +189,7 @@ Was ist der Hauptzweck der Datenkodierung in JSON?
 }
 
 // Merkmale von JSON
-Welches der folgenden Merkmale ist KEIN Merkmal von JSON? 
+::Welches der folgenden Merkmale ist KEIN Merkmal von JSON? 
 {
     =JSON erlaubt Kommentare innerhalb der Daten.
     ~JSON ist ein textbasiertes Datenaustauschformat.
