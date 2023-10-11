@@ -1,5 +1,5 @@
 // CSV and TSV File Formats
-What is the primary benefit of using CSV or TSV files for data interchange between different software applications? 
+:: What is the primary benefit of using CSV or TSV files for data interchange between different software applications? 
 {
     =They are platform-independent and widely supported.
     ~They are more secure than other formats.
@@ -9,7 +9,7 @@ What is the primary benefit of using CSV or TSV files for data interchange betwe
 }
 
 // Line Termination in Plain Text Files
-In a plain text file, how is each line typically terminated? 
+::In a plain text file, how is each line typically terminated? 
 {
     =By a newline character (\n).
     ~By a semicolon (;).
@@ -19,7 +19,7 @@ In a plain text file, how is each line typically terminated?
 }
 
 // Purpose of the "Delimiter" in CSV or TSV Files
-What is the purpose of the "delimiter" in a CSV or TSV file? 
+::What is the purpose of the "delimiter" in a CSV or TSV file? 
 {
     =To separate individual data fields.
     ~To indicate the file format version.
@@ -29,7 +29,7 @@ What is the purpose of the "delimiter" in a CSV or TSV file?
 }
 
 // Meaning of "Delimiter" in CSV and TSV Files
-What does the term "delimiter" mean in the context of CSV and TSV files? 
+::What does the term "delimiter" mean in the context of CSV and TSV files? 
 {
     =A special character used to separate data fields.
     ~A line that marks the end of the file.
@@ -39,7 +39,7 @@ What does the term "delimiter" mean in the context of CSV and TSV files?
 }
 
 // Understanding JSON Abbreviation
-What does JSON stand for in the context of data interchange? 
+::What does JSON stand for in the context of data interchange? 
 {
     =JavaScript Object Notation.
     ~Java Serialized Object Network.
@@ -49,7 +49,7 @@ What does JSON stand for in the context of data interchange?
 }
 
 // Primary Use of JSON
-What is the primary use of JSON (JavaScript Object Notation)? 
+::What is the primary use of JSON (JavaScript Object Notation)? 
 {
     =To represent structured data in a human-readable format.
     ~To store multimedia files.
@@ -59,7 +59,7 @@ What is the primary use of JSON (JavaScript Object Notation)?
 }
 
 // Enclosing String Values in JSON
-Which of the following characters is used to enclose a string value in JSON? 
+::Which of the following characters is used to enclose a string value in JSON? 
 {
     =Double quotes (" ").
     ~Single quotes (' ').
@@ -69,7 +69,7 @@ Which of the following characters is used to enclose a string value in JSON?
 }
 
 // Purpose of Curly Braces in JSON Objects
-In a JSON object, what is the purpose of the curly braces { }? 
+::In a JSON object, what is the purpose of the curly braces { }? 
 {
     =To enclose the object's key-value pairs.
     ~To indicate the end of the object.
@@ -79,7 +79,7 @@ In a JSON object, what is the purpose of the curly braces { }?
 }
 
 // Valid JSON Data Types
-Which of the following is NOT a valid JSON data type? 
+::Which of the following is NOT a valid JSON data type? 
 {
     =Date.
     ~String.
@@ -89,7 +89,7 @@ Which of the following is NOT a valid JSON data type?
 }
 
 // Mixing Data Types in JSON Arrays
-In a JSON array, can elements have different data types (e.g., a mix of numbers and strings)? 
+::In a JSON array, can elements have different data types (e.g., a mix of numbers and strings)? 
 {
     =Yes, JSON allows mixing data types within arrays.
     ~No, JSON only allows elements of the same data type in arrays.
@@ -99,7 +99,7 @@ In a JSON array, can elements have different data types (e.g., a mix of numbers 
 }
 
 // Purpose of Keys in JSON Objects
-In a JSON object, what is the purpose of a key? 
+::In a JSON object, what is the purpose of a key? 
 {
     =To provide a label for a value.
     ~To represent a number.
@@ -109,7 +109,7 @@ In a JSON object, what is the purpose of a key?
 }
 
 // JSON vs. XML: Advantages of JSON
-What is the primary advantage of using JSON over XML for data interchange? 
+::What is the primary advantage of using JSON over XML for data interchange? 
 {
     =JSON is more compact and easier to read.
     ~JSON files are binary and more efficient.
@@ -119,7 +119,7 @@ What is the primary advantage of using JSON over XML for data interchange?
 }
 
 // Values Associated with Keys in JSON
-In a JSON object, what is the value associated with a key? 
+::In a JSON object, what is the value associated with a key? 
 {
     =A data type such as a string or number.
     ~Another key-value pair.
@@ -129,7 +129,7 @@ In a JSON object, what is the value associated with a key?
 }
 
 // Serialization in JSON
-In a JSON document, what does the term "serialization" refer to? 
+::In a JSON document, what does the term "serialization" refer to? 
 {
     =The process of converting data into a JSON format.
     ~The process of parsing JSON data.
@@ -139,7 +139,7 @@ In a JSON document, what does the term "serialization" refer to?
 }
 
 // Comments in JSON
-Which of the following statements is true regarding the use of comments in JSON? 
+::Which of the following statements is true regarding the use of comments in JSON? 
 {
     =JSON does not support comments.
     ~Comments in JSON must be enclosed in double quotes.
@@ -149,7 +149,7 @@ Which of the following statements is true regarding the use of comments in JSON?
 }
 
 // Key-Value Separators in JSON Objects
-Which character is used to separate key-value pairs in a JSON object? 
+::Which character is used to separate key-value pairs in a JSON object? 
 {
     =Comma (,).
     ~Semicolon (;).
@@ -159,7 +159,7 @@ Which character is used to separate key-value pairs in a JSON object?
 }
 
 // Accessing Elements in JSON Arrays
-In a JSON array, can elements be accessed by their position or index? 
+::In a JSON array, can elements be accessed by their position or index? 
 {
     =Yes, elements can be accessed by their position.
     ~No, JSON arrays do not support indexing.
@@ -169,7 +169,7 @@ In a JSON array, can elements be accessed by their position or index?
 }
 
 // Valid JSON Array Representation
-Which of the following is a valid JSON array? 
+::Which of the following is a valid JSON array? 
 {
     =["apple", "banana", "cherry"].
     ~{ "apple", "banana", "cherry" }.
@@ -179,7 +179,7 @@ Which of the following is a valid JSON array?
 }
 
 // Data Encoding in JSON
-What is the primary purpose of encoding data in JSON? 
+::What is the primary purpose of encoding data in JSON? 
 {
     =To make it human-readable and easy to parse.
     ~To compress the data.
@@ -189,7 +189,7 @@ What is the primary purpose of encoding data in JSON?
 }
 
 // Characteristics of JSON
-Which of the following is NOT a characteristic of JSON? 
+::Which of the following is NOT a characteristic of JSON? 
 {
     =JSON allows for comments within the data.
     ~JSON is a text-based data interchange format.
