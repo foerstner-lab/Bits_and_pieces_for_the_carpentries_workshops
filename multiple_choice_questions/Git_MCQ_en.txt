@@ -1,4 +1,4 @@
-// Staging changes
+// Staging changes [tag:git] [tag:basic]
 ::Which command is used in Git to stage changes for a commit? {
 =git add
 ~git branch
@@ -7,7 +7,7 @@
 ~git pull
 }
 
-// git clone
+// git clone [tag:git] [tag:basic]
 ::What is the purpose of the "git clone" command in Git?{
 ~To create a new Git repository.
 ~To delete a remote repository.
@@ -16,7 +16,7 @@
 ~To merge branches in a repository.
 }
 
-// git pull
+// git pull [tag:git] [tag:basic]
 ::What is the purpose of the "git pull" command in Git? {
 ~To create a new branch.
 ~To push changes to a remote repository.
