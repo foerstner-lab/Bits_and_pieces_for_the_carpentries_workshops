@@ -1,4 +1,4 @@
-// CSV and TSV File Formats
+// CSV and TSV File Formats [tag:plaintext] [tag:basic]
 :: What is the primary benefit of using CSV or TSV files for data interchange between different software applications? 
 {
     =They are platform-independent and widely supported.
@@ -8,7 +8,7 @@
     ~They are compressed to save storage space.
 }
 
-// Line Termination in Plain Text Files
+// Line Termination in Plain Text Files [tag:plaintext] [tag:basic]
 ::In a plain text file, how is each line typically terminated? 
 {
     =By a newline character (\n).
@@ -18,7 +18,7 @@
     ~By a tab character (\t).
 }
 
-// Purpose of the "Delimiter" in CSV or TSV Files
+// Purpose of the "Delimiter" in CSV or TSV Files [tag:plaintext] [tag:basic]
 ::What is the purpose of the "delimiter" in a CSV or TSV file? 
 {
     =To separate individual data fields.
@@ -28,7 +28,7 @@
     ~To add comments in the file.
 }
 
-// Meaning of "Delimiter" in CSV and TSV Files
+// Meaning of "Delimiter" in CSV and TSV Files [tag:plaintext] [tag:basic]
 ::What does the term "delimiter" mean in the context of CSV and TSV files? 
 {
     =A special character used to separate data fields.
@@ -38,7 +38,7 @@
     ~A method for compressing file contents.
 }
 
-// Understanding JSON Abbreviation
+// Understanding JSON Abbreviation [tag:plaintext] [tag:basic]
 ::What does JSON stand for in the context of data interchange? 
 {
     =JavaScript Object Notation.
@@ -48,7 +48,7 @@
     ~Java Server Object Notation.
 }
 
-// Primary Use of JSON
+// Primary Use of JSON [tag:plaintext] [tag:basic]
 ::What is the primary use of JSON (JavaScript Object Notation)? 
 {
     =To represent structured data in a human-readable format.
@@ -58,7 +58,7 @@
     ~To execute code in web browsers.
 }
 
-// Enclosing String Values in JSON
+// Enclosing String Values in JSON [tag:plaintext] [tag:basic]
 ::Which of the following characters is used to enclose a string value in JSON? 
 {
     =Double quotes (" ").
@@ -68,7 +68,7 @@
     ~Angle brackets (< >).
 }
 
-// Purpose of Curly Braces in JSON Objects
+// Purpose of Curly Braces in JSON Objects [tag:plaintext] [tag:basic]
 ::In a JSON object, what is the purpose of the curly braces { }? 
 {
     =To enclose the object's key-value pairs.
@@ -78,7 +78,7 @@
     ~To define a function.
 }
 
-// Valid JSON Data Types
+// Valid JSON Data Types [tag:plaintext] [tag:basic]
 ::Which of the following is NOT a valid JSON data type? 
 {
     =Date.
@@ -88,7 +88,7 @@
     ~Null.
 }
 
-// Mixing Data Types in JSON Arrays
+// Mixing Data Types in JSON Arrays [tag:plaintext] [tag:basic]
 ::In a JSON array, can elements have different data types (e.g., a mix of numbers and strings)? 
 {
     =Yes, JSON allows mixing data types within arrays.
@@ -98,7 +98,7 @@
     ~Only if the elements are enclosed in square brackets.
 }
 
-// Purpose of Keys in JSON Objects
+// Purpose of Keys in JSON Objects [tag:plaintext] [tag:basic]
 ::In a JSON object, what is the purpose of a key? 
 {
     =To provide a label for a value.
@@ -108,7 +108,7 @@
     ~To separate array elements.
 }
 
-// JSON vs. XML: Advantages of JSON
+// JSON vs. XML: Advantages of JSON [tag:plaintext] [tag:basic]
 ::What is the primary advantage of using JSON over XML for data interchange? 
 {
     =JSON is more compact and easier to read.
@@ -118,7 +118,7 @@
     ~JSON is a markup language.
 }
 
-// Values Associated with Keys in JSON
+// Values Associated with Keys in JSON [tag:plaintext] [tag:basic]
 ::In a JSON object, what is the value associated with a key? 
 {
     =A data type such as a string or number.
@@ -128,7 +128,7 @@
     ~A null value.
 }
 
-// Serialization in JSON
+// Serialization in JSON [tag:plaintext] [tag:basic]
 ::In a JSON document, what does the term "serialization" refer to? 
 {
     =The process of converting data into a JSON format.
@@ -138,7 +138,7 @@
     ~The process of sorting JSON objects.
 }
 
-// Comments in JSON
+// Comments in JSON [tag:plaintext] [tag:basic]
 ::Which of the following statements is true regarding the use of comments in JSON? 
 {
     =JSON does not support comments.
@@ -148,7 +148,7 @@
     ~Comments in JSON start with /* and end with */.
 }
 
-// Key-Value Separators in JSON Objects
+// Key-Value Separators in JSON Objects [tag:plaintext] [tag:basic]
 ::Which character is used to separate key-value pairs in a JSON object? 
 {
     =Comma (,).
@@ -158,7 +158,7 @@
     ~Exclamation mark (!).
 }
 
-// Accessing Elements in JSON Arrays
+// Accessing Elements in JSON Arrays [tag:plaintext] [tag:basic]
 ::In a JSON array, can elements be accessed by their position or index? 
 {
     =Yes, elements can be accessed by their position.
@@ -168,7 +168,7 @@
     ~Only if the elements are separated by colons.
 }
 
-// Valid JSON Array Representation
+// Valid JSON Array Representation [tag:plaintext] [tag:basic]
 ::Which of the following is a valid JSON array? 
 {
     =["apple", "banana", "cherry"].
@@ -178,7 +178,7 @@
     ~[ "apple": 1, "banana": 2, "cherry": 3 ].
 }
 
-// Data Encoding in JSON
+// Data Encoding in JSON [tag:plaintext] [tag:basic]
 ::What is the primary purpose of encoding data in JSON? 
 {
     =To make it human-readable and easy to parse.
@@ -188,7 +188,7 @@
     ~To create executable code.
 }
 
-// Characteristics of JSON
+// Characteristics of JSON [tag:plaintext] [tag:basic]
 ::Which of the following is NOT a characteristic of JSON? 
 {
     =JSON allows for comments within the data.
