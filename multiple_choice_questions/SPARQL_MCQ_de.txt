@@ -1,5 +1,5 @@
-// Was ist SPARQL?
-Was ist SPARQL?
+// Was ist SPARQL? [tag:sparql] [tag:basic]
+::Was ist SPARQL?
 {
     =Eine Abfragesprache für semantische Daten
     ~Eine Programmiersprache
@@ -7,27 +7,27 @@ Was ist SPARQL?
     ~Ein Betriebssystem
 }
 
-// SPARQL SELECT Akronym
-Wofür steht in SPARQL das Akronym "SELECT"?
+// SPARQL SELECT Akronym [tag:sparql] [tag:basic]
+::Wofür steht in SPARQL das Akronym "SELECT"?
 {
-    =Keines der oben genannten
+    =Keines der genannten
     ~Securely Extract Lists of Data
     ~Strukturierte Abfragesprache
     ~Semantic Path and Resource Locator
     ~Simple Protocol und RDF Query Language
 }
 
-// Zweck von SPARQL-Abfragen im Wikidata-Kontext
-Was ist der primäre Zweck einer SPARQL-Abfrage im Kontext von Wikidata?
+// Zweck von SPARQL-Abfragen im Wikidata-Kontext [tag:sparql] [tag:basic]
+::Was ist der primäre Zweck einer SPARQL-Abfrage im Kontext von Wikidata?
 {
     =Strukturierte Daten aus Wikidata abzurufen und zu manipulieren
-    ~Um Webseiten zu erstellen
-    ~um E-Mails zu versenden
-    ~Mathematische Berechnungen durchzuführen
+    ~Erstellung von Webseiten
+    ~E-Mails versenden
+    ~Mathematische Berechnungen durchführen
 }
 
-// Abrufen von Eigenschaften und Werten in SPARQL
-Welches Schlüsselwort wird in SPARQL verwendet, um alle Eigenschaften und ihre Werte für eine bestimmte Wikidata-Entität abzurufen?
+// Abrufen von Eigenschaften und Werten in SPARQL [tag:sparql] [tag:basic]
+::Welches Schlüsselwort wird in SPARQL verwendet, um alle Eigenschaften und ihre Werte für eine bestimmte Wikidata-Entität abzurufen?
 {
     =DESCRIBE
     ~SELECT
@@ -35,17 +35,17 @@ Welches Schlüsselwort wird in SPARQL verwendet, um alle Eigenschaften und ihre 
     ~WHERE
 }
 
-// Zweck der SPARQL LIMIT-Klausel
-Was ist der Zweck der SPARQL "LIMIT" Klausel in einer Abfrage?
+// Zweck der SPARQL LIMIT-Klausel [tag:sparql] [tag:basic]
+::Was ist der Zweck der SPARQL "LIMIT" Klausel in einer Abfrage?
 {
     =Angabe der Anzahl der abzurufenden Abfrageergebnisse
-    ~ Um die Anzahl der Triples im Datensatz zu begrenzen
+    ~Um die Anzahl der Triples im Datensatz zu begrenzen
     ~Um Abfrageergebnisse basierend auf einer Bedingung zu filtern
     ~Um Abfrageergebnisse alphabetisch zu ordnen
 }
 
-// Gruppierung von Abfrageergebnissen in SPARQL
-Welches SPARQL-Schlüsselwort wird verwendet, um Abfrageergebnisse nach einer bestimmten Variable zu gruppieren, um Aggregatfunktionen wie COUNT oder SUM durchzuführen?
+// Gruppierung von Abfrageergebnissen in SPARQL [tag:sparql] [tag:basic]
+::Welches SPARQL-Schlüsselwort wird verwendet, um Abfrageergebnisse nach einer bestimmten Variable zu gruppieren, um Aggregatfunktionen wie COUNT oder SUM durchzuführen?
 {
     =GROUP
     ~HAVING
@@ -53,8 +53,8 @@ Welches SPARQL-Schlüsselwort wird verwendet, um Abfrageergebnisse nach einer be
     ~FILTER
 }
 
-// SPARQL FILTER-Klausel
-Was erlaubt die SPARQL-Klausel "FILTER" in einer Abfrage zu tun?
+// SPARQL FILTER-Klausel [tag:sparql] [tag:basic]
+::Was erlaubt die SPARQL-Klausel "FILTER" in einer Abfrage zu tun?
 {
     =Bestimmte Ergebnisse basierend auf einer Bedingung ausschließen
     ~Spezifische Eigenschaften abrufen
@@ -62,8 +62,8 @@ Was erlaubt die SPARQL-Klausel "FILTER" in einer Abfrage zu tun?
     ~Joins zwischen Datensätzen durchführen
 }
 
-// Anordnen von Abfrageergebnissen in SPARQL
-Welches Schlüsselwort wird verwendet, um Abfrageergebnisse in aufsteigender oder absteigender Reihenfolge auf der Grundlage einer bestimmten Variable in SPARQL zu ordnen?
+// Anordnen von Abfrageergebnissen in SPARQL [tag:sparql] [tag:basic]
+::Welches Schlüsselwort wird verwendet, um Abfrageergebnisse in aufsteigender oder absteigender Reihenfolge auf der Grundlage einer bestimmten Variable in SPARQL zu ordnen?
 {
     =ORDER
     ~SORT
@@ -71,17 +71,17 @@ Welches Schlüsselwort wird verwendet, um Abfrageergebnisse in aufsteigender ode
     ~GROUP
 }
 
-// Zweck der SPARQL PREFIX-Deklaration
-Was ist der Zweck der "PREFIX"-Deklaration in SPARQL?
+// Zweck der SPARQL PREFIX-Deklaration [tag:sparql] [tag:basic]
+::Was ist der Zweck der "PREFIX"-Deklaration in SPARQL?
 {
-    =Namensraumpräfixe zur Verwendung in der Abfrage zu definieren
-    ~Den Titel der Abfrage anzugeben
-    ~Um eine Filterbedingung zu erstellen
+    =Namensraumpräfixe zur Verwendung in der Abfrage definieren
+    ~Den Titel der Abfrage angeben
+    ~Eine Filterbedingung erstellen
     ~Zur Begrenzung der Anzahl der Ergebnisse
 }
 
-// Ergebnisformat für SPARQL-Abfragen in Wikidata
-Welches Ergebnisformat wird üblicherweise verwendet, wenn SPARQL-Abfragen gegen Wikidata über dessen webbasierten Abfragedienst ausgeführt werden?
+// Ergebnisformat für SPARQL-Abfragen in Wikidata [tag:sparql] [tag:basic]
+::Welches Ergebnisformat wird üblicherweise verwendet, wenn SPARQL-Abfragen gegen Wikidata über dessen webbasierten Abfragedienst ausgeführt werden?
 {
     =JSON
     ~CSV
@@ -89,8 +89,8 @@ Welches Ergebnisformat wird üblicherweise verwendet, wenn SPARQL-Abfragen gegen
     ~HTML
 }
 
-// SPARQL OPTIONAL-Schlüsselwort
-Welches SPARQL-Schlüsselwort wird verwendet, um optionale Muster in einer Abfrage anzugeben, was bedeutet, dass die Abfrage auch Ergebnisse liefert, wenn diese Muster nicht übereinstimmen?
+// SPARQL OPTIONAL-Schlüsselwort [tag:sparql] [tag:basic]
+::Welches SPARQL-Schlüsselwort wird verwendet, um optionale Muster in einer Abfrage anzugeben, was bedeutet, dass die Abfrage auch Ergebnisse liefert, wenn diese Muster nicht übereinstimmen?
 {
     =OPTIONAL
     ~REQUIRED
@@ -98,8 +98,8 @@ Welches SPARQL-Schlüsselwort wird verwendet, um optionale Muster in einer Abfra
     ~CONDITIONAL
 }
 
-// SPARQL-Schlüsselwort UNION
-Was ermöglicht das SPARQL-Schlüsselwort "UNION" in einer Abfrage zu tun?
+// SPARQL-Schlüsselwort UNION [tag:sparql] [tag:basic]
+::Was ermöglicht das SPARQL-Schlüsselwort "UNION" in einer Abfrage zu tun?
 {
     =Die Ergebnisse von zwei oder mehr Abfragen zu einer einzigen Ergebnismenge zusammenfassen
     ~Erstellen einer Schnittmenge von Abfrageergebnissen
@@ -107,8 +107,8 @@ Was ermöglicht das SPARQL-Schlüsselwort "UNION" in einer Abfrage zu tun?
     ~Gruppieren von Abfrageergebnissen
 }
 
-// Die Rolle von Wikidata beim Wissensaustausch und der Zusammenarbeit
-Was ist einer der Hauptvorteile der Verwendung von Wikidata für den Wissensaustausch und die Zusammenarbeit?
+// Die Rolle von Wikidata beim Wissensaustausch und der Zusammenarbeit [tag:sparql] [tag:basic]
+::Was ist einer der Hauptvorteile der Verwendung von Wikidata für den Wissensaustausch und die Zusammenarbeit?
 {
     =Es bietet freien und offenen Zugang zu strukturiertem Wissen.
     ~Es handelt sich um eine proprietäre Plattform, die nur für wenige zugänglich ist.
@@ -117,8 +117,8 @@ Was ist einer der Hauptvorteile der Verwendung von Wikidata für den Wissensaust
     ~Sie ist auf eine bestimmte Sprache beschränkt.
 }
 
-// Nutzung von Wikidata für die Datenintegration und -anreicherung
-Wie kann Wikidata zur Unterstützung der Datenintegration und -anreicherung genutzt werden?
+// Nutzung von Wikidata für die Datenintegration und -anreicherung [tag:sparql] [tag:basic]
+::Wie kann Wikidata zur Unterstützung der Datenintegration und -anreicherung genutzt werden?
 {
     =Indem Benutzer Daten gemeinsam hinzufügen und bearbeiten können.
     ~Durch die Bereitstellung unstrukturierter Daten ohne Kontext.
@@ -127,8 +127,8 @@ Wie kann Wikidata zur Unterstützung der Datenintegration und -anreicherung genu
     ~Indem sie von den Nutzern verlangen, für Datenbeiträge zu bezahlen.
 }
 
-// Häufige Anwendungsfälle für Wikidata
-Welcher der folgenden Fälle ist ein üblicher Anwendungsfall für Wikidata?
+// Häufige Anwendungsfälle für Wikidata [tag:sparql] [tag:basic]
+::Welcher der folgenden Fälle ist ein üblicher Anwendungsfall für Wikidata?
 {
     =Kollaborative Forschung an wissenschaftlichen Artikeln.
     ~Speicherung geschützter Geschäftsdaten.
@@ -137,8 +137,8 @@ Welcher der folgenden Fälle ist ein üblicher Anwendungsfall für Wikidata?
     ~Online-Videospiele spielen.
 }
 
-// Art der Daten in Wikidata
-Welche Art von Daten kann in Wikidata gefunden werden?
+// Art der Daten in Wikidata [tag:sparql] [tag:basic]
+::Welche Art von Daten kann in Wikidata gefunden werden?
 {
     =Strukturierte und verlinkte offene Daten.
     ~Persönliche Fotos und Videos.
@@ -147,8 +147,8 @@ Welche Art von Daten kann in Wikidata gefunden werden?
     ~Cryptocurrency-Transaktionen.
 }
 
-// Welche Art von Daten kann in Wikidata gefunden werden?
-Welche Art von Daten können in Wikidata gefunden werden?
+// Welche Art von Daten kann in Wikidata gefunden werden? [tag:sparql] [tag:basic]
+::Welche Art von Daten können in Wikidata gefunden werden?
 {
     =Strukturierte und verlinkte offene Daten.
     ~Persönliche Fotos und Videos.
@@ -157,18 +157,18 @@ Welche Art von Daten können in Wikidata gefunden werden?
     ~Cryptocurrency-Transaktionen.
 }
 
-// Wie fördert Wikidata die Mehrsprachigkeit und die kulturelle Vielfalt?
-Wie fördert Wikidata die Mehrsprachigkeit und die kulturelle Vielfalt?
+// Wie fördert Wikidata die Mehrsprachigkeit und die kulturelle Vielfalt? [tag:sparql] [tag:basic]
+::Wie fördert Wikidata die Mehrsprachigkeit und die kulturelle Vielfalt?
 {
-    =Indem es den Benutzern erlaubt, in ihrer Muttersprache beizutragen.
+    =Indem es den Usern erlaubt, in ihrer Muttersprache beizutragen.
     ~Indem es eine einsprachige Politik durchsetzt.
     ~Durch die Bereitstellung von Übersetzungen nur auf Englisch.
-    ~Durch die Beschränkung des Zugangs auf Benutzer aus bestimmten Regionen.
+    ~Durch die Beschränkung des Zugangs auf User aus bestimmten Regionen.
     ~Durch den Ausschluss von Inhalten aus nicht-englischsprachigen Gemeinschaften.
 }
 
-// Hauptziel des strukturierten Datenmodells von Wikidata
-Was ist das Hauptziel des strukturierten Datenmodells von Wikidata?
+// Hauptziel des strukturierten Datenmodells von Wikidata [tag:sparql] [tag:basic]
+::Was ist das Hauptziel des strukturierten Datenmodells von Wikidata?
 {
     =Einfache Verknüpfung und gemeinsame Nutzung von Daten zu ermöglichen.
     ~Den Zugang zu Daten aus Sicherheitsgründen zu beschränken.
@@ -177,18 +177,18 @@ Was ist das Hauptziel des strukturierten Datenmodells von Wikidata?
     ~den Zugang zu den Daten auf akademische Einrichtungen zu beschränken.
 }
 
-// Wie trägt Wikidata zur Verbesserung der Datenqualität und -genauigkeit bei?
-Wie trägt Wikidata zur Verbesserung der Datenqualität und -genauigkeit bei?
+// Wie trägt Wikidata zur Verbesserung der Datenqualität und -genauigkeit bei? [tag:sparql] [tag:basic]
+::Wie trägt Wikidata zur Verbesserung der Datenqualität und -genauigkeit bei?
 {
-    =Indem es die gemeinschaftliche Bearbeitung und Überprüfung durch Fachkollegen ermöglicht.
+    =Indem es die gemeinschaftliche Bearbeitung und Überprüfung durch Fachkolleg:innen ermöglicht.
     ~Durch die Beschränkung der Datenbeiträge auf eine ausgewählte Gruppe von Experten.
     ~Durch das Hinzufügen von zufälligen und ungeprüften Informationen in die Datenbank.
     ~Durch regelmäßiges Löschen aller von Nutzern beigetragenen Daten.
     ~Durch die Erhebung einer Gebühr für Dateneinsendungen.
 }
 
-// Wikidatas Verwendung offener Lizenzen
-Welche der folgenden Aussagen über die Verwendung offener Lizenzen durch Wikidata ist zutreffend?
+// Wikidatas Verwendung offener Lizenzen [tag:sparql] [tag:basic]
+::Welche der folgenden Aussagen über die Verwendung offener Lizenzen durch Wikidata ist zutreffend?
 {
     =Wikidata-Inhalte sind unter einer Creative-Commons-Lizenz lizenziert.
     ~Wikidata-Inhalte sind nicht lizenziert und können nicht wiederverwendet werden.
@@ -197,8 +197,8 @@ Welche der folgenden Aussagen über die Verwendung offener Lizenzen durch Wikida
     ~Wikidata-Inhalte sind ausschließlich für kommerzielle Unternehmen lizenziert.
 }
 
-// Wie kann Wikidata semantische Webanwendungen und verknüpfte Daten unterstützen?
-Wie kann Wikidata semantische Webanwendungen und verlinkte Daten unterstützen?
+// Wie kann Wikidata semantische Webanwendungen und verknüpfte Daten unterstützen? [tag:sparql] [tag:basic]
+::Wie kann Wikidata semantische Webanwendungen und verlinkte Daten unterstützen?
 {
     =Indem Daten programmatisch abgefragt und verknüpft werden können.
     ~Durch die Bereitstellung von Daten ausschließlich im PDF-Format.
@@ -207,8 +207,8 @@ Wie kann Wikidata semantische Webanwendungen und verlinkte Daten unterstützen?
     ~Durch die Erhebung von Gebühren für den Zugriff auf verknüpfte Daten.
 }
 
-// Nutzen des kollaborativen und gemeinschaftsorientierten Ansatzes von Wikidata
-Was ist der Vorteil von Wikidatas kollaborativem und gemeinschaftsorientiertem Ansatz?
+// Nutzen des kollaborativen und gemeinschaftsorientierten Ansatzes von Wikidata [tag:sparql] [tag:basic]
+::Was ist der Vorteil von Wikidatas kollaborativem und gemeinschaftsorientiertem Ansatz?
 {
     =Er macht kollektives Wissen und Fachwissen nutzbar.
     ~Er gewährleistet die Genauigkeit der Daten ohne menschliches Zutun.
@@ -217,8 +217,8 @@ Was ist der Vorteil von Wikidatas kollaborativem und gemeinschaftsorientiertem A
     ~Es erlaubt einer einzigen Organisation, alle Daten zu kontrollieren.
 }
 
-// Wie erleichtert Wikidata die Wiederverwendung von Daten über verschiedene Wissensgebiete hinweg?
-Wie erleichtert Wikidata die Wiederverwendung von Daten über verschiedene Wissensbereiche hinweg?
+// Wie erleichtert Wikidata die Wiederverwendung von Daten über verschiedene Wissensgebiete hinweg? [tag:sparql] [tag:basic]
+::Wie erleichtert Wikidata die Wiederverwendung von Daten über verschiedene Wissensbereiche hinweg?
 {
     =Durch die Möglichkeit, Daten zu kategorisieren und zu verknüpfen.
     ~Durch die Beschränkung der Daten auf einen einzigen Bereich oder ein einziges Thema.
@@ -227,8 +227,8 @@ Wie erleichtert Wikidata die Wiederverwendung von Daten über verschiedene Wisse
     ~Durch die Bereitstellung von Daten in einem geschlossenen und unzugänglichen Format.
 }
 
-// Hauptzweck der Wikibase-Software von Wikidata
-Was ist der Hauptzweck der Wikibase-Software von Wikidata?
+// Hauptzweck der Wikibase-Software von Wikidata [tag:sparql] [tag:basic]
+::Was ist der Hauptzweck der Wikibase-Software von Wikidata?
 {
     =Die Erstellung von Wikidata-ähnlichen Datenbanken zu ermöglichen.
     ~Den Zugang zu Wikidata für nicht-akademische Nutzer zu sperren.
@@ -237,8 +237,8 @@ Was ist der Hauptzweck der Wikibase-Software von Wikidata?
     ~Daten in einem proprietären Datenbankformat zu speichern.
 }
 
-// Wie stellt Wikidata die Konsistenz und Einheitlichkeit der Daten über verschiedene Einträge hinweg sicher?
-Wie stellt Wikidata die Konsistenz und Einheitlichkeit der Daten zwischen den verschiedenen Einträgen sicher?
+// Wie stellt Wikidata die Konsistenz und Einheitlichkeit der Daten über verschiedene Einträge hinweg sicher? [tag:sparql] [tag:basic]
+::Wie stellt Wikidata die Konsistenz und Einheitlichkeit der Daten zwischen den verschiedenen Einträgen sicher?
 {
     =Durch die Einführung strenger Datenvalidierungsregeln und -richtlinien.
     ~Indem man den Mitwirkenden erlaubt, jedes Datenformat zu verwenden, das sie bevorzugen.
@@ -247,8 +247,8 @@ Wie stellt Wikidata die Konsistenz und Einheitlichkeit der Daten zwischen den ve
     ~Durch die Erhebung von Gebühren für die Datenformatierung.
 }
 
-// Rolle der Wikidata-Bezeichner (QIDs) bei der Datenverknüpfung
-Welche Rolle spielen Wikidata-Bezeichner (QIDs) bei der Datenverknüpfung?
+// Rolle der Wikidata-Bezeichner (QIDs) bei der Datenverknüpfung [tag:sparql] [tag:basic]
+::Welche Rolle spielen Wikidata-Identifier (QIDs) bei der Datenverknüpfung?
 {
     =Sie bieten eine standardisierte Möglichkeit, Entitäten zu identifizieren.
     ~Sie werden verwendet, um auf kostenpflichtige Datenquellen zuzugreifen.
@@ -257,8 +257,8 @@ Welche Rolle spielen Wikidata-Bezeichner (QIDs) bei der Datenverknüpfung?
     ~Sie beschränken den Datenzugang auf Regierungsbehörden.
 }
 
-// Wie unterstützt Wikidata Institutionen und Bibliotheken des kulturellen Erbes?
-Wie unterstützt Wikidata Institutionen des kulturellen Erbes und Bibliotheken?
+// Wie unterstützt Wikidata Institutionen und Bibliotheken des kulturellen Erbes? [tag:sparql] [tag:basic]
+::Wie unterstützt Wikidata Institutionen des kulturellen Erbes und Bibliotheken?
 {
     =Indem sie freien Zugang zu strukturierten Daten zur Anreicherung anbieten.
     ~Indem es exorbitante Gebühren für den Datenzugang erhebt.
@@ -267,8 +267,8 @@ Wie unterstützt Wikidata Institutionen des kulturellen Erbes und Bibliotheken?
     ~Durch den Ausschluss von Inhalten des kulturellen Erbes aus der Datenbank.
 }
 
-// Bedeutung des Wikidata Query Service für die Nutzer
-Welche Bedeutung hat der Wikidata Query Service für die Nutzer?
+// Bedeutung des Wikidata Query Service für die Nutzer [tag:sparql] [tag:basic]
+::Welche Bedeutung hat der Wikidata Query Service für die Nutzer?
 {
     =Er ermöglicht es den Nutzern, die Daten von Wikidata abzufragen und zu erforschen.
     ~Er bietet eine geschlossene Plattform für die Datenanalyse.
@@ -277,8 +277,8 @@ Welche Bedeutung hat der Wikidata Query Service für die Nutzer?
     ~Es unterstützt nur Abfragen in einer einzigen Sprache.
 }
 
-// Wie fördert Wikidata die Interoperabilität von Daten mit anderen Projekten?
-Wie fördert Wikidata die Interoperabilität von Daten mit anderen Projekten?
+// Wie fördert Wikidata die Interoperabilität von Daten mit anderen Projekten? [tag:sparql] [tag:basic]
+::Wie fördert Wikidata die Interoperabilität von Daten mit anderen Projekten?
 {
     =Durch die Bereitstellung von Daten in standardisierten und offenen Formaten.
     ~Durch die Speicherung von Daten ausschließlich in proprietären Formaten.
@@ -287,8 +287,8 @@ Wie fördert Wikidata die Interoperabilität von Daten mit anderen Projekten?
     ~Durch den Ausschluss von Daten aus Nicht-Wikimedia-Projekten.
 }
 
-// Nutzung von Wikidata zur Verbesserung von Suchmaschinenfunktionen und Wissenspanels
-Wie kann Wikidata genutzt werden, um die Möglichkeiten von Suchmaschinen und Wissenstafeln zu verbessern?
+// Nutzung von Wikidata zur Verbesserung von Suchmaschinenfunktionen und Wissenspanels [tag:sparql] [tag:basic]
+::Wie kann Wikidata genutzt werden, um die Möglichkeiten von Suchmaschinen und Wissenstafeln zu verbessern?
 {
     =Indem man strukturierte Daten anbietet, die von Suchmaschinen genutzt werden können.
     ~Durch Ausschluss von Daten aus der Indizierung durch Suchmaschinen.
