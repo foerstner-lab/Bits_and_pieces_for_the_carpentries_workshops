@@ -1,5 +1,5 @@
-// Welcher Befehl wird verwendet, um SSH-Schlüsselpaare auf einem lokalen Rechner zu erzeugen?
-Welcher Befehl wird verwendet, um SSH-Schlüsselpaare auf einem lokalen Rechner zu erzeugen?
+// Welcher Befehl wird verwendet, um SSH-Schlüsselpaare auf einem lokalen Rechner zu erzeugen? [tag:ssh] [tag:basic]
+::Welcher Befehl wird verwendet, um SSH-Schlüsselpaare auf einem lokalen Rechner zu erzeugen?
 {
     =ssh-keygen
     ~ssh-genkey
@@ -7,8 +7,8 @@ Welcher Befehl wird verwendet, um SSH-Schlüsselpaare auf einem lokalen Rechner 
     ~ssh-encrypt
 }
 
-// Standardname für die private SSH-Schlüsseldatei
-Wie lautet der Standardname für die von ssh-keygen erzeugte private SSH-Schlüsseldatei?
+// Standardname für die private SSH-Schlüsseldatei [tag:ssh] [tag:basic]
+::Wie lautet der Standardname für die von ssh-keygen erzeugte private SSH-Schlüsseldatei?
 {
     =id_rsa
     ~id_rsa.pub
@@ -16,8 +16,8 @@ Wie lautet der Standardname für die von ssh-keygen erzeugte private SSH-Schlüs
     ~public_key
 }
 
-// Befehl zum Kopieren des öffentlichen SSH-Schlüssels auf einen entfernten Server
-Welcher Befehl wird verwendet, um den öffentlichen SSH-Schlüssel auf einen entfernten Server zu kopieren?
+// Befehl zum Kopieren des öffentlichen SSH-Schlüssels auf einen entfernten Server [tag:ssh] [tag:basic]
+::Welcher Befehl wird verwendet, um den öffentlichen SSH-Key auf einen entfernten Server zu kopieren?
 {
     =ssh-copy-id
     ~ssh-kopieren-schlüssel
@@ -25,8 +25,8 @@ Welcher Befehl wird verwendet, um den öffentlichen SSH-Schlüssel auf einen ent
     ~ssh-send-key
 }
 
-// Zweck des Kopierens des öffentlichen SSH-Schlüssels auf einen entfernten Server mit ssh-copy-id
-Was ist der Zweck des Kopierens Ihres öffentlichen SSH-Schlüssels auf einen entfernten Server mit ssh-copy-id?
+// Zweck des Kopierens des öffentlichen SSH-Schlüssels auf einen entfernten Server mit ssh-copy-id [tag:ssh] [tag:basic]
+::Was ist der Zweck des Kopierens des öffentlichen SSH-Key auf einen entfernten Server mit ssh-copy-id?
 {
     =Um sich beim entfernten Server ohne Passwort zu authentifizieren.
     ~Um Dateien zwischen dem lokalen und dem entfernten Rechner zu übertragen.
@@ -34,8 +34,8 @@ Was ist der Zweck des Kopierens Ihres öffentlichen SSH-Schlüssels auf einen en
     ~Um die SSH-Konfiguration des Servers zu ändern.
 }
 
-// Zu bearbeitende Datei für die Konfiguration der SSH-Optionen auf dem lokalen Rechner
-Welche Datei sollten Sie bearbeiten, um die SSH-Optionen auf Ihrem lokalen Rechner zu konfigurieren?
+// Zu bearbeitende Datei für die Konfiguration der SSH-Optionen auf dem lokalen Rechner [tag:ssh] [tag:basic]
+::Welche Datei sollten Sie bearbeiten, um die SSH-Optionen auf Ihrem lokalen Rechner zu konfigurieren?
 {
     =~/.ssh/config
     ~/etc/ssh/sshd_config
@@ -43,8 +43,8 @@ Welche Datei sollten Sie bearbeiten, um die SSH-Optionen auf Ihrem lokalen Rechn
     ~~/.ssh/authorized_keys
 }
 
-// Zweck der Datei known_hosts in SSH
-Was ist der Zweck der Datei known_hosts in SSH?
+// Zweck der Datei known_hosts in SSH [tag:ssh] [tag:basic]
+::Was ist der Zweck der Datei known_hosts in SSH?
 {
     =Zur Verfolgung der Host-Schlüssel des entfernten Servers.
     ~Um private Schlüssel zu speichern.
@@ -52,8 +52,8 @@ Was ist der Zweck der Datei known_hosts in SSH?
     ~Um öffentliche Schlüssel zu speichern.
 }
 
-// SSH-Befehl zur Angabe einer anderen Identitätsdatei
-Welcher SSH-Befehl wird verwendet, um eine andere Identitätsdatei (privater Schlüssel) anzugeben, wenn man sich mit einem entfernten Server verbindet?
+// SSH-Befehl zur Angabe einer anderen Identitätsdatei [tag:ssh] [tag:basic]
+::Welcher SSH-Befehl wird verwendet, um eine andere Identitätsdatei (privater Key) anzugeben, wenn man sich mit einem entfernten Server verbindet?
 {
     =ssh -i
     ~ssh -p
@@ -61,8 +61,8 @@ Welcher SSH-Befehl wird verwendet, um eine andere Identitätsdatei (privater Sch
     ~ssh -r
 }
 
-// SSH-Befehl zum sicheren Kopieren von Dateien zwischen lokalen und entfernten Rechnern
-Mit welchem SSH-Befehl können Sie Dateien sicher zwischen Ihrem lokalen Rechner und einem entfernten Server kopieren?
+// SSH-Befehl zum sicheren Kopieren von Dateien zwischen lokalen und entfernten Rechnern [tag:ssh] [tag:basic]
+::Mit welchem SSH-Befehl können Dateien sicher zwischen dem lokalen Rechner und einem entfernten Server kopiert werden?
 {
     =scp
     ~ssh-copy-id
