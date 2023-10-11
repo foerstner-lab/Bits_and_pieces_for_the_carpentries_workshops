@@ -1,5 +1,5 @@
-// Pandas Library in Python
-In Python, what is the primary purpose of the pandas library?
+// Pandas Library in Python [tag:python] [tag:basic]
+::In Python, what is the primary purpose of the pandas library?
 {
     =To perform data analysis and manipulation
     ~To create graphical user interfaces (GUIs)
@@ -7,8 +7,8 @@ In Python, what is the primary purpose of the pandas library?
     ~To work with machine learning algorithms
 }
 
-// Import Statement in Python
-In Python, what is the purpose of the import statement?
+// Import Statement in Python [tag:python] [tag:basic]
+::In Python, what is the purpose of the import statement?
 {
     =To include external libraries or modules
     ~To create a new variable
@@ -17,8 +17,8 @@ In Python, what is the purpose of the import statement?
     ~To comment out code
 }
 
-// Primary Data Structure in Pandas
-What is the primary data structure for storing and manipulating data in pandas?
+// Primary Data Structure in Pandas [tag:python] [tag:basic]
+::What is the primary data structure for storing and manipulating data in pandas?
 {
     =DataFrame
     ~List
@@ -27,8 +27,8 @@ What is the primary data structure for storing and manipulating data in pandas?
     ~Set
 }
 
-// Loading Data into DataFrame
-Which pandas method is used to load data from a CSV file into a DataFrame?
+// Loading Data into DataFrame [tag:python] [tag:basic]
+::Which pandas method is used to load data from a CSV file into a DataFrame?
 {
     =read_csv()
     ~load_data()
@@ -37,8 +37,8 @@ Which pandas method is used to load data from a CSV file into a DataFrame?
     ~parse_csv()
 }
 
-// Purpose of the if Statement
-In Python, what does the if statement allow you to do?
+// Purpose of the if Statement [tag:python] [tag:basic]
+::In Python, what does the if statement allow you to do?
 {
     =Execute code only if a certain condition is met
     ~Perform a loop operation
@@ -47,8 +47,8 @@ In Python, what does the if statement allow you to do?
     ~Create a DataFrame
 }
 
-// Comparison Operator in Python
-Which Python operator is used to check if two values are equal in value and type?
+// Comparison Operator in Python [tag:python] [tag:basic]
+::Which Python operator is used to check if two values are equal in value and type?
 {
     ===
     ~=
@@ -57,8 +57,8 @@ Which Python operator is used to check if two values are equal in value and type
     ~<=
 }
 
-// Purpose of the iloc Attribute in Pandas
-What is the purpose of the iloc attribute in pandas?
+// Purpose of the iloc Attribute in Pandas [tag:python] [tag:basic]
+::What is the purpose of the iloc attribute in pandas?
 {
     =To select rows and columns by their integer positions
     ~To perform element-wise operations on a DataFrame
@@ -67,8 +67,8 @@ What is the purpose of the iloc attribute in pandas?
     ~To sort data in ascending order
 }
 
-// Calculating Summary Statistics in Pandas
-Which pandas method is used to calculate summary statistics (e.g., mean, median) for numeric columns in a DataFrame?
+// Calculating Summary Statistics in Pandas [tag:python] [tag:basic]
+::Which pandas method is used to calculate summary statistics (e.g., mean, median) for numeric columns in a DataFrame?
 {
     =describe()
     ~count()
@@ -77,8 +77,8 @@ Which pandas method is used to calculate summary statistics (e.g., mean, median)
     ~info()
 }
 
-// Purpose of the for Loop in Python
-In Python, what is the purpose of the for loop?
+// Purpose of the for Loop in Python [tag:python] [tag:basic]
+::In Python, what is the purpose of the for loop?
 {
     =To perform a specific task a fixed number of times
     ~To execute code only if a certain condition is met
@@ -87,8 +87,8 @@ In Python, what is the purpose of the for loop?
     ~To load data from a CSV file
 }
 
-// Mutable Python Data Type
-Which Python data type is mutable (can be modified after creation)?
+// Mutable Python Data Type [tag:python] [tag:basic]
+::Which Python data type is mutable (can be modified after creation)?
 {
     =List
     ~Tuple
@@ -97,8 +97,8 @@ Which Python data type is mutable (can be modified after creation)?
     ~Dictionary
 }
 
-// Purpose of the str() Function in Python
-What does the str() function in Python do?
+// Purpose of the str() Function in Python [tag:python] [tag:basic]
+::What does the str() function in Python do?
 {
     =Convert a value to a string
     ~Convert a string to lowercase
@@ -107,8 +107,8 @@ What does the str() function in Python do?
     ~Remove leading and trailing spaces from a string
 }
 
-// Usage of Jupyter Notebook
-What is a Jupyter notebook primarily used for in Python development?
+// Usage of Jupyter Notebook [tag:python] [tag:basic]
+::What is a Jupyter notebook primarily used for in Python development?
 {
     =To write and execute Python code interactively.
     ~To compile Python code into binary executables.
@@ -117,8 +117,8 @@ What is a Jupyter notebook primarily used for in Python development?
     ~To debug Python code.
 }
 
-// Purpose of Cells in Jupyter Notebook
-In a Jupyter notebook, what are cells used for?
+// Purpose of Cells in Jupyter Notebook [tag:python] [tag:basic]
+::In a Jupyter notebook, what are cells used for?
 {
     =Executing code and displaying output.
     ~Storing Python code only.
@@ -127,8 +127,8 @@ In a Jupyter notebook, what are cells used for?
     ~Creating external Python scripts.
 }
 
-// File Extension for Jupyter Notebook Files
-What is the file extension commonly associated with Jupyter notebook files?
+// File Extension for Jupyter Notebook Files [tag:python] [tag:basic]
+::What is the file extension commonly associated with Jupyter notebook files?
 {
     =.ipynb
     ~.txt
@@ -137,8 +137,8 @@ What is the file extension commonly associated with Jupyter notebook files?
     ~.csv
 }
 
-// Functionality of Jupyter Code Cells
-What does a Jupyter code cell allow you to do?
+// Functionality of Jupyter Code Cells [tag:python] [tag:basic]
+::What does a Jupyter code cell allow you to do?
 {
     =Write both Python code and formatted text.
     ~Write only Python code.
@@ -147,8 +147,8 @@ What does a Jupyter code cell allow you to do?
     ~Execute code without saving the cell.
 }
 
-// Adding New Cell in Jupyter Notebook
-How can you add a new cell below the currently selected cell in a Jupyter notebook?
+// Adding New Cell in Jupyter Notebook [tag:python] [tag:basic]
+::How can you add a new cell below the currently selected cell in a Jupyter notebook?
 {
     =Press Alt + Enter.
     ~Press Shift + Enter.
@@ -157,8 +157,8 @@ How can you add a new cell below the currently selected cell in a Jupyter notebo
     ~Press Ctrl + S.
 }
 
-// Purpose of Jupyter Markdown Cell
-What is the purpose of a Jupyter Markdown cell?
+// Purpose of Jupyter Markdown Cell [tag:python] [tag:basic]
+::What is the purpose of a Jupyter Markdown cell?
 {
     =To provide text-based documentation.
     ~To execute Python code.
@@ -167,8 +167,8 @@ What is the purpose of a Jupyter Markdown cell?
     ~To create Python functions.
 }
 
-// Saving Content in Jupyter Notebook
-Which command is used to save the content of a Jupyter notebook?
+// Saving Content in Jupyter Notebook [tag:python] [tag:basic]
+::Which command is used to save the content of a Jupyter notebook?
 {
     =Ctrl + S (or Cmd + S on Mac)
     ~save_notebook()
@@ -177,8 +177,8 @@ Which command is used to save the content of a Jupyter notebook?
     ~close_notebook()
 }
 
-// Restarting Python Kernel in Jupyter Notebook
-How can you restart the Python kernel in a Jupyter notebook?
+// Restarting Python Kernel in Jupyter Notebook [tag:python] [tag:basic]
+::How can you restart the Python kernel in a Jupyter notebook?
 {
     =Click the "Restart Kernel" button in the toolbar.
     ~Close and reopen the entire notebook.
@@ -187,8 +187,8 @@ How can you restart the Python kernel in a Jupyter notebook?
     ~Restart the computer running Jupyter.
 }
 
-// Commenting Multiple Lines in Jupyter Notebook
-In a Jupyter notebook, how can you comment out multiple lines of code at once?
+// Commenting Multiple Lines in Jupyter Notebook [tag:python] [tag:basic]
+::In a Jupyter notebook, how can you comment out multiple lines of code at once?
 {
     =Highlight the lines and press Ctrl + / (or Cmd + / on Mac).
     ~Use the # symbol at the beginning of each line.
@@ -197,8 +197,8 @@ In a Jupyter notebook, how can you comment out multiple lines of code at once?
     ~Use the %comment magic command.
 }
 
-// Advantage of Python Scripts over Jupyter Notebooks
-What is the main advantage of using a Python script (.py) over a Jupyter notebook (.ipynb)?
+// Advantage of Python Scripts over Jupyter Notebooks [tag:python] [tag:basic]
+::What is the main advantage of using a Python script (.py) over a Jupyter notebook (.ipynb)?
 {
     =Python scripts are easier to share and version control.
     ~Python scripts allow for interactive execution.
@@ -207,8 +207,8 @@ What is the main advantage of using a Python script (.py) over a Jupyter noteboo
     ~Python scripts support only simple calculations.
 }
 
-// Running Python Scripts from Command Line
-How do you run a Python script from the command line?
+// Running Python Scripts from Command Line [tag:python] [tag:basic]
+::How do you run a Python script from the command line?
 {
     =Type python my_script.py in the terminal.
     ~Type python my_script.ipynb in the terminal.
@@ -217,8 +217,8 @@ How do you run a Python script from the command line?
     ~There is no way to run Python scripts from the command line.
 }
 
-// Purpose of Python Scripts for Automation Tasks
-What is the primary purpose of using Python scripts for automation tasks?
+// Purpose of Python Scripts for Automation Tasks [tag:python] [tag:basic]
+::What is the primary purpose of using Python scripts for automation tasks?
 {
     =To perform repetitive tasks automatically.
     ~To create Jupyter notebooks.
@@ -227,8 +227,8 @@ What is the primary purpose of using Python scripts for automation tasks?
     ~To create interactive web applications.
 }
 
-// apply() Method in Pandas DataFrame
-In pandas, what is the primary purpose of the apply method when used with a DataFrame?
+// apply() Method in Pandas DataFrame [tag:python] [tag:basic]
+::In pandas, what is the primary purpose of the apply method when used with a DataFrame?
 {
     =To apply a function to each element or row in a DataFrame.
     ~To create a new DataFrame with only selected columns.
@@ -237,8 +237,8 @@ In pandas, what is the primary purpose of the apply method when used with a Data
     ~To sort the DataFrame in ascending order.
 }
 
-// apply() Method Behavior in Series vs. DataFrame
-In pandas, how does the apply method behave differently when applied to a Series compared to a DataFrame?
+// apply() Method Behavior in Series vs. DataFrame [tag:python] [tag:basic]
+::In pandas, how does the apply method behave differently when applied to a Series compared to a DataFrame?
 {
     =When applied to a Series, apply can only operate on a single element at a time, while on a DataFrame, it operates on entire rows or columns.
     ~When applied to a Series, apply always returns a Series, while on a DataFrame, it can return a DataFrame or a Series, depending on the function used.
@@ -247,8 +247,8 @@ In pandas, how does the apply method behave differently when applied to a Series
     ~There is no difference in how the apply method behaves between Series and DataFrames in pandas.
 }
 
-// Basic Visualizations in Pandas
-Which pandas function is commonly used to create basic visualizations, such as line plots and bar charts, directly from a DataFrame or Series?
+// Basic Visualizations in Pandas [tag:python] [tag:basic]
+::Which pandas function is commonly used to create basic visualizations, such as line plots and bar charts, directly from a DataFrame or Series?
 {
     =plot()
     ~visualize()
@@ -257,8 +257,8 @@ Which pandas function is commonly used to create basic visualizations, such as l
     ~show()
 }
 
-// Parameter for Plot Type in pandas plot()
-Which parameter in the plot() function allows you to specify the type of plot to create, such as 'line', 'bar', or 'hist'?
+// Parameter for Plot Type in pandas plot() [tag:python] [tag:basic]
+::Which parameter in the plot() function allows you to specify the type of plot to create, such as 'line', 'bar', or 'hist'?
 {
     =kind
     ~style
@@ -267,8 +267,8 @@ Which parameter in the plot() function allows you to specify the type of plot to
     ~plot_style
 }
 
-// Purpose of xlabel and ylabel in pandas plot()
-In pandas, what is the purpose of the xlabel and ylabel parameters when creating a plot using the plot() function?
+// Purpose of xlabel and ylabel in pandas plot() [tag:python] [tag:basic]
+::In pandas, what is the purpose of the xlabel and ylabel parameters when creating a plot using the plot() function?
 {
     =They control the axis labels.
     ~They set the plot title.
@@ -277,8 +277,8 @@ In pandas, what is the purpose of the xlabel and ylabel parameters when creating
     ~They determine the plot style.
 }
 
-// 3D Plots in pandas plot()
-Which of the following statements is true regarding the plot() function in pandas?
+// 3D Plots in pandas plot() [tag:python] [tag:basic]
+::Which of the following statements is true regarding the plot() function in pandas?
 {
     =It cannot create 3D plots.
     ~It only works with numerical data.
@@ -287,8 +287,8 @@ Which of the following statements is true regarding the plot() function in panda
     ~It can only create scatter plots.
 }
 
-// Saving Plots in pandas
-Which method can be used to save a plot created with the plot() function to a file in pandas?
+// Saving Plots in pandas [tag:python] [tag:basic]
+::Which method can be used to save a plot created with the plot() function to a file in pandas?
 {
     =savefig()
     ~save_plot()
