@@ -1,5 +1,5 @@
 // Pandas Library in Python
-Was ist der Hauptzweck der Pandas Library in Python?
+::Was ist der Hauptzweck der Pandas Library in Python?
 {
     =Datenanalyse und -manipulation durchführen
     ~Um grafische Benutzeroberflächen (GUIs) zu erstellen
@@ -8,7 +8,7 @@ Was ist der Hauptzweck der Pandas Library in Python?
 }
 
 // Import-Anweisung in Python
-Was ist der Zweck der Import-Anweisung in Python?
+::Was ist der Zweck der Import-Anweisung in Python?
 {
     =Externe Bibliotheken oder Module einbinden
     ~Um eine neue Variable zu erstellen
@@ -18,7 +18,7 @@ Was ist der Zweck der Import-Anweisung in Python?
 }
 
 // Primäre Datenstruktur in Pandas
-Was ist die primäre Datenstruktur zum Speichern und Manipulieren von Daten in Pandas?
+::Was ist die primäre Datenstruktur zum Speichern und Manipulieren von Daten in Pandas?
 {
     =DataFrame
     ~Liste
@@ -28,7 +28,7 @@ Was ist die primäre Datenstruktur zum Speichern und Manipulieren von Daten in P
 }
 
 // Laden von Daten in DataFrame
-Welche Pandas-Methode wird verwendet, um Daten aus einer CSV-Datei in einen DataFrame zu laden?
+::Welche Pandas-Methode wird verwendet, um Daten aus einer CSV-Datei in einen DataFrame zu laden?
 {
     =read_csv()
     ~load_data()
@@ -38,7 +38,7 @@ Welche Pandas-Methode wird verwendet, um Daten aus einer CSV-Datei in einen Data
 }
 
 // Zweck der if-Anweisung
-Was können Sie in Python mit der if-Anweisung tun?
+::Was können Sie in Python mit der if-Anweisung tun?
 {
     =Code nur ausführen, wenn eine bestimmte Bedingung erfüllt ist
     ~Eine Schleifenoperation ausführen
@@ -48,7 +48,7 @@ Was können Sie in Python mit der if-Anweisung tun?
 }
 
 // Vergleichsoperator in Python
-Welcher Python-Operator wird verwendet, um zu prüfen, ob zwei Werte in Wert und Typ gleich sind?
+::Welcher Python-Operator wird verwendet, um zu prüfen, ob zwei Werte in Wert und Typ gleich sind?
 {
     ===
     ~=
@@ -58,7 +58,7 @@ Welcher Python-Operator wird verwendet, um zu prüfen, ob zwei Werte in Wert und
 }
 
 // Zweck des iloc-Attributs in Pandas
-Was ist der Zweck des iloc-Attributs in Pandas?
+::Was ist der Zweck des iloc-Attributs in Pandas?
 {
     =Zeilen und Spalten anhand ihrer ganzzahligen Positionen auszuwählen
     ~Um elementweise Operationen auf einem DataFrame durchzuführen
@@ -68,7 +68,7 @@ Was ist der Zweck des iloc-Attributs in Pandas?
 }
 
 // Berechnung von zusammenfassenden Statistiken in Pandas
-Welche Pandas-Methode wird verwendet, um zusammenfassende Statistiken (z. B. Mittelwert, Median) für numerische Spalten in einem DataFrame zu berechnen?
+::Welche Pandas-Methode wird verwendet, um zusammenfassende Statistiken (z. B. Mittelwert, Median) für numerische Spalten in einem DataFrame zu berechnen?
 {
     =describe()
     ~count()
@@ -78,7 +78,7 @@ Welche Pandas-Methode wird verwendet, um zusammenfassende Statistiken (z. B. Mit
 }
 
 // Zweck der for-Schleife in Python
-Was ist der Zweck der for-Schleife in Python?
+::Was ist der Zweck der for-Schleife in Python?
 {
     =Eine bestimmte Aufgabe eine bestimmte Anzahl von Malen auszuführen
     ~Code nur auszuführen, wenn eine bestimmte Bedingung erfüllt ist
@@ -88,7 +88,7 @@ Was ist der Zweck der for-Schleife in Python?
 }
 
 // Veränderlicher Python-Datentyp
-Welcher Python-Datentyp ist veränderbar (kann nach der Erstellung geändert werden)?
+::Welcher Python-Datentyp ist veränderbar (kann nach der Erstellung geändert werden)?
 {
     =Liste
     ~Tupel
@@ -98,7 +98,7 @@ Welcher Python-Datentyp ist veränderbar (kann nach der Erstellung geändert wer
 }
 
 // Zweck der str()-Funktion in Python
-Was macht die str()-Funktion in Python?
+::Was macht die str()-Funktion in Python?
 {
     =Konvertiert einen Wert in eine Zeichenkette
     ~Konvertierung einer Zeichenkette in Kleinbuchstaben
@@ -108,7 +108,7 @@ Was macht die str()-Funktion in Python?
 }
 
 // Verwendung von Jupyter Notebook
-Wofür wird ein Jupyter-Notizbuch in der Python-Entwicklung hauptsächlich verwendet?
+::Wofür wird ein Jupyter-Notizbuch in der Python-Entwicklung hauptsächlich verwendet?
 {
     =Um Python-Code interaktiv zu schreiben und auszuführen.
     ~Zum Kompilieren von Python-Code in ausführbare Binärdateien.
@@ -118,7 +118,7 @@ Wofür wird ein Jupyter-Notizbuch in der Python-Entwicklung hauptsächlich verwe
 }
 
 // Zweck von Zellen in Jupyter-Notizbüchern
-Wofür werden Zellen in einem Jupyter-Notizbuch verwendet?
+::Wofür werden Zellen in einem Jupyter-Notizbuch verwendet?
 {
     =Ausführung von Code und Anzeige der Ausgabe.
     ~Nur Python-Code speichern.
@@ -128,7 +128,7 @@ Wofür werden Zellen in einem Jupyter-Notizbuch verwendet?
 }
 
 // Dateierweiterung für Jupyter Notebook-Dateien
-Welche Dateierweiterung wird üblicherweise mit Jupyter-Notizbuchdateien assoziiert?
+::Welche Dateierweiterung wird üblicherweise mit Jupyter-Notizbuchdateien assoziiert?
 {
     =.ipynb
     ~.txt
@@ -138,7 +138,7 @@ Welche Dateierweiterung wird üblicherweise mit Jupyter-Notizbuchdateien assozii
 }
 
 // Funktionsweise von Jupyter-Code-Zellen
-Was kann man mit einer Jupyter-Codezelle machen?
+::Was kann man mit einer Jupyter-Codezelle machen?
 {
     =Schreiben Sie sowohl Python-Code als auch formatierten Text.
     ~Nur Python-Code schreiben.
@@ -148,7 +148,7 @@ Was kann man mit einer Jupyter-Codezelle machen?
 }
 
 // Hinzufügen einer neuen Zelle in Jupyter Notebook
-Wie kann man in einem Jupyter-Notizbuch eine neue Zelle unterhalb der aktuell ausgewählten Zelle hinzufügen?
+::Wie kann man in einem Jupyter-Notizbuch eine neue Zelle unterhalb der aktuell ausgewählten Zelle hinzufügen?
 {
     =Drücken Sie Alt + Enter.
     ~Drücken Sie Shift + Enter.
@@ -158,7 +158,7 @@ Wie kann man in einem Jupyter-Notizbuch eine neue Zelle unterhalb der aktuell au
 }
 
 // Zweck der Jupyter Markdown-Zelle
-Was ist der Zweck einer Jupyter-Markdown-Zelle?
+::Was ist der Zweck einer Jupyter-Markdown-Zelle?
 {
     =Textbasierte Dokumentation bereitstellen.
     ~Python-Code auszuführen.
@@ -168,7 +168,7 @@ Was ist der Zweck einer Jupyter-Markdown-Zelle?
 }
 
 // Inhalt im Jupyter-Notizbuch speichern
-Welcher Befehl wird verwendet, um den Inhalt eines Jupyter-Notizbuchs zu speichern?
+::Welcher Befehl wird verwendet, um den Inhalt eines Jupyter-Notizbuchs zu speichern?
 {
     =Strg + S (oder Cmd + S auf Mac)
     ~save_notebook()
@@ -178,7 +178,7 @@ Welcher Befehl wird verwendet, um den Inhalt eines Jupyter-Notizbuchs zu speiche
 }
 
 // Neustart des Python-Kernels in einem Jupyter-Notebook
-Wie kann man den Python-Kernel in einem Jupyter-Notebook neu starten?
+::Wie kann man den Python-Kernel in einem Jupyter-Notebook neu starten?
 {
     =Klicken Sie auf die Schaltfläche "Kernel neu starten" in der Symbolleiste.
     ~Schließen Sie das gesamte Notizbuch und öffnen Sie es erneut.
@@ -188,7 +188,7 @@ Wie kann man den Python-Kernel in einem Jupyter-Notebook neu starten?
 }
 
 // Mehrere Zeilen in einem Jupyter-Notizbuch auskommentieren
-Wie kann man in einem Jupyter-Notizbuch mehrere Codezeilen auf einmal auskommentieren?
+::Wie kann man in einem Jupyter-Notizbuch mehrere Codezeilen auf einmal auskommentieren?
 {
     =Highlight die Zeilen und drücken Sie Strg + / (oder Cmd + / auf Mac).
     ~Verwenden Sie das Symbol # am Anfang jeder Zeile.
@@ -198,7 +198,7 @@ Wie kann man in einem Jupyter-Notizbuch mehrere Codezeilen auf einmal auskomment
 }
 
 // Vorteile von Python-Skripten gegenüber Jupyter-Notizbüchern
-Was ist der Hauptvorteil der Verwendung eines Python-Skripts (.py) gegenüber einem Jupyter-Notizbuch (.ipynb)?
+::Was ist der Hauptvorteil der Verwendung eines Python-Skripts (.py) gegenüber einem Jupyter-Notizbuch (.ipynb)?
 {
     =Python-Skripte lassen sich leichter weitergeben und versionieren.
     ~Python-Skripte ermöglichen eine interaktive Ausführung.
@@ -208,7 +208,7 @@ Was ist der Hauptvorteil der Verwendung eines Python-Skripts (.py) gegenüber ei
 }
 
 // Ausführen von Python-Skripten über die Kommandozeile
-Wie führt man ein Python-Skript von der Kommandozeile aus?
+::Wie führt man ein Python-Skript von der Kommandozeile aus?
 {
     =Tippen Sie python my_script.py in das Terminal.
     ~Tippen Sie python mein_script.ipynb in das Terminal ein.
@@ -218,7 +218,7 @@ Wie führt man ein Python-Skript von der Kommandozeile aus?
 }
 
 // Zweck von Python-Skripten für Automatisierungsaufgaben
-Was ist der Hauptzweck der Verwendung von Python-Skripten für Automatisierungsaufgaben?
+::Was ist der Hauptzweck der Verwendung von Python-Skripten für Automatisierungsaufgaben?
 {
     =Wiederkehrende Aufgaben automatisch ausführen.
     ~Um Jupyter-Notizbücher zu erstellen.
@@ -228,7 +228,7 @@ Was ist der Hauptzweck der Verwendung von Python-Skripten für Automatisierungsa
 }
 
 // apply() Methode in Pandas DataFrame
-Was ist der Hauptzweck der apply-Methode in Pandas, wenn sie mit einem DataFrame verwendet wird?
+::Was ist der Hauptzweck der apply-Methode in Pandas, wenn sie mit einem DataFrame verwendet wird?
 {
     =Eine Funktion auf jedes Element oder jede Zeile in einem DataFrame anzuwenden.
     ~Um einen neuen DataFrame mit nur ausgewählten Spalten zu erstellen.
@@ -238,7 +238,7 @@ Was ist der Hauptzweck der apply-Methode in Pandas, wenn sie mit einem DataFrame
 }
 
 // apply()-Methode Verhalten in Serien vs. DataFrame
-Wie verhält sich die apply-Methode in Pandas, wenn sie auf eine Serie angewendet wird, im Vergleich zu einem DataFrame?
+::Wie verhält sich die apply-Methode in Pandas, wenn sie auf eine Serie angewendet wird, im Vergleich zu einem DataFrame?
 {
     =Wenn sie auf eine Serie angewendet wird, kann apply jeweils nur auf ein einzelnes Element wirken, während sie bei einem DataFrame auf ganze Zeilen oder Spalten wirkt.
     ~Wenn es auf eine Reihe angewendet wird, gibt apply immer eine Reihe zurück, während es bei einem Datenrahmen je nach verwendeter Funktion einen Datenrahmen oder eine Reihe zurückgeben kann.
@@ -248,7 +248,7 @@ Wie verhält sich die apply-Methode in Pandas, wenn sie auf eine Serie angewende
 }
 
 // Grundlegende Visualisierungen in Pandas
-Welche Pandas-Funktion wird häufig verwendet, um grundlegende Visualisierungen, wie z. B. Liniendiagramme und Balkendiagramme, direkt aus einem DataFrame oder einer Serie zu erstellen?
+::Welche Pandas-Funktion wird häufig verwendet, um grundlegende Visualisierungen, wie z. B. Liniendiagramme und Balkendiagramme, direkt aus einem DataFrame oder einer Serie zu erstellen?
 {
     =plot()
     ~visualize()
@@ -258,7 +258,7 @@ Welche Pandas-Funktion wird häufig verwendet, um grundlegende Visualisierungen,
 }
 
 // Parameter für Plot-Typ in pandas plot()
-Mit welchem Parameter in der Funktion plot() können Sie den Typ des zu erstellenden Plots angeben, z. B. 'line', 'bar' oder 'hist'?
+::Mit welchem Parameter in der Funktion plot() können Sie den Typ des zu erstellenden Plots angeben, z. B. 'line', 'bar' oder 'hist'?
 {
     =art
     ~style
@@ -268,7 +268,7 @@ Mit welchem Parameter in der Funktion plot() können Sie den Typ des zu erstelle
 }
 
 // Zweck von xlabel und ylabel in Pandas plot()
-Was ist der Zweck der Parameter xlabel und ylabel in Pandas, wenn ein Plot mit der Funktion plot() erstellt wird?
+::Was ist der Zweck der Parameter xlabel und ylabel in Pandas, wenn ein Plot mit der Funktion plot() erstellt wird?
 {
     =Sie steuern die Achsenbeschriftungen.
     ~Sie legen den Plot-Titel fest.
@@ -278,7 +278,7 @@ Was ist der Zweck der Parameter xlabel und ylabel in Pandas, wenn ein Plot mit d
 }
 
 // 3D-Plots in Pandas plot()
-Welche der folgenden Aussagen zur Funktion plot() in Pandas ist zutreffend?
+::Welche der folgenden Aussagen zur Funktion plot() in Pandas ist zutreffend?
 {
     =Sie kann keine 3D-Diagramme erstellen.
     ~Sie funktioniert nur mit numerischen Daten.
@@ -288,7 +288,7 @@ Welche der folgenden Aussagen zur Funktion plot() in Pandas ist zutreffend?
 }
 
 // Speichern von Plots in Pandas
-Welche Methode kann verwendet werden, um einen mit der Funktion plot() erstellten Plot in einer Datei in Pandas zu speichern?
+::Welche Methode kann verwendet werden, um einen mit der Funktion plot() erstellten Plot in einer Datei in Pandas zu speichern?
 {
     =savefig()
     ~save_plot()
