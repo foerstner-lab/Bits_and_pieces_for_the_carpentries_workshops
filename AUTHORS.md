@@ -1,6 +1,0 @@
-- Konrad Förstner, GitHub: [@konrad](https://github.com/konrad)
-- Rabea Müller, email: rabea.m@live.de, GitHub: [@RabeaMue](https://github.com/RabeaMue)  
-- Till Sauerwein, GitHub: [@TillSa](https://github.com/Tillsa)
-- Vanessa Scharf, GitHub: [@VScharf7](https://github.com/VScharf7)  
-- Silvia Di Giorgio, GitHub: [@silviadg87](https://github.com/silviadg87)  
-- Lukas Bossert, GitHub: [@LukasCBossert](https://github.com/LukasCBossert)
