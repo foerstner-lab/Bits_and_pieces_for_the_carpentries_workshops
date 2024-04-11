@@ -1,11 +1,9 @@
 Which command is used to list files and directories in the current directory in Unix Shell?
-
 A) ls
 B) cd
 C) rm
 D) mv
 E) mkdir
-
 
 What command is used to change the current directory in Unix Shell?
 A) ls
@@ -77,21 +75,12 @@ C) List directory contents
 D) Copy files
 E) Remove files and directories
 
-
-
 Which command is used to search for files and directories in Unix Shell?
 A) grep
 B) cp
 C) ls
 D) rm
 E) mv
-
-What is the purpose of the "chmod" command in Unix Shell?
-A) Change the current directory
-B) Change file permissions
-C) List directory contents
-D) Copy files
-E) Remove files and directories
 
 Which command is used to display the last few lines of a text file in Unix Shell?
 A) cat
@@ -114,19 +103,6 @@ C) mv
 D) rm
 E) ls
 
-What command is used to zip or compress files in Unix Shell?
-A) unzip
-B) tar
-C) gzip
-D) cp
-E) mv
-
-Which command is used to unzip or extract compressed files in Unix Shell?
-A) zip
-B) tar
-C) gunzip
-D) cp
-E) mv
 
 What is the purpose of the "find" command in Unix Shell?
 A) List directory contents
@@ -184,13 +160,6 @@ C) start
 D) ps
 E) ls
 
-Which command is used to create and edit a new text file in Unix Shell?
-A) touch
-B) edit
-C) open
-D) nano
-E) cp
-
 What does the "mv" command do in Unix Shell?
 A) Move or rename files and directories
 B) Copy files and directories
@@ -198,26 +167,12 @@ C) List directory contents
 D) Remove files and directories
 E) Change file permissions
 
-What is the purpose of the "chmod" command in Unix Shell?
-A) Change file permissions
-B) List directory contents
-C) Create a new directory
-D) Remove files and directories
-E) Copy files
-
 How can you recursively copy a directory and its contents in Unix Shell?
 A) cp -r
 B) mv
 C) rm
 D) ls
 E) touch
-
-What is the purpose of the "ps" command in Unix Shell?
-A) List directory contents
-B) Display process information
-C) Create a new directory
-D) Remove files and directories
-E) Change file permissions
 
 Which command is used to display the first few lines of a text file in Unix Shell?
 A) cat
@@ -240,57 +195,6 @@ C) Create a new directory
 D) Remove files and directories
 E) Change file permissions
 
-Which command is used to view and manipulate environment variables in Unix Shell?
-A) env
-B) set
-C) export
-D) ls
-E) cp
-
-How can you display the contents of a directory in a tree-like structure in Unix Shell?
-A) tree
-B) ls
-C) cp
-D) rm
-E) mv
-
-What is the purpose of the "echo" command in Unix Shell?
-A) Print text to the screen
-B) Copy files
-C) List directory contents
-D) Remove files and directories
-E) Move files and directories
-
-How do you create an empty text file in Unix Shell?
-A) touch
-B) edit
-C) open
-D) cat
-E) cp
-
-What is the purpose of the "alias" command in Unix Shell?
-A) Create shortcuts for long commands
-B) List directory contents
-C) Copy files
-D) Remove files and directories
-E) Change file permissions
-
-Which command is used to display the current date and time in Unix Shell?
-A) date
-B) time
-C) ls
-D) cp
-E) mv
-
-What is the purpose of the "who" command in Unix Shell?
-A) List directory contents
-B) Display information about logged-in users
-C) Create a new directory
-D) Remove files and directories
-E) Change file permissions
-
-
-
 In Unix Shell, what is the purpose of a "for" loop?
 A) To list directory contents
 B) To create a new directory
@@ -298,16 +202,12 @@ C) To iterate over a list of items and perform a set of commands for each item
 D) To remove files and directories
 E) To change file permissions
 
-Choose the correct answer.
-
 Which keyword is commonly used to define a variable that iterates through a list of items in a "for" loop in Unix Shell?
 A) iterate
 B) counter
 C) item
 D) index
 E) variable
-
-Select the correct option.
 
 How can you specify a range of numbers to iterate through in a "for" loop in Unix Shell?
 A) Using the "while" keyword
