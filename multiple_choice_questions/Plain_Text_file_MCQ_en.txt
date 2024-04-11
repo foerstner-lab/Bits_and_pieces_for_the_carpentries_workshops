@@ -1,190 +1,199 @@
-What is the primary benefit of using CSV or TSV files for data interchange between different software applications?
+// CSV and TSV File Formats [tag:plaintext] [tag:basic]
+:: What is the primary benefit of using CSV or TSV files for data interchange between different software applications? 
+{
+    =They are platform-independent and widely supported.
+    ~They are more secure than other formats.
+    ~They can contain multimedia content.
+    ~They can execute code embedded within the file.
+    ~They are compressed to save storage space.
+}
 
-A) They are more secure than other formats
-B) They can contain multimedia content
-C) They are platform-independent and widely supported
-D) They can execute code embedded within the file
-E) They are compressed to save storage space
+// Line Termination in Plain Text Files [tag:plaintext] [tag:basic]
+::In a plain text file, how is each line typically terminated? 
+{
+    =By a newline character (\n).
+    ~By a semicolon (;).
+    ~By a comma (,).
+    ~By a period (.).
+    ~By a tab character (\t).
+}
 
-ANSWER C
+// Purpose of the "Delimiter" in CSV or TSV Files [tag:plaintext] [tag:basic]
+::What is the purpose of the "delimiter" in a CSV or TSV file? 
+{
+    =To separate individual data fields.
+    ~To indicate the file format version.
+    ~To specify the encoding of the file.
+    ~To encrypt the file contents.
+    ~To add comments in the file.
+}
 
-In a plain text file, how is each line typically terminated?
-A) By a semicolon (;)
-B) By a comma (,)
-C) By a period (.)
-D) By a newline character (\n)
-E) By a tab character (\t)
+// Meaning of "Delimiter" in CSV and TSV Files [tag:plaintext] [tag:basic]
+::What does the term "delimiter" mean in the context of CSV and TSV files? 
+{
+    =A special character used to separate data fields.
+    ~A line that marks the end of the file.
+    ~A file extension indicating a specific format.
+    ~A character that indicates the start of a comment.
+    ~A method for compressing file contents.
+}
 
-Correct Answer: D) By a newline character (\n)
+// Understanding JSON Abbreviation [tag:plaintext] [tag:basic]
+::What does JSON stand for in the context of data interchange? 
+{
+    =JavaScript Object Notation.
+    ~Java Serialized Object Network.
+    ~Just Simple Object Names.
+    ~JavaScript Object Network.
+    ~Java Server Object Notation.
+}
 
-What is the purpose of the "delimiter" in a CSV or TSV file?
-A) To indicate the file format version
-B) To specify the encoding of the file
-C) To separate individual data fields
-D) To encrypt the file contents
-E) To add comments in the file
+// Primary Use of JSON [tag:plaintext] [tag:basic]
+::What is the primary use of JSON (JavaScript Object Notation)? 
+{
+    =To represent structured data in a human-readable format.
+    ~To store multimedia files.
+    ~To format text documents.
+    ~To compress files for storage.
+    ~To execute code in web browsers.
+}
 
+// Enclosing String Values in JSON [tag:plaintext] [tag:basic]
+::Which of the following characters is used to enclose a string value in JSON? 
+{
+    =Double quotes (" ").
+    ~Single quotes (' ').
+    ~Square brackets ([ ]).
+    ~Curly braces ({ }).
+    ~Angle brackets (< >).
+}
 
-What does the term "delimiter" mean in the context of CSV and TSV files?
-A) A line that marks the end of the file
-B) A special character used to separate data fields
-C) A file extension indicating a specific format
-D) A character that indicates the start of a comment
-E) A method for compressing file contents
+// Purpose of Curly Braces in JSON Objects [tag:plaintext] [tag:basic]
+::In a JSON object, what is the purpose of the curly braces { }? 
+{
+    =To enclose the object's key-value pairs.
+    ~To indicate the end of the object.
+    ~To separate individual array elements.
+    ~To represent a string value.
+    ~To define a function.
+}
 
-Correct Answer: B) A special character used to separate data fields.
+// Valid JSON Data Types [tag:plaintext] [tag:basic]
+::Which of the following is NOT a valid JSON data type? 
+{
+    =Date.
+    ~String.
+    ~Boolean.
+    ~Number.
+    ~Null.
+}
 
-What does JSON stand for in the context of data interchange?
-A) JavaScript Object Notation
-B) Java Serialized Object Network
-C) Just Simple Object Names
-D) JavaScript Object Network
-E) Java Server Object Notation
+// Mixing Data Types in JSON Arrays [tag:plaintext] [tag:basic]
+::In a JSON array, can elements have different data types (e.g., a mix of numbers and strings)? 
+{
+    =Yes, JSON allows mixing data types within arrays.
+    ~No, JSON only allows elements of the same data type in arrays.
+    ~Only if the array is enclosed in double quotes.
+    ~Only if the elements are separated by colons.
+    ~Only if the elements are enclosed in square brackets.
+}
 
-Correct Answer: A) JavaScript Object Notation
+// Purpose of Keys in JSON Objects [tag:plaintext] [tag:basic]
+::In a JSON object, what is the purpose of a key? 
+{
+    =To provide a label for a value.
+    ~To represent a number.
+    ~To define a function.
+    ~To enclose a string.
+    ~To separate array elements.
+}
 
-What is the primary use of JSON (JavaScript Object Notation)?
-A) To store multimedia files
-B) To format text documents
-C) To represent structured data in a human-readable format
-D) To compress files for storage
-E) To execute code in web browsers
+// JSON vs. XML: Advantages of JSON [tag:plaintext] [tag:basic]
+::What is the primary advantage of using JSON over XML for data interchange? 
+{
+    =JSON is more compact and easier to read.
+    ~JSON files are binary and more efficient.
+    ~JSON supports complex formatting and styling.
+    ~JSON allows for embedded multimedia elements.
+    ~JSON is a markup language.
+}
 
-Correct Answer: C) To represent structured data in a human-readable format
+// Values Associated with Keys in JSON [tag:plaintext] [tag:basic]
+::In a JSON object, what is the value associated with a key? 
+{
+    =A data type such as a string or number.
+    ~Another key-value pair.
+    ~A function definition.
+    ~A single character.
+    ~A null value.
+}
 
-Which of the following characters is used to enclose a string value in JSON?
-A) Single quotes (' ')
-B) Double quotes (" ")
-C) Square brackets ([ ])
-D) Curly braces ({ })
-E) Angle brackets (< >)
+// Serialization in JSON [tag:plaintext] [tag:basic]
+::In a JSON document, what does the term "serialization" refer to? 
+{
+    =The process of converting data into a JSON format.
+    ~The process of parsing JSON data.
+    ~The process of compressing JSON files.
+    ~The process of encrypting JSON data.
+    ~The process of sorting JSON objects.
+}
 
-Correct Answer: B) Double quotes (" ")
+// Comments in JSON [tag:plaintext] [tag:basic]
+::Which of the following statements is true regarding the use of comments in JSON? 
+{
+    =JSON does not support comments.
+    ~Comments in JSON must be enclosed in double quotes.
+    ~Comments in JSON start with the # symbol.
+    ~Comments in JSON start with // and continue until the end of the line.
+    ~Comments in JSON start with /* and end with */.
+}
 
-In a JSON object, what is the purpose of the curly braces { }?
-A) To indicate the end of the object
-B) To enclose the object's key-value pairs
-C) To separate individual array elements
-D) To represent a string value
-E) To define a function
+// Key-Value Separators in JSON Objects [tag:plaintext] [tag:basic]
+::Which character is used to separate key-value pairs in a JSON object? 
+{
+    =Comma (,).
+    ~Semicolon (;).
+    ~Colon (:).
+    ~Period (.).
+    ~Exclamation mark (!).
+}
 
-Correct Answer: B) To enclose the object's key-value pairs
+// Accessing Elements in JSON Arrays [tag:plaintext] [tag:basic]
+::In a JSON array, can elements be accessed by their position or index? 
+{
+    =Yes, elements can be accessed by their position.
+    ~No, JSON arrays do not support indexing.
+    ~Only if the array is enclosed in square brackets.
+    ~Only if the array is enclosed in double quotes.
+    ~Only if the elements are separated by colons.
+}
 
+// Valid JSON Array Representation [tag:plaintext] [tag:basic]
+::Which of the following is a valid JSON array? 
+{
+    =["apple", "banana", "cherry"].
+    ~{ "apple", "banana", "cherry" }.
+    ~( "apple", "banana", "cherry" ).
+    ~{ "fruit": ["apple", "banana", "cherry"] }.
+    ~[ "apple": 1, "banana": 2, "cherry": 3 ].
+}
 
-Which of the following is NOT a valid JSON data type?
-A) String
-B) Boolean
-C) Date
-D) Number
-E) Null
+// Data Encoding in JSON [tag:plaintext] [tag:basic]
+::What is the primary purpose of encoding data in JSON? 
+{
+    =To make it human-readable and easy to parse.
+    ~To compress the data.
+    ~To encrypt the data.
+    ~To add multimedia elements.
+    ~To create executable code.
+}
 
-Correct Answer: C) Date
-
-
-In a JSON array, can elements have different data types (e.g., a mix of numbers and strings)?
-A) Yes, JSON allows mixing data types within arrays
-B) No, JSON only allows elements of the same data type in arrays
-C) Only if the array is enclosed in double quotes
-D) Only if the elements are separated by colons
-E) Only if the elements are enclosed in square brackets
-
-Correct Answer: A) Yes, JSON allows mixing data types within arrays
-
-In a JSON object, what is the purpose of a key?
-A) To represent a number
-B) To define a function
-C) To provide a label for a value
-D) To enclose a string
-E) To separate array elements
-
-Correct Answer: C) To provide a label for a value
-
-What is the primary advantage of using JSON over XML for data interchange?
-A) JSON files are binary and more efficient.
-B) JSON supports complex formatting and styling.
-C) JSON is more compact and easier to read.
-D) JSON allows for embedded multimedia elements.
-E) JSON is a markup language.
-
-Correct Answer: C) JSON is more compact and easier to read.
-
-
-In a JSON object, what is the value associated with a key?
-A) Another key-value pair
-B) A data type such as a string or number
-C) A function definition
-D) A single character
-E) A null value
-
-Correct Answer: B) A data type such as a string or number
-
-
-In a JSON document, what does the term "serialization" refer to?
-A) The process of parsing JSON data
-B) The process of converting data into a JSON format
-C) The process of compressing JSON files
-D) The process of encrypting JSON data
-E) The process of sorting JSON objects
-
-Correct Answer: B) The process of converting data into a JSON format
-
-Which of the following statements is true regarding the use of comments in JSON?
-A) JSON does not support comments.
-B) Comments in JSON must be enclosed in double quotes.
-C) Comments in JSON start with the # symbol.
-D) Comments in JSON start with // and continue until the end of the line.
-E) Comments in JSON start with /* and end with */.
-
-Correct Answer: A) JSON does not support comments.
-
-
-Which character is used to separate key-value pairs in a JSON object?
-A) Comma (,)
-B) Semicolon (;)
-C) Colon (:)
-D) Period (.)
-E) Exclamation mark (!)
-
-Correct Answer: A) Comma (,)
-
-
-In a JSON array, can elements be accessed by their position or index?
-A) No, JSON arrays do not support indexing.
-B) Yes, elements can be accessed by their position.
-C) Only if the array is enclosed in square brackets.
-D) Only if the array is enclosed in double quotes.
-E) Only if the elements are separated by colons.
-
-Correct Answer: B) Yes, elements can be accessed by their position.
-
-Which of the following is a valid JSON array?
-A) { "apple", "banana", "cherry" }
-B) [ "apple", "banana", "cherry" ]
-C) ( "apple", "banana", "cherry" )
-D) { "fruit": ["apple", "banana", "cherry"] }
-E) [ "apple": 1, "banana": 2, "cherry": 3 ]
-
-Correct Answer: B) [ "apple", "banana", "cherry" ]
-
-What is the primary purpose of encoding data in JSON?
-A) To compress the data
-B) To make it human-readable and easy to parse
-C) To encrypt the data
-D) To add multimedia elements
-E) To create executable code
-
-Correct Answer: B) To make it human-readable and easy to parse
-
-
-Which of the following is NOT a characteristic of JSON?
-A) JSON is a text-based data interchange format.
-B) JSON uses double quotes for string values.
-C) JSON allows for comments within the data.
-D) JSON supports complex nested structures.
-E) JSON is language-independent.
-
-Correct Answer: C) JSON allows for comments within the data.
-
-
-
-
+// Characteristics of JSON [tag:plaintext] [tag:basic]
+::Which of the following is NOT a characteristic of JSON? 
+{
+    =JSON allows for comments within the data.
+    ~JSON is a text-based data interchange format.
+    ~JSON uses double quotes for string values.
+    ~JSON supports complex nested structures.
+    ~JSON is language-independent.
+}

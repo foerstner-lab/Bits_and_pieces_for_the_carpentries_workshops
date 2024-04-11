@@ -1,301 +1,299 @@
-In Python, what is the primary purpose of the pandas library?
-
-A) To create graphical user interfaces (GUIs)
-B) To perform data analysis and manipulation
-C) To build web applications
-D) To work with machine learning algorithms
-
-Correct Answer: B) To perform data analysis and manipulation
-
-In Python, what is the purpose of the import statement?
-A) To create a new variable
-B) To execute a loop
-C) To include external libraries or modules
-D) To define a function
-E) To comment out code
-
-Correct Answer: C) To include external libraries or modules
-
-What is the primary data structure for storing and manipulating data in pandas?
-A) List
-B) Tuple
-C) Dictionary
-D) DataFrame
-E) Set
-
-Correct Answer: D) DataFrame
-
-Which pandas method is used to load data from a CSV file into a DataFrame?
-A) read_csv()
-B) load_data()
-C) import_csv()
-D) create_dataframe()
-E) parse_csv()
-
-Correct Answer: A) read_csv()
-
-In Python, what does the if statement allow you to do?
-A) Perform a loop operation
-B) Define a function
-C) Execute code only if a certain condition is met
-D) Import external libraries
-E) Create a DataFrame
-
-Correct Answer: C) Execute code only if a certain condition is met
-
-Which Python operator is used to check if two values are equal in value and type?
-A) ==
-B) =
-C) !=
-D) <
-E) <=
-
-Correct Answer: A) ==
-
-What is the purpose of the iloc attribute in pandas?
-A) To perform element-wise operations on a DataFrame
-B) To select rows and columns by their integer positions
-C) To filter data based on a condition
-D) To create new columns in a DataFrame
-E) To sort data in ascending order
-
-Correct Answer: B) To select rows and columns by their integer positions
-
-Which pandas method is used to calculate summary statistics (e.g., mean, median) for numeric columns in a DataFrame?
-A) describe()
-B) count()
-C) head()
-D) shape()
-E) info()
-
-Correct Answer: A) describe()
-
-In Python, what is the purpose of the for loop?
-A) To execute code only if a certain condition is met
-B) To create a function
-C) To perform a specific task a fixed number of times
-D) To import external libraries
-E) To load data from a CSV file
-
-Correct Answer: C) To perform a specific task a fixed number of times
-
-Which Python data type is mutable (can be modified after creation)?
-A) Tuple
-B) String
-C) List
-D) Set
-E) Dictionary
-
-Correct Answer: C) List
-
-What does the str() function in Python do?
-A) Convert a string to lowercase
-B) Format a string as a currency
-C) Convert a data frame to a string
-D) Convert a value to a string
-E) Remove leading and trailing spaces from a string
-
-Correct Answer: D) Convert a value to a string
-
-What is a Jupyter notebook primarily used for in Python development?
-
-A) To write and execute Python code interactively.
-B) To compile Python code into binary executables.
-C) To create Python software applications.
-D) To generate Python documentation.
-E) To debug Python code.
-
-Correct Answer: A) To write and execute Python code interactively.
-
-In a Jupyter notebook, what are cells used for?
-
-A) Storing Python code only.
-B) Displaying text comments only.
-C) Executing code and displaying output.
-D) Running Python code in the background.
-E) Creating external Python scripts.
-
-Correct Answer: C) Executing code and displaying output.
-
-What is the file extension commonly associated with Jupyter notebook files?
-A) .txt
-B) .py
-C) .ipynb
-D) .html
-E) .csv
-
-Correct Answer: C) .ipynb
-
-What does a Jupyter code cell allow you to do?
-A) Write only Python code.
-B) Write only Markdown text.
-C) Write both Python code and formatted text.
-D) Execute code without displaying the output.
-E) Execute code without saving the cell.
-
-Correct Answer: C) Write both Python code and formatted text.
-
-How can you add a new cell below the currently selected cell in a Jupyter notebook?
-A) Press Shift + Enter.
-B) Press Ctrl + Enter.
-C) Press Alt + Enter.
-D) Press Shift + B.
-E) Press Ctrl + S.
-
-Correct Answer: C) Press Alt + Enter.
-
-What is the purpose of a Jupyter Markdown cell?
-A) To execute Python code.
-B) To display interactive widgets.
-C) To provide text-based documentation.
-D) To run unit tests.
-E) To create Python functions.
-
-Correct Answer: C) To provide text-based documentation.
-
-Which command is used to save the content of a Jupyter notebook?
-A) save_notebook()
-B) export_to_pdf()
-C) save_and_exit()
-D) Ctrl + S (or Cmd + S on Mac)
-E) close_notebook()
-
-Correct Answer: D) Ctrl + S (or Cmd + S on Mac)
-
-In a Jupyter notebook, what does the "Kernel" refer to?
-A) A type of Python script.
-B) The notebook's file format.
-C) The server that runs the notebook.
-D) A Python library for data analysis.
-E) A user interface component.
-
-Correct Answer: C) The server that runs the notebook.
-
-How can you restart the Python kernel in a Jupyter notebook?
-A) Close and reopen the entire notebook.
-B) Run the command restart_kernel() in a code cell.
-C) Click the "Restart Kernel" button in the toolbar.
-D) Use the command python -m restart_kernel.
-E) Restart the computer running Jupyter.
-
-Correct Answer: C) Click the "Restart Kernel" button in the toolbar.
-
-In a Jupyter notebook, how can you comment out multiple lines of code at once?
-A) Use the # symbol at the beginning of each line.
-B) Highlight the lines and press Ctrl + / (or Cmd + / on Mac).
-C) Use triple quotes (''') at the beginning and end of the block.
-D) Comment out each line individually.
-E) Use the %comment magic command.
-
-Correct Answer: B) Highlight the lines and press Ctrl + / (or Cmd + / on Mac).
-
-What is the main advantage of using a Python script (.py) over a Jupyter notebook (.ipynb)?
-A) Python scripts allow for interactive execution.
-B) Python scripts can only be executed in a Jupyter environment.
-C) Python scripts are easier to share and version control.
-D) Python scripts cannot contain Markdown text.
-E) Python scripts support only simple calculations.
-
-Correct Answer: C) Python scripts are easier to share and version control.
-
-How do you run a Python script from the command line?
-A) Type python my_script.ipynb in the terminal.
-B) Double-click the script file in the file explorer.
-C) Open it in a Jupyter notebook and click "Run All."
-D) Type python my_script.py in the terminal.
-E) There is no way to run Python scripts from the command line.
-
-Correct Answer: D) Type python my_script.py in the terminal.
-
-What is the primary purpose of using Python scripts for automation tasks?
-A) To create Jupyter notebooks.
-B) To generate rich text documents.
-C) To execute Python code interactively.
-D) To perform repetitive tasks automatically.
-E) To create interactive web applications.
-
-Correct Answer: D) To perform repetitive tasks automatically.
-
-
-In pandas, what is the primary purpose of the apply method when used with a DataFrame?
-A) To create a new DataFrame with only selected columns.
-B) To apply a function to each element or row in a DataFrame.
-C) To group rows based on a specific column's values.
-D) To filter rows based on a condition.
-E) To sort the DataFrame in ascending order.
-
-Correct Answer: B) To apply a function to each element or row in a DataFrame.
-
-Explanation: The apply method in pandas is primarily used to apply a
-function (provided as an argument) to each element or row in a
-DataFrame. It is a powerful tool for transforming data, performing
-element-wise operations, or aggregating data within a DataFrame. While
-options (A), (C), (D), and (E) describe some common DataFrame
-operations, they are not the primary purpose of the apply method.
-
-
-In pandas, how does the apply method behave differently when applied to a Series compared to a DataFrame?
-A) When applied to a Series, apply can only operate on a single element at a time, while on a DataFrame, it operates on entire rows or columns.
-B) When applied to a Series, apply always returns a Series, while on a DataFrame, it can return a DataFrame or a Series, depending on the function used.
-C) When applied to a Series, apply cannot accept user-defined functions, while on a DataFrame, it can.
-D) When applied to a Series, apply can only be used to aggregate data, while on a DataFrame, it can perform element-wise operations.
-E) There is no difference in how the apply method behaves between Series and DataFrames in pandas.
-
-Correct Answer: A) When applied to a Series, apply can only operate on a single element at a time, while on a DataFrame, it operates on entire rows or columns.
-
-Which pandas function is commonly used to create basic visualizations, such as line plots and bar charts, directly from a DataFrame or Series?
-A) plot()
-B) visualize()
-C) draw()
-D) chart()
-E) show()
-
-Correct Answer: A) plot()
-
-Explanation: The plot() function in pandas is commonly used for creating basic visualizations like line plots, bar charts, histograms, and more from a DataFrame or Series.
-
-Which parameter in the plot() function allows you to specify the type of plot to create, such as 'line', 'bar', or 'hist'?
-A) style
-B) kind
-C) type
-D) plot_type
-E) plot_style
-
-Correct Answer: B) kind
-
-Explanation: The kind parameter in the plot() function is used to specify the type of plot to create. It accepts values like 'line', 'bar', 'hist', 'scatter', etc.
-
-In pandas, what is the purpose of the xlabel and ylabel parameters when creating a plot using the plot() function?
-A) They set the plot title.
-B) They specify the legend labels.
-C) They control the axis labels.
-D) They define the plot color.
-E) They determine the plot style.
-
-Correct Answer: C) They control the axis labels.
-
-Explanation: The xlabel and ylabel parameters in the plot() function are used to specify the labels for the x-axis and y-axis, respectively.
-
-Which of the following statements is true regarding the plot() function in pandas?
-A) It only works with numerical data.
-B) It cannot create 3D plots.
-C) It requires an external plotting library like Matplotlib.
-D) It doesn't support customization of plot styles.
-E) It can only create scatter plots.
-
-Correct Answer: B) It cannot create 3D plots.
-
-Explanation: The plot() function in pandas primarily creates 2D plots. For 3D plots, you would typically need an external plotting library like Matplotlib.
-
-Which method can be used to save a plot created with the plot() function to a file in pandas?
-A) save_plot()
-B) export_to_file()
-C) to_image()
-D) savefig()
-E) write_image()
-
-Correct Answer: D) savefig()
-
-Explanation: You can use the savefig() method to save a plot created
-with the plot() function to a file in various formats (e.g., PNG, PDF,
-SVG).
+// Pandas Library in Python [tag:python] [tag:basic]
+::In Python, what is the primary purpose of the pandas library?
+{
+    =To perform data analysis and manipulation
+    ~To create graphical user interfaces (GUIs)
+    ~To build web applications
+    ~To work with machine learning algorithms
+}
+
+// Import Statement in Python [tag:python] [tag:basic]
+::In Python, what is the purpose of the import statement?
+{
+    =To include external libraries or modules
+    ~To create a new variable
+    ~To execute a loop
+    ~To define a function
+    ~To comment out code
+}
+
+// Primary Data Structure in Pandas [tag:python] [tag:basic]
+::What is the primary data structure for storing and manipulating data in pandas?
+{
+    =DataFrame
+    ~List
+    ~Tuple
+    ~Dictionary
+    ~Set
+}
+
+// Loading Data into DataFrame [tag:python] [tag:basic]
+::Which pandas method is used to load data from a CSV file into a DataFrame?
+{
+    =read_csv()
+    ~load_data()
+    ~import_csv()
+    ~create_dataframe()
+    ~parse_csv()
+}
+
+// Purpose of the if Statement [tag:python] [tag:basic]
+::In Python, what does the if statement allow you to do?
+{
+    =Execute code only if a certain condition is met
+    ~Perform a loop operation
+    ~Define a function
+    ~Import external libraries
+    ~Create a DataFrame
+}
+
+// Comparison Operator in Python [tag:python] [tag:basic]
+::Which Python operator is used to check if two values are equal in value and type?
+{
+    ===
+    ~=
+    ~!=
+    ~<
+    ~<=
+}
+
+// Purpose of the iloc Attribute in Pandas [tag:python] [tag:basic]
+::What is the purpose of the iloc attribute in pandas?
+{
+    =To select rows and columns by their integer positions
+    ~To perform element-wise operations on a DataFrame
+    ~To filter data based on a condition
+    ~To create new columns in a DataFrame
+    ~To sort data in ascending order
+}
+
+// Calculating Summary Statistics in Pandas [tag:python] [tag:basic]
+::Which pandas method is used to calculate summary statistics (e.g., mean, median) for numeric columns in a DataFrame?
+{
+    =describe()
+    ~count()
+    ~head()
+    ~shape()
+    ~info()
+}
+
+// Purpose of the for Loop in Python [tag:python] [tag:basic]
+::In Python, what is the purpose of the for loop?
+{
+    =To perform a specific task a fixed number of times
+    ~To execute code only if a certain condition is met
+    ~To create a function
+    ~To import external libraries
+    ~To load data from a CSV file
+}
+
+// Mutable Python Data Type [tag:python] [tag:basic]
+::Which Python data type is mutable (can be modified after creation)?
+{
+    =List
+    ~Tuple
+    ~String
+    ~Set
+    ~Dictionary
+}
+
+// Purpose of the str() Function in Python [tag:python] [tag:basic]
+::What does the str() function in Python do?
+{
+    =Convert a value to a string
+    ~Convert a string to lowercase
+    ~Format a string as a currency
+    ~Convert a data frame to a string
+    ~Remove leading and trailing spaces from a string
+}
+
+// Usage of Jupyter Notebook [tag:python] [tag:basic]
+::What is a Jupyter notebook primarily used for in Python development?
+{
+    =To write and execute Python code interactively.
+    ~To compile Python code into binary executables.
+    ~To create Python software applications.
+    ~To generate Python documentation.
+    ~To debug Python code.
+}
+
+// Purpose of Cells in Jupyter Notebook [tag:python] [tag:basic]
+::In a Jupyter notebook, what are cells used for?
+{
+    =Executing code and displaying output.
+    ~Storing Python code only.
+    ~Displaying text comments only.
+    ~Running Python code in the background.
+    ~Creating external Python scripts.
+}
+
+// File Extension for Jupyter Notebook Files [tag:python] [tag:basic]
+::What is the file extension commonly associated with Jupyter notebook files?
+{
+    =.ipynb
+    ~.txt
+    ~.py
+    ~.html
+    ~.csv
+}
+
+// Functionality of Jupyter Code Cells [tag:python] [tag:basic]
+::What does a Jupyter code cell allow you to do?
+{
+    =Write both Python code and formatted text.
+    ~Write only Python code.
+    ~Write only Markdown text.
+    ~Execute code without displaying the output.
+    ~Execute code without saving the cell.
+}
+
+// Adding New Cell in Jupyter Notebook [tag:python] [tag:basic]
+::How can you add a new cell below the currently selected cell in a Jupyter notebook?
+{
+    =Press Alt + Enter.
+    ~Press Shift + Enter.
+    ~Press Ctrl + Enter.
+    ~Press Shift + B.
+    ~Press Ctrl + S.
+}
+
+// Purpose of Jupyter Markdown Cell [tag:python] [tag:basic]
+::What is the purpose of a Jupyter Markdown cell?
+{
+    =To provide text-based documentation.
+    ~To execute Python code.
+    ~To display interactive widgets.
+    ~To run unit tests.
+    ~To create Python functions.
+}
+
+// Saving Content in Jupyter Notebook [tag:python] [tag:basic]
+::Which command is used to save the content of a Jupyter notebook?
+{
+    =Ctrl + S (or Cmd + S on Mac)
+    ~save_notebook()
+    ~export_to_pdf()
+    ~save_and_exit()
+    ~close_notebook()
+}
+
+// Restarting Python Kernel in Jupyter Notebook [tag:python] [tag:basic]
+::How can you restart the Python kernel in a Jupyter notebook?
+{
+    =Click the "Restart Kernel" button in the toolbar.
+    ~Close and reopen the entire notebook.
+    ~Run the command restart_kernel() in a code cell.
+    ~Use the command python -m restart_kernel.
+    ~Restart the computer running Jupyter.
+}
+
+// Commenting Multiple Lines in Jupyter Notebook [tag:python] [tag:basic]
+::In a Jupyter notebook, how can you comment out multiple lines of code at once?
+{
+    =Highlight the lines and press Ctrl + / (or Cmd + / on Mac).
+    ~Use the # symbol at the beginning of each line.
+    ~Use triple quotes (''') at the beginning and end of the block.
+    ~Comment out each line individually.
+    ~Use the %comment magic command.
+}
+
+// Advantage of Python Scripts over Jupyter Notebooks [tag:python] [tag:basic]
+::What is the main advantage of using a Python script (.py) over a Jupyter notebook (.ipynb)?
+{
+    =Python scripts are easier to share and version control.
+    ~Python scripts allow for interactive execution.
+    ~Python scripts can only be executed in a Jupyter environment.
+    ~Python scripts cannot contain Markdown text.
+    ~Python scripts support only simple calculations.
+}
+
+// Running Python Scripts from Command Line [tag:python] [tag:basic]
+::How do you run a Python script from the command line?
+{
+    =Type python my_script.py in the terminal.
+    ~Type python my_script.ipynb in the terminal.
+    ~Double-click the script file in the file explorer.
+    ~Open it in a Jupyter notebook and click "Run All."
+    ~There is no way to run Python scripts from the command line.
+}
+
+// Purpose of Python Scripts for Automation Tasks [tag:python] [tag:basic]
+::What is the primary purpose of using Python scripts for automation tasks?
+{
+    =To perform repetitive tasks automatically.
+    ~To create Jupyter notebooks.
+    ~To generate rich text documents.
+    ~To execute Python code interactively.
+    ~To create interactive web applications.
+}
+
+// apply() Method in Pandas DataFrame [tag:python] [tag:basic]
+::In pandas, what is the primary purpose of the apply method when used with a DataFrame?
+{
+    =To apply a function to each element or row in a DataFrame.
+    ~To create a new DataFrame with only selected columns.
+    ~To group rows based on a specific column's values.
+    ~To filter rows based on a condition.
+    ~To sort the DataFrame in ascending order.
+}
+
+// apply() Method Behavior in Series vs. DataFrame [tag:python] [tag:basic]
+::In pandas, how does the apply method behave differently when applied to a Series compared to a DataFrame?
+{
+    =When applied to a Series, apply can only operate on a single element at a time, while on a DataFrame, it operates on entire rows or columns.
+    ~When applied to a Series, apply always returns a Series, while on a DataFrame, it can return a DataFrame or a Series, depending on the function used.
+    ~When applied to a Series, apply cannot accept user-defined functions, while on a DataFrame, it can.
+    ~When applied to a Series, apply can only be used to aggregate data, while on a DataFrame, it can perform element-wise operations.
+    ~There is no difference in how the apply method behaves between Series and DataFrames in pandas.
+}
+
+// Basic Visualizations in Pandas [tag:python] [tag:basic]
+::Which pandas function is commonly used to create basic visualizations, such as line plots and bar charts, directly from a DataFrame or Series?
+{
+    =plot()
+    ~visualize()
+    ~draw()
+    ~chart()
+    ~show()
+}
+
+// Parameter for Plot Type in pandas plot() [tag:python] [tag:basic]
+::Which parameter in the plot() function allows you to specify the type of plot to create, such as 'line', 'bar', or 'hist'?
+{
+    =kind
+    ~style
+    ~type
+    ~plot_type
+    ~plot_style
+}
+
+// Purpose of xlabel and ylabel in pandas plot() [tag:python] [tag:basic]
+::In pandas, what is the purpose of the xlabel and ylabel parameters when creating a plot using the plot() function?
+{
+    =They control the axis labels.
+    ~They set the plot title.
+    ~They specify the legend labels.
+    ~They define the plot color.
+    ~They determine the plot style.
+}
+
+// 3D Plots in pandas plot() [tag:python] [tag:basic]
+::Which of the following statements is true regarding the plot() function in pandas?
+{
+    =It cannot create 3D plots.
+    ~It only works with numerical data.
+    ~It requires an external plotting library like Matplotlib.
+    ~It doesn't support customization of plot styles.
+    ~It can only create scatter plots.
+}
+
+// Saving Plots in pandas [tag:python] [tag:basic]
+::Which method can be used to save a plot created with the plot() function to a file in pandas?
+{
+    =savefig()
+    ~save_plot()
+    ~export_to_file()
+    ~to_image()
+    ~write_image()
+}
+

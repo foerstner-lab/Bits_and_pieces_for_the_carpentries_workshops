@@ -1,263 +1,298 @@
-What is SPARQL?
-A) A programming language
-B) A query language for semantic data
-C) A markup language for web pages
-D) An operating system
-
-Correct Answer: B) A query language for semantic data
-
-
-In SPARQL, what does the acronym "SELECT" stand for?
-A) Securely Extract Lists of Data
-B) Structured Query Language
-C) Simple Protocol and RDF Query Language
-D) Semantic Path and Resource Locator
-E) None of the above
-
-Correct Answer: E) None of the above
-
-
-What is the primary purpose of a SPARQL query in the context of Wikidata?
-A) To create web pages
-B) To retrieve and manipulate structured data from Wikidata
-C) To send emails
-D) To perform mathematical calculations
-
-
-In SPARQL, which keyword is used to retrieve all properties and their values for a specific Wikidata entity?
-A) DESCRIBE
-B) SELECT
-C) FILTER
-D) WHERE
-
-Correct Answer: A) DESCRIBE
-
-What is the purpose of the SPARQL "LIMIT" clause in a query?
-A) To specify the number of query results to retrieve
-B) To limit the number of triples in the dataset
-C) To filter query results based on a condition
-D) To order query results alphabetically
-
-Correct Answer: A) To specify the number of query results to retrieve
-
-Which SPARQL keyword is used to group query results by a specific variable in order to perform aggregate functions like COUNT or SUM?
-A) GROUP
-B) HAVING
-C) ORDER
-D) FILTER
-
-Correct Answer: A) GROUP
-
-What does the SPARQL "FILTER" clause allow you to do in a query?
-A) Retrieve specific properties
-B) Exclude certain results based on a condition
-C) Order query results
-D) Perform joins between datasets
-
-Correct Answer: B) Exclude certain results based on a condition
-
-Which keyword is used to order query results in ascending or descending order based on a specific variable in SPARQL?
-A) SORT
-B) ARRANGE
-C) ORDER
-D) GROUP
-
-Correct Answer: C) ORDER
-
-In SPARQL, what is the purpose of the "PREFIX" declaration?
-A) To specify the query's title
-B) To define namespace prefixes for use in the query
-C) To create a filter condition
-D) To limit the number of results
-
-Correct Answer: B) To define namespace prefixes for use in the query
-
-What is the result format commonly used when executing SPARQL queries against Wikidata via its web-based query service?
-A) CSV
-B) PDF
-C) HTML
-D) JSON
-
-Correct Answer: D) JSON
-
-Which SPARQL keyword is used to specify optional patterns in a query, meaning that the query will still return results if those patterns are not matched?
-A) OPTIONAL
-B) REQUIRED
-C) MANDATORY
-D) CONDITIONAL
-
-Correct Answer: A) OPTIONAL
-
-What does the SPARQL "UNION" keyword allow you to do in a query?
-A) Combine the results of two or more queries into a single result set
-B) Create an intersection of query results
-C) Filter query results based on a condition
-D) Group query results
-
-Correct Answer: A) Combine the results of two or more queries into a single result set
-
-What is one of the primary advantages of using Wikidata for knowledge sharing and collaboration?
-A) It is a proprietary platform accessible to a select few.
-B) It offers free and open access to structured knowledge.
-C) It requires a subscription for basic access.
-D) It is limited to a specific language.
-E) It focuses exclusively on academic research.
-
-Correct Answer: B) It offers free and open access to structured knowledge.
-
-How can Wikidata be used to support data integration and enrichment?
-A) By restricting access to a select group of researchers.
-B) By providing unstructured data without context.
-C) By allowing users to add and edit data collaboratively.
-D) By enforcing strict data privacy regulations.
-E) By requiring users to pay for data contributions.
-
-Correct Answer: C) By allowing users to add and edit data collaboratively.
-
-Which of the following is a common use case for Wikidata?
-A) Storing proprietary business data.
-B) Collaborative research on scientific articles.
-C) Sharing personal opinions and anecdotes.
-D) Managing social media profiles.
-E) Playing video games online.
-
-Correct Answer: B) Collaborative research on scientific articles.
-
-What type of data can be found in Wikidata?
-A) Personal photos and videos.
-B) Structured and linked open data.
-C) Closed-source software code.
-D) Physical merchandise for sale.
-E) Cryptocurrency transactions.
-
-Correct Answer: B) Structured and linked open data.
-
-How does Wikidata promote multilingualism and cultural diversity?
-A) By enforcing a single language policy.
-B) By providing translations only in English.
-C) By allowing users to contribute in their native languages.
-D) By restricting access to users from specific regions.
-E) By excluding content from non-English-speaking communities.
-
-Correct Answer: C) By allowing users to contribute in their native languages.
-
-
-What is the primary goal of Wikidata's structured data model?
-A) To limit access to data for security reasons.
-B) To store data in a proprietary format.
-C) To enable easy data linking and sharing.
-D) To provide data exclusively in printed books.
-E) To restrict data access to academic institutions.
-
-Correct Answer: C) To enable easy data linking and sharing.
-
-How does Wikidata help improve data quality and accuracy?
-A) By restricting data contributions to a select group of experts.
-B) By adding random and unverified information to the database.
-C) By allowing collaborative editing and peer review.
-D) By deleting all user-contributed data periodically.
-E) By charging a fee for data submissions.
-
-Correct Answer: C) By allowing collaborative editing and peer review.
-
-Which of the following statements is true regarding Wikidata's use of open licenses?
-A) Wikidata content is not licensed and cannot be reused.
-B) Wikidata content is licensed under a closed-source license.
-C) Wikidata content is licensed under a Creative Commons license.
-D) Wikidata content is only accessible to government agencies.
-E) Wikidata content is licensed exclusively to commercial companies.
-
-Correct Answer: C) Wikidata content is licensed under a Creative Commons license.
-
-In what ways can Wikidata support semantic web applications and linked data?
-A) By providing data exclusively in PDF format.
-B) By enforcing strict data privacy regulations.
-C) By allowing data to be queried and linked programmatically.
-D) By restricting data access to specific web browsers.
-E) By charging fees for accessing linked data.
-
-Correct Answer: C) By allowing data to be queried and linked programmatically.
-
-What is the benefit of Wikidata's collaborative and community-driven approach?
-A) It ensures data accuracy without human intervention.
-B) It limits access to data to prevent misuse.
-C) It provides a closed platform for a select group of experts.
-D) It allows a single organization to control all data.
-E) It harnesses collective knowledge and expertise.
-
-Correct Answer: E) It harnesses collective knowledge and expertise.
-
-How does Wikidata facilitate data reuse across different knowledge domains?
-A) By restricting data to a single domain or topic.
-B) By using a proprietary data format.
-C) By allowing data to be categorized and linked.
-D) By requiring users to pay for data access.
-E) By providing data in a closed and inaccessible format.
-
-Correct Answer: C) By allowing data to be categorized and linked.
-
-What is the primary purpose of Wikidata's Wikibase software?
-A) To block access to Wikidata for non-academic users.
-B) To enforce rigid data privacy policies.
-C) To provide a closed platform for commercial use.
-D) To enable the creation of Wikidata-like databases.
-E) To store data in a proprietary database format.
-
-Correct Answer: D) To enable the creation of Wikidata-like databases.
-
-How does Wikidata ensure data consistency and uniformity across different entries?
-A) By allowing contributors to use any data format they prefer.
-B) By excluding user-contributed data from the database.
-C) By implementing strict data validation rules and guidelines.
-D) By hiding all data from public view.
-E) By charging contributors for data formatting.
-
-Correct Answer: C) By implementing strict data validation rules and guidelines.
-
-What is the role of Wikidata identifiers (QIDs) in data linking?
-A) They are used to access paid data sources.
-B) They prevent data from being linked to other sources.
-C) They provide a standardized way to identify entities.
-D) They limit data linking to a single language.
-E) They restrict data access to government agencies.
-
-Correct Answer: C) They provide a standardized way to identify entities.
-
-How does Wikidata support cultural heritage institutions and libraries?
-A) By charging exorbitant fees for data access.
-B) By limiting access to data for research purposes only.
-C) By offering free access to structured data for enrichment.
-D) By requiring institutions to contribute proprietary data.
-E) By excluding cultural heritage content from the database.
-
-Correct Answer: C) By offering free access to structured data for enrichment.
-
-What is the significance of the Wikidata Query Service for users?
-A) It provides a closed platform for data analysis.
-B) It restricts access to data to specific devices.
-C) It allows users to query and explore Wikidata's data.
-D) It charges a fee for each query made.
-E) It only supports queries in a single language.
-
-Correct Answer: C) It allows users to query and explore Wikidata's data.
-
-How does Wikidata encourage data interoperability with other projects?
-A) By storing data exclusively in proprietary formats.
-B) By limiting access to data through a closed API.
-C) By providing data in standardized and open formats.
-D) By requiring users to pay for data integration.
-E) By excluding data from non-Wikimedia projects.
-
-Correct Answer: C) By providing data in standardized and open formats.
-
-How can Wikidata be utilized to enhance search engine capabilities and knowledge panels?
-A) By excluding data from search engine indexing.
-B) By providing inaccurate and outdated information.
-C) By offering structured data that search engines can utilize.
-D) By preventing search engines from accessing Wikidata.
-E) By charging search engines for data access.
-
-Correct Answer: C) By offering structured data that search engines can utilize.
-
-
-
+// What is SPARQL? [tag:sparql] [tag:basic]
+::What is SPARQL?
+{
+    =A query language for semantic data
+    ~A programming language
+    ~A markup language for web pages
+    ~An operating system
+}
+
+// SPARQL SELECT Acronym [tag:sparql] [tag:basic]
+::In SPARQL, what does the acronym "SELECT" stand for?
+{
+    =None of the above
+    ~Securely Extract Lists of Data
+    ~Structured Query Language
+    ~Semantic Path and Resource Locator
+    ~Simple Protocol and RDF Query Language
+}
+
+// SPARQL Query Purpose in Wikidata Context [tag:sparql] [tag:basic]
+::What is the primary purpose of a SPARQL query in the context of Wikidata?
+{
+    =To retrieve and manipulate structured data from Wikidata
+    ~To create web pages
+    ~To send emails
+    ~To perform mathematical calculations
+}
+
+// Retrieving Properties and Values in SPARQL [tag:sparql] [tag:basic]
+::In SPARQL, which keyword is used to retrieve all properties and their values for a specific Wikidata entity?
+{
+    =DESCRIBE
+    ~SELECT
+    ~FILTER
+    ~WHERE
+}
+
+// Purpose of SPARQL LIMIT Clause [tag:sparql] [tag:basic]
+::What is the purpose of the SPARQL "LIMIT" clause in a query?
+{
+    =To specify the number of query results to retrieve
+    ~To limit the number of triples in the dataset
+    ~To filter query results based on a condition
+    ~To order query results alphabetically
+}
+
+// Grouping Query Results in SPARQL [tag:sparql] [tag:basic]
+::Which SPARQL keyword is used to group query results by a specific variable in order to perform aggregate functions like COUNT or SUM?
+{
+    =GROUP
+    ~HAVING
+    ~ORDER
+    ~FILTER
+}
+
+// SPARQL FILTER Clause [tag:sparql] [tag:basic]
+::What does the SPARQL "FILTER" clause allow you to do in a query?
+{
+    =Exclude certain results based on a condition
+    ~Retrieve specific properties
+    ~Order query results
+    ~Perform joins between datasets
+}
+
+// Ordering Query Results in SPARQL [tag:sparql] [tag:basic]
+::Which keyword is used to order query results in ascending or descending order based on a specific variable in SPARQL?
+{
+    =ORDER
+    ~SORT
+    ~ARRANGE
+    ~GROUP
+}
+
+// Purpose of SPARQL PREFIX Declaration [tag:sparql] [tag:basic]
+::In SPARQL, what is the purpose of the "PREFIX" declaration?
+{
+    =To define namespace prefixes for use in the query
+    ~To specify the query's title
+    ~To create a filter condition
+    ~To limit the number of results
+}
+
+// Result Format for SPARQL Queries in Wikidata [tag:sparql] [tag:basic]
+::What is the result format commonly used when executing SPARQL queries against Wikidata via its web-based query service?
+{
+    =JSON
+    ~CSV
+    ~PDF
+    ~HTML
+}
+
+// SPARQL OPTIONAL Keyword [tag:sparql] [tag:basic]
+::Which SPARQL keyword is used to specify optional patterns in a query, meaning that the query will still return results if those patterns are not matched?
+{
+    =OPTIONAL
+    ~REQUIRED
+    ~MANDATORY
+    ~CONDITIONAL
+}
+
+// SPARQL UNION Keyword [tag:sparql] [tag:basic]
+::What does the SPARQL "UNION" keyword allow you to do in a query?
+{
+    =Combine the results of two or more queries into a single result set
+    ~Create an intersection of query results
+    ~Filter query results based on a condition
+    ~Group query results
+}
+
+// Wikidata's Role in Knowledge Sharing and Collaboration [tag:sparql] [tag:basic]
+::What is one of the primary advantages of using Wikidata for knowledge sharing and collaboration?
+{
+    =It offers free and open access to structured knowledge.
+    ~It is a proprietary platform accessible to a select few.
+    ~It requires a subscription for basic access.
+    ~It focuses exclusively on academic research.
+    ~It is limited to a specific language.
+}
+
+// Utilizing Wikidata for Data Integration and Enrichment [tag:sparql] [tag:basic]
+::How can Wikidata be used to support data integration and enrichment?
+{
+    =By allowing users to add and edit data collaboratively.
+    ~By providing unstructured data without context.
+    ~By restricting access to a select group of researchers.
+    ~By enforcing strict data privacy regulations.
+    ~By requiring users to pay for data contributions.
+}
+
+// Common Use Case for Wikidata [tag:sparql] [tag:basic]
+::Which of the following is a common use case for Wikidata?
+{
+    =Collaborative research on scientific articles.
+    ~Storing proprietary business data.
+    ~Sharing personal opinions and anecdotes.
+    ~Managing social media profiles.
+    ~Playing video games online.
+}
+
+// Type of Data in Wikidata [tag:sparql] [tag:basic]
+::What type of data can be found in Wikidata?
+{
+    =Structured and linked open data.
+    ~Personal photos and videos.
+    ~Closed-source software code.
+    ~Physical merchandise for sale.
+    ~Cryptocurrency transactions.
+}
+
+// What type of data can be found in Wikidata? [tag:sparql] [tag:basic]
+::What type of data can be found in Wikidata?
+{
+    =Structured and linked open data.
+    ~Personal photos and videos.
+    ~Closed-source software code.
+    ~Physical merchandise for sale.
+    ~Cryptocurrency transactions.
+}
+
+// How does Wikidata promote multilingualism and cultural diversity? [tag:sparql] [tag:basic]
+::How does Wikidata promote multilingualism and cultural diversity?
+{
+    =By allowing users to contribute in their native languages.
+    ~By enforcing a single language policy.
+    ~By providing translations only in English.
+    ~By restricting access to users from specific regions.
+    ~By excluding content from non-English-speaking communities.
+}
+
+// Primary goal of Wikidata's structured data model [tag:sparql] [tag:basic]
+::What is the primary goal of Wikidata's structured data model?
+{
+    =To enable easy data linking and sharing.
+    ~To limit access to data for security reasons.
+    ~To store data in a proprietary format.
+    ~To provide data exclusively in printed books.
+    ~To restrict data access to academic institutions.
+}
+
+// How does Wikidata improve data quality and accuracy? [tag:sparql] [tag:basic]
+::How does Wikidata help improve data quality and accuracy?
+{
+    =By allowing collaborative editing and peer review.
+    ~By restricting data contributions to a select group of experts.
+    ~By adding random and unverified information to the database.
+    ~By deleting all user-contributed data periodically.
+    ~By charging a fee for data submissions.
+}
+
+// Wikidata's use of open licenses [tag:sparql] [tag:basic]
+::Which of the following statements is true regarding Wikidata's use of open licenses?
+{
+    =Wikidata content is licensed under a Creative Commons license.
+    ~Wikidata content is not licensed and cannot be reused.
+    ~Wikidata content is licensed under a closed-source license.
+    ~Wikidata content is only accessible to government agencies.
+    ~Wikidata content is licensed exclusively to commercial companies.
+}
+
+// How can Wikidata support semantic web applications and linked data? [tag:sparql] [tag:basic]
+::In what ways can Wikidata support semantic web applications and linked data?
+{
+    =By allowing data to be queried and linked programmatically.
+    ~By providing data exclusively in PDF format.
+    ~By enforcing strict data privacy regulations.
+    ~By restricting data access to specific web browsers.
+    ~By charging fees for accessing linked data.
+}
+
+// Benefit of Wikidata's collaborative and community-driven approach [tag:sparql] [tag:basic]
+::What is the benefit of Wikidata's collaborative and community-driven approach?
+{
+    =It harnesses collective knowledge and expertise.
+    ~It ensures data accuracy without human intervention.
+    ~It limits access to data to prevent misuse.
+    ~It provides a closed platform for a select group of experts.
+    ~It allows a single organization to control all data.
+}
+
+// How does Wikidata facilitate data reuse across different knowledge domains? [tag:sparql] [tag:basic]
+::How does Wikidata facilitate data reuse across different knowledge domains?
+{
+    =By allowing data to be categorized and linked.
+    ~By restricting data to a single domain or topic.
+    ~By using a proprietary data format.
+    ~By requiring users to pay for data access.
+    ~By providing data in a closed and inaccessible format.
+}
+
+// Primary purpose of Wikidata's Wikibase software [tag:sparql] [tag:basic]
+::What is the primary purpose of Wikidata's Wikibase software?
+{
+    =To enable the creation of Wikidata-like databases.
+    ~To block access to Wikidata for non-academic users.
+    ~To enforce rigid data privacy policies.
+    ~To provide a closed platform for commercial use.
+    ~To store data in a proprietary database format.
+}
+
+// How does Wikidata ensure data consistency and uniformity across different entries? [tag:sparql] [tag:basic]
+::How does Wikidata ensure data consistency and uniformity across different entries?
+{
+    =By implementing strict data validation rules and guidelines.
+    ~By allowing contributors to use any data format they prefer.
+    ~By excluding user-contributed data from the database.
+    ~By hiding all data from public view.
+    ~By charging contributors for data formatting.
+}
+
+// Role of Wikidata identifiers (QIDs) in data linking [tag:sparql] [tag:basic]
+::What is the role of Wikidata identifiers (QIDs) in data linking?
+{
+    =They provide a standardized way to identify entities.
+    ~They are used to access paid data sources.
+    ~They prevent data from being linked to other sources.
+    ~They limit data linking to a single language.
+    ~They restrict data access to government agencies.
+}
+
+// How does Wikidata support cultural heritage institutions and libraries? [tag:sparql] [tag:basic]
+::How does Wikidata support cultural heritage institutions and libraries?
+{
+    =By offering free access to structured data for enrichment.
+    ~By charging exorbitant fees for data access.
+    ~By limiting access to data for research purposes only.
+    ~By requiring institutions to contribute proprietary data.
+    ~By excluding cultural heritage content from the database.
+}
+
+// Significance of the Wikidata Query Service for users [tag:sparql] [tag:basic]
+::What is the significance of the Wikidata Query Service for users?
+{
+    =It allows users to query and explore Wikidata's data.
+    ~It provides a closed platform for data analysis.
+    ~It restricts access to data to specific devices.
+    ~It charges a fee for each query made.
+    ~It only supports queries in a single language.
+}
+
+// How does Wikidata encourage data interoperability with other projects? [tag:sparql] [tag:basic]
+::How does Wikidata encourage data interoperability with other projects?
+{
+    =By providing data in standardized and open formats.
+    ~By storing data exclusively in proprietary formats.
+    ~By limiting access to data through a closed API.
+    ~By requiring users to pay for data integration.
+    ~By excluding data from non-Wikimedia projects.
+}
+
+// Utilizing Wikidata to enhance search engine capabilities and knowledge panels [tag:sparql] [tag:basic]
+::How can Wikidata be utilized to enhance search engine capabilities and knowledge panels?
+{
+    =By offering structured data that search engines can utilize.
+    ~By excluding data from search engine indexing.
+    ~By providing inaccurate and outdated information.
+    ~By preventing search engines from accessing Wikidata.
+    ~By charging search engines for data access.
+}

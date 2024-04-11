@@ -1,12 +1,439 @@
-Mit welchem Befehl wechsel ich in mein Home-Verzeichnis?
-A) cd ~
-B) cd
-C) cd /home/
-D) cd .
-ANSWER: A,B
+// Welcher Befehl wird verwendet, um Dateien und Verzeichnisse im aktuellen Verzeichnis im Unix Shell anzuzeigen? [tag:shell] [tag:basic]
+::Welcher Befehl wird verwendet, um Dateien und Verzeichnisse im aktuellen Verzeichnis im Unix Shell anzuzeigen?
+{
+    =ls
+    ~cd
+    ~rm
+    ~mv
+    ~mkdir
+}
 
-Wofür steht der Befehl "rm" und was macht er?
-A) "Read manual" - Handbücher lesen
-B) "Remove" - Löscht Ordner/Dateien
-ANSWER: B
+// Welcher Befehl wird verwendet, um das aktuelle Verzeichnis im Unix Shell zu ändern? [tag:shell] [tag:basic]
+::Welcher Befehl wird verwendet, um das aktuelle Verzeichnis im Unix Shell zu ändern?
+{
+    ~ls
+    =cd
+    ~cp
+    ~mv
+    ~rm
+}
 
+// Welcher Befehl wird verwendet, um ein neues Verzeichnis im Unix Shell zu erstellen? [tag:shell] [tag:basic]
+::Welcher Befehl wird verwendet, um ein neues Verzeichnis im Unix Shell zu erstellen?
+{
+    ~ls
+    ~cd
+    ~rm
+    =mkdir
+    ~touch
+}
+
+// Was ist der Zweck des "pwd" Befehls im Unix Shell? [tag:shell] [tag:basic]
+::Was ist der Zweck des "pwd" Befehls im Unix Shell?
+{
+    =Aktuelles Arbeitsverzeichnis anzeigen
+    ~Eine Datei löschen
+    ~Eine Datei verschieben
+    ~Dateien und Verzeichnisse auflisten
+    ~Verzeichnis ändern
+}
+
+// Welcher Befehl wird verwendet, um Dateien oder Verzeichnisse im Unix Shell zu kopieren? [tag:shell] [tag:basic]
+::Welcher Befehl wird verwendet, um Dateien oder Verzeichnisse im Unix Shell zu kopieren?
+{
+    ~mv
+    =cp
+    ~rm
+    ~mkdir
+    ~ls
+}
+
+// Was macht der "echo" Befehl im Unix Shell? [tag:shell] [tag:basic]
+::Was macht der "echo" Befehl im Unix Shell?
+{
+    ~Verzeichnisinhalt auflisten
+    ~Dateien kopieren
+    =Text auf dem Bildschirm ausgeben
+    ~Dateien und Verzeichnisse löschen
+    ~Dateien und Verzeichnisse verschieben
+}
+
+// Wie können Sie den Inhalt einer Textdatei im Unix Shell anzeigen? [tag:shell] [tag:basic]
+::Wie können Sie den Inhalt einer Textdatei im Unix Shell anzeigen?
+{
+    =cat
+    ~cp
+    ~mkdir
+    ~touch
+    ~mv
+}
+
+// Welcher Befehl wird verwendet, um eine Datei im Unix Shell zu löschen? [tag:shell] [tag:basic]
+::Welcher Befehl wird verwendet, um eine Datei im Unix Shell zu löschen?
+{
+    ~ls
+    ~cd
+    ~cp
+    =rm
+    ~mkdir
+}
+
+// Was ist der Zweck des "touch" Befehls im Unix Shell? [tag:shell] [tag:basic]
+::Was ist der Zweck des "touch" Befehls im Unix Shell?
+{
+    ~Ein neues Verzeichnis erstellen
+    ~Eine Datei umbenennen
+    =Den Zeitstempel einer Datei aktualisieren oder eine leere Datei erstellen
+    ~Dateien und Verzeichnisse verschieben
+    ~Verzeichnisinhalt auflisten
+}
+
+// Welcher Befehl wird verwendet, um Dateien und Verzeichnisse im Unix Shell zu verschieben oder umzubenennen? [tag:shell] [tag:basic]
+::Welcher Befehl wird verwendet, um Dateien und Verzeichnisse im Unix Shell zu verschieben oder umzubenennen?
+{
+    ~cp
+    =mv
+    ~rm
+    ~ls
+    ~cd
+}
+
+// Was ist der Zweck des "man" Befehls im Unix Shell? [tag:shell] [tag:basic]
+::Was ist der Zweck des "man" Befehls im Unix Shell?
+{
+    ~Ein neues Verzeichnis erstellen
+    =Die Anleitung oder Hilfeseite für einen Befehl anzeigen
+    ~Verzeichnisinhalt auflisten
+    ~Dateien kopieren
+    ~Dateien und Verzeichnisse löschen
+}
+
+// Welcher Befehl wird verwendet, um nach Dateien und Verzeichnissen im Unix Shell zu suchen? [tag:shell] [tag:basic]
+::Welcher Befehl wird verwendet, um nach Dateien und Verzeichnissen im Unix Shell zu suchen?
+{
+    =grep
+    ~cp
+    ~ls
+    ~rm
+    ~mv
+}
+
+// Was ist der Zweck des "chmod" Befehls im Unix Shell? [tag:shell] [tag:basic]
+::Was ist der Zweck des "chmod" Befehls im Unix Shell?
+{
+    ~Das aktuelle Verzeichnis ändern
+    =Dateiberechtigungen ändern
+    ~Verzeichnisinhalt auflisten
+    ~Dateien kopieren
+    ~Dateien und Verzeichnisse löschen
+}
+
+// Welcher Befehl wird verwendet, um die letzten Zeilen einer Textdatei im Unix Shell anzuzeigen? [tag:shell] [tag:basic]
+::Welcher Befehl wird verwendet, um die letzten Zeilen einer Textdatei im Unix Shell anzuzeigen?
+{
+    ~cat
+    ~head
+    =tail
+    ~ls
+    ~cp
+}
+
+// Was ist der Zweck des "history" Befehls im Unix Shell? [tag:shell] [tag:basic]
+::Was ist der Zweck des "history" Befehls im Unix Shell?
+{
+    ~Verzeichnisinhalt auflisten
+    =Befehlshistorie anzeigen
+    ~Dateien und Verzeichnisse löschen
+    ~Dateien kopieren
+    ~Eine Datei umbenennen
+}
+
+// Wie erstellen Sie einen symbolischen Link im Unix Shell? [tag:shell] [tag:basic]
+::Wie erstellen Sie einen symbolischen Link im Unix Shell?
+{
+    =ln -s
+    ~cp
+    ~mv
+    ~rm
+    ~ls
+}
+
+// Welcher Befehl wird verwendet, um Dateien im Unix Shell zu zippen oder zu komprimieren? [tag:shell] [tag:basic]
+::Welcher Befehl wird verwendet, um Dateien im Unix Shell zu zippen oder zu komprimieren?
+{
+    ~unzip
+    =tar
+    ~gzip
+    ~cp
+    ~mv
+}
+
+// Welcher Befehl wird verwendet, um komprimierte Dateien im Unix Shell zu entzippen oder zu extrahieren? [tag:shell] [tag:basic]
+::Welcher Befehl wird verwendet, um komprimierte Dateien im Unix Shell zu entzippen oder zu extrahieren?
+{
+    =zip
+    =tar
+    ~gunzip
+    ~cp
+    ~mv
+}
+
+// Was ist der Zweck des "find" Befehls im Unix Shell? [tag:shell] [tag:basic]
+::Was ist der Zweck des "find" Befehls im Unix Shell?
+{
+    ~Verzeichnisinhalt auflisten
+    ~Ein neues Verzeichnis erstellen
+    =Nach Dateien und Verzeichnissen suchen
+    ~Dateien kopieren
+    ~Dateiberechtigungen ändern
+}
+
+// Wie navigieren Sie zum Home-Verzeichnis im Unix Shell? [tag:shell] [tag:basic]
+::Wie navigieren Sie zum Home-Verzeichnis im Unix Shell?
+{
+    ~home
+    ~cd /
+    =cd ~
+    ~cd ..
+    ~cd
+}
+
+// Was macht der "mv" Befehl im Unix Shell? [tag:shell] [tag:basic]
+::Was macht der "mv" Befehl im Unix Shell?
+{
+    =Dateien und Verzeichnisse verschieben oder umbenennen
+    ~Dateien und Verzeichnisse kopieren
+    ~Verzeichnisinhalt auflisten
+    ~Dateien und Verzeichnisse löschen
+    ~Dateiberechtigungen ändern
+}
+
+// Welcher Befehl wird verwendet, um die auf einem Unix-System laufenden Prozesse aufzulisten? [tag:shell] [tag:basic]
+::Welcher Befehl wird verwendet, um die auf einem Unix-System laufenden Prozesse aufzulisten?
+{
+    =ps
+    ~ls
+    ~top
+    ~cd
+    ~kill
+}
+
+// Was ist der Zweck des "grep" Befehls im Unix Shell? [tag:shell] [tag:basic]
+::Was ist der Zweck des "grep" Befehls im Unix Shell?
+{
+    ~Die Anleitung für einen Befehl anzeigen
+    ~Verzeichnisinhalt auflisten
+    =Nach Mustern in Dateien suchen
+    ~Dateien kopieren
+    ~Dateien und Verzeichnisse verschieben
+}
+
+// Welcher Befehl wird verwendet, um eine Textdatei im Unix Shell zu öffnen und zu bearbeiten? [tag:shell] [tag:basic]
+::Welcher Befehl wird verwendet, um eine Textdatei im Unix Shell zu öffnen und zu bearbeiten?
+{
+    ~edit
+    ~open
+    =nano
+    ~ls
+    ~cp
+}
+
+// Was ist der Zweck des "df" Befehls im Unix Shell? [tag:shell] [tag:basic]
+::Was ist der Zweck des "df" Befehls im Unix Shell?
+{
+    =Festplattenbelegung und freien Speicherplatz anzeigen
+    ~Verzeichnisinhalt auflisten
+    ~Ein neues Verzeichnis erstellen
+    ~Dateien und Verzeichnisse löschen
+    ~Dateiberechtigungen ändern
+}
+
+// Wie beenden Sie einen laufenden Prozess im Unix Shell? [tag:shell] [tag:basic]
+::Wie beenden Sie einen laufenden Prozess im Unix Shell?
+{
+    =kill
+    ~stop
+    ~start
+    ~ps
+    ~ls
+}
+
+// Welcher Befehl wird verwendet, um eine neue Textdatei im Unix Shell zu erstellen und zu bearbeiten? [tag:shell] [tag:basic]
+::Welcher Befehl wird verwendet, um eine neue Textdatei im Unix Shell zu erstellen und zu bearbeiten?
+{
+    =touch
+    ~edit
+    ~open
+    ~nano
+    ~cp
+}
+
+// Was macht der "mv" Befehl im Unix Shell? [tag:shell] [tag:basic]
+::Was macht der "mv" Befehl im Unix Shell?
+{
+    =Dateien und Verzeichnisse verschieben oder umbenennen
+    ~Dateien und Verzeichnisse kopieren
+    ~Verzeichnisinhalt auflisten
+    ~Dateien und Verzeichnisse löschen
+    ~Dateiberechtigungen ändern
+}
+
+// Was ist der Zweck des "chmod" Befehls im Unix Shell? [tag:shell] [tag:basic]
+::Was ist der Zweck des "chmod" Befehls im Unix Shell?
+{
+    =Dateiberechtigungen ändern
+    ~Verzeichnisinhalt auflisten
+    ~Ein neues Verzeichnis erstellen
+    ~Dateien und Verzeichnisse löschen
+    ~Dateien kopieren
+}
+
+// Wie können Sie ein Verzeichnis und dessen Inhalte rekursiv im Unix Shell kopieren? [tag:shell] [tag:basic]
+::Wie können Sie ein Verzeichnis und dessen Inhalte rekursiv im Unix Shell kopieren?
+{
+    =cp -r
+    ~mv
+    ~rm
+    ~ls
+    ~touch
+}
+
+// Was ist der Zweck des "ps" Befehls im Unix-Shell? [tag:shell] [tag:basic]
+::Was ist der Zweck des "ps" Befehls im Unix-Shell?
+{
+    ~Verzeichnisinhalt auflisten
+    =Prozessinformationen anzeigen
+    ~Ein neues Verzeichnis erstellen
+    ~Dateien und Verzeichnisse löschen
+    ~Dateiberechtigungen ändern
+}
+
+// Welcher Befehl wird verwendet, um die ersten Zeilen einer Textdatei im Unix-Shell anzuzeigen? [tag:shell] [tag:basic]
+::Welcher Befehl wird verwendet, um die ersten Zeilen einer Textdatei im Unix-Shell anzuzeigen?
+{
+    =cat
+    ~head
+    ~tail
+    ~ls
+    ~cp
+}
+
+// Was macht der "wc" Befehl im Unix-Shell? [tag:shell] [tag:basic]
+::Was macht der "wc" Befehl im Unix-Shell?
+{
+    =Zählt Wörter, Zeilen und Zeichen in einer Datei
+    ~Dateien kopieren
+    ~Verzeichnisinhalt auflisten
+    ~Dateien und Verzeichnisse löschen
+    ~Dateien und Verzeichnisse verschieben
+}
+
+// Was ist der Zweck des "tar" Befehls im Unix-Shell? [tag:shell] [tag:basic]
+::Was ist der Zweck des "tar" Befehls im Unix-Shell?
+{
+    =Archiviert und komprimiert Dateien
+    ~Verzeichnisinhalt auflisten
+    ~Ein neues Verzeichnis erstellen
+    ~Dateien und Verzeichnisse löschen
+    ~Dateiberechtigungen ändern
+}
+
+// Welcher Befehl wird verwendet, um Umgebungsvariablen im Unix-Shell anzuzeigen und zu bearbeiten? [tag:shell] [tag:basic]
+::Welcher Befehl wird verwendet, um Umgebungsvariablen im Unix-Shell anzuzeigen und zu bearbeiten?
+{
+    =env
+    ~set
+    ~export
+    ~ls
+    ~cp
+}
+
+// Wie können Sie den Inhalt eines Verzeichnisses in einer baumartigen Struktur im Unix-Shell anzeigen? [tag:shell] [tag:basic]
+::Wie können Sie den Inhalt eines Verzeichnisses in einer baumartigen Struktur im Unix-Shell anzeigen?
+{
+    =tree
+    ~ls
+    ~cp
+    ~rm
+    ~mv
+}
+
+// Was ist der Zweck des "echo" Befehls im Unix-Shell? [tag:shell] [tag:basic]
+::Was ist der Zweck des "echo" Befehls im Unix-Shell?
+{
+    =Text auf dem Bildschirm ausgeben
+    ~Dateien kopieren
+    ~Verzeichnisinhalt auflisten
+    ~Dateien und Verzeichnisse löschen
+    ~Dateien und Verzeichnisse verschieben
+}
+
+// Wie erstellen Sie eine leere Textdatei im Unix-Shell? [tag:shell] [tag:basic]
+::Wie erstellen Sie eine leere Textdatei im Unix-Shell?
+{
+    =touch
+    ~edit
+    ~open
+    ~cat
+    ~cp
+}
+
+// Was ist der Zweck des "alias" Befehls im Unix-Shell? [tag:shell] [tag:basic]
+::Was ist der Zweck des "alias" Befehls im Unix-Shell?
+{
+    =Erstellen von Abkürzungen für lange Befehle
+    ~Verzeichnisinhalt auflisten
+    ~Dateien kopieren
+    ~Dateien und Verzeichnisse löschen
+    ~Dateiberechtigungen ändern
+}
+
+// Welcher Befehl wird verwendet, um das aktuelle Datum und die aktuelle Uhrzeit im Unix-Shell anzuzeigen? [tag:shell] [tag:basic]
+::Welcher Befehl wird verwendet, um das aktuelle Datum und die aktuelle Uhrzeit im Unix-Shell anzuzeigen?
+{
+    =date
+    ~time
+    ~ls
+    ~cp
+    ~mv
+}
+
+// Was ist der Zweck des "who" Befehls im Unix-Shell? [tag:shell] [tag:basic]
+::Was ist der Zweck des "who" Befehls im Unix-Shell?
+{
+    ~Verzeichnisinhalt auflisten
+    =Informationen über angemeldete Benutzer anzeigen
+    ~Ein neues Verzeichnis erstellen
+    ~Dateien und Verzeichnisse löschen
+    ~Dateiberechtigungen ändern
+}
+
+// Was ist der Zweck einer "for"-Schleife im Unix-Shell? [tag:shell] [tag:basic]
+::Was ist der Zweck einer "for"-Schleife im Unix-Shell?
+{
+    ~Verzeichnisinhalt auflisten
+    ~Ein neues Verzeichnis erstellen
+    =Über eine Liste von Elementen iterieren und für jedes Element eine Reihe von Befehlen ausführen
+    ~Dateien und Verzeichnisse löschen
+    ~Dateiberechtigungen ändern
+}
+
+// Welches Schlüsselwort wird häufig verwendet, um eine Variable zu definieren, die in einer "for"-Schleife im Unix-Shell durch eine Liste von Elementen iteriert? [tag:shell] [tag:basic]
+::Welches Schlüsselwort wird häufig verwendet, um eine Variable zu definieren, die in einer "for"-Schleife im Unix-Shell durch eine Liste von Elementen iteriert?
+{
+    ~iterieren
+    ~Zähler
+    =item
+    ~index
+    ~Variable
+}
+
+// Wie können Sie einen Zahlenbereich in einer "for"-Schleife im Unix-Shell angeben, durch den iteriert werden soll? [tag:shell] [tag:basic]
+::Wie können Sie einen Zahlenbereich in einer "for"-Schleife im Unix-Shell angeben, durch den iteriert werden soll?
+{
+    ~Mit dem "while"-Schlüsselwort
+    ~Mit dem "until"-Schlüsselwort
+    =Mit dem "seq"-Befehl
+    ~Mit der "if"-Anweisung
+    ~Mit dem "grep"-Befehl
+}

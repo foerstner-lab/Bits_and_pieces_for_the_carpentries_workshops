@@ -1,0 +1,189 @@
+// CSV- und TSV-Dateiformate [tag:plaintext] [tag:basic]
+::Was ist der Hauptvorteil der Verwendung von CSV- oder TSV-Dateien für den Datenaustausch zwischen verschiedenen Softwareanwendungen? 
+{
+    =Sie sind plattformunabhängig und werden weitgehend unterstützt.
+    ~Sie sind sicherer als andere Formate.
+    ~Sie können Multimedia-Inhalte enthalten.
+    ~Sie können in die Datei eingebetteten Code ausführen.
+    ~Sie sind komprimiert, um Speicherplatz zu sparen.
+}
+
+// Zeilenabschlüsse in reinen Textdateien [tag:plaintext] [tag:basic]
+::Wie wird eine Zeile in einer einfachen Textdatei normalerweise beendet? 
+{
+    =Durch ein Zeilenumbruchszeichen (\n).
+    ~durch ein Semikolon (;).
+    ~Durch ein Komma (,).
+    ~Mit einem Punkt (.).
+    ~Durch ein Tabulatorzeichen (\t).
+}
+
+// Zweck des "Delimiter" in CSV- oder TSV-Dateien [tag:plaintext] [tag:basic]
+::Was ist der Zweck des "delimiter" in einer CSV- oder TSV-Datei? 
+{
+    =Zur Trennung einzelner Datenfelder.
+    ~Um die Version des Dateiformats anzugeben.
+    ~Um die Kodierung der Datei anzugeben.
+    ~Um den Inhalt der Datei zu verschlüsseln.
+    ~Zum Hinzufügen von Kommentaren in der Datei.
+}
+
+// Bedeutung von "Delimiter" in CSV- und TSV-Dateien [tag:plaintext] [tag:basic]
+::Was bedeutet der Begriff "delimiter" im Zusammenhang mit CSV- und TSV-Dateien? 
+{
+    =Ein spezielles Zeichen, das zur Trennung von Datenfeldern verwendet wird.
+    ~Eine Zeile, die das Ende der Datei markiert.
+    ~Eine Dateierweiterung, die ein bestimmtes Format angibt.
+    ~Ein Zeichen, das den Beginn eines Kommentars anzeigt.
+    ~Eine Methode zur Komprimierung des Dateiinhalts.
+}
+
+// Verständnis der JSON-Abkürzung [tag:plaintext] [tag:basic]
+::Wofür steht JSON im Kontext des Datenaustauschs? 
+{
+    =JavaScript Object Notation.
+    ~Java Serialized Object Network.
+    ~Just Simple Object Names.
+    ~JavaScript Object Network.
+    ~Java Server Object Notation.
+}
+
+// Primäre Verwendung von JSON [tag:plaintext] [tag:basic]
+::Was ist die primäre Verwendung von JSON? 
+{
+    =Zur Darstellung strukturierter Daten in einem für Menschen lesbaren Format.
+    ~Um Multimediadateien zu speichern.
+    ~Zur Formatierung von Textdokumenten.
+    ~Zum Komprimieren von Dateien für die Speicherung.
+    ~Zur Ausführung von Code in Webbrowsern.
+}
+
+// Einschließen von String-Werten in JSON [tag:plaintext] [tag:basic]
+::Welches der folgenden Zeichen wird verwendet, um einen String-Wert in JSON einzuschließen? 
+{
+    =Doppelte Anführungszeichen (" ").
+    ~Einfache Anführungszeichen (' ').
+    ~Eckige Klammern ([ ]).
+    ~Geschweifte Klammern ({ }).
+    ~Winklige Klammern (< >).
+}
+
+// Zweck der geschweiften Klammern in JSON-Objekten [tag:plaintext] [tag:basic]
+::Was ist der Zweck der geschweiften Klammern { } in einem JSON-Objekt? 
+{
+    =Die Schlüssel-Wert-Paare des Objekts einschließen.
+    ~Um das Ende des Objekts anzuzeigen.
+    ~Um einzelne Array-Elemente zu trennen.
+    ~Um einen String-Wert darzustellen.
+    ~Um eine Funktion zu definieren.
+}
+
+// Gültige JSON-Datentypen [tag:plaintext] [tag:basic]
+::Welcher der folgenden Datentypen ist KEIN ein gültiger JSON-Datentyp? 
+{
+    =Datum
+    ~String
+    ~Boolean
+    ~Number
+    ~Null
+}
+
+// Mischen von Datentypen in JSON-Arrays [tag:plaintext] [tag:basic]
+::Können Elemente in einem JSON-Array unterschiedliche Datentypen haben (z. B. eine Mischung aus Zahlen und Zeichenketten)? 
+{
+    =Ja, JSON erlaubt das Mischen von Datentypen in Arrays.
+    ~Nein, JSON erlaubt nur Elemente desselben Datentyps in Arrays.
+    ~Nur wenn das Array in doppelte Anführungszeichen eingeschlossen ist.
+    ~Nur wenn die Elemente durch Doppelpunkte getrennt sind.
+    ~Nur wenn die Elemente in eckige Klammern eingeschlossen sind.
+}
+
+// Zweck von Schlüsseln in JSON-Objekten [tag:plaintext] [tag:basic]
+::Was ist der Zweck eines Schlüssels in einem JSON-Objekt? 
+{
+    =Eine Bezeichnung für einen Wert bereitzustellen.
+    ~Um eine Zahl darzustellen.
+    ~Um eine Funktion zu definieren.
+    ~Um eine Zeichenkette einzuschließen.
+    ~Um Array-Elemente zu trennen.
+}
+
+// JSON vs. XML: Vorteile von JSON [tag:plaintext] [tag:basic]
+::Was ist der Hauptvorteil der Verwendung von JSON gegenüber XML für den Datenaustausch? 
+{
+    =JSON ist kompakter und leichter zu lesen.
+    ~JSON-Dateien sind binär und effizienter.
+    ~JSON unterstützt komplexe Formatierung und Styling.
+    ~JSON ermöglicht die Einbindung von Multimedia-Elementen.
+    ~JSON ist eine Auszeichnungssprache.
+}
+
+// Werte in Verbindung mit Schlüsseln in JSON [tag:plaintext] [tag:basic]
+::Welcher Wert ist in einem JSON-Objekt mit einem Schlüssel verknüpft? 
+{
+    =Ein Datentyp wie eine Zeichenkette oder eine Zahl.
+    ~Ein anderes Schlüssel-Werte-Paar.
+    ~Eine Funktionsdefinition.
+    ~Ein einzelnes Zeichen.
+    ~Ein Nullwert.
+}
+
+// Kommentare in JSON [tag:plaintext] [tag:basic]
+::Welche der folgenden Aussagen über die Verwendung von Kommentaren in JSON ist zutreffend? 
+{
+    =JSON unterstützt keine Kommentare.
+    ~Kommentare in JSON müssen in doppelte Anführungszeichen gesetzt werden.
+    ~Kommentare in JSON beginnen mit dem Symbol #.
+    ~Kommentare in JSON beginnen mit // und gehen bis zum Ende der Zeile.
+    ~Kommentare in JSON beginnen mit /* und enden mit */.
+}
+
+// Schlüssel-Wert-Trennzeichen in JSON-Objekten [tag:plaintext] [tag:basic]
+::Welches Zeichen wird verwendet, um Schlüssel-Wert-Paare in einem JSON-Objekt zu trennen? 
+{
+    =Komma (,).
+    ~Semikolon (;).
+    ~Kolon (:).
+    ~Periode (.).
+    ~Ausrufezeichen (!).
+}
+
+// Zugriff auf Elemente in JSON-Arrays [tag:plaintext] [tag:basic]
+::Kann auf Elemente in einem JSON-Array über ihre Position oder ihren Index zugegriffen werden? 
+{
+    =Ja, auf Elemente kann über ihre Position zugegriffen werden.
+    ~Nein, JSON-Arrays unterstützen keine Indizierung.
+    ~Nur wenn das Array in eckige Klammern eingeschlossen ist.
+    ~Nur wenn das Array in doppelte Anführungszeichen eingeschlossen ist.
+    ~Nur wenn die Elemente durch Doppelpunkte getrennt sind.
+}
+
+// Gültige JSON-Array-Darstellung [tag:plaintext] [tag:basic]
+::Welche der folgenden Angaben ist ein gültiges JSON-Array? 
+{
+    =["Apfel", "Banane", "Kirsche"].
+    ~{ "apfel", "banane", "kirsche" }.
+    ~( "apfel", "banane", "kirsche" ).
+    ~{ "Obst": ["Apfel", "Banane", "Kirsche"] }.
+    ~[ "Apfel": 1, "Banane": 2, "Kirsche": 3 ].
+}
+
+// Datenkodierung in JSON [tag:plaintext] [tag:basic]
+::Was ist der Hauptzweck der Datenkodierung in JSON? 
+{
+    =Um sie für den Menschen lesbar und leicht zu parsen zu machen.
+    ~Die Daten zu komprimieren.
+    ~Die Daten zu verschlüsseln.
+    ~Um Multimedia-Elemente hinzuzufügen.
+    ~Um ausführbaren Code zu erstellen.
+}
+
+// Merkmale von JSON [tag:plaintext] [tag:basic]
+::Welches der folgenden Merkmale ist KEIN Merkmal von JSON? 
+{
+    =JSON erlaubt Kommentare innerhalb der Daten.
+    ~JSON ist ein textbasiertes Datenaustauschformat.
+    ~JSON verwendet doppelte Anführungszeichen für String-Werte.
+    ~JSON unterstützt komplexe verschachtelte Strukturen.
+    ~JSON ist sprachunabhängig.
+}
