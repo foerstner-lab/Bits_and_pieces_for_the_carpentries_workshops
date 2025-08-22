@@ -93,3 +93,7 @@ file".
 
 Click on "launch" .
 
+## Git
+
+- https://learngitbranching.js.org
+- https://git-scm.com/book/en/v2
