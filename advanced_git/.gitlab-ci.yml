@@ -1,0 +1,21 @@
+# SPDX-FileCopyrightText: 2020 German Aerospace Center (DLR)
+#
+# SPDX-License-Identifier: CC0-1.0
+
+check_external_links:
+  image: ruby:2.6.5-slim-buster
+  stage: test
+  script:
+    - gem install awesome_bot -v 1.19.1
+    - awesome_bot --allow-ssl --allow-redirect *.md 01_introduction/README.md 02_git-for-teams/README.md 02_git-for-teams/episodes/*.md 03_example-project/README.md 03_example-project/episodes/*.md
+  tags:
+    - docker
+
+check_license_infos:
+  image: python:3.8
+  stage: test
+  script:
+    - pip install reuse
+    - reuse lint
+  tags:
+    - docker

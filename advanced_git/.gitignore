@@ -1,0 +1,13 @@
+# SPDX-FileCopyrightText: 2020 German Aerospace Center (DLR)
+#
+# SPDX-License-Identifier: CC0-1.0
+
+# Temp office files
+~*.pptx
+~*.docx
+
+# IDEs
+.idea/*
+
+# python-gitlab configuration file
+gitlab-config.ini

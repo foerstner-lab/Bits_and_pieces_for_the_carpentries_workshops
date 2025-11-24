@@ -1,0 +1,8 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: workshop-materials
+Upstream-Contact: Tobias Schlauch <tobias.schlauch@dlr.de>
+Source: https://gitlab.com/hifis/hifis-workshops/software-development-for-teams/workshop-materials
+
+Files: 02_git-for-teams/code/*
+Copyright: 2020  German Aerospace Center (DLR)
+License: MIT
