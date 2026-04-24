@@ -30,7 +30,7 @@
 ```
 - *kursiv* / _kursiv_
 - **fett** / __fett__
-- ***fett-kusib***
+- ***fett-kusiv***
 - ~~durchgestrichen~~
 ```
 ### Umsetzung
